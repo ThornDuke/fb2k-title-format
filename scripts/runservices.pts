@@ -1,0 +1,253 @@
+//////
+// These are the labels and paths used in the "run service" plugin
+////
+
+// Label:
+//   Google Reviews Artist + Album
+// Path:
+http://www.google.com/search?q=
+$replace($replace($replace($replace($replace($trim(%album artist% %album%),?,'%'3F),=,'%'3D),&,'%'26),+,'%'2B), ,+)
++site:www.radioaktiv.it
++OR
++site:www.sentireascoltare.com
++OR
++site:www.ondarock.it
++OR
++site:www.impattosonoro.it
++OR
++site:www.rootsworld.com
++OR
++site:pitchfork.com
++OR
++site:worldmusiccentral.org
++OR
++site:afropop.org
+&ie=utf-8
+
+//////
+// 2nd version
+////
+http://www.google.com/search?q=
+$replace($replace($trim(%album artist% %album%),
+'!','%'21,
+'"','%'22,
+'#','%'23,
+'$','%'24,
+'%','%'25,
+'&','%'26,
+'','%'27,
+'(','%'28,
+')','%'29,
+'*','%'2A,
+'+','%'2B,
+',','%'2C,
+'/','%'2F,
+':','%'3A,
+';'.'%'3B,
+'<','%'3C,
+'=','%'3D,
+'>','%'3E,
+'?','%'3F,
+'@','%'40,
+'[','%'5B,
+'\','%'5C,
+']','%'5D,
+'^','%'5E,
+'`','%'60)
+, ,+)
++site:www.radioaktiv.it
++OR
++site:www.sentireascoltare.com
++OR
++site:www.ondarock.it
++OR
++site:www.impattosonoro.it
++OR
++site:www.rootsworld.com
++OR
++site:pitchfork.com
++OR
++site:worldmusiccentral.org
++OR
++site:afropop.org
+&ie=utf-8&num=20
+
+// Label:
+//    Personal Google Reviews Artist + Album
+// path:
+https://cse.google.com/cse?cx=146f85e605dc94c01&q=
+$replace($replace($trim(%album artist% %album%),
+'!','%'21,
+'"','%'22,
+'#','%'23,
+'$','%'24,
+'%','%'25,
+'&','%'26,
+'','%'27,
+'(','%'28,
+')','%'29,
+'*','%'2A,
+'+','%'2B,
+',','%'2C,
+'/','%'2F,
+':','%'3A,
+';'.'%'3B,
+'<','%'3C,
+'=','%'3D,
+'>','%'3E,
+'?','%'3F,
+'@','%'40,
+'[','%'5B,
+'\','%'5C,
+']','%'5D,
+'^','%'5E,
+'`','%'60)
+, ,+)
+
+// Label:
+//   Musicbrainz Artist + Album
+// Path:
+https://musicbrainz.org/search?query=
+$replace($replace($replace($replace($replace($trim(%album artist% %album%),?,'%'3F),=,'%'3D),&,'%'26),+,'%'2B), ,+)
+&type=release
+&limit=100
+
+//////
+// 2nd version
+////
+https://musicbrainz.org/search?query=
+$replace($replace($trim(%album artist% %album%),
+'!','%'21,
+'"','%'22,
+'#','%'23,
+'$','%'24,
+'%','%'25,
+'&','%'26,
+'','%'27,
+'(','%'28,
+')','%'29,
+'*','%'2A,
+'+','%'2B,
+',','%'2C,
+'/','%'2F,
+':','%'3A,
+';'.'%'3B,
+'<','%'3C,
+'=','%'3D,
+'>','%'3E,
+'?','%'3F,
+'@','%'40,
+'[','%'5B,
+'\','%'5C,
+']','%'5D,
+'^','%'5E,
+'`','%'60)
+, ,+)
+&type=release
+&limit=100
+
+// Label:
+//   Discogs Artist + Album
+// Path:
+https://www.discogs.com/search?q=
+$replace($replace($replace($replace($replace($trim(%album artist% %album%),?,'%'3F),=,'%'3D),&,'%'26),+,'%'2B), ,+)
+&type=all
+
+//////
+// 2nd version
+////
+https://www.discogs.com/search?q=
+$replace($replace($trim(%album artist% %album%),
+'!','%'21,
+'"','%'22,
+'#','%'23,
+'$','%'24,
+'%','%'25,
+'&','%'26,
+'','%'27,
+'(','%'28,
+')','%'29,
+'*','%'2A,
+'+','%'2B,
+',','%'2C,
+'/','%'2F,
+':','%'3A,
+';'.'%'3B,
+'<','%'3C,
+'=','%'3D,
+'>','%'3E,
+'?','%'3F,
+'@','%'40,
+'[','%'5B,
+'\','%'5C,
+']','%'5D,
+'^','%'5E,
+'`','%'60)
+, ,+)
+&type=all
+
+// Label:
+//   Google Artist + Album
+// Path:
+http://www.google.com/search?q=
+$replace($replace($replace($replace($replace($trim(%album artist% %album%),?,'%'3F),=,'%'3D),&,'%'26),+,'%'2B), ,+)
+&ie=utf-8
+
+//////
+// 2nd version
+////
+http://www.google.com/search?q=
+$replace($replace($trim(%album artist% %album%),
+'!','%'21,
+'"','%'22,
+'#','%'23,
+'$','%'24,
+'%','%'25,
+'&','%'26,
+'','%'27,
+'(','%'28,
+')','%'29,
+'*','%'2A,
+'+','%'2B,
+',','%'2C,
+'/','%'2F,
+':','%'3A,
+';'.'%'3B,
+'<','%'3C,
+'=','%'3D,
+'>','%'3E,
+'?','%'3F,
+'@','%'40,
+'[','%'5B,
+'\','%'5C,
+']','%'5D,
+'^','%'5E,
+'`','%'60)
+, ,+)
+&ie=utf-8
+
+// Label:
+//   Music Hoarders Cover artist + album
+// Path:
+$puts(resolution,1200)
+$puts(sources,'amazonmusic,applemusic,bugs,flo,itunes,kkbox,linemusic,musicbrainz,tidal')
+$puts(country,us)
+$puts(artist,$if($stricmp(%album artist%,various artists),,%album artist%))
+$puts(splitter,Φ)
+$puts(splitterLength,$len($get(splitter)))
+$puts(artistAlbum,$replace($replace($trim($get(artist)$get(splitter)%album%),
+'!','%'21,'"','%'22,'#','%'23,'$','%'24,
+'%','%'25,'&','%'26,'','%'27,'(','%'28,
+')','%'29,'*','%'2A,'+','%'2B,',','%'2C,
+'/','%'2F,':','%'3A,';','%'3B,'<','%'3C,
+'=','%'3D,'>','%'3E,'?','%'3F,'@','%'40,
+'[','%'5B,'\','%'5C,']','%'5D,'^','%'5E,
+'`','%'60), ,+))
+$puts(artist,$substr($get(artistAlbum),$get(splitterLength),$sub($strstr($get(artistAlbum),$get(splitter)),$get(splitterLength))))
+$puts(album,$substr($get(artistAlbum),$add($strstr($get(artistAlbum),$get(splitter)),$get(splitterLength)),$len($get(artistAlbum))))
+https://covers.musichoarders.xyz/
+?resolution=$get(resolution)
+&sources=$get(sources)
+&country=$get(country)
+[&artist=$get(artist)]
+&album=$get(album)

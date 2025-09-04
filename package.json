@@ -1,0 +1,58 @@
+{
+  "name": "foobar2000-title-formatting-syntax",
+  "displayName": "Foobar2000 Title Formatting Syntax",
+  "description": "Syntax highlighting and snippets for Foobar2000's title formatting.",
+  "version": "1.0.7",
+  "author": "Thorn Duke",
+  "publisher": "ThornDuke",
+  "icon": "resources/main.png",
+  "galleryBanner": {
+    "color": "#001b33",
+    "theme": "dark"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "keywords": [
+    "foobar2000",
+    "title formatting",
+    "syntax highlighting",
+    "snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "f2k",
+        "aliases": [
+          "Foobar2000 Title Formatting"
+        ],
+        "extensions": [
+          ".f2k"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "f2k",
+        "scopeName": "source.f2k",
+        "path": "./syntaxes/foobar2000.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "f2k",
+        "path": "./snippets/foobar2000.json"
+      }
+    ]
+  },
+  "pricing": "Free",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

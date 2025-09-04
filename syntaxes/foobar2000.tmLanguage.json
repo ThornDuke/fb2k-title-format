@@ -1,0 +1,42 @@
+{
+  "scopeName": "source.f2k",
+  "name": "Foobar2000 Title Formatting",
+  "fileTypes": ["f2k"],
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.f2k",
+      "match": "^\\/\\/.*$"
+    },
+    {
+      "name": "string.quoted.single.f2k",
+      "match": "'([^']|'')*'"
+    },
+    {
+      "name": "variable.other.tag.f2k",
+      "match": "%(title|artist|album artist|track artist|album|date|genre|tracknumber|totaltracks|discnumber|totaldiscs|codec|codec_profile|codec_long|filename|filename_ext|directoryname|path|subsong|path_sort|length|length_seconds|bitrate|channels|samplerate|replaygain_track_gain|replaygain_album_gain|replaygain_track_peak|replaygain_album_peak|replaygain_track_peak_db|replaygain_album_peak_db|filesize|filesize_natural|last_modified|list_index|list_total|isplaying|ispaused|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|queue_index|queue_indexes|queue_total)%"
+    },
+    {
+      "name": "meta.f2k",
+      "begin": "\\$(abbr|ansi|ascii|lower|upper|num|caps|caps2|if|if2|if3|ifgreater|iflonger|ifequal|longest|len|pad|pad_right|cut|padcut|padcut_right|insert|add|sub|mul|div|mod|min|max|left|right|and|or|xor|not|fix_eol|meta|meta_sep|meta_num|info|char|strcmp|stricmp|directory|directory_path|greater|longer|strchr|strrchr|strstr|select|repeat|replace|ext|substr|trim|tab|stripprefix|swapprefix|peak_to_db|year|month|day_of_month|date|time|put|puts|get)\\s*\\(",
+      "end": "\\)",
+      "captures": {
+        "0": {
+          "name": "support.function.f2k"
+        }
+      },
+      "patterns": [
+        {
+          "include": "$self"
+        }
+      ]
+    },
+    {
+      "name": "constant.language.f2k",
+      "match": "\\$(put|puts|get)\\s*\\(\\s*([a-zA-Z0-9_]+)"
+    },
+    {
+      "name": "meta.block.conditional.f2k",
+      "match": "\\[[^\\]]*(%[a-zA-Z0-9 _]+%|\\$[a-zA-Z0-9_]+\\([^)]*\\))[^\\]]*\\]"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+.vscode/
+scripts/
+*.log
+CHANGELOG.md

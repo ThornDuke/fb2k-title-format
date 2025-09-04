@@ -1,0 +1,30 @@
+// ===================================================================
+//
+// Path building for Convert and File operations
+//
+// 1. Take in account if it is a Series
+// 2. Builds the text of the first folders by distinguishing between
+//    letters, numbers and other characters
+//
+// ===================================================================
+
+// TODO
+// $puts(albumArtist,$ascii(%album artist%))
+// $puts(series,$ascii(%series%))
+
+$puts(target,$if(%series%,$stripprefix(%series%,the),$stripprefix(%album artist%,the)))
+$puts(firstCh,$ascii($substr($get(target),1,1)))
+$puts(secondCh,$iflonger($get(target),1,$ascii($substr($get(target),2,2)),-))
+$puts(isFirstChLetter,$if($strcmp($upper($get(firstCh)),$lower($get(firstCh))),false,true))
+$puts(isSecondChLetter,$if($strcmp($upper($get(secondCh)),$lower($get(secondCh))),false,true))
+$puts(isFirstChNumber,$if($or($strcmp($get(firstCh),0),$greater($get(firstCh),0)),true,false))
+$puts(isSecondChNumber,$if($or($strcmp($get(secondCh),0),$greater($get(secondCh),0)),true,false))
+$puts(firstChar,$if($or($strcmp($get(isFirstChLetter),true),$strcmp($get(isFirstChNumber),true)),$upper($get(firstCh)),-))
+$puts(secondChar,$if($or($strcmp($get(isSecondChLetter),true),$strcmp($get(isSecondChNumber),true)),$upper($get(secondCh)),-))
+$puts(volumeName,$if(%volume%,vol %volume%,%album%))
+$puts(seriesStart,SERIES/$get(firstChar)/%series%/$cut(%date%,4) - $get(volumeName))
+$puts(singleStart,$get(firstChar)/$get(firstChar)$get(secondChar)/$stripprefix(%album artist%,the)/$cut(%date%,4) - %album%)
+$if(%series%,$get(seriesStart),$get(singleStart))/[cd %disc number%/]%track number% - %title%
+
+// tutto il codice sopra in una unica linea
+$puts(target,$if(%series%,$stripprefix(%series%,the),$stripprefix(%album artist%,the)))$puts(firstCh,$ascii($substr($get(target),1,1)))$puts(secondCh,$iflonger($get(target),1,$ascii($substr($get(target),2,2)),-))$puts(isFirstChLetter,$if($strcmp($upper($get(firstCh)),$lower($get(firstCh))),false,true))$puts(isSecondChLetter,$if($strcmp($upper($get(secondCh)),$lower($get(secondCh))),false,true))$puts(isFirstChNumber,$if($or($strcmp($get(firstCh),0),$greater($get(firstCh),0)),true,false))$puts(isSecondChNumber,$if($or($strcmp($get(secondCh),0),$greater($get(secondCh),0)),true,false))$puts(firstChar,$if($or($strcmp($get(isFirstChLetter),true),$strcmp($get(isFirstChNumber),true)),$upper($get(firstCh)),-))$puts(secondChar,$if($or($strcmp($get(isSecondChLetter),true),$strcmp($get(isSecondChNumber),true)),$upper($get(secondCh)),-))$puts(volumeName,$if(%volume%,vol %volume%,%album%))$puts(seriesStart,SERIES/$get(firstChar)/%series%/$cut(%date%,4) - $get(volumeName))$puts(singleStart,$get(firstChar)/$get(firstChar)$get(secondChar)/$stripprefix(%album artist%,the)/$cut(%date%,4) - %album%)$if(%series%,$get(seriesStart),$get(singleStart))/[cd %disc number%/]%track number% - %title%
