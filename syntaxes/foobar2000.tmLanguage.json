@@ -17,7 +17,7 @@
     },
     {
       "name": "meta.f2k",
-      "begin": "\\$(abbr|ansi|ascii|lower|upper|num|caps|caps2|if|if2|if3|ifgreater|iflonger|ifequal|longest|len|pad|pad_right|cut|padcut|padcut_right|insert|add|sub|mul|div|mod|min|max|left|right|and|or|xor|not|fix_eol|meta|meta_sep|meta_num|info|char|strcmp|stricmp|directory|directory_path|greater|longer|strchr|strrchr|strstr|select|repeat|replace|ext|substr|trim|tab|stripprefix|swapprefix|peak_to_db|year|month|day_of_month|date|time|put|puts|get)\\s*\\(",
+      "begin": "\\$(abbr|ansi|ascii|lower|upper|num|caps|caps2|if|if2|if3|ifgreater|iflonger|ifequal|longest|len|pad|pad_right|cut|padcut|padcut_right|insert|add|sub|mul|div|mod|min|max|left|right|and|or|xor|not|fix_eol|meta|meta_sep|meta_num|info|char|strcmp|stricmp|directory|directory_path|greater|longer|strchr|strrchr|strstr|select|repeat|replace|ext|substr|trim|tab|stripprefix|swapprefix|peak_to_db|year|month|day_of_month|date|time|put|puts|get|crlf|rgb|set_global|get_global|set_style|calculate_blend_target|offset_colour|set_format|reset_format|set_font|reset_font)\\s*\\(",
       "end": "\\)",
       "captures": {
         "0": {
