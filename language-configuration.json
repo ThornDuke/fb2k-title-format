@@ -2,11 +2,7 @@
   "comments": {
     "lineComment": "//"
   },
-  "brackets": [
-    ["{", "}"],
-    ["[", "]"],
-    ["(", ")"]
-  ],
+  "brackets": [],
   "autoClosingPairs": [
     ["(", ")"],
     ["[", "]"],
@@ -23,9 +19,5 @@
   "colorizedBracketPairs": [
     ["(", ")"],
     ["[", "]"]
-  ],
-  "indentationRules": {
-    "increaseIndentPattern": "",
-    "decreaseIndentPattern": ""
-  }
+  ]
 }
