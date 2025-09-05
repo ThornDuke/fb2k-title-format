@@ -1,4 +1,3 @@
-// https://code.visualstudio.com/docs/editing/userdefinedsnippets#_create-your-own-snippets
 {
   "Tag: %title%": {
     "prefix": "%title",
@@ -227,385 +226,384 @@
   },
   "Function: $abbr(X)": {
     "prefix": "$abbr(",
-    "body": ["'abbr(${1:X})"],
+    "body": ["$abbr(${1:X})"],
     "description": "Foobar2000 function: returns an abbreviation of X."
   },
   "Function: $abbr(X,Y)": {
     "prefix": "$abbr(",
-    "body": ["'abbr(${1:X},${2:Y})"],
+    "body": ["$abbr(${1:X},${2:Y})"],
     "description": "Foobar2000 function: returns an abbreviation of X if X is longer than Y characters; otherwise returns full value of X."
   },
   "Function: $ansi(X)": {
     "prefix": "$ansi(",
-    "body": ["'ansi(${1:X})"],
+    "body": ["$ansi(${1:X})"],
     "description": "Foobar2000 function: Returns X with all characters not present in current system codepage replaced with closest matches. Useful for sanitizing filenames when interacting with other software that can't handle Unicode."
   },
   "Function: $ascii(X)": {
     "prefix": "$ascii(",
-    "body": ["'ascii(${1:X})"],
+    "body": ["$ascii(${1:X})"],
     "description": "Foobar2000 function: Returns X with all non-ASCII characters replaced with closest ASCII matches. Useful for sanitizing filenames when interacting with other software that can't handle Unicode."
   },
   "Function: $lower(X)": {
     "prefix": "$lower(",
-    "body": ["'lower(${1:X})"],
+    "body": ["$lower(${1:X})"],
     "description": "Foobar2000 function: Converts X to lowercase."
   },
   "Function: $upper(X)": {
     "prefix": "$upper(",
-    "body": ["'upper(${1:X})"],
+    "body": ["$upper(${1:X})"],
     "description": "Foobar2000 function: Converts X to uppercase."
   },
   "Function: $num(X,Y)": {
     "prefix": "$num(",
-    "body": ["'num(${1:X},${2:Y})"],
+    "body": ["$num(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Displays X as a number and pads with zeros up to Y characters (useful for track numbers etc)."
   },
   "Function: $caps(X)": {
     "prefix": "$caps(",
-    "body": ["'caps(${1:X})"],
+    "body": ["$caps(${1:X})"],
     "description": "Foobar2000 function: Converts first letter in every word of X to uppercase, and all other letters to lowercase, e.g. “blah BLAH” ⇒ “Blah Blah”."
   },
   "Function: $caps2(X)": {
     "prefix": "$caps2(",
-    "body": ["'caps2(${1:X})"],
+    "body": ["$caps2(${1:X})"],
     "description": "Foobar2000 function: Similar to $caps, but leaves uppercase letters as they are, e.g. “blah BLAH” ⇒ “Blah BLAH”."
   },
   "Function: $if(X,Y,Z)": {
     "prefix": "$if(",
-    "body": ["'if(${1:X},${2:Y},${3:Z})"],
+    "body": ["$if(${1:X},${2:Y},${3:Z})"],
     "description": "Foobar2000 function: If X contains at least one present field, executes/displays Y, otherwise executes/displays Z."
   },
   "Function: $if2(X,Y)": {
     "prefix": "$if2(",
-    "body": ["'if2(${1:X},${2:Y})"],
+    "body": ["$if2(${1:X},${2:Y})"],
     "description": "Foobar2000 function: If X contains at least one present field, executes/displays X, otherwise executes/displays Y. Same as $if(X,X,Y)."
   },
   "Function: $if3(X,Y,Z,..)": {
     "prefix": "$if3(",
-    "body": ["'if3(${1:X},${2:Y},${3:Z})"],
+    "body": ["$if3(${1:X},${2:Y},${3:Z})"],
     "description": "Foobar2000 function: Returns the first of parameters that contains at least one present field."
   },
   "Function: $ifgreater(A,B,C,D)": {
     "prefix": "$ifgreater(",
-    "body": ["'ifgreater(${1:A},${2:B},${3:C},${4:D})"],
+    "body": ["$ifgreater(${1:A},${2:B},${3:C},${4:D})"],
     "description": "Foobar2000 function: If the number A is greater than the number B, executes/returns C, otherwise executes/returns D."
   },
   "Function: $iflonger(A,B,C,D)": {
     "prefix": "$iflonger(",
-    "body": ["'iflonger(${1:A},${2:B},${3:C},${4:D})"],
+    "body": ["$iflonger(${1:A},${2:B},${3:C},${4:D})"],
     "description": "Foobar2000 function: If the string A is longer than B characters, executes/returns C, otherwise executes/returns D."
   },
   "Function: $ifequal(A,B,C,D)": {
     "prefix": "$ifequal(",
-    "body": ["'ifequal(${1:A},${2:B},${3:C},${4:D})"],
+    "body": ["$ifequal(${1:A},${2:B},${3:C},${4:D})"],
     "description": "Foobar2000 function: If the number A is equal to the number B, executes/returns C, otherwise executes/returns D."
   },
   "Function: $longest(A,B,C,….)": {
     "prefix": "$longest(",
-    "body": ["'longest(${1:A},${2:B},${3:C})"],
+    "body": ["$longest(${1:A},${2:B},${3:C})"],
     "description": "Foobar2000 function: Compares lengths of of A,B,C… and returns the longest one."
   },
   "Function: $len(X)": {
     "prefix": "$len(",
-    "body": ["'len(${1:X})"],
+    "body": ["$len(${1:X})"],
     "description": "Foobar2000 function: Returns length of the string X in characters."
   },
   "Function: $pad(X,Y)": {
     "prefix": "$pad(",
-    "body": ["'pad(${1:X},${2:Y})"],
+    "body": ["$pad(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Pads X with spaces up to Y characters."
   },
   "Function: $pad_right(X,Y)": {
     "prefix": "$pad_right(",
-    "body": ["'pad_right(${1:X},${2:Y})"],
+    "body": ["$pad_right(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Pads X with spaces up to Y characters."
   },
   "Function: $pad(X,Y,Z)": {
     "prefix": "$pad(",
-    "body": ["'pad(${1:X},${2:Y},${3:Z})"],
+    "body": ["$pad(${1:X},${2:Y},${3:Z})"],
     "description": "Foobar2000 function: Pads X with Z character up to Y characters."
   },
   "Function: $pad_right(X,Y,Z)": {
     "prefix": "$pad_right(",
-    "body": ["'pad_right(${1:X},${2:Y},${3:Z})"],
+    "body": ["$pad_right(${1:X},${2:Y},${3:Z})"],
     "description": "Foobar2000 function: Pads X with Z character up to Y characters."
   },
   "Function: $cut(X,Y)": {
     "prefix": "$cut(",
-    "body": ["'cut(${1:X},${2:Y})"],
+    "body": ["$cut(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Truncates X to Y characters."
   },
   "Function: $padcut(X,Y)": {
     "prefix": "$padcut(",
-    "body": ["'padcut(${1:X},${2:Y})"],
+    "body": ["$padcut(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Pads X to Y characters and truncates to Y if longer."
   },
   "Function: $padcut_right(X,Y)": {
     "prefix": "$padcut_right(",
-    "body": ["'padcut_right(${1:X},${2:Y})"],
+    "body": ["$padcut_right(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Pads X to Y characters and truncates to Y if longer."
   },
   "Function: $insert(A,B,N)": {
     "prefix": "$insert(",
-    "body": ["'insert(${1:A},${2:B},${3:N})"],
+    "body": ["$insert(${1:A},${2:B},${3:N})"],
     "description": "Foobar2000 function: Inserts string B into string A after N characters."
   },
   "Function: $add(X,Y)": {
     "prefix": "$add(",
-    "body": ["'add(${1:X},${2:Y})"],
+    "body": ["$add(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: addition"
   },
   "Function: $sub(X,Y)": {
     "prefix": "$sub(",
-    "body": ["'sub(${1:X},${2:Y})"],
+    "body": ["$sub(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: subtraction"
   },
   "Function: $mul(X,Y)": {
     "prefix": "$mul(",
-    "body": ["'mul(${1:X},${2:Y})"],
+    "body": ["$mul(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: multiplication"
   },
   "Function: $div(X,Y)": {
     "prefix": "$div(",
-    "body": ["'div(${1:X},${2:Y})"],
+    "body": ["$div(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: division"
   },
   "Function: $mod(X,Y)": {
     "prefix": "$mod(",
-    "body": ["'mod(${1:X},${2:Y})"],
+    "body": ["$mod(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: modulus"
   },
   "Function: $min(X,Y)": {
     "prefix": "$min(",
-    "body": ["'min(${1:X},${2:Y})"],
+    "body": ["$min(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: minimum"
   },
   "Function: $max(X,Y)": {
     "prefix": "$max(",
-    "body": ["'max(${1:X},${2:Y})"],
+    "body": ["$max(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Math operation: maximum"
   },
   "Function: $left(X,Y)": {
     "prefix": "$left(",
-    "body": ["'left(${1:X},${2:Y})"],
+    "body": ["$left(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Returns Y first characters of string X."
   },
   "Function: $right(X,Y)": {
     "prefix": "$right(",
-    "body": ["'right(${1:X},${2:Y})"],
+    "body": ["$right(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Returns Y last characters of string X."
   },
   "Function: $and(X,Y)": {
     "prefix": "$and(",
-    "body": ["'and(${1:X},${2:Y})"],
+    "body": ["$and(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Logical operations, for use with $if()."
   },
   "Function: $or(X,Y)": {
     "prefix": "$or(",
-    "body": ["'or(${1:X},${2:Y})"],
+    "body": ["$or(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Logical operations, for use with $if()."
   },
   "Function: $xor(X,Y)": {
     "prefix": "$xor(",
-    "body": ["'xor(${1:X},${2:Y})"],
+    "body": ["$xor(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Logical operations, for use with $if()."
   },
   "Function: $not(X)": {
     "prefix": "$not(",
-    "body": ["'not(${1:X})"],
+    "body": ["$not(${1:X})"],
     "description": "Foobar2000 function: Logical operations, for use with $if()."
   },
   "Function: $fix_eol(x)": {
     "prefix": "$fix_eol(",
-    "body": ["'fix_eol(${1:x})"],
+    "body": ["$fix_eol(${1:x})"],
     "description": "Foobar2000 function: Truncates multiline strings, adding ” (…)” at the end."
   },
   "Function: $fix_eol(x,y)": {
     "prefix": "$fix_eol(",
-    "body": ["'fix_eol(${1:x},${2:y})"],
+    "body": ["$fix_eol(${1:x},${2:y})"],
     "description": "Foobar2000 function: Truncates multiline strings, adding y at the end."
   },
   "Function: $meta(X)": {
     "prefix": "$meta(",
-    "body": ["'meta(${1:X})"],
+    "body": ["$meta(${1:X})"],
     "description": "Foobar2000 function: Returns value of metadata field named X."
   },
   "Function: $meta_sep(X,Y)": {
     "prefix": "$meta_sep(",
-    "body": ["'meta_sep(${1:X},${2:Y})"],
+    "body": ["$meta_sep(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Returns metadata field named X, with custom separators for multiple values."
   },
   "Function: $meta_sep(X,Y,Z)": {
     "prefix": "$meta_sep(",
-    "body": ["'meta_sep(${1:X},${2:Y},${3:Z})"],
+    "body": ["$meta_sep(${1:X},${2:Y},${3:Z})"],
     "description": "Foobar2000 function: Returns metadata field named X, with custom separators for multiple values."
   },
   "Function: $meta_num(X)": {
     "prefix": "$meta_num(",
-    "body": ["'meta_num(${1:X})"],
+    "body": ["$meta_num(${1:X})"],
     "description": "Foobar2000 function: Returns number of present values for metadata field X."
   },
   "Function: $info(X)": {
     "prefix": "$info(",
-    "body": ["'info(${1:X})"],
+    "body": ["$info(${1:X})"],
     "description": "Foobar2000 function: Returns tech info field named X."
   },
   "Function: $char(X)": {
     "prefix": "$char(",
-    "body": ["'char(${1:X})"],
+    "body": ["$char(${1:X})"],
     "description": "Foobar2000 function: Inserts Unicode character no. X."
   },
   "Function: $strcmp(X,Y)": {
     "prefix": "$strcmp(",
-    "body": ["'strcmp(${1:X},${2:Y})"],
+    "body": ["$strcmp(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Returns “1” when strings X and Y are identical, empty string otherwise; intended for use with $if()."
   },
   "Function: $stricmp(X,Y)": {
     "prefix": "$stricmp(",
-    "body": ["'stricmp(${1:X},${2:Y})"],
+    "body": ["$stricmp(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Returns “1” when strings X and Y are identical, empty string otherwise; intended for use with $if(). Non-case-sensitive"
   },
   "Function: $directory(X)": {
     "prefix": "$directory(",
-    "body": ["'directory(${1:X})"],
+    "body": ["$directory(${1:X})"],
     "description": "Foobar2000 function: Extracts directory name from the file path X."
   },
   "Function: $directory(X,N)": {
     "prefix": "$directory(",
-    "body": ["'directory(${1:X},${2:N})"],
+    "body": ["$directory(${1:X},${2:N})"],
     "description": "Foobar2000 function: Extracts directory name from the file path X, optionally goes up by N directory levels."
   },
   "Function: $directory_path(X)": {
     "prefix": "$directory_path(",
-    "body": ["'directory_path(${1:X})"],
+    "body": ["$directory_path(${1:X})"],
     "description": "Foobar2000 function: Extracts directory path from the file path X."
   },
   "Function: $greater(X,Y)": {
     "prefix": "$greater(",
-    "body": ["'greater(${1:X},${2:Y})"],
+    "body": ["$greater(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Compares two integers, tests if X>Y, intended for use with $if() and logical operators."
   },
   "Function: $longer(X,Y)": {
     "prefix": "$longer(",
-    "body": ["'longer(${1:X},${2:Y})"],
+    "body": ["$longer(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Compares two strings, tests if X is longer than Y, intended for use with $if() and logical operators."
   },
   "Function: $strchr(X,Y)": {
     "prefix": "$strchr(",
-    "body": ["'strchr(${1:X},${2:Y})"],
+    "body": ["$strchr(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Finds first occurrence of character Y in string X."
   },
   "Function: $strrchr(X,Y)": {
     "prefix": "$strrchr(",
-    "body": ["'strrchr(${1:X},${2:Y})"],
+    "body": ["$strrchr(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Finds last occurrence of character Y in string X."
   },
   "Function: $strstr(X,Y)": {
     "prefix": "$strstr(",
-    "body": ["'strstr(${1:X},${2:Y})"],
+    "body": ["$strstr(${1:X},${2:Y})"],
     "description": "Foobar2000 function: Finds first occurrence of string Y in string X."
   },
   "Function: $select(N,A,B,C,….)": {
     "prefix": "$select(",
-    "body": ["'select(${1:N},${2:A},${3:B},${4:C})"],
+    "body": ["$select(${1:N},${2:A},${3:B},${4:C})"],
     "description": "Foobar2000 function: Returns N-th of A,B,C… parameters."
   },
   "Function: $repeat(X,N)": {
     "prefix": "$repeat(",
-    "body": ["'repeat(${1:X},${2:N})"],
+    "body": ["$repeat(${1:X},${2:N})"],
     "description": "Foobar2000 function: Repeats X N times."
   },
   "Function: $replace(A,B,C)": {
     "prefix": "$replace(",
-    "body": ["'replace(${1:A},${2:B},${3:C})"],
+    "body": ["$replace(${1:A},${2:B},${3:C})"],
     "description": "Foobar2000 function: Replaces all occurrences of string B in string A with string C."
   },
   "Function: $ext(X)": {
     "prefix": "$ext(",
-    "body": ["'ext(${1:X})"],
+    "body": ["$ext(${1:X})"],
     "description": "Foobar2000 function: Extracts extension from file path / file name"
   },
   "Function: $substr(A,B,C)": {
     "prefix": "$substr(",
-    "body": ["'substr(${1:A},${2:B},${3:C})"],
+    "body": ["$substr(${1:A},${2:B},${3:C})"],
     "description": "Foobar2000 function: Returns substring of string A, starting from B-th character and ending at C-th character"
   },
   "Function: $trim(A)": {
     "prefix": "$trim(",
-    "body": ["'trim(${1:A})"],
+    "body": ["$trim(${1:A})"],
     "description": "Foobar2000 function: Trims leading/trailing space characters from A."
   },
   "Function: $tab()": {
     "prefix": "$tab(",
-    "body": ["'tab($0)"],
+    "body": ["$tab($0)"],
     "description": "Foobar2000 function: Generates a tab character; equivalent to $char(9). See “tab character” explanation below for more info about its use."
   },
   "Function: $stripprefix(X)": {
     "prefix": "$stripprefix(",
-    "body": ["'stripprefix(${1:X})"],
+    "body": ["$stripprefix(${1:X})"],
     "description": "Foobar2000 function: Removes “A” and “The” prefixes from X."
   },
   "Function: $stripprefix(X,prefix1,prefix2,…)": {
     "prefix": "$stripprefix(",
-    "body": ["'stripprefix(${1:X},${2:prefix1},${3:prefix2})"],
+    "body": ["$stripprefix(${1:X},${2:prefix1},${3:prefix2})"],
     "description": "Foobar2000 function: Removes the specified prefixes from X."
   },
   "Function: $swapprefix(X)": {
     "prefix": "$swapprefix(",
-    "body": ["'swapprefix(${1:X})"],
+    "body": ["$swapprefix(${1:X})"],
     "description": "Foobar2000 function: Moves “A” and “The” prefixes to the end of X."
   },
   "Function: $swapprefix(X,prefix1,prefix2,…)": {
     "prefix": "$swapprefix(",
-    "body": ["'swapprefix(${1:X},${2:prefix1},${3:prefix2})"],
+    "body": ["$swapprefix(${1:X},${2:prefix1},${3:prefix2})"],
     "description": "Foobar2000 function: Moves the specified prefixes to the end of X."
   },
   "Function: $peak_to_db(X)": {
     "prefix": "$peak_to_db(",
-    "body": ["'peak_to_db(${1:X})"],
+    "body": ["$peak_to_db(${1:X})"],
     "description": "Foobar2000 function: Converts audio peak value from 0..1 PCM to decibels."
   },
   "Function: $year(time)": {
     "prefix": "$year(",
-    "body": ["'year(${1:time})"],
+    "body": ["$year(${1:time})"],
     "description": "Foobar2000 function: Retrieves the year part (formatted as four digits) from a time/date string."
   },
   "Function: $month(time)": {
     "prefix": "$month(",
-    "body": ["'month(${1:time})"],
+    "body": ["$month(${1:time})"],
     "description": "Foobar2000 function: Retrieves the month part (formatted as two digits) from a time/date string."
   },
   "Function: $day_of_month(time)": {
     "prefix": "$day_of_month(",
-    "body": ["'day_of_month(${1:time})"],
+    "body": ["$day_of_month(${1:time})"],
     "description": "Foobar2000 function: Retrieves the day of month part (formatted as two digits) from a time/date string."
   },
   "Function: $date(time)": {
     "prefix": "$date(",
-    "body": ["'date(${1:time})"],
+    "body": ["$date(${1:time})"],
     "description": "Foobar2000 function: Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string."
   },
   "Function: $time(time)": {
     "prefix": "$time(",
-    "body": ["'time(${1:time})"],
+    "body": ["$time(${1:time})"],
     "description": "Foobar2000 function: Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string."
   },
   "Function: $put(name,text)": {
     "prefix": "$put(",
-    "body": ["'put(${1:name},${2:text})"],
+    "body": ["$put(${1:name},${2:text})"],
     "description": "Foobar2000 function: Sets the variable named name to text and returns text."
   },
   "Function: $puts(name,text)": {
     "prefix": "$puts(",
-    "body": ["'puts(${1:name},${2:text})"],
+    "body": ["$puts(${1:name},${2:text})"],
     "description": "Foobar2000 function: Silent version of $put(). Same as $put(name,text), but returns an empty string."
   },
   "Function: $get(name)": {
     "prefix": "$get(",
-    "body": ["'get(${1:name})"],
+    "body": ["$get(${1:name})"],
     "description": "Foobar2000 function: Returns the value of the variable named name or an empty string if such variable hasn't been set."
   },
-
   "Tag: %_text%": {
     "prefix": "%_text",
     "body": ["%_text%"],
@@ -740,6 +738,72 @@
     "prefix": "%default_font_size",
     "body": ["%default_font_size%"],
     "description": "ColumnUI tag: the default font size for the panel, in points."
-  }
-  // CUI functions
+  },
+  "Function: $crlf()": {
+    "prefix": "$crlf(",
+    "body": ["$crlf()"],
+    "description": "ColumnUI function: Inserts a carriage return + line feed (new line)."
+  },
+  "Function: $rgb()": {
+    "prefix": "$rgb(",
+    "body": ["$rgb(${1:R},${2:G},${3:B})"],
+    "description": "ColumnUI function: Returns a colour value from the specified red, green and blue components (0–255)."
+  },
+  "Function: $set_global(<variable name>,<variable value>)": {
+    "prefix": "$set_global(",
+    "body": ["$set_global(${1:<variable name>},${2:<variable value>})"],
+    "description": "ColumnUI function: Sets a global variable to the specified value."
+  },
+  "Function: $get_global(<variable name>)": {
+    "prefix": "$get_global(",
+    "body": ["$get_global(${1:<variable name>})"],
+    "description": "ColumnUI function: Returns the value of the specified global variable."
+  },
+  "Function: $set_style(text,<text colour>,<selected item text colour>)": {
+    "prefix": "$set_style(",
+    "body": [
+      "$set_style(${1:text},${2:text colour},${3:selected item text colour})"
+    ],
+    "description": "ColumnUI function: Sets the text colour for normal and selected items. Colours are specified using the $rgb() function."
+  },
+  "Function: $set_style(text,<text colour>,<selected item text colour>,<selected item text colour when window is not focused>)": {
+    "prefix": "$set_style(",
+    "body": [
+      "$set_style(${1:text},${2:text colour},${3:selected item text colour},${4:selected item text colour when window is not focused})"
+    ],
+    "description": "ColumnUI function: Sets the text colour for normal and selected items. The fourth parameter sets the text colour for selected items when the window is not focused; if omitted, the third parameter is used instead. Colours are specified using the $rgb() function."
+  },
+  "Function: $calculate_blend_target(<colour>)": {
+    "prefix": "$calculate_blend_target(",
+    "body": ["$calculate_blend_target(${1:colour})"],
+    "description": "ColumnUI function: Returns black if the mean of the red, green and blue components of a colour is greater than or equal to 128; otherwise it returns white."
+  },
+  "Function: $offset_colour(<colour_from>,<colour_to>,<offset>)": {
+    "prefix": "$offset_colour(",
+    "body": ["$offset_colour(${1:colour_from},${2:colour_to},${3:offset})"],
+    "description": "ColumnUI function: Shifts one colour towards another colour. Intended to be used with black or white for <colour_to>. <offset> should be between 0 and 255."
+  },
+  "Function: $set_format()": {
+    "prefix": "$set_format(",
+    "body": [
+      "$set_format(${1:|font-family,font-size,font-weight,font-stretch,font-style,text-decoration|}: ${2:|value,initial|})"
+    ],
+    "description": "ColumnUI function: Changes font and text styling for subsequent text. Example: $set_format(font-family: Segoe UI Variable;font-size: 20;font-weight: 300;font-stretch: 100%%;font-style: italic;text-decoration: underline;)"
+  },
+  "Function: $reset_format()": {
+    "prefix": "$reset_format(",
+    "body": ["$reset_format()"],
+    "description": "ColumnUI function: Restores font and text styling for subsequent text to the panel defaults."
+  },
+  "Function: $set_font(<font face>,<point size>,<modifiers>)": {
+    "prefix": "$set_font(",
+    "body": [
+      "$set_font(${1:font face},${2:point size},${3:|bold,italic,underline|})"
+    ],
+    "description": "ColumnUI function: Changes the font used for subsequent text."
+  },
+  "Function: $reset_font()": {
+    "prefix": "$reset_font(",
+    "body": ["$reset_font()"],
+    "description": "ColumnUI function: Restores the font used for subsequent text to the panel defaults."
 }
