@@ -1,4 +1,9 @@
+# Ignore files and directories for npm package publishing
+node_modules/
+dist/
 .vscode/
-scripts/
+tests/
 *.log
 CHANGELOG.md
+project-notes.md
+requisites.md

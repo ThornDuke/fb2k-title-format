@@ -1,10 +1,15 @@
+# Ignore files and directories for VS Code extension packaging
+
 .vscode/**
 .vscode-test/**
 .github/**
 .gitignore
 *.vsix
+tests/**
 build/**
 node_modules/**
 changelog-for-version.js
 package-lock.json
 vsc-extension-quickstart.md
+project-notes.md
+requisites.md

@@ -199,3 +199,54 @@
    - la configurazione per prettier
    - il file '.gitignore'
    - il file '.npmignore'
+
+8. ColumnUI
+
+- tag
+  - %\_text%
+  - %\_selected_text%
+  - %\_selected_text_no_focus%
+  - %\_back%
+  - %\_selected_back%
+  - %\_selected_back_no_focus%
+  - %\_display_index%
+  - %\_is_group%
+  - %\_is_themed%
+  - %\_system_year%
+  - %\_system_day%
+  - %\_system_month%
+  - %\_system_day_of_week%
+  - %\_system_hour%
+  - %\_system_julian_day%
+  - %playlist_name%
+  - %title%
+  - %is_locked%
+  - %lock_name%
+  - %size%
+  - %length%
+  - %filesize%
+  - %filesize_raw%
+  - %is_active%
+  - %is_playing%
+  - %default_font_face%
+  - %default_font_size%
+
+- funzioni
+  - $crlf()
+  - $rgb()
+  - $set_global(<variable name>,<variable value>)
+  - $get_global(<variable name>)
+  - $set_style(text,<text colour>,<selected item text colour>[,<selected item text colour when window is not focused>])
+  - $calculate_blend_target(<colour>)
+  - $offset_colour(<colour_from>,<colour_to>,<offset>)
+  - $set_format(property-name-1: property-value-1; property-name-2: property-value-2;...)
+    - font-family: <font family name> | initial
+    - font-size: <font size in points> | initial
+    - font-weight: <1–999> | initial
+    - font-stretch: <1–9> | <percentage> | initial
+    - font-style: normal | italic | oblique | initial
+    - text-decoration: none | underline | initial
+  - $reset_format()
+  - $set_font(<font face>,<point size>,<modifiers>)
+    - modifiers: bold, italic, underline
+  - $reset_font()
