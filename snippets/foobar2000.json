@@ -3,609 +3,786 @@
   "Tag: %title%": {
     "prefix": "%title",
     "body": ["%title%"],
-    "description": "Foobar2000 Tag: %title%"
+    "description": "FB2K: Title of the track. If \\“title\\” metadata field is missing, file name is used instead."
   },
+
   "Tag: %artist%": {
     "prefix": "%artist",
     "body": ["%artist%"],
-    "description": "Foobar2000 Tag: %artist%"
+    "description": "FB2K: Name of the artist of the track. Checks following metadata fields, in this order: \\“artist\\”, \\“album artist\\”, \\“composer\\”, \\“performer\\”."
   },
+
   "Tag: %album artist%": {
     "prefix": "%album artist",
     "body": ["%album artist%"],
-    "description": "Foobar2000 Tag: %album artist%"
+    "description": "FB2K: Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: \\“album artist\\”, \\“artist\\”, \\“composer\\”, \\“performer\\”. The difference between this and `%`a`r`tist% is that %album artist% is intended for use where consistent value across entire album is needed even when per-track artists values vary."
   },
+
   "Tag: %track artist%": {
     "prefix": "%track artist",
     "body": ["%track artist%"],
-    "description": "Foobar2000 Tag: %track artist%"
+    "description": "FB2K: Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track. Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ \\'//\\' %track artist%]` - in this case, last part will be displayed only when track-specific artist info is present."
   },
+
   "Tag: %album%": {
     "prefix": "%album",
     "body": ["%album%"],
-    "description": "Foobar2000 Tag: %album%"
+    "description": "FB2K: Name of the album specified track belongs to. Checks following metadata fields, in this order: \\“album\\”, \\“venue\\”."
   },
+
   "Tag: %date%": {
     "prefix": "%date",
     "body": ["%date%"],
-    "description": "Foobar2000 Tag: %date%"
+    "description": "FB2K: Recording date (year) of the album specified track belongs to, using \\“date\\” metadata field."
   },
+
   "Tag: %genre%": {
     "prefix": "%genre",
     "body": ["%genre%"],
-    "description": "Foobar2000 Tag: %genre%"
+    "description": "FB2K: Genre of the album specified track belongs to, using \\“genre\\” metadata field."
   },
+
   "Tag: %tracknumber%": {
     "prefix": "%tracknumber",
     "body": ["%tracknumber%"],
-    "description": "Foobar2000 Tag: %tracknumber%"
+    "description": "FB2K: Two-digit index of specified track within the album. Available only when \\“tracknumber\\” field is present in track’s metadata."
   },
+
   "Tag: %totaltracks%": {
     "prefix": "%totaltracks",
     "body": ["%totaltracks%"],
-    "description": "Foobar2000 Tag: %totaltracks%"
+    "description": "FB2K: Two-digit number of tracks within the album specified track belongs to. Available only when \\“totaltracks\\” field is present in track’s metadata."
   },
+
   "Tag: %discnumber%": {
     "prefix": "%discnumber",
     "body": ["%discnumber%"],
-    "description": "Foobar2000 Tag: %discnumber%"
+    "description": "FB2K: Index of disc specified track belongs to, within the album. Available only when \\discnumber\\”/\\“disc\\” field is present in track’s metadata."
   },
+
   "Tag: %totaldiscs%": {
     "prefix": "%totaldiscs",
     "body": ["%totaldiscs%"],
-    "description": "Foobar2000 Tag: %totaldiscs%"
+    "description": "FB2K: Number of discs within the album specified track belongs to. Available only when \\“totaldiscs\\” field is present in track’s metadata."
   },
+
   "Tag: %codec%": {
     "prefix": "%codec",
     "body": ["%codec%"],
-    "description": "Foobar2000 Tag: %codec%"
+    "description": "FB2K: Name of the codec used to encode the track. If exact codec name is not available, file extension is used."
   },
+
   "Tag: %codec_profile%": {
     "prefix": "%codec_profile",
     "body": ["%codec_profile%"],
-    "description": "Foobar2000 Tag: %codec_profile%"
+    "description": "FB2K: Additional information about encoding settings used. Not always available."
   },
+
   "Tag: %codec_long%": {
     "prefix": "%codec_long",
     "body": ["%codec_long%"],
-    "description": "Foobar2000 Tag: %codec_long%"
+    "description": "FB2K: Long name of the codec, including profile. Some codecs, such as HE-AAC, supply this. If long name isn't supplied by the codec, `%codec_long%` falls back to `%codec%` / `%codec_profile%`."
   },
+
   "Tag: %filename%": {
     "prefix": "%filename",
     "body": ["%filename%"],
-    "description": "Foobar2000 Tag: %filename%"
+    "description": "FB2K: Name of file, excluding directory path and extension."
   },
+
   "Tag: %filename_ext%": {
     "prefix": "%filename_ext",
     "body": ["%filename_ext%"],
-    "description": "Foobar2000 Tag: %filename_ext%"
+    "description": "FB2K: Name of the file, including extension but excluding directory path."
   },
+
   "Tag: %directoryname%": {
     "prefix": "%directoryname",
     "body": ["%directoryname%"],
-    "description": "Foobar2000 Tag: %directoryname%"
+    "description": "FB2K: Name of the directory the file is in."
   },
+
   "Tag: %path%": {
     "prefix": "%path",
     "body": ["%path%"],
-    "description": "Foobar2000 Tag: %path%"
+    "description": "FB2K: Full path of the file. Note that `%path_sort%` should be use for sorting instead of `%path%`."
   },
+
   "Tag: %subsong%": {
     "prefix": "%subsong",
     "body": ["%subsong%"],
-    "description": "Foobar2000 Tag: %subsong%"
+    "description": "FB2K: Index of the track within the file, for use with file formats that support multiple tracks within single physical file (e.g. chapters or a cuesheet)."
   },
+
   "Tag: %path_sort%": {
     "prefix": "%path_sort",
     "body": ["%path_sort%"],
-    "description": "Foobar2000 Tag: %path_sort%"
+    "description": "FB2K: Path of the file; for use with sorting, where order of subsongs within a file needs to be preserved; exact value returned by it is undefined and should not be relied on."
   },
+
   "Tag: %length%": {
     "prefix": "%length",
     "body": ["%length%"],
-    "description": "Foobar2000 Tag: %length%"
+    "description": "FB2K: Length of the track, formatted as _[HH:]MM:SS_."
   },
+
   "Tag: %length_seconds%": {
     "prefix": "%length_seconds",
     "body": ["%length_seconds%"],
-    "description": "Foobar2000 Tag: %length_seconds%"
+    "description": "FB2K: Length of the track, in seconds, formatted as an integer."
   },
+
   "Tag: %bitrate%": {
     "prefix": "%bitrate",
     "body": ["%bitrate%"],
-    "description": "Foobar2000 Tag: %bitrate%"
+    "description": "FB2K: Bitrate of the track in kilobits per second (kbps); includes dynamic VBR bitrate display for currently played track."
   },
+
   "Tag: %channels%": {
     "prefix": "%channels",
     "body": ["%channels%"],
-    "description": "Foobar2000 Tag: %channels%"
+    "description": "FB2K: Number of channels in the track (mono/stereo/etc)."
   },
+
   "Tag: %samplerate%": {
     "prefix": "%samplerate",
     "body": ["%samplerate%"],
-    "description": "Foobar2000 Tag: %samplerate%"
+    "description": "FB2K: Sample rate of the track, in Hz."
   },
+
   "Tag: %replaygain_track_gain%": {
     "prefix": "%replaygain_track_gain",
     "body": ["%replaygain_track_gain%"],
-    "description": "Foobar2000 Tag: %replaygain_track_gain%"
+    "description": "FB2K: ReplayGain information"
   },
+
   "Tag: %replaygain_album_gain%": {
     "prefix": "%replaygain_album_gain",
     "body": ["%replaygain_album_gain%"],
-    "description": "Foobar2000 Tag: %replaygain_album_gain%"
+    "description": "FB2K: ReplayGain information"
   },
+
   "Tag: %replaygain_track_peak%": {
     "prefix": "%replaygain_track_peak",
     "body": ["%replaygain_track_peak%"],
-    "description": "Foobar2000 Tag: %replaygain_track_peak%"
+    "description": "FB2K: ReplayGain information"
   },
+
   "Tag: %replaygain_album_peak%": {
     "prefix": "%replaygain_album_peak",
     "body": ["%replaygain_album_peak%"],
-    "description": "Foobar2000 Tag: %replaygain_album_peak%"
+    "description": "FB2K: ReplayGain information"
   },
+
   "Tag: %replaygain_track_peak_db%": {
     "prefix": "%replaygain_track_peak_db",
     "body": ["%replaygain_track_peak_db%"],
-    "description": "Foobar2000 Tag: %replaygain_track_peak_db%"
+    "description": "FB2K: ReplayGain information"
   },
+
   "Tag: %replaygain_album_peak_db%": {
     "prefix": "%replaygain_album_peak_db",
     "body": ["%replaygain_album_peak_db%"],
-    "description": "Foobar2000 Tag: %replaygain_album_peak_db%"
+    "description": "FB2K: ReplayGain information"
   },
+
   "Tag: %filesize%": {
     "prefix": "%filesize",
     "body": ["%filesize%"],
-    "description": "Foobar2000 Tag: %filesize%"
+    "description": "FB2K: Size of the file, in bytes."
   },
+
   "Tag: %filesize_natural%": {
     "prefix": "%filesize_natural",
     "body": ["%filesize_natural%"],
-    "description": "Foobar2000 Tag: %filesize_natural%"
+    "description": "FB2K: Size of the file, automatically formatted in appropriate units such as megabytes or kilobytes."
   },
+
   "Tag: %last_modified%": {
     "prefix": "%last_modified",
     "body": ["%last_modified%"],
-    "description": "Foobar2000 Tag: %last_modified%"
+    "description": "FB2K: Last modification time of the file, formatted as _YYYY-MM-DD HH:MM:SS_"
   },
+
   "Tag: %list_index%": {
     "prefix": "%list_index",
     "body": ["%list_index%"],
-    "description": "Foobar2000 Tag: %list_index%"
+    "description": "FB2K: Index of the item on the list it belongs to. Applies to: playlist, list of items processed by masstagger/massrenamer, etc. Padded with zeros to match max. width of possible index within the list."
   },
+
   "Tag: %list_total%": {
     "prefix": "%list_total",
     "body": ["%list_total%"],
-    "description": "Foobar2000 Tag: %list_total%"
+    "description": "FB2K: Number of items on the list specified item belongs to. Applies to: playlist, list of items processed by masstagger/massrenamer, etc."
   },
+
   "Tag: %isplaying%": {
     "prefix": "%isplaying",
     "body": ["%isplaying%"],
-    "description": "Foobar2000 Tag: %isplaying%"
+    "description": "FB2K: Present if e.g. a playlist item is currently being played, absent otherwise. Meant to be used as a switch for `$if()`."
   },
+
   "Tag: %ispaused%": {
     "prefix": "%ispaused",
     "body": ["%ispaused%"],
-    "description": "Foobar2000 Tag: %ispaused%"
+    "description": "FB2K: Present if e.g. a playlist item is currently being played and is paused, absent otherwise. Meant to be used as a switch for `$if()`."
   },
   "Tag: %playback_time%": {
     "prefix": "%playback_time",
     "body": ["%playback_time%"],
-    "description": "Foobar2000 Tag: %playback_time%"
+    "description": "FB2K: Current playback time, formatted as _[HH:]MM:SS_. Available only in contexts where playback related data is displayed, such as statusbar."
   },
+
   "Tag: %playback_time_seconds%": {
     "prefix": "%playback_time_seconds",
     "body": ["%playback_time_seconds%"],
-    "description": "Foobar2000 Tag: %playback_time_seconds%"
+    "description": "FB2K: Current playback time, in seconds, formatted as integer. Available only in contexts where playback related data is displayed, such as statusbar."
   },
   "Tag: %playback_time_remaining%": {
     "prefix": "%playback_time_remaining",
     "body": ["%playback_time_remaining%"],
-    "description": "Foobar2000 Tag: %playback_time_remaining%"
+    "description": "FB2K: Remaining playback time, formatted as _[HH:]MM:SS_. Available only in contexts where playback related data is displayed, such as statusbar. Not available when duration of currently playing track is not known."
   },
+
   "Tag: %playback_time_remaining_seconds%": {
     "prefix": "%playback_time_remaining_seconds",
     "body": ["%playback_time_remaining_seconds%"],
-    "description": "Foobar2000 Tag: %playback_time_remaining_seconds%"
+    "description": "FB2K: Remaining playback time, in seconds, formatted as integer. Available only in contexts where playback related data is displayed, such as statusbar. Not available when length of currently playing track is not known."
   },
+
   "Tag: %queue_index%": {
     "prefix": "%queue_index",
     "body": ["%queue_index%"],
-    "description": "Foobar2000 Tag: %queue_index%"
+    "description": "FB2K: Index of the specified item in the playback queue; available in playlist only. If the item has been queued multiple times, `%queue_index%` evaluates to the first index."
   },
+
   "Tag: %queue_indexes%": {
     "prefix": "%queue_indexes",
     "body": ["%queue_indexes%"],
-    "description": "Foobar2000 Tag: %queue_indexes%"
+    "description": "FB2K: List of indexes of the specified item in the playback queue; available in playlist only. Same as `%queue_index%` unless the item has been queued more than once."
   },
+
   "Tag: %queue_total%": {
     "prefix": "%queue_total",
     "body": ["%queue_total%"],
-    "description": "Foobar2000 Tag: %queue_total%"
+    "description": "FB2K: Total amount of tracks in playback queue. Available only for queued tracks, for technical reasons."
   },
   "Function: $abbr(X)": {
     "prefix": "$abbr(",
     "body": ["\\$abbr(${1:X})"],
-    "description": "Foobar2000 Function: $abbr"
+    "description": "Foobar2000 function: $abbr"
   },
   "Function: $abbr(X,Y)": {
     "prefix": "$abbr(",
     "body": ["\\$abbr(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $abbr"
+    "description": "Foobar2000 function: $abbr"
   },
   "Function: $ansi(X)": {
     "prefix": "$ansi(",
     "body": ["\\$ansi(${1:X})"],
-    "description": "Foobar2000 Function: $ansi"
+    "description": "Foobar2000 function: $ansi"
   },
   "Function: $ascii(X)": {
     "prefix": "$ascii(",
     "body": ["\\$ascii(${1:X})"],
-    "description": "Foobar2000 Function: $ascii"
+    "description": "Foobar2000 function: $ascii"
   },
   "Function: $lower(X)": {
     "prefix": "$lower(",
     "body": ["\\$lower(${1:X})"],
-    "description": "Foobar2000 Function: $lower"
+    "description": "Foobar2000 function: $lower"
   },
   "Function: $upper(X)": {
     "prefix": "$upper(",
     "body": ["\\$upper(${1:X})"],
-    "description": "Foobar2000 Function: $upper"
+    "description": "Foobar2000 function: $upper"
   },
   "Function: $num(X,Y)": {
     "prefix": "$num(",
     "body": ["\\$num(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $num"
+    "description": "Foobar2000 function: $num"
   },
   "Function: $caps(X)": {
     "prefix": "$caps(",
     "body": ["\\$caps(${1:X})"],
-    "description": "Foobar2000 Function: $caps"
+    "description": "Foobar2000 function: $caps"
   },
   "Function: $caps2(X)": {
     "prefix": "$caps2(",
     "body": ["\\$caps2(${1:X})"],
-    "description": "Foobar2000 Function: $caps2"
+    "description": "Foobar2000 function: $caps2"
   },
   "Function: $if(X,Y,Z)": {
     "prefix": "$if(",
     "body": ["\\$if(${1:X},${2:Y},${3:Z})"],
-    "description": "Foobar2000 Function: $if"
+    "description": "Foobar2000 function: $if"
   },
   "Function: $if2(X,Y)": {
     "prefix": "$if2(",
     "body": ["\\$if2(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $if2"
+    "description": "Foobar2000 function: $if2"
   },
   "Function: $if3(X,Y,Z,..)": {
     "prefix": "$if3(",
     "body": ["\\$if3(${1:X},${2:Y},${3:Z})"],
-    "description": "Foobar2000 Function: $if3"
+    "description": "Foobar2000 function: $if3"
   },
   "Function: $ifgreater(A,B,C,D)": {
     "prefix": "$ifgreater(",
     "body": ["\\$ifgreater(${1:A},${2:B},${3:C},${4:D})"],
-    "description": "Foobar2000 Function: $ifgreater"
+    "description": "Foobar2000 function: $ifgreater"
   },
   "Function: $iflonger(A,B,C,D)": {
     "prefix": "$iflonger(",
     "body": ["\\$iflonger(${1:A},${2:B},${3:C},${4:D})"],
-    "description": "Foobar2000 Function: $iflonger"
+    "description": "Foobar2000 function: $iflonger"
   },
   "Function: $ifequal(A,B,C,D)": {
     "prefix": "$ifequal(",
     "body": ["\\$ifequal(${1:A},${2:B},${3:C},${4:D})"],
-    "description": "Foobar2000 Function: $ifequal"
+    "description": "Foobar2000 function: $ifequal"
   },
   "Function: $longest(A,B,C,….)": {
     "prefix": "$longest(",
     "body": ["\\$longest(${1:A},${2:B},${3:C})"],
-    "description": "Foobar2000 Function: $longest"
+    "description": "Foobar2000 function: $longest"
   },
   "Function: $len(X)": {
     "prefix": "$len(",
     "body": ["\\$len(${1:X})"],
-    "description": "Foobar2000 Function: $len"
+    "description": "Foobar2000 function: $len"
   },
   "Function: $pad(X,Y)": {
     "prefix": "$pad(",
     "body": ["\\$pad(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $pad"
+    "description": "Foobar2000 function: $pad"
   },
   "Function: $pad_right(X,Y)": {
     "prefix": "$pad_right(",
     "body": ["\\$pad_right(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $pad_right"
+    "description": "Foobar2000 function: $pad_right"
   },
   "Function: $pad(X,Y,Z)": {
     "prefix": "$pad(",
     "body": ["\\$pad(${1:X},${2:Y},${3:Z})"],
-    "description": "Foobar2000 Function: $pad"
+    "description": "Foobar2000 function: $pad"
   },
   "Function: $pad_right(X,Y,Z)": {
     "prefix": "$pad_right(",
     "body": ["\\$pad_right(${1:X},${2:Y},${3:Z})"],
-    "description": "Foobar2000 Function: $pad_right"
+    "description": "Foobar2000 function: $pad_right"
   },
   "Function: $cut(X,Y)": {
     "prefix": "$cut(",
     "body": ["\\$cut(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $cut"
+    "description": "Foobar2000 function: $cut"
   },
   "Function: $padcut(X,Y)": {
     "prefix": "$padcut(",
     "body": ["\\$padcut(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $padcut"
+    "description": "Foobar2000 function: $padcut"
   },
   "Function: $padcut_right(X,Y)": {
     "prefix": "$padcut_right(",
     "body": ["\\$padcut_right(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $padcut_right"
+    "description": "Foobar2000 function: $padcut_right"
   },
   "Function: $insert(A,B,N)": {
     "prefix": "$insert(",
     "body": ["\\$insert(${1:A},${2:B},${3:N})"],
-    "description": "Foobar2000 Function: $insert"
+    "description": "Foobar2000 function: $insert"
   },
   "Function: $add(X,Y)": {
     "prefix": "$add(",
     "body": ["\\$add(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $add"
+    "description": "Foobar2000 function: $add"
   },
   "Function: $sub(X,Y)": {
     "prefix": "$sub(",
     "body": ["\\$sub(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $sub"
+    "description": "Foobar2000 function: $sub"
   },
   "Function: $mul(X,Y)": {
     "prefix": "$mul(",
     "body": ["\\$mul(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $mul"
+    "description": "Foobar2000 function: $mul"
   },
   "Function: $div(X,Y)": {
     "prefix": "$div(",
     "body": ["\\$div(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $div"
+    "description": "Foobar2000 function: $div"
   },
   "Function: $mod(X,Y)": {
     "prefix": "$mod(",
     "body": ["\\$mod(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $mod"
+    "description": "Foobar2000 function: $mod"
   },
   "Function: $min(X,Y)": {
     "prefix": "$min(",
     "body": ["\\$min(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $min"
+    "description": "Foobar2000 function: $min"
   },
   "Function: $max(X,Y)": {
     "prefix": "$max(",
     "body": ["\\$max(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $max"
+    "description": "Foobar2000 function: $max"
   },
   "Function: $left(X,Y)": {
     "prefix": "$left(",
     "body": ["\\$left(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $left"
+    "description": "Foobar2000 function: $left"
   },
   "Function: $right(X,Y)": {
     "prefix": "$right(",
     "body": ["\\$right(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $right"
+    "description": "Foobar2000 function: $right"
   },
   "Function: $and(X,Y)": {
     "prefix": "$and(",
     "body": ["\\$and(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $and"
+    "description": "Foobar2000 function: $and"
   },
   "Function: $or(X,Y)": {
     "prefix": "$or(",
     "body": ["\\$or(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $or"
+    "description": "Foobar2000 function: $or"
   },
   "Function: $xor(X,Y)": {
     "prefix": "$xor(",
     "body": ["\\$xor(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $xor"
+    "description": "Foobar2000 function: $xor"
   },
   "Function: $not(X)": {
     "prefix": "$not(",
     "body": ["\\$not(${1:X})"],
-    "description": "Foobar2000 Function: $not"
+    "description": "Foobar2000 function: $not"
   },
   "Function: $fix_eol(x)": {
     "prefix": "$fix_eol(",
     "body": ["\\$fix_eol(${1:x})"],
-    "description": "Foobar2000 Function: $fix_eol"
+    "description": "Foobar2000 function: $fix_eol"
   },
   "Function: $fix_eol(x,y)": {
     "prefix": "$fix_eol(",
     "body": ["\\$fix_eol(${1:x},${2:y})"],
-    "description": "Foobar2000 Function: $fix_eol"
+    "description": "Foobar2000 function: $fix_eol"
   },
   "Function: $meta(X)": {
     "prefix": "$meta(",
     "body": ["\\$meta(${1:X})"],
-    "description": "Foobar2000 Function: $meta"
+    "description": "Foobar2000 function: $meta"
   },
   "Function: $meta_sep(X,Y)": {
     "prefix": "$meta_sep(",
     "body": ["\\$meta_sep(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $meta_sep"
+    "description": "Foobar2000 function: $meta_sep"
   },
   "Function: $meta_sep(X,Y,Z)": {
     "prefix": "$meta_sep(",
     "body": ["\\$meta_sep(${1:X},${2:Y},${3:Z})"],
-    "description": "Foobar2000 Function: $meta_sep"
+    "description": "Foobar2000 function: $meta_sep"
   },
   "Function: $meta_num(X)": {
     "prefix": "$meta_num(",
     "body": ["\\$meta_num(${1:X})"],
-    "description": "Foobar2000 Function: $meta_num"
+    "description": "Foobar2000 function: $meta_num"
   },
   "Function: $info(X)": {
     "prefix": "$info(",
     "body": ["\\$info(${1:X})"],
-    "description": "Foobar2000 Function: $info"
+    "description": "Foobar2000 function: $info"
   },
   "Function: $char(X)": {
     "prefix": "$char(",
     "body": ["\\$char(${1:X})"],
-    "description": "Foobar2000 Function: $char"
+    "description": "Foobar2000 function: $char"
   },
   "Function: $strcmp(X,Y)": {
     "prefix": "$strcmp(",
     "body": ["\\$strcmp(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $strcmp"
+    "description": "Foobar2000 function: $strcmp"
   },
   "Function: $stricmp(X,Y)": {
     "prefix": "$stricmp(",
     "body": ["\\$stricmp(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $stricmp"
+    "description": "Foobar2000 function: $stricmp"
   },
   "Function: $directory(X)": {
     "prefix": "$directory(",
     "body": ["\\$directory(${1:X})"],
-    "description": "Foobar2000 Function: $directory"
+    "description": "Foobar2000 function: $directory"
   },
   "Function: $directory(X,N)": {
     "prefix": "$directory(",
     "body": ["\\$directory(${1:X},${2:N})"],
-    "description": "Foobar2000 Function: $directory"
+    "description": "Foobar2000 function: $directory"
   },
   "Function: $directory_path(X)": {
     "prefix": "$directory_path(",
     "body": ["\\$directory_path(${1:X})"],
-    "description": "Foobar2000 Function: $directory_path"
+    "description": "Foobar2000 function: $directory_path"
   },
   "Function: $greater(X,Y)": {
     "prefix": "$greater(",
     "body": ["\\$greater(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $greater"
+    "description": "Foobar2000 function: $greater"
   },
   "Function: $longer(X,Y)": {
     "prefix": "$longer(",
     "body": ["\\$longer(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $longer"
+    "description": "Foobar2000 function: $longer"
   },
   "Function: $strchr(X,Y)": {
     "prefix": "$strchr(",
     "body": ["\\$strchr(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $strchr"
+    "description": "Foobar2000 function: $strchr"
   },
   "Function: $strrchr(X,Y)": {
     "prefix": "$strrchr(",
     "body": ["\\$strrchr(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $strrchr"
+    "description": "Foobar2000 function: $strrchr"
   },
   "Function: $strstr(X,Y)": {
     "prefix": "$strstr(",
     "body": ["\\$strstr(${1:X},${2:Y})"],
-    "description": "Foobar2000 Function: $strstr"
+    "description": "Foobar2000 function: $strstr"
   },
   "Function: $select(N,A,B,C,….)": {
     "prefix": "$select(",
     "body": ["\\$select(${1:N},${2:A},${3:B},${4:C})"],
-    "description": "Foobar2000 Function: $select"
+    "description": "Foobar2000 function: $select"
   },
   "Function: $repeat(X,N)": {
     "prefix": "$repeat(",
     "body": ["\\$repeat(${1:X},${2:N})"],
-    "description": "Foobar2000 Function: $repeat"
+    "description": "Foobar2000 function: $repeat"
   },
   "Function: $replace(A,B,C)": {
     "prefix": "$replace(",
     "body": ["\\$replace(${1:A},${2:B},${3:C})"],
-    "description": "Foobar2000 Function: $replace"
+    "description": "Foobar2000 function: $replace"
   },
   "Function: $ext(X)": {
     "prefix": "$ext(",
     "body": ["\\$ext(${1:X})"],
-    "description": "Foobar2000 Function: $ext"
+    "description": "Foobar2000 function: $ext"
   },
   "Function: $substr(A,B,C)": {
     "prefix": "$substr(",
     "body": ["\\$substr(${1:A},${2:B},${3:C})"],
-    "description": "Foobar2000 Function: $substr"
+    "description": "Foobar2000 function: $substr"
   },
   "Function: $trim(A)": {
     "prefix": "$trim(",
     "body": ["\\$trim(${1:A})"],
-    "description": "Foobar2000 Function: $trim"
+    "description": "Foobar2000 function: $trim"
   },
   "Function: $tab()": {
     "prefix": "$tab(",
     "body": ["\\$tab($0)"],
-    "description": "Foobar2000 Function: $tab"
+    "description": "Foobar2000 function: $tab"
   },
   "Function: $stripprefix(X)": {
     "prefix": "$stripprefix(",
     "body": ["\\$stripprefix(${1:X})"],
-    "description": "Foobar2000 Function: $stripprefix"
+    "description": "Foobar2000 function: $stripprefix"
   },
   "Function: $stripprefix(X,prefix1,prefix2,…)": {
     "prefix": "$stripprefix(",
     "body": ["\\$stripprefix(${1:X},${2:prefix1},${3:prefix2})"],
-    "description": "Foobar2000 Function: $stripprefix"
+    "description": "Foobar2000 function: $stripprefix"
   },
   "Function: $swapprefix(X)": {
     "prefix": "$swapprefix(",
     "body": ["\\$swapprefix(${1:X})"],
-    "description": "Foobar2000 Function: $swapprefix"
+    "description": "Foobar2000 function: $swapprefix"
   },
   "Function: $swapprefix(X,prefix1,prefix2,…)": {
     "prefix": "$swapprefix(",
     "body": ["\\$swapprefix(${1:X},${2:prefix1},${3:prefix2})"],
-    "description": "Foobar2000 Function: $swapprefix"
+    "description": "Foobar2000 function: $swapprefix"
   },
   "Function: $peak_to_db(X)": {
     "prefix": "$peak_to_db(",
     "body": ["\\$peak_to_db(${1:X})"],
-    "description": "Foobar2000 Function: $peak_to_db"
+    "description": "Foobar2000 function: $peak_to_db"
   },
   "Function: $year(time)": {
     "prefix": "$year(",
     "body": ["\\$year(${1:time})"],
-    "description": "Foobar2000 Function: $year"
+    "description": "Foobar2000 function: $year"
   },
   "Function: $month(time)": {
     "prefix": "$month(",
     "body": ["\\$month(${1:time})"],
-    "description": "Foobar2000 Function: $month"
+    "description": "Foobar2000 function: $month"
   },
   "Function: $day_of_month(time)": {
     "prefix": "$day_of_month(",
     "body": ["\\$day_of_month(${1:time})"],
-    "description": "Foobar2000 Function: $day_of_month"
+    "description": "Foobar2000 function: $day_of_month"
   },
   "Function: $date(time)": {
     "prefix": "$date(",
     "body": ["\\$date(${1:time})"],
-    "description": "Foobar2000 Function: $date"
+    "description": "Foobar2000 function: $date"
   },
   "Function: $time(time)": {
     "prefix": "$time(",
     "body": ["\\$time(${1:time})"],
-    "description": "Foobar2000 Function: $time"
+    "description": "Foobar2000 function: $time"
   },
   "Function: $put(name,text)": {
     "prefix": "$put(",
     "body": ["\\$put(${1:name},${2:text})"],
-    "description": "Foobar2000 Function: $put"
+    "description": "Foobar2000 function: $put"
   },
   "Function: $puts(name,text)": {
     "prefix": "$puts(",
     "body": ["\\$puts(${1:name},${2:text})"],
-    "description": "Foobar2000 Function: $puts"
+    "description": "Foobar2000 function: $puts"
   },
   "Function: $get(name)": {
     "prefix": "$get(",
     "body": ["\\$get(${1:name})"],
-    "description": "Foobar2000 Function: $get"
-  }
+    "description": "Foobar2000 function: $get"
+  },
   // ColumnUI specific
   // tags
+  "Tag: %_text%": {
+    "prefix": "%_text",
+    "body": ["%_text%"],
+    "description": "ColumnUI tag: return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_text%": {
+    "prefix": "%_selected_text",
+    "body": ["%_selected_text%"],
+    "description": "ColumnUI tag: return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_text_no_focus%": {
+    "prefix": "%_selected_text_no_focus",
+    "body": ["%_selected_text_no_focus%"],
+    "description": "ColumnUI tag: return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_back%": {
+    "prefix": "%_back",
+    "body": ["%_back%"],
+    "description": "ColumnUI tag: return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_back%": {
+    "prefix": "%_selected_back",
+    "body": ["%_selected_back%"],
+    "description": "ColumnUI tag: return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_back_no_focus%": {
+    "prefix": "%_selected_back_no_focus",
+    "body": ["%_selected_back_no_focus%"],
+    "description": "ColumnUI tag: return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_display_index%": {
+    "prefix": "%_display_index",
+    "body": ["%_display_index%"],
+    "description": "ColumnUI tag: the current row number in the playlist view (including group headings)"
+  },
+  "Tag: %_is_group%": {
+    "prefix": "%_is_group",
+    "body": ["%_is_group%"],
+    "description": "ColumnUI tag: whether a group heading is currently being formatted"
+  },
+  "Tag: %_is_themed%": {
+    "prefix": "%_is_themed",
+    "body": ["%_is_themed%"],
+    "description": "ColumnUI tag: whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences"
+  },
+  "Tag: %_system_year%": {
+    "prefix": "%_system_year",
+    "body": ["%_system_year%"],
+    "description": "ColumnUI tag: the current year"
+  },
+  "Tag: %_system_day%": {
+    "prefix": "%_system_day",
+    "body": ["%_system_day%"],
+    "description": "ColumnUI tag: the current day of the month, as a number"
+  },
+  "Tag: %_system_month%": {
+    "prefix": "%_system_month",
+    "body": ["%_system_month%"],
+    "description": "ColumnUI tag: the current month of the year, as a number"
+  },
+  "Tag: %_system_day_of_week%": {
+    "prefix": "%_system_day_of_week",
+    "body": ["%_system_day_of_week%"],
+    "description": "ColumnUI tag: the current day of the week, as a number"
+  },
+  "Tag: %_system_hour%": {
+    "prefix": "%_system_hour",
+    "body": ["%_system_hour%"],
+    "description": "ColumnUI tag: the current hour"
+  },
+  "Tag: %_system_julian_day%": {
+    "prefix": "%_system_julian_day",
+    "body": ["%_system_julian_day%"],
+    "description": "ColumnUI tag: the current Julian day"
+  },
+  "Tag: %playlist_name%": {
+    "prefix": "%playlist_name",
+    "body": ["%playlist_name%"],
+    "description": "ColumnUI tag: the name of the active playlist"
+  },
+  "Tag: CUI %title%": {
+    "prefix": "%title",
+    "body": ["%title%"],
+    "description": "ColumnUI tag: the title of the playlist"
+  },
+  "Tag: %is_locked%": {
+    "prefix": "%is_locked",
+    "body": ["%is_locked%"],
+    "description": "ColumnUI tag: exists if the playlist is locked"
+  },
+  "Tag: %lock_name%": {
+    "prefix": "%lock_name",
+    "body": ["%lock_name%"],
+    "description": "ColumnUI tag: the name of the playlist lock, if the playlist is locked"
+  },
+  "Tag: %size%": {
+    "prefix": "%size",
+    "body": ["%size%"],
+    "description": "ColumnUI tag: the number of items in the playlist"
+  },
+  "Tag: CUI %length%": {
+    "prefix": "%length",
+    "body": ["%length%"],
+    "description": "ColumnUI tag: the total length of the items in the playlist"
+  },
+  "Tag: CUI %filesize%": {
+    "prefix": "%filesize",
+    "body": ["%filesize%"],
+    "description": "ColumnUI tag: the sum of the known file sizes of the items in the playlist"
+  },
+  "Tag: %filesize_raw%": {
+    "prefix": "%filesize_raw",
+    "body": ["%filesize_raw%"],
+    "description": "ColumnUI tag: the sum of the known file sizes of the items in the playlist, in bytes"
+  },
+  "Tag: %is_active%": {
+    "prefix": "%is_active",
+    "body": ["%is_active%"],
+    "description": "ColumnUI tag: exists if the playlist is the active playlist"
+  },
+  "Tag: %is_playing%": {
+    "prefix": "%is_playing",
+    "body": ["%is_playing%"],
+    "description": "ColumnUI tag: exists if the playlist is playing"
+  },
+  "Tag: %default_font_face%": {
+    "prefix": "%default_font_face",
+    "body": ["%default_font_face%"],
+    "description": "ColumnUI tag: the default font family for the panel."
+  },
+  "Tag: %default_font_size%": {
+    "prefix": "%default_font_size",
+    "body": ["%default_font_size%"],
+    "description": "ColumnUI tag: the default font size for the panel, in points."
+  }
   // functions
 }
