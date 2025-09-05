@@ -7,7 +7,7 @@
 tests/**
 build/**
 node_modules/**
-changelog-for-version.js
+CHANGELOG.md
 package-lock.json
 vsc-extension-quickstart.md
 project-notes.md

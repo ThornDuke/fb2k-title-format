@@ -806,4 +806,5 @@
     "prefix": "$reset_font(",
     "body": ["\\$reset_font()"],
     "description": "ColumnsUI function: Restores the font used for subsequent text to the panel defaults."
+  }
 }
