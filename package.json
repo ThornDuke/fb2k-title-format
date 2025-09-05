@@ -2,7 +2,7 @@
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
   "description": "Syntax highlighting and snippets for Foobar2000's title formatting.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -27,7 +27,7 @@
   "contributes": {
     "languages": [
       {
-        "id": "f2k",
+        "id": "fb2k",
         "aliases": [
           "Foobar2000 Title Formatting"
         ],
@@ -39,14 +39,14 @@
     ],
     "grammars": [
       {
-        "language": "f2k",
+        "language": "fb2k",
         "scopeName": "source.f2k",
         "path": "./syntaxes/foobar2000.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "f2k",
+        "language": "fb2k",
         "path": "./snippets/foobar2000.json"
       }
     ]
