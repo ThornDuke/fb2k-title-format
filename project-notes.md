@@ -2,7 +2,7 @@
 
 ## TODO
 
-- [ ] dev--columnUI-language-tags
+- [x] dev--columnUI-language-tags
 - [ ] dev--columnUI-language-functions
 - [ ] dev--columnUI-snippets-tags
 - [ ] dev--columnUI-snippets-functions

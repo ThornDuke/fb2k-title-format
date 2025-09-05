@@ -1,5 +1,4 @@
 # A .gitignore file tells Git which files and directories to ignore and not track.
-
 node_modules/
 dist/
 tests/
