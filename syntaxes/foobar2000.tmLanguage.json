@@ -13,7 +13,7 @@
     },
     {
       "name": "variable.other.tag.f2k",
-      "match": "%(title|artist|album artist|track artist|album|date|genre|tracknumber|totaltracks|discnumber|totaldiscs|codec|codec_profile|codec_long|filename|filename_ext|directoryname|path|subsong|path_sort|length|length_seconds|bitrate|channels|samplerate|replaygain_track_gain|replaygain_album_gain|replaygain_track_peak|replaygain_album_peak|replaygain_track_peak_db|replaygain_album_peak_db|filesize|filesize_natural|last_modified|list_index|list_total|isplaying|ispaused|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|queue_index|queue_indexes|queue_total)%"
+      "match": "%(title|artist|album artist|track artist|album|date|genre|tracknumber|totaltracks|discnumber|totaldiscs|codec|codec_profile|codec_long|filename|filename_ext|directoryname|path|subsong|path_sort|length|length_seconds|bitrate|channels|samplerate|replaygain_track_gain|replaygain_album_gain|replaygain_track_peak|replaygain_album_peak|replaygain_track_peak_db|replaygain_album_peak_db|filesize|filesize_natural|last_modified|list_index|list_total|isplaying|ispaused|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|queue_index|queue_indexes|queue_total|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|title|is_locked|lock_name|size|length|filesize|filesize_raw|is_active|is_playing|default_font_face|default_font_size)%"
     },
     {
       "name": "meta.f2k",

@@ -2,7 +2,7 @@
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
   "description": "Syntax highlighting and snippets for Foobar2000's title formatting.",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -51,7 +51,22 @@
       }
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThornDuke/fb2k-title-format"
+  },
+  "bugs": {
+    "url": "https://github.com/ThornDuke/fb2k-title-format/issues"
+  },
+  "homepage": "https://github.com/ThornDuke/fb2k-title-format#readme",
   "pricing": "Free",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.{json,md}\"",
+    "publish:prerelease": "vsce publish --githubBranch master --pre-release",
+    "publish": "vsce publish --githubBranch master",
+    "pack:prerelease": "vsce package --githubBranch master --pre-release",
+    "pack": "vsce package --githubBranch master"
+  },
   "devDependencies": {
     "prettier": "^3.0.0"
   }

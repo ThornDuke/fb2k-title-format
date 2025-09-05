@@ -2,6 +2,11 @@
 
 ## TODO
 
+- [ ] dev--columnUI-language-tags
+- [ ] dev--columnUI-language-functions
+- [ ] dev--columnUI-snippets-tags
+- [ ] dev--columnUI-snippets-functions
+
 ### Permanent
 
 - Before releasing
@@ -22,3 +27,16 @@
 ### Next release
 
 ### Released
+
+## Commit message types
+
+| Text       | Description                                                        |
+| ---------- | ------------------------------------------------------------------ |
+| `feat`     | new feature for the user, not a new feature for build script       |
+| `fix`      | bug fix for the user, not a fix to a build script                  |
+| `docs`     | changes to the documentation                                       |
+| `ver`      | new milestone                                                      |
+| `style`    | formatting, missing semi colons, etc; no production code change    |
+| `refactor` | refactoring production code, eg. renaming a variable               |
+| `test`     | adding missing tests, refactoring tests; no production code change |
+| `chore`    | updating grunt tasks etc; no production code change                |
