@@ -33,10 +33,6 @@
     {
       "name": "constant.language.fb2k",
       "match": "\\$(put|puts|get)\\s*\\(\\s*([a-zA-Z0-9_]+)"
-    },
-    {
-      "name": "meta.block.conditional.fb2k",
-      "match": "\\[[^\\]]*(%[a-zA-Z0-9 _]+%|\\$[a-zA-Z0-9_]+\\([^)]*\\))[^\\]]*\\]"
     }
   ]
 }
