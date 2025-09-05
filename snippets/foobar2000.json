@@ -1,3 +1,4 @@
+// https://code.visualstudio.com/docs/editing/userdefinedsnippets#_create-your-own-snippets
 {
   "Tag: %title%": {
     "prefix": "%title",
@@ -604,4 +605,7 @@
     "body": ["\\$get(${1:name})"],
     "description": "Foobar2000 Function: $get"
   }
+  // ColumnUI specific
+  // tags
+  // functions
 }
