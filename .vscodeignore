@@ -1,5 +1,4 @@
 # Ignore files and directories for VS Code extension packaging
-
 .vscode/**
 .vscode-test/**
 .github/**
