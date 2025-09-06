@@ -16,11 +16,16 @@ Complete code snippets are provided for all tags and functions.
 
 ### Commands
 
-The plugin provides the command `ctrl+K ctrl+Z` (`cmd+k cmd+Z` on Mac) to group a block of code into a single line. This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
+The plugin provides the command `Join Lines Smart` to group a block of code into a single line. This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
+
+- Keybindings: `Ctrl+K Ctrl+Z` (`Cmd+K Cmd+Z` on Mac)
+- Command Palette: `Shift + Command + P` (Mac) `Ctrl + Shift + P` (Windows/Linux) then type `Join Lines Smart`
+
+> **Note:** This command is only available in files with the `.f2k` extension.
 
 ## Usage
 
-Open a file with the `.f2k` extension to activate syntax highlighting and snippets.
+Open a file with the `.f2k` extension to activate syntax highlighting, snippets and commands.
 
 ## Installation
 

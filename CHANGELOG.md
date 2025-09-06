@@ -13,6 +13,16 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [1.2.1] - 2025-09-06
+
+## Added
+
+- package.json: keybindings for Win and Linux
+
+## Changed
+
+- README.md: some updates
+
 ## [1.2.0] - 2025-09-06
 
 ### Added

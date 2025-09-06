@@ -2,7 +2,7 @@
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
   "description": "Syntax highlighting, snippets and commands for Foobar2000's title formatting.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -65,6 +65,9 @@
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
         "key": "cmd+k cmd+z",
+        "mac": "cmd+k cmd+z",
+        "win": "ctrl+k ctrl+z",
+        "linux": "ctrl+k ctrl+z",
         "when": "editorTextFocus"
       }
     ]
