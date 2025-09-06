@@ -1,0 +1,64 @@
+const vscode = require('vscode');
+
+function activate(context) {
+  let disposable = vscode.commands.registerTextEditorCommand(
+    'foobar2000-title-formatting-syntax.joinLinesSmart',
+    (editor, edit) => {
+      // Controlla che il linguaggio sia 'fb2k'
+      if (editor.document.languageId !== 'fb2k') {
+        return;
+      }
+
+      const document = editor.document;
+      const selections = editor.selections;
+
+      selections.forEach((selection) => {
+        let startLine = selection.start.line;
+        let endLine = selection.end.line;
+
+        // Se non c'è selezione, trova il blocco tra righe vuote o commenti
+        if (selection.isEmpty) {
+          // Trova in alto
+          while (
+            startLine > 0 &&
+            !/^\s*$/.test(document.lineAt(startLine - 1).text) &&
+            !/^\s*\/\//.test(document.lineAt(startLine - 1).text)
+          ) {
+            startLine--;
+          }
+          // Trova in basso
+          while (
+            endLine < document.lineCount - 1 &&
+            !/^\s*$/.test(document.lineAt(endLine + 1).text) &&
+            !/^\s*\/\//.test(document.lineAt(endLine + 1).text)
+          ) {
+            endLine++;
+          }
+        }
+
+        // Prendi le linee da unire
+        const lines = [];
+        for (let i = startLine; i <= endLine; i++) {
+          lines.push(document.lineAt(i).text.trim());
+        }
+        const joined = lines.join('');
+
+        // Sostituisci il blocco selezionato
+        const range = new vscode.Range(
+          new vscode.Position(startLine, 0),
+          new vscode.Position(endLine, document.lineAt(endLine).text.length)
+        );
+        edit.replace(range, joined);
+      });
+    }
+  );
+
+  context.subscriptions.push(disposable);
+}
+
+function deactivate() {}
+
+module.exports = {
+  activate,
+  deactivate,
+};

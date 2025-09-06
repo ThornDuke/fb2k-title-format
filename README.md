@@ -14,6 +14,10 @@ All elements of title-formatting syntax are recognized: comments, text, function
 
 Complete code snippets are provided for all tags and functions.
 
+### Commands
+
+The plugin provides the command `ctrl+K ctrl+Z` (`cmd+k cmd+Z` on Mac) to group a block of code into a single line. This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
+
 ## Usage
 
 Open a file with the `.f2k` extension to activate syntax highlighting and snippets.

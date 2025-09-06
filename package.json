@@ -1,8 +1,8 @@
 {
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
-  "description": "Syntax highlighting and snippets for Foobar2000's title formatting.",
-  "version": "1.1.13",
+  "description": "Syntax highlighting, snippets and commands for Foobar2000's title formatting.",
+  "version": "1.2.0",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -16,13 +16,18 @@
   },
   "categories": [
     "Programming Languages",
-    "Snippets"
+    "Snippets",
+    "Keymaps"
   ],
   "keywords": [
     "foobar2000",
     "title formatting",
     "syntax highlighting",
     "snippets"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:foobar2000-title-formatting-syntax.joinLinesSmart"
   ],
   "contributes": {
     "languages": [
@@ -34,7 +39,7 @@
         "extensions": [
           ".f2k"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./config/language-configuration.json"
       }
     ],
     "grammars": [
@@ -48,6 +53,19 @@
       {
         "language": "fb2k",
         "path": "./snippets/foobar2000.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
+        "title": "Join Lines Smart"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
+        "key": "cmd+k cmd+z",
+        "when": "editorTextFocus"
       }
     ]
   },
