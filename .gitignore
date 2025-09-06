@@ -3,6 +3,7 @@ node_modules/
 dist/
 tests/
 .vscode/
+package-lock.json
 project-notes.md
 requisites.md
 *.vsix
