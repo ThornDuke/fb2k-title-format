@@ -17,7 +17,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 ### Changed
 
-- README.md: all rewritten
+- README.md: all file rewritten
 - syntaxes/foobar2000.tmLanguage.json: better separation between identifiers
 
 ### Fixed
