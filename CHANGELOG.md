@@ -13,13 +13,24 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [1.3.0] - 2025-09-07
+
+### Added
+
+- syntaxes/foobar2000.tmLanguage.json: non-default functions are treated as errors
+- syntaxes/foobar2000.tmLanguage.json: user-created tags are colored differently than the default tags
+
+### Changed
+
+- README.md: various updates
+
 ## [1.2.1] - 2025-09-06
 
-## Added
+### Added
 
 - package.json: keybindings for Win and Linux
 
-## Changed
+### Changed
 
 - README.md: some updates
 

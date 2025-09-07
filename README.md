@@ -8,7 +8,14 @@ Handles all scripting related to Foobar2000 [native tags and functions](https://
 
 ### Syntax highlighting
 
-All elements of title-formatting syntax are recognized: comments, text, functions, constants, conditional blocks.
+All elements of the title-formatting syntax are recognized: comments, text, functions, tags, constants, and conditional blocks.
+
+- **Functions** are highlighted in two ways:
+  - _Predefined functions_ (recognized by Foobar2000) are colored as valid functions.
+  - _Unrecognized functions_ (not supported by Foobar2000) are highlighted as errors.
+- **Tags** are colored differently depending on their type:
+  - _Predefined tags_ use one color.
+  - _User-defined tags_ (custom tags) use a distinct color to differentiate them from the standard ones.
 
 ### Snippets
 
