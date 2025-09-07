@@ -8,7 +8,7 @@ Handles all scripting related to Foobar2000 [native tags and functions](https://
 
 ### Syntax highlighting
 
-All elements of the title-formatting syntax are recognized: comments, text, functions, tags, constants, and conditional blocks.
+All elements of the title-formatting syntax are recognized: comments, text, functions, tags, constants, query keywords and conditional blocks.
 
 - **Functions** are highlighted in two ways:
   - _Predefined functions_ (recognized by Foobar2000) are colored as valid functions.
@@ -19,7 +19,7 @@ All elements of the title-formatting syntax are recognized: comments, text, func
 
 ### Snippets
 
-Complete code snippets are provided for all tags and functions.
+Complete code snippets are provided for all tags, functions and query keywords.
 
 ### Commands
 

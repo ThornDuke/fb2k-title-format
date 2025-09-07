@@ -55,8 +55,22 @@
       ]
     },
     {
-      "name": "constant.language.fb2k",
-      "match": "\\$(put|puts|get)\\s*\\(\\s*([a-zA-Z0-9_]+)"
+      "name": "meta.fb2k",
+      "match": "\\$(put|puts|get)\\s*\\(\\s*([a-zA-Z0-9_]+)",
+      "captures": {
+        "2": {
+          "name": "constant.language.fb2k"
+        }
+      }
+    },
+    {
+      "name": "meta.fb2k",
+      "match": "\\s+(AFTER|AND|BEFORE|DURING|DURING LAST|SECONDS|MINUTES|HOURS|DAYS|WEEKS|SECOND|MINUTE|HOUR|DAY|WEEK|EQUAL|GREATER|HAS|IS|LESS|MISSING|NOT|OR|PRESENT|SINCE|SORT BY|SORT ASCENDING BY|SORT DESCENDING BY)\\s+",
+      "captures": {
+        "1": {
+          "name": "keyword.operator.fb2k"
+        }
+      }
     }
   ]
 }

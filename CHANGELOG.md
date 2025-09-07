@@ -13,6 +13,13 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [Unreleased]
+
+### Added
+
+- syntaxes/foobar2000.tmLanguage.json: query keywords
+- snippets/foobar2000.json: query keywords
+
 ## [1.3.0] - 2025-09-07
 
 ### Added
@@ -56,6 +63,6 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 - 2025-09-04 Created the repo
 - fb2k.jsonc: snippets
 - language.configuration.json: working
-- snippets/foobar2000.tmLanguage.json: working
-- snippets/foobar2000.tmLanguage.json: full list of FB2K tags and functions
-- snippets/foobar2000.tmLanguage.json: full list of ColumnsUI tags and functions
+- snippets/foobar2000.json: working
+- snippets/foobar2000.json: full list of FB2K tags and functions
+- snippets/foobar2000.json: full list of ColumnsUI tags and functions

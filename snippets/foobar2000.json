@@ -786,7 +786,7 @@
   "Function: $set_format()": {
     "prefix": "$set_format",
     "body": [
-      "\\$set_format(${1:|font-family,font-size,font-weight,font-stretch,font-style,text-decoration|}: ${2:|value,initial|})"
+      "\\$set_format(${1|font-family,font-size,font-weight,font-stretch,font-style,text-decoration|}: ${2|value,initial|})"
     ],
     "description": "ColumnsUI function: Changes font and text styling for subsequent text. Example: $set_format(font-family: Segoe UI Variable;font-size: 20;font-weight: 300;font-stretch: 100%%;font-style: italic;text-decoration: underline;)"
   },
@@ -798,7 +798,7 @@
   "Function: $set_font(<font face>,<point size>,<modifiers>)": {
     "prefix": "$set_font",
     "body": [
-      "\\$set_font(${1:font face},${2:point size},${3:|bold,italic,underline|})"
+      "\\$set_font(${1:font face},${2:point size},${3|bold,italic,underline|})"
     ],
     "description": "ColumnsUI function: Changes the font used for subsequent text."
   },
@@ -806,5 +806,102 @@
     "prefix": "$reset_font",
     "body": ["\\$reset_font()"],
     "description": "ColumnsUI function: Restores the font used for subsequent text to the panel defaults."
+  },
+  "Keyword: AFTER": {
+    "prefix": ["AFTER", "after"],
+    "body": ["${1:time1} AFTER ${2:time2}"],
+    "description": "Foobar2000 keyword: returns only items where <time1> value is after <time2>"
+  },
+  "Keyword: AND": {
+    "prefix": ["AND", "and"],
+    "body": ["${1:expression1} AND ${2:expression2}"],
+    "description": "Foobar2000 keyword: returns only items where both <expression1> and <expression2> are true"
+  },
+  "Keyword: BEFORE": {
+    "prefix": ["BEFORE", "before"],
+    "body": ["${1:time1} BEFORE ${2:time2}"],
+    "description": "Foobar2000 keyword: returns only items where <time1> value is before <time2>"
+  },
+  "Keyword: DURING": {
+    "prefix": ["DURING", "during"],
+    "body": ["${1:time1} DURING ${2:time2}"],
+    "description": "Foobar2000 keyword: Returns only items where <time1> value is a subset of <time2> period"
+  },
+  "Keyword: DURING LAST (plural form)": {
+    "prefix": ["DURING LAST", "during last"],
+    "body": [
+      "${1:time} DURING LAST ${2:number} ${3|SECONDS,MINUTES,HOURS,DAYS,WEEKS|}"
+    ],
+    "description": "Foobar2000 keyword: returns items where <time> value is contained in the specified period"
+  },
+  "Keyword: DURING LAST (singular form)": {
+    "prefix": ["DURING LAST", "during last"],
+    "body": ["${1:time} DURING LAST ${2|SECOND,MINUTE,HOUR,DAY,WEEK|}"],
+    "description": "Foobar2000 keyword: returns items where <time> value is contained in the specified period"
+  },
+  "Keyword: EQUAL": {
+    "prefix": ["EQUAL", "equal"],
+    "body": ["${1:field} EQUAL ${2:number}"],
+    "description": "Foobar2000 keyword: returns only items where <field> value is equal to <number>"
+  },
+  "Keyword: GREATER": {
+    "prefix": ["GREATER", "greater"],
+    "body": ["${1:field} GREATER ${2:number}"],
+    "description": "Foobar2000 keyword: returns only items where <field> value is greater than <number>"
+  },
+  "Keyword: HAS": {
+    "prefix": ["HAS", "has"],
+    "body": ["${1|field,*|} HAS ${2:string}"],
+    "description": "Foobar2000 keyword: returns only items where <field> contains <string> (case-insensitive). If * is used instead of a field name, returns items where any field contains <string>."
+  },
+  "Keyword: IS": {
+    "prefix": ["IS", "is"],
+    "body": ["${1:field} IS ${2:string}"],
+    "description": "Foobar2000 keyword: returns only items where <field> is exactly equal to <string> (case-insensitive)"
+  },
+  "Keyword: LESS": {
+    "prefix": ["LESS", "less"],
+    "body": ["${1:field} LESS ${2:number}"],
+    "description": "Foobar2000 keyword: returns only items where <field> value is less than <number>"
+  },
+  "Keyword: MISSING": {
+    "prefix": ["MISSING", "missing"],
+    "body": ["${1:field} MISSING"],
+    "description": "Foobar2000 keyword: returns only items that don't have a metadata field named <field>"
+  },
+  "Keyword: NOT": {
+    "prefix": ["NOT", "not"],
+    "body": ["NOT ${1:expression}"],
+    "description": "Foobar2000 keywords: returns only items where the expression is false"
+  },
+  "Keyword: OR": {
+    "prefix": ["OR", "or"],
+    "body": ["${1:expression1} OR ${2:expression2}"],
+    "description": "Foobar2000 keyword: returns only items where either <expression1> or <expression2> (or both) are true"
+  },
+  "Keyword: PRESENT": {
+    "prefix": ["PRESENT", "present"],
+    "body": ["${1:field} PRESENT"],
+    "description": "Foobar2000 keyword: returns only items that have a metadata field named <field>"
+  },
+  "Keyword: SINCE": {
+    "prefix": ["SINCE", "since"],
+    "body": ["${1:time1} SINCE ${2:time2}"],
+    "description": "Foobar2000 keyword: returns only items where <time1> value is not before <time2>"
+  },
+  "Keyword: SORT BY": {
+    "prefix": ["SORT BY", "sort by"],
+    "body": ["SORT BY ${1:<sort-pattern>}"],
+    "description": "Foobar2000 keyword: Sort results in ascending order"
+  },
+  "Keyword: SORT ASCENDING BY": {
+    "prefix": ["SORT ASCENDING BY", "sort ascending by"],
+    "body": ["SORT ASCENDING BY ${1:<sort-pattern>}"],
+    "description": "Foobar2000 keyword: Sort results in ascending order"
+  },
+  "Keyword: SORT DESCENDING BY": {
+    "prefix": ["SORT DESCENDING BY", "sort descending by"],
+    "body": ["SORT DESCENDING BY ${1:<sort-pattern>}"],
+    "description": "Foobar2000 keyword: Sort results in descending order"
   }
 }
