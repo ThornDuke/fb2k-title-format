@@ -425,6 +425,11 @@
     "body": ["\\$meta_num(${1:name})"],
     "description": "FB2K: Returns the number of values for the tag called name."
   },
+  "Function: $peak_to_db(X)": {
+    "prefix": "$peak_to_db",
+    "body": ["\\$peak_to_db(${1:num X})"],
+    "description": "Converts audio peak value from 0..1 PCM to decibels."
+  },
   "Tag: %album artist%": {
     "prefix": "%album artist%",
     "body": ["%album artist%"],
@@ -439,6 +444,16 @@
     "prefix": "%artist%",
     "body": ["%artist%"],
     "description": "FB2K: Name of the artist of the track."
+  },
+  "Tag: %date%": {
+    "prefix": "%date%",
+    "body": ["%date%"],
+    "description": "FB2K: Recording date of the album specified track belongs to, using 'date' metadata field."
+  },
+  "Tag: %genre%": {
+    "prefix": "%genre%",
+    "body": ["%genre%"],
+    "description": "Genre of the album specified track belongs to, using 'genre' metadata field."
   },
   "Tag: %discnumber%": {
     "prefix": "%discnumber%",
@@ -504,6 +519,11 @@
     "prefix": "%codec_long%",
     "body": ["%codec_long%"],
     "description": "FB2K: Long name of the codec, including profile."
+  },
+  "Tag: %path_sort%": {
+    "prefix": "%path_sort%",
+    "body": ["%path_sort%"],
+    "description": "Path of the file; for use with sorting, where order of subsongs within a file needs to be preserved."
   },
   "Tag: %filesize%": {
     "prefix": "%filesize%",
