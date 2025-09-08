@@ -19,6 +19,22 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 - syntaxes/foobar2000.tmLanguage.json: query keywords
 - snippets/foobar2000.json: query keywords
+- snippets/foobar2000.json: all the snippets:
+  - FB2K
+  - Now playing info
+  - Playlist-only fields
+  - Album List
+  - Playback Statistics
+  - Playlist Organizer
+  - CUI
+- syntaxes/foobar2000.tmLanguage.json: all the syntaxes
+  - FB2K
+  - Now playing info
+  - Playlist-only fields
+  - Album List
+  - Playback Statistics
+  - Playlist Organizer
+  - CUI
 
 ## [1.3.0] - 2025-09-07
 

@@ -425,122 +425,122 @@
     "body": ["\\$meta_num(${1:name})"],
     "description": "FB2K: Returns the number of values for the tag called name."
   },
-  "Field: %album artist%": {
+  "Tag: %album artist%": {
     "prefix": "%album artist%",
     "body": ["%album artist%"],
     "description": "FB2K: Name of the artist of the album specified track belongs to."
   },
-  "Field: %album%": {
+  "Tag: %album%": {
     "prefix": "%album%",
     "body": ["%album%"],
     "description": "FB2K: Name of the album specified track belongs to."
   },
-  "Field: %artist%": {
+  "Tag: %artist%": {
     "prefix": "%artist%",
     "body": ["%artist%"],
     "description": "FB2K: Name of the artist of the track."
   },
-  "Field: %discnumber%": {
+  "Tag: %discnumber%": {
     "prefix": "%discnumber%",
     "body": ["%discnumber%"],
     "description": "FB2K: Index of disc specified track belongs to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata."
   },
-  "Field: %totaldiscs%": {
+  "Tag: %totaldiscs%": {
     "prefix": "%totaldiscs%",
     "body": ["%totaldiscs%"],
     "description": "FB2K: Index of total discs specified tracks belong to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata."
   },
-  "Field: %track artist%": {
+  "Tag: %track artist%": {
     "prefix": "%track artist%",
     "body": ["%track artist%"],
     "description": "FB2K: Name of the artist of the track; present only if %album artist% is different than %artist% for specific track."
   },
-  "Field: %title%": {
+  "Tag: %title%": {
     "prefix": "%title%",
     "body": ["%title%"],
     "description": "FB2K: Title of the track. If 'title' metadata field is missing, file name is used instead."
   },
-  "Field: %tracknumber%": {
+  "Tag: %tracknumber%": {
     "prefix": "%tracknumber%",
     "body": ["%tracknumber%"],
     "description": "FB2K: Index of specified track within the album. Available only when 'tracknumber' field is present in track’s metadata. An extra '0' is placed in front of single digit track numbers."
   },
-  "Field: %track number%": {
+  "Tag: %track number%": {
     "prefix": "%track number%",
     "body": ["%track number%"],
     "description": "FB2K: Similar to %tracknumber%, however single digit track numbers are not reformatted to have an extra 0."
   },
-  "Field: %totaltracks%": {
+  "Tag: %totaltracks%": {
     "prefix": "%totaltracks%",
     "body": ["%totaltracks%"],
     "description": "FB2K: Index of total tracks specified tracks belong to, within the album."
   },
-  "Field: %bitrate%": {
+  "Tag: %bitrate%": {
     "prefix": "%bitrate%",
     "body": ["%bitrate%"],
     "description": "FB2K: Bitrate of the track in kilobits per second."
   },
-  "Field: %channels%": {
+  "Tag: %channels%": {
     "prefix": "%channels%",
     "body": ["%channels%"],
     "description": "FB2K: Number of channels in the track, as text."
   },
-  "Field: %channel_mask%": {
+  "Tag: %channel_mask%": {
     "prefix": "%channel_mask%",
     "body": ["%channel_mask%"],
     "description": "FB2K: Description of the used audio channels in the track."
   },
-  "Field: %codec%": {
+  "Tag: %codec%": {
     "prefix": "%codec%",
     "body": ["%codec%"],
     "description": "FB2K: Name of codec used to encode the track."
   },
-  "Field: %codec_profile%": {
+  "Tag: %codec_profile%": {
     "prefix": "%codec_profile%",
     "body": ["%codec_profile%"],
     "description": "FB2K: Additional information about encoding settings used."
   },
-  "Field: %codec_long%": {
+  "Tag: %codec_long%": {
     "prefix": "%codec_long%",
     "body": ["%codec_long%"],
     "description": "FB2K: Long name of the codec, including profile."
   },
-  "Field: %filesize%": {
+  "Tag: %filesize%": {
     "prefix": "%filesize%",
     "body": ["%filesize%"],
     "description": "FB2K: The exact file size in bytes"
   },
-  "Field: %filesize_natural%": {
+  "Tag: %filesize_natural%": {
     "prefix": "%filesize_natural%",
     "body": ["%filesize_natural%"],
     "description": "FB2K: The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes."
   },
-  "Field: %length%": {
+  "Tag: %length%": {
     "prefix": "%length%",
     "body": ["%length%"],
     "description": "FB2K: The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second."
   },
-  "Field: %length_ex%": {
+  "Tag: %length_ex%": {
     "prefix": "%length_ex%",
     "body": ["%length_ex%"],
     "description": "FB2K: The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond."
   },
-  "Field: %length_seconds%": {
+  "Tag: %length_seconds%": {
     "prefix": "%length_seconds%",
     "body": ["%length_seconds%"],
     "description": "FB2K: The length of the track in seconds, rounded to the nearest second."
   },
-  "Field: %length_seconds_fp%": {
+  "Tag: %length_seconds_fp%": {
     "prefix": "%length_seconds_fp%",
     "body": ["%length_seconds_fp%"],
     "description": "FB2K: The length of the track in seconds as a floating point number."
   },
-  "Field: %length_samples%": {
+  "Tag: %length_samples%": {
     "prefix": "%length_samples%",
     "body": ["%length_samples%"],
     "description": "FB2K: The length of the track in samples."
   },
-  "Field: %samplerate%": {
+  "Tag: %samplerate%": {
     "prefix": "%samplerate%",
     "body": ["%samplerate%"],
     "description": "FB2K: Sample rate of the track, in Hz."
@@ -552,108 +552,108 @@
     ],
     "description": "FB2K: Returns value of technical information field."
   },
-  "Field: %__codec%": {
+  "Tag: %__codec%": {
     "prefix": "%__codec%",
     "body": ["%__codec%"],
     "description": "FB2K: Codec."
   },
 
-  "Field: %__codec_profile%": {
+  "Tag: %__codec_profile%": {
     "prefix": "%__codec_profile",
     "body": ["%__codec_profile"],
     "description": "FB2k: Codec Profile."
   },
-  "Field: %__samplerate%": {
+  "Tag: %__samplerate%": {
     "prefix": "%__samplerate",
     "body": ["%__samplerate"],
     "description": "FB2k: Sample Rate, in hertz."
   },
-  "Field: %__bitrate%": {
+  "Tag: %__bitrate%": {
     "prefix": "%__bitrate",
     "body": ["%__bitrate"],
     "description": "FB2k: Bitrate, in kilobits per second."
   },
-  "Field: %__tool%": {
+  "Tag: %__tool%": {
     "prefix": "%__tool",
     "body": ["%__tool"],
     "description": "FB2k: Tool used to produce the file, possibly guessed."
   },
-  "Field: %__encoding%": {
+  "Tag: %__encoding%": {
     "prefix": "%__encoding",
     "body": ["%__encoding"],
     "description": "FB2k: Encoding lossiness."
   },
-  "Field: %__channels%": {
+  "Tag: %__channels%": {
     "prefix": "%__channels",
     "body": ["%__channels"],
     "description": "FB2k: Channels count."
   },
-  "Field: %__bitspersample%": {
+  "Tag: %__bitspersample%": {
     "prefix": "%__bitspersample",
     "body": ["%__bitspersample"],
     "description": "FB2k: Bits Per Sample."
   },
-  "Field: %__decoded_bitspersample%": {
+  "Tag: %__decoded_bitspersample%": {
     "prefix": "%__decoded_bitspersample",
     "body": ["%__decoded_bitspersample"],
     "description": "FB2k: Bits Per Sample after decoding."
   },
-  "Field: %__bitspersample_extra%": {
+  "Tag: %__bitspersample_extra%": {
     "prefix": "%__bitspersample_extra",
     "body": ["%__bitspersample_extra"],
     "description": "FB2k: Format of 32-bit audio data."
   },
-  "Field: %__tagtype%": {
+  "Tag: %__tagtype%": {
     "prefix": "%__tagtype",
     "body": ["%__tagtype"],
     "description": "FB2k: Tag Type, comma-separated list of tag formats."
   },
-  "Field: %__cue_embedded%": {
+  "Tag: %__cue_embedded%": {
     "prefix": "%__cue_embedded",
     "body": ["%__cue_embedded"],
     "description": "FB2k: Embedded Cuesheet presence."
   },
-  "Field: %__md5%": {
+  "Tag: %__md5%": {
     "prefix": "%__md5",
     "body": ["%__md5"],
     "description": "FB2k: Audio MD5 hash, if container defines it."
   },
-  "Field: %__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%": {
+  "Tag: %__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%": {
     "prefix": "%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK",
     "body": ["%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK"],
     "description": "FB2k: Channel mask, channel layout of the track coded as hex."
   },
-  "Field: %__ENC_DELAY%": {
+  "Tag: %__ENC_DELAY%": {
     "prefix": "%__ENC_DELAY",
     "body": ["%__ENC_DELAY"],
     "description": "FB2k: LAME proprietary MP3 enc_delay value for gapless playback."
   },
-  "Field: %__ENC_PADDING%": {
+  "Tag: %__ENC_PADDING%": {
     "prefix": "%__ENC_PADDING",
     "body": ["%__ENC_PADDING"],
     "description": "FB2k: LAME proprietary MP3 enc_padding value for gapless playback."
   },
-  "Field: %__MP3_ACCURATE_LENGTH%": {
+  "Tag: %__MP3_ACCURATE_LENGTH%": {
     "prefix": "%__MP3_ACCURATE_LENGTH",
     "body": ["%__MP3_ACCURATE_LENGTH"],
     "description": "FB2k: MP3 duration."
   },
-  "Field: %__MP3_STEREO_MODE%": {
+  "Tag: %__MP3_STEREO_MODE%": {
     "prefix": "%__MP3_STEREO_MODE",
     "body": ["%__MP3_STEREO_MODE"],
     "description": "FB2k: Stereo mode used in MP3 file."
   },
-  "Field: %__VERSION%": {
+  "Tag: %__VERSION%": {
     "prefix": "%__VERSION",
     "body": ["%__VERSION"],
     "description": "FB2k: Version of tool."
   },
-  "Field: %__FLAGS%": {
+  "Tag: %__FLAGS%": {
     "prefix": "%__FLAGS",
     "body": ["%__FLAGS"],
     "description": "FB2k: Flags of tool."
   },
-  "Field: %__channel_mode%": {
+  "Tag: %__channel_mode%": {
     "prefix": "%__channel_mode",
     "body": ["%__channel_mode"],
     "description": "FB2k: Channel Mode, description of channels."
@@ -663,72 +663,72 @@
     "body": ["\\$channels()"],
     "description": "FB2K: The number of channels in text format."
   },
-  "Field: %replaygain_album_gain%": {
+  "Tag: %replaygain_album_gain%": {
     "prefix": "%replaygain_album_gain%",
     "body": ["%replaygain_album_gain%"],
     "description": "FB2K: he ReplayGain album gain value."
   },
-  "Field: %replaygain_album_peak%": {
+  "Tag: %replaygain_album_peak%": {
     "prefix": "%replaygain_album_peak%",
     "body": ["%replaygain_album_peak%"],
     "description": "FB2K: The ReplayGain album peak value."
   },
-  "Field: %replaygain_album_peak_db%": {
+  "Tag: %replaygain_album_peak_db%": {
     "prefix": "%replaygain_album_peak_db%",
     "body": ["%replaygain_album_peak_db%"],
     "description": "FB2K: The ReplayGain album peak value in decibels."
   },
-  "Field: %replaygain_track_gain%": {
+  "Tag: %replaygain_track_gain%": {
     "prefix": "%replaygain_track_gain%",
     "body": ["%replaygain_track_gain%"],
     "description": "FB2K: The ReplayGain track gain value."
   },
-  "Field: %replaygain_track_peak%": {
+  "Tag: %replaygain_track_peak%": {
     "prefix": "%replaygain_track_peak%",
     "body": ["%replaygain_track_peak%"],
     "description": "FB2K: The ReplayGain track peak value."
   },
-  "Field: %replaygain_track_peak_db%": {
+  "Tag: %replaygain_track_peak_db%": {
     "prefix": "%replaygain_track_peak_db%",
     "body": ["%replaygain_track_peak_db%"],
     "description": "FB2K: The ReplayGain track peak value in decibels."
   },
-  "Field: %filename%": {
+  "Tag: %filename%": {
     "prefix": "%filename%",
     "body": ["%filename%"],
     "description": "FB2K: The filename without directory and extension."
   },
-  "Field: %filename_ext%": {
+  "Tag: %filename_ext%": {
     "prefix": "%filename_ext%",
     "body": ["%filename_ext%"],
     "description": "FB2K: The filename with extension, but without the directory."
   },
-  "Field: %directoryname%": {
+  "Tag: %directoryname%": {
     "prefix": "%directoryname%",
     "body": ["%directoryname%"],
     "description": "FB2K: The name of the parent directory only, not the complete path."
   },
-  "Field: %last_modified%": {
+  "Tag: %last_modified%": {
     "prefix": "%last_modified%",
     "body": ["%last_modified%"],
     "description": "FB2K: The date and time the file was last modified. Eg: 2005-12-22 00:04:10"
   },
-  "Field: %path%": {
+  "Tag: %path%": {
     "prefix": "%path%",
     "body": ["%path%"],
     "description": "FB2K: The complete path, including the filename and extension."
   },
-  "Field: %_path_raw%": {
+  "Tag: %_path_raw%": {
     "prefix": "%_path_raw%",
     "body": ["%_path_raw%"],
     "description": "FB2K: The path as URL including the protocol scheme."
   },
-  "Field: %subsong%": {
+  "Tag: %subsong%": {
     "prefix": "%subsong%",
     "body": ["%subsong%"],
     "description": "FB2K: The subsong index."
   },
-  "Field: %_foobar2000_version%": {
+  "Tag: %_foobar2000_version%": {
     "prefix": "%_foobar2000_version%",
     "body": ["%_foobar2000_version%"],
     "description": "FB2K: The version of foobar2000."
@@ -768,57 +768,57 @@
     "body": ["\\$puts(${1:name},${2:value})"],
     "description": "FB2K: tores value in the variable name and returns nothing."
   },
-  "Field: %playback_time%": {
+  "Tag: %playback_time%": {
     "prefix": "%playback_time%",
     "body": ["%playback_time%"],
     "description": "FB2K: The elapsed time formatted as [HH:]MM:SS."
   },
-  "Field: %playback_time_seconds%": {
+  "Tag: %playback_time_seconds%": {
     "prefix": "%playback_time_seconds%",
     "body": ["%playback_time_seconds%"],
     "description": "FB2K: The elapsed time in seconds."
   },
-  "Field: %playback_time_remaining%": {
+  "Tag: %playback_time_remaining%": {
     "prefix": "%playback_time_remaining%",
     "body": ["%playback_time_remaining%"],
     "description": "FB2K: The time remaining until the track ends, formatted as [HH:]MM:SS."
   },
-  "Field: %playback_time_remaining_seconds%": {
+  "Tag: %playback_time_remaining_seconds%": {
     "prefix": "%playback_time_remaining_seconds%",
     "body": ["%playback_time_remaining_seconds%"],
     "description": "FB2K: The time remaining until the track ends, in seconds."
   },
-  "Field: %isplaying%": {
+  "Tag: %isplaying%": {
     "prefix": "%isplaying%",
     "body": ["%isplaying%"],
     "description": "FB2K: '1' if file is currently playing, empty string otherwise."
   },
-  "Field: %ispaused%": {
+  "Tag: %ispaused%": {
     "prefix": "%ispaused%",
     "body": ["%ispaused%"],
     "description": "FB2K: '1' if playback is paused, empty string otherwise."
   },
-  "Field: %list_index%": {
+  "Tag: %list_index%": {
     "prefix": "%list_index%",
     "body": ["%list_index%"],
     "description": "FB2K: A zero-padded playlist index of specified item. The first item is at index 1."
   },
-  "Field: %list_total%": {
+  "Tag: %list_total%": {
     "prefix": "%list_total%",
     "body": ["%list_total%"],
     "description": "FB2K: The number of items in the playlist."
   },
-  "Field: %queue_index%": {
+  "Tag: %queue_index%": {
     "prefix": "%queue_index%",
     "body": ["%queue_index%"],
     "description": "FB2K: Index of the specified item in the playback queue. If the item has been queued multiple times, %queue_index% evaluates to the first index."
   },
-  "Field: %queue_indexes%": {
+  "Tag: %queue_indexes%": {
     "prefix": "%queue_indexes%",
     "body": ["%queue_indexes%"],
     "description": "FB2K: List of indexes of the specified item in the playback queue. Same as %queue_index% unless the item has been queued more than once."
   },
-  "Field: %queue_total%": {
+  "Tag: %queue_total%": {
     "prefix": "%queue_total%",
     "body": ["%queue_total%"],
     "description": "FB2K: Total amount of tracks in playback queue."
@@ -877,67 +877,67 @@
     "body": ["\\$meta_branch(${1:name})"],
     "description": "FB2K: Like '$meta_branch_remap(name)', but without the tag remapping."
   },
-  "Field: %play_counts%": {
+  "Tag: %play_counts%": {
     "prefix": "%play_counts%",
     "body": ["%play_counts%"],
     "description": "FB2K: Returns how many times this tracks has been played. If the track has not been played yet, the field does not exist."
   },
-  "Field: %first_played%": {
+  "Tag: %first_played%": {
     "prefix": "%first_played%",
     "body": ["%first_played%"],
     "description": "FB2K: Returns the date and time when the track was first played. If the track has not been played yet, the field does not exist."
   },
-  "Field: %last_played%": {
+  "Tag: %last_played%": {
     "prefix": "%last_played%",
     "body": ["%last_played%"],
     "description": "FB2K: Returns the date and time when the track was last played. If the track has not been played yet, the field does not exist."
   },
-  "Field: %played_per_day%": {
+  "Tag: %played_per_day%": {
     "prefix": "%played_per_day%",
     "body": ["%played_per_day%"],
     "description": "FB2K: Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between %first_played% and %last_played%). If the track has not been played yet, the field does not exist."
   },
-  "Field: %added%": {
+  "Tag: %added%": {
     "prefix": "%added%",
     "body": ["%added%"],
     "description": "FB2K: Returns the date and time at which track has been added to Media Library. Even if the track has not been played yet, the field exists, logically."
   },
-  "Field: %rating%": {
+  "Tag: %rating%": {
     "prefix": "%rating%",
     "body": ["%rating%"],
     "description": "FB2K: Returns Rating Value (can be integer from 1 to 5). If the track has not been rated yet, the field does not exist."
   },
-  "Field: %rating_stars%": {
+  "Tag: %rating_stars%": {
     "prefix": "%rating_stars%",
     "body": ["%rating_stars%"],
     "description": "FB2K: Returns Song's Rating Value, formatted as up to five stars, e.g. ★★★. If the track has not been rated yet, the field does not exist."
   },
-  "Field: %rating_stars_fixed%": {
+  "Tag: %rating_stars_fixed%": {
     "prefix": "%rating_stars_fixed%",
     "body": ["%rating_stars_fixed%"],
     "description": "FB2K: Returns Song's Rating Value, formatted as five stars, e.g. ★★★☆☆. If the track has not been rated yet, the field does not exist."
   },
-  "Field: %node_name%": {
+  "Tag: %node_name%": {
     "prefix": "%node_name%",
     "body": ["%node_name%"],
     "description": "FB2K: Name of the node, either a playlist or a folder."
   },
-  "Field: %is_folder%": {
+  "Tag: %is_folder%": {
     "prefix": "%is_folder%",
     "body": ["%is_folder%"],
     "description": "FB2K: A boolean value for use in '$if( ...)' expressions and is true when the node is a folder."
   },
-  "Field: %count%": {
+  "Tag: %count%": {
     "prefix": "%count%",
     "body": ["%count%"],
     "description": "FB2K: Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
   },
-  "Field: %playlist_duration%": {
+  "Tag: %playlist_duration%": {
     "prefix": "%playlist_duration%",
     "body": ["%playlist_duration%"],
     "description": "FB2K: Will provide the duration of playlists."
   },
-  "Field: %playlist_size%": {
+  "Tag: %playlist_size%": {
     "prefix": "%playlist_size%",
     "body": ["%playlist_size%"],
     "description": "FB2K: Will provide the size of playlists (in kB, MB or GB)."
