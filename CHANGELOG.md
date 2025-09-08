@@ -35,6 +35,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
   - Playback Statistics
   - Playlist Organizer
   - CUI
+- README.md: badges
 
 ## [1.3.0] - 2025-09-07
 
