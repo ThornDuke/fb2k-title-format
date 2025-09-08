@@ -768,6 +768,11 @@
     "body": ["\\$puts(${1:name},${2:value})"],
     "description": "FB2K: tores value in the variable name and returns nothing."
   },
+  "Function: $get(name)": {
+    "prefix": "$get",
+    "body": ["\\$get(${1:name})"],
+    "description": "FB2K: Returns the value that was last stored in the variable name, if the variable was not defined (yet), it returns nothing."
+  },
   "Tag: %playback_time%": {
     "prefix": "%playback_time%",
     "body": ["%playback_time%"],

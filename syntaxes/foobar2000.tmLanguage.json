@@ -26,7 +26,7 @@
     },
     {
       "name": "meta.fb2k",
-      "begin": "\\$(add|div|sub|mul|muldiv|greater|max|min|mod|rand|and|or|not|xor|if|if2|if3|ifgreater|iflonger|ifequal|longest|select|abbr|ansi|ascii|caps|caps2|char|crc32|crlf|tab|cut|directory|directory_path|ext|filename|fix_eol|hex|insert|left|len|len2|longer|lower|longest|num|pad|pad_right|pad|pad_right|padcut|padcut|padcut_right|progress|progress2|repeat|replace|right|roman|rot13|shortest|strchr|strrchr|strstr|strcmp|stricmp|stripprefix|substr|swapprefix|swapprefix|trim|upper|meta|meta_sep|meta_sep|meta_test|meta_num|info|channels|year|month|day_of_month|date|time|put|puts|blend|hsl|hsl|rgb|transition|meta_branch_remap|meta_branch|set_global|get_global|set_style|set_style|calculate_blend_target|offset_colour|set_format|reset_format|set_font|reset_font)\\s*\\(",
+      "begin": "\\$(add|div|sub|mul|muldiv|greater|max|min|mod|rand|and|or|not|xor|if|if2|if3|ifgreater|iflonger|ifequal|longest|select|abbr|ansi|ascii|caps|caps2|char|crc32|crlf|tab|cut|directory|directory_path|ext|filename|fix_eol|hex|insert|left|len|len2|longer|lower|longest|num|pad|pad_right|pad|pad_right|padcut|padcut|padcut_right|progress|progress2|repeat|replace|right|roman|rot13|shortest|strchr|strrchr|strstr|strcmp|stricmp|stripprefix|substr|swapprefix|swapprefix|trim|upper|meta|meta_sep|meta_sep|meta_test|meta_num|info|channels|year|month|day_of_month|date|time|put|puts|get|blend|hsl|hsl|rgb|transition|meta_branch_remap|meta_branch|set_global|get_global|set_style|set_style|calculate_blend_target|offset_colour|set_format|reset_format|set_font|reset_font)\\s*\\(",
       "end": "\\)",
       "captures": {
         "0": {
