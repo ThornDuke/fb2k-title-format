@@ -36,6 +36,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
   - Playlist Organizer
   - CUI
 - README.md: badges
+- config/language-configuration.json: indentation after parentheses
 
 ## [1.3.0] - 2025-09-07
 
