@@ -83,10 +83,10 @@
   "pricing": "Free",
   "scripts": {
     "prettier": "prettier --write \"**/*.{json,md}\"",
-    "publish:prerelease": "vsce publish --githubBranch master --pre-release",
-    "publish": "vsce publish --githubBranch master",
     "pack:prerelease": "vsce package --githubBranch master --pre-release",
-    "pack": "vsce package --githubBranch master"
+    "pack": "vsce package --githubBranch master",
+    "publish:prerelease": "vsce publish --githubBranch master --pre-release",
+    "publish": "vsce publish --githubBranch master"
   },
   "devDependencies": {
     "prettier": "^3.0.0"

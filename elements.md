@@ -139,82 +139,120 @@
     "prefix": "$caps2",
     "body": ["\\$caps2(${1:str})"],
     "description": "FB2K: Converts first letter in every word of string str to uppercase, and leaves all other letters as they are."
-  }
+  },
+  "Function: $char(nbr)": {
+    "prefix": "$char",
+    "body": ["\\$char(${1:nbr})"],
+    "description": "FB2K: Returns Unicode character of nbr."
+  },
+  "Function: $crc32(str)": {
+    "prefix": "$crc32",
+    "body": ["\\$crc32(${1:str})"],
+    "description": "FB2K: Computes the CRC32 of the string str as a number."
+  },
+  "Function: $crlf()": {
+    "prefix": "$crlf",
+    "body": ["\\$crlf()"],
+    "description": "FB2K: Inserts end-of-line marker (carriage return, line feed)."
+  },
+  "Function: $tab()": {
+    "prefix": "$tab",
+    "body": ["\\$tab()"],
+    "description": "FB2K: Inserts one tabulator character."
+  },
+  "Function: $tab(count)": {
+    "prefix": "$tab",
+    "body": ["\\$tab(${1:count})"],
+    "description": "FB2K: Inserts count tabulator characters."
+  },
+  "Function: $cut(str,len)": {
+    "prefix": "$cut",
+    "body": ["\\$cut(${1:str},${2:len})"],
+    "description": "FB2K: Returns first len characters from the left of the string str. This function is the same as $left(a,len). Negative numbers produce the entire string."
+  },
+  "Function: $directory(path)": {
+    "prefix": "$directory",
+    "body": ["\\$directory(${1:path})"],
+    "description": "FB2K: Extracts only the directory name."
+  },
+  "Function: $directory(path,n)": {
+    "prefix": "$directory",
+    "body": ["\\$directory(${1:path},${2:num n})"],
+    "description": "FB2K: Extracts directory name from the file path; goes up by n levels."
+  },
+  "Function: $directory_path(path)": {
+    "prefix": "$directory_path",
+    "body": ["\\$directory_path(${1:path})"],
+    "description": "FB2K: Extracts directory path from the file path."
+  },
+  "Function: $ext(path)": {
+    "prefix": "$ext",
+    "body": ["\\$ext(${1:path})"],
+    "description": "FB2K: Extracts file extension from string path, a file name or full path."
+  },
+  "Function: $filename(path)": {
+    "prefix": "$filename",
+    "body": ["\\$filename(${1:path})"],
+    "description": "FB2K: Extracts file name from full path."
+  },
+  "Function: $fix_eol(str)": {
+    "prefix": "$fix_eol",
+    "body": ["\\$fix_eol(${1:str})"],
+    "description": "FB2K: If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by \\" (...)\\". Otherwise str is returned unaltered."
+  },
+  "Function: $fix_eol(str,indicator)": {
+    "prefix": "$fix_eol",
+    "body": ["\\$fix_eol(${1:str},${2:indicator})"],
+    "description": "FB2K: If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by indicator. Otherwise str is returned unaltered."
+  },
+  "Function: $hex(int,len)": {
+    "prefix": "$hex",
+    "body": ["\\$hex(${1:int},${2:len})"],
+    "description": "FB2K: Formats the integer number int in hexadecimal notation with len digits. Pads with zeros from the left if necessary."
+  },
+  "Function: $insert(str,insert,n)": {
+    "prefix": "$insert",
+    "body": ["\\$insert(${1:str},${2:string insert},${3:num n})"],
+    "description": "FB2K: Inserts \\"insert\\" into str after n characters."
+  },
+  "Function: $left(str,len)": {
+    "prefix": "$left",
+    "body": ["\\$left(${1:str},${2:len})"],
+    "description": "FB2K: Returns first len characters from the left of the string str. This function is the same as $cut(str,len). Negative numbers produce the entire string."
+  },
+  "Function: $len(str)": {
+    "prefix": "$len",
+    "body": ["\\$len(${1:str})"],
+    "description": "FB2K: Returns length of string str in characters."
+  },
+  "Function: $len2(str)": {
+    "prefix": "$len2",
+    "body": ["\\$len2(${1:str})"],
+    "description": "FB2K: Returns length of string str in characters, respecting double-width character rules (double-width characters will be counted as two)."
+  },
+  "Function: $longer(str1,str2)": {
+    "prefix": "$longer",
+    "body": ["\\$longer(${1:str1},${2:str2})"],
+    "description": "FB2K: Returns true, if string str1 is longer than string str2, false otherwise."
+  },
+  "Function: $lower(str)": {
+    "prefix": "$lower",
+    "body": ["\\$lower(${1:str})"],
+    "description": "FB2K: Converts string str to lowercase."
+  },
+  "Function: $longest(str1,...)": {
+    "prefix": "$longest",
+    "body": ["\\$longest(${1:str1}${2:[,...]})"],
+    "description": "FB2K: Returns the longest of its arguments. Can be used with an arbitrary number of strings."
+  },
+  "Function: $num(nbr,len)": {
+    "prefix": "$num",
+    "body": ["\\$num(${1:nbr},${2:len})"],
+    "description": "FB2K: Formats the integer number nbr in decimal notation with len characters. Pads with zeros from the left if necessary. len includes the dash when the number is negative. If nbr is not numeric, it is treated as zero."
+  },
 }
 ```
 
-$char(nbr)
-Returns Unicode character of nbr. You can search for characters and find the matching decimal number on this site.
-
-$crc32(str)
-Computes the CRC32 of the string str as a number. Intended for use in coloring scripts.
-
-Example: $rgb($mod($crc32(%album%),256),128,128)
-
-$crlf()
-Inserts end-of-line marker (carriage return, line feed). Can be used to generate multiple lines in the output, for example for the tooltip of the system notification area ("systray") icon.
-
-$cut(str,len)
-Returns first len characters from the left of the string str. This function is the same as $left(a,len). Negative numbers produce the entire string. Examples:
-
-$cut('abc123',3) → abc
-$cut('abc123',0) → (nothing)
-$cut('abc123',-1) → abc123
-$directory(path)
-Extracts only the directory name (not full path, ie given path as 'D:\music\jazz\filename.mp3', this will output 'jazz') from the file path.
-
-$directory(path,n)
-Extracts directory name from the file path; goes up by n levels.
-
-$directory_path(path)
-Extracts directory path from the file path. ie. given path as 'D:\music\jazz\filename.mp3', this will output 'D:\music\jazz'
-
-$ext(path)
-Extracts file extension from string path; a file name or full path.
-
-$filename(path)
-Extracts file name from full path.
-
-$fix_eol(str)
-If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by " (...)". Otherwise str is returned unaltered.
-
-$fix_eol(str,indicator)
-If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by indicator. Otherwise str is returned unaltered.
-
-$hex(int,len)
-Formats the integer number int in hexadecimal notation with len digits. Pads with zeros from the left if necessary.
-
-$insert(str,insert,n)
-Inserts insert into str after n characters.
-
-$left(str,len)
-Returns first len characters from the left of the string str. This function is the same as $cut(str,len). Negative numbers produce the entire string. Examples:
-
-$left('abc123',3) → abc
-$left('abc123',0) → (nothing)
-$left('abc123',-1) → abc123
-$len(str)
-Returns length of string str in characters.
-
-$len2(str)
-Returns length of string str in characters, respecting double-width character rules (double-width characters will be counted as two).
-
-$longer(str1,str2)
-Returns true, if string str1 is longer than string str2, false otherwise.
-
-$lower(str)
-Converts string str to lowercase.
-
-$longest(arg,...)
-Returns the longest of its arguments. Can be used with an arbitrary number of strings.
-
-$num(nbr,len)
-Formats the integer number nbr in decimal notation with len characters. Pads with zeros from the left if necessary. len includes the dash when the number is negative. If nbr is not numeric, it is treated as zero. Examples:
-
-$num(123,5) → 00123
-$num(-123,5) → -0123
-$num(4.8,5) → 00004
-$num(A1,5) → 00000
 $pad(str,len)
 Creates a left-aligned version of the string str. If str is shorter than len characters, the function adds spaces to the right of str to make the result len characters long. Otherwise the function returns str unchanged.
 
@@ -307,12 +345,6 @@ Moves the specified prefixes to the end of string str.
 
 $trim(str)
 Removes leading and trailing spaces from string str.
-
-$tab()
-Inserts one tabulator character.
-
-$tab(count)
-Inserts count tabulator characters.
 
 $upper(str)
 Converts string str to uppercase.
