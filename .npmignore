@@ -4,6 +4,7 @@ dist/
 .vscode/
 tests/
 *.log
+.nvmrc
 CHANGELOG.md
 project-notes.md
 requisites.md

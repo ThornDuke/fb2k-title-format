@@ -8,3 +8,4 @@ project-notes.md
 requisites.md
 *.vsix
 *.log
+.nvmrc

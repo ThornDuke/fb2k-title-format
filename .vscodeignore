@@ -3,6 +3,7 @@
 .vscode-test/**
 .github/**
 .gitignore
+.nvmrc
 *.vsix
 tests/**
 build/**
