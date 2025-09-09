@@ -27,12 +27,46 @@ Complete code snippets are provided for all tags, functions and query keywords.
 
 ### Commands
 
-The plugin provides the command `Join Lines Smart` to group a block of code into a single line. This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
+The plugin provides the following commands:
+
+#### `Remove Indentation`
+
+To simplify writing and reading complex scripts, code is indented within functions. For example:
+
+```sh
+$iflonger(
+  $get(target),1,
+  $ascii($substr($get(target),2,2)),
+  'shorter than 1 char'
+)
+```
+
+To use this function in Foobar2000, you must remove indentation, since in title formatting all spaces are significant, even those at the beginning of the line.
+
+This command removes indentation from all selected lines, or from all unselected lines between blank or commented lines.
+
+- Keybindings: `Ctrl+K Ctrl+H` (`Cmd+K Cmd+H` on Mac)
+- Command Palette: `Shift + Command + P` (Mac) `Ctrl + Shift + P` (Windows/Linux) then type `Remove Indentation`
+
+#### `Join Lines`
+
+This command joins all selected lines of code into a single line, or all unselected lines between blank or commented lines.
+
+This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
 
 - Keybindings: `Ctrl+K Ctrl+Z` (`Cmd+K Cmd+Z` on Mac)
-- Command Palette: `Shift + Command + P` (Mac) `Ctrl + Shift + P` (Windows/Linux) then type `Join Lines Smart`
+- Command Palette: `Shift + Command + P` (Mac) `Ctrl + Shift + P` (Windows/Linux) then type `Join Lines`
 
-> **Note:** This command is only available in files with the `.f2k` extension.
+#### `Join Lines No Comments`
+
+This command joins all selected lines of code, or all unselected lines between blank lines, into a single line, _after removing the commented lines_.
+
+This is useful when there are commented lines within a script that must be removed before the script can be used in Foobar2000.
+
+- Keybindings: `Ctrl+K Ctrl+Y` (`Cmd+K Cmd+Y` on Mac)
+- Command Palette: `Shift + Command + P` (Mac) `Ctrl + Shift + P` (Windows/Linux) then type `Join Lines No Comments`
+
+> **note**: these commands are only available in files with the '.f2k' extension.
 
 ## Usage
 
