@@ -12,7 +12,17 @@ Handles all scripting related to Foobar2000 [native tags and functions](https://
 
 ### Syntax highlighting
 
-All elements of the title-formatting syntax are recognized: comments, text, functions, tags, constants, query keywords and conditional blocks.
+All elements of the title-formatting syntax are recognized
+
+| element            | example                      |
+| ------------------ | ---------------------------- |
+| comments           | `// text`                    |
+| text               | `'text'`                     |
+| functions          | `$function(%name%,the)`      |
+| tags               | `%name% ... %<name>%`        |
+| constants          | `$puts(name) ... $get(name)` |
+| query keywords     | `name HAS something`         |
+| conditional blocks | `[%name_one% - %name_two%]`  |
 
 - **Functions** are highlighted in two ways:
   - _Predefined functions_ (recognized by Foobar2000) are colored as valid functions.
@@ -23,7 +33,7 @@ All elements of the title-formatting syntax are recognized: comments, text, func
 
 ### Snippets
 
-Complete code snippets are provided for all tags, functions and query keywords.
+Complete code snippets are provided for all predefined tags, functions and query keywords.
 
 ### Commands
 
@@ -34,14 +44,17 @@ The plugin provides the following commands:
 To simplify writing and reading complex scripts, code is indented within functions. For example:
 
 ```sh
-$iflonger(
-  $get(target),1,
-  $ascii($substr($get(target),2,2)),
-  'shorter than 1 char'
+$puts(
+  target,
+  $if(
+    %series%,
+    $stripprefix(%series%,the),
+    $stripprefix(%album artist%,the)
+  )
 )
 ```
 
-To use this function in Foobar2000, you must remove indentation, since in title formatting all spaces are significant, even those at the beginning of the line.
+To use this function in Foobar2000, you must remove indentation, since in FB2k title formatting all spaces are significant, even those at the beginning of the lines.
 
 This command removes indentation from all selected lines, or from all unselected lines between blank or commented lines.
 
@@ -50,7 +63,7 @@ This command removes indentation from all selected lines, or from all unselected
 
 #### `Join Lines`
 
-This command joins all selected lines of code into a single line, or all unselected lines between blank or commented lines.
+This command joins into a single line all selected lines of code, or all unselected lines between blank or commented lines.
 
 This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
 

@@ -18,8 +18,8 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 ### Added
 
 - syntaxes/foobar2000.tmLanguage.json: query keywords
-- snippets/foobar2000.json: query keywords
-- snippets/foobar2000.json: all the snippets:
+- snippets/FB2k-title-formatting.code-snippets: query keywords
+- snippets/FB2k-title-formatting.code-snippets: all the snippets:
   - FB2K
   - Now playing info
   - Playlist-only fields
@@ -38,6 +38,8 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 - README.md: badges
 - config/language-configuration.json: indentation after parentheses
 - src/extension.js: commands `Join Lines No Comments` and `Remove Indentation`
+- syntaxes/foobar2000.tmLanguage.json: Album List tags
+- snippets/FB2k-title-formatting.code-snippets: Album List tags
 
 ## [1.3.0] - 2025-09-07
 
@@ -82,6 +84,6 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 - 2025-09-04 Created the repo
 - fb2k.jsonc: snippets
 - language.configuration.json: working
-- snippets/foobar2000.json: working
-- snippets/foobar2000.json: full list of FB2K tags and functions
-- snippets/foobar2000.json: full list of ColumnsUI tags and functions
+- snippets/FB2k-title-formatting.code-snippets: working
+- snippets/FB2k-title-formatting.code-snippets: full list of FB2K tags and functions
+- snippets/FB2k-title-formatting.code-snippets: full list of ColumnsUI tags and functions
