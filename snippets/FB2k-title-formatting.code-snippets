@@ -1,8 +1,3 @@
-// Foobar2000 Title Formatting snippets
-//
-// author: Thorn Duke
-// date: 2025-09-05
-// reference: https://code.visualstudio.com/docs/editing/userdefinedsnippets
 {
   "Function: $add(a,b,...)": {
     "prefix": "$add",

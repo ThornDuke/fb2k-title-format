@@ -1,6 +1,53 @@
 const vscode = require('vscode');
+const path = require('path');
+const fs = require('fs');
+
+let fb2kSnippets = {};
+
+function loadSnippets(context) {
+  const snippetPath = path.join(
+    context.extensionPath,
+    'snippets',
+    'FB2k-title-formatting.code-snippets'
+  );
+  try {
+    const fileContent = fs.readFileSync(snippetPath, 'utf8');
+    fb2kSnippets = JSON.parse(fileContent);
+  } catch (err) {
+    console.error('Errore nel caricamento degli snippet:', err);
+    vscode.window.showErrorMessage(
+      'Impossibile caricare gli snippet per il linguaggio Foobar2000 Title Formatting.'
+    );
+  }
+}
 
 function activate(context) {
+  // Carica gli snippet all'attivazione dell'estensione
+  loadSnippets(context);
+
+  // Registra il CompletionItemProvider per il linguaggio 'fb2k'
+  const completionProvider = vscode.languages.registerCompletionItemProvider(
+    'fb2k',
+    {
+      provideCompletionItems(document, position) {
+        const completions = [];
+        for (const key in fb2kSnippets) {
+          if (Object.prototype.hasOwnProperty.call(fb2kSnippets, key)) {
+            const snippet = fb2kSnippets[key];
+            const completionItem = new vscode.CompletionItem(key);
+            completionItem.kind = vscode.CompletionItemKind.Snippet;
+            completionItem.insertText = new vscode.SnippetString(
+              snippet.body.join('\n')
+            );
+            completionItem.detail = snippet.description;
+            completions.push(completionItem);
+          }
+        }
+        return completions;
+      },
+    }
+  );
+
   let disposableJoinLines = vscode.commands.registerTextEditorCommand(
     'foobar2000-title-formatting-syntax.joinLinesSmart',
     (editor, edit) => {
@@ -158,6 +205,7 @@ function activate(context) {
     }
   );
 
+  context.subscriptions.push(completionProvider);
   context.subscriptions.push(disposableJoinLines);
   context.subscriptions.push(disposableJoinLinesNoComments);
   context.subscriptions.push(disposableRemoveIndentation);

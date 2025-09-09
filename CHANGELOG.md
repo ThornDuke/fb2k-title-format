@@ -40,6 +40,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 - src/extension.js: commands `Join Lines No Comments` and `Remove Indentation`
 - syntaxes/foobar2000.tmLanguage.json: Album List tags
 - snippets/FB2k-title-formatting.code-snippets: Album List tags
+- src/extension.js: autocomplete
 
 ## [1.3.0] - 2025-09-07
 
