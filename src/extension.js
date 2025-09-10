@@ -1,3 +1,8 @@
+/*---------------------------------------------------------
+ * Copyright 2025 Thorn Duke. All rights reserved.
+ * Licensed under the MIT License.
+ * See LICENSE in the project root for license information.
+ *--------------------------------------------------------*/
 const vscode = require('vscode');
 const path = require('path');
 const fs = require('fs');
@@ -10,13 +15,16 @@ function loadSnippets(context) {
     'snippets',
     'FB2k-title-formatting.code-snippets'
   );
+  // console.log('§>', { snippetPath });
+
   try {
     const fileContent = fs.readFileSync(snippetPath, 'utf8');
     fb2kSnippets = JSON.parse(fileContent);
+    // console.log('§>', { fileContent, fb2kSnippets });
   } catch (err) {
-    console.error('Errore nel caricamento degli snippet:', err);
+    console.error('Error loading snippets:', err);
     vscode.window.showErrorMessage(
-      'Impossibile caricare gli snippet per il linguaggio Foobar2000 Title Formatting.'
+      'Unable to load snippets for Foobar2000 Title Formatting language.'
     );
   }
 }
@@ -44,7 +52,7 @@ function activate(context) {
           }
         }
         return completions;
-      },
+      }
     }
   );
 
@@ -67,17 +75,17 @@ function activate(context) {
         if (selection.isEmpty) {
           // Trova in alto
           while (
-            startLine > 0 &&
-            !/^\s*$/.test(document.lineAt(startLine - 1).text) &&
-            !/^\s*\/\//.test(document.lineAt(startLine - 1).text)
+            startLine > 0
+            && !/^\s*$/.test(document.lineAt(startLine - 1).text)
+            && !/^\s*\/\//.test(document.lineAt(startLine - 1).text)
           ) {
             startLine--;
           }
           // Trova in basso
           while (
-            endLine < document.lineCount - 1 &&
-            !/^\s*$/.test(document.lineAt(endLine + 1).text) &&
-            !/^\s*\/\//.test(document.lineAt(endLine + 1).text)
+            endLine < document.lineCount - 1
+            && !/^\s*$/.test(document.lineAt(endLine + 1).text)
+            && !/^\s*\/\//.test(document.lineAt(endLine + 1).text)
           ) {
             endLine++;
           }
@@ -119,15 +127,15 @@ function activate(context) {
         if (selection.isEmpty) {
           // Trova in alto
           while (
-            startLine > 0 &&
-            !/^\s*$/.test(document.lineAt(startLine - 1).text)
+            startLine > 0
+            && !/^\s*$/.test(document.lineAt(startLine - 1).text)
           ) {
             startLine--;
           }
           // Trova in basso
           while (
-            endLine < document.lineCount - 1 &&
-            !/^\s*$/.test(document.lineAt(endLine + 1).text)
+            endLine < document.lineCount - 1
+            && !/^\s*$/.test(document.lineAt(endLine + 1).text)
           ) {
             endLine++;
           }
@@ -172,17 +180,17 @@ function activate(context) {
         if (selection.isEmpty) {
           // Trova in alto
           while (
-            startLine > 0 &&
-            !/^\s*$/.test(document.lineAt(startLine - 1).text) &&
-            !/^\s*\/\//.test(document.lineAt(startLine - 1).text)
+            startLine > 0
+            && !/^\s*$/.test(document.lineAt(startLine - 1).text)
+            && !/^\s*\/\//.test(document.lineAt(startLine - 1).text)
           ) {
             startLine--;
           }
           // Trova in basso
           while (
-            endLine < document.lineCount - 1 &&
-            !/^\s*$/.test(document.lineAt(endLine + 1).text) &&
-            !/^\s*\/\//.test(document.lineAt(endLine + 1).text)
+            endLine < document.lineCount - 1
+            && !/^\s*$/.test(document.lineAt(endLine + 1).text)
+            && !/^\s*\/\//.test(document.lineAt(endLine + 1).text)
           ) {
             endLine++;
           }
@@ -215,5 +223,5 @@ function deactivate() {}
 
 module.exports = {
   activate,
-  deactivate,
+  deactivate
 };
