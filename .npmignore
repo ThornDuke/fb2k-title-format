@@ -3,6 +3,7 @@ node_modules/
 dist/
 .vscode/
 tests/
+build/
 *.log
 .nvmrc
 CHANGELOG.md

@@ -2,7 +2,7 @@
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
   "description": "Syntax highlighting, snippets and commands for Foobar2000's title formatting.",
-  "version": "1.4.7",
+  "version": "1.4.9",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -107,11 +107,10 @@
   "pricing": "Free",
   "scripts": {
     "prettier": "prettier --write \"**/*.{json,md}\"",
-    "pack:prerelease": "vsce package --githubBranch master --pre-release",
-    "pack:local": "vsce package",
-    "pack": "vsce package --githubBranch master",
-    "publish:prerelease": "vsce publish --githubBranch master --pre-release",
-    "publish": "vsce publish --githubBranch master"
+    "pack:prerelease": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && mkdir -p build && vsce package --githubBranch master --pre-release --out build",
+    "pack": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && mkdir -p build && vsce package --out build",
+    "publish:prerelease": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && vsce publish --githubBranch master --pre-release",
+    "publish": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && vsce publish --githubBranch master"
   },
   "devDependencies": {
     "prettier": "^3.0.0"

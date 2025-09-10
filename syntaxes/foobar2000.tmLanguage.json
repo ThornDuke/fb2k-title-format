@@ -3,87 +3,151 @@
   "name": "Foobar2000 Title Formatting",
   "fileTypes": ["fb2k"],
   "patterns": [
-    {
-      "name": "comment.line.double-slash.fb2k",
-      "match": "^\\/\\/.*$"
-    },
-    {
-      "name": "string.quoted.single.fb2k",
-      "match": "'([^']|'')*'"
-    },
-    {
-      "name": "variable.other.tag.f2k",
-      "match": "%(album artist|album|artist|date|genre|discnumber|totaldiscs|track artist|title|tracknumber|track number|totaltracks|bitrate|channels|channel_mask|codec|codec_profile|codec_long|filesize|filesize_natural|length|length_ex|length_seconds|length_seconds_fp|length_samples|samplerate|__codec|__codec_profile|__samplerate|__bitrate|__tool|__encoding|__channels|__bitspersample|__decoded_bitspersample|__bitspersample_extra|__tagtype|__cue_embedded|__md5|__WAVEFORMATEXTENSIBLE_CHANNEL_MASK|__ENC_DELAY|__ENC_PADDING|__MP3_ACCURATE_LENGTH|__MP3_STEREO_MODE|__VERSION|__FLAGS|__channel_mode|replaygain_album_gain|replaygain_album_peak|replaygain_album_peak_db|replaygain_track_gain|replaygain_track_peak|replaygain_track_peak_db|filename|filename_ext|directoryname|last_modified|path|_path_raw|path_sort|subsong|_foobar2000_version|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|isplaying|ispaused|list_index|list_total|queue_index|queue_indexes|queue_total|play_counts|first_played|last_played|played_per_day|added|rating|rating_stars|rating_stars_fixed|node_name|is_folder|count|playlist_duration|playlist_size|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|is_locked|lock_name|size|length|filesize|filesize_raw|is_active|is_playing|default_font_face|default_font_size)%"
-    },
-    {
-      "name": "constant.other.user-tag.fb2k",
-      "match": "%([a-zA-Z0-9 _]+)%",
-      "captures": {
-        "1": {
-          "name": "constant.other.user-tag.name.fb2k"
-        }
-      }
-    },
-    {
-      "name": "variable.other.album-list-tag.f2k",
-      "match": "%<(album artist|album|artist|date|genre|discnumber|totaldiscs|track artist|title|tracknumber|track number|totaltracks|bitrate|channels|channel_mask|codec|codec_profile|codec_long|filesize|filesize_natural|length|length_ex|length_seconds|length_seconds_fp|length_samples|samplerate|__codec|__codec_profile|__samplerate|__bitrate|__tool|__encoding|__channels|__bitspersample|__decoded_bitspersample|__bitspersample_extra|__tagtype|__cue_embedded|__md5|__WAVEFORMATEXTENSIBLE_CHANNEL_MASK|__ENC_DELAY|__ENC_PADDING|__MP3_ACCURATE_LENGTH|__MP3_STEREO_MODE|__VERSION|__FLAGS|__channel_mode|replaygain_album_gain|replaygain_album_peak|replaygain_album_peak_db|replaygain_track_gain|replaygain_track_peak|replaygain_track_peak_db|filename|filename_ext|directoryname|last_modified|path|_path_raw|path_sort|subsong|_foobar2000_version|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|isplaying|ispaused|list_index|list_total|queue_index|queue_indexes|queue_total|play_counts|first_played|last_played|played_per_day|added|rating|rating_stars|rating_stars_fixed|node_name|is_folder|count|playlist_duration|playlist_size|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|is_locked|lock_name|size|length|filesize|filesize_raw|is_active|is_playing|default_font_face|default_font_size)>%"
-    },
-    {
-      "name": "constant.other.album-list-tag.fb2k",
-      "match": "%<([a-zA-Z0-9 _]+)>%",
-      "captures": {
-        "1": {
-          "name": "constant.other.user-tag.name.fb2k"
-        }
-      }
-    },
-    {
-      "name": "meta.fb2k",
-      "begin": "\\$(add|div|sub|mul|muldiv|greater|max|min|mod|rand|and|or|not|xor|if|if2|if3|ifgreater|iflonger|ifequal|longest|select|abbr|ansi|ascii|caps|caps2|char|crc32|crlf|tab|cut|directory|directory_path|ext|filename|fix_eol|hex|insert|left|len|len2|longer|lower|longest|num|pad|pad_right|pad|pad_right|padcut|padcut|padcut_right|progress|progress2|peak_to_db|repeat|replace|right|roman|rot13|shortest|strchr|strrchr|strstr|strcmp|stricmp|stripprefix|substr|swapprefix|swapprefix|trim|upper|meta|meta_sep|meta_sep|meta_test|meta_num|info|channels|year|month|day_of_month|date|time|put|puts|get|blend|hsl|hsl|rgb|transition|meta_branch_remap|meta_branch|set_global|get_global|set_style|set_style|calculate_blend_target|offset_colour|set_format|reset_format|set_font|reset_font)\\s*\\(",
-      "end": "\\)",
-      "captures": {
-        "0": {
-          "name": "support.function.fb2k"
-        }
-      },
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#functions" },
+    { "include": "#tags" },
+    { "include": "#keywords" },
+    { "include": "#constants" }
+  ],
+  "repository": {
+    "comments": {
       "patterns": [
         {
-          "include": "$self"
+          "name": "comment.line.double-slash.fb2k",
+          "match": "^\\/\\/.*$"
         }
       ]
     },
-    {
-      "name": "invalid.illegal.function.fb2k",
-      "begin": "\\$([a-zA-Z0-9_]+)\\s*\\(",
-      "beginCaptures": {
-        "1": {
-          "name": "invalid.illegal.function.name.fb2k"
-        }
-      },
-      "end": "\\)",
+    "strings": {
       "patterns": [
         {
-          "include": "$self"
+          "name": "string.quoted.single.fb2k",
+          "match": "'([^']|'')*'"
         }
       ]
     },
-    {
-      "name": "meta.fb2k",
-      "match": "\\$(put|puts|get)\\s*\\(\\s*([a-zA-Z0-9_]+)",
-      "captures": {
-        "2": {
-          "name": "constant.language.fb2k"
+    "functions": {
+      "patterns": [
+        {
+          "name": "meta.fb2k",
+          "begin": "\\$(add|div|sub|mul|muldiv|greater|max|min|mod|rand|and|or|not|xor|if|if2|if3|ifgreater|iflonger|ifequal|longest|select|abbr|ansi|ascii|caps|caps2|char|crc32|crlf|tab|cut|directory|directory_path|ext|filename|fix_eol|hex|insert|left|len|len2|longer|lower|longest|num|pad|pad_right|pad|pad_right|padcut|padcut|padcut_right|progress|progress2|peak_to_db|repeat|replace|right|roman|rot13|shortest|strchr|strrchr|strstr|strcmp|stricmp|stripprefix|substr|swapprefix|swapprefix|trim|upper|meta|meta_sep|meta_sep|meta_test|meta_num|info|channels|year|month|day_of_month|date|time|put|puts|get|blend|hsl|hsl|rgb|transition|meta_branch_remap|meta_branch|set_global|get_global|set_style|set_style|calculate_blend_target|offset_colour|set_format|reset_format|set_font|reset_font)\\s*\\(",
+          "end": "\\)",
+          "captures": {
+            "0": {
+              "name": "support.function.fb2k"
+            }
+          },
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
+        },
+        {
+          "name": "invalid.illegal.function.fb2k",
+          "begin": "\\$([a-zA-Z0-9_]+)\\s*\\(",
+          "beginCaptures": {
+            "1": {
+              "name": "invalid.illegal.function.name.fb2k"
+            }
+          },
+          "end": "\\)",
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
         }
-      }
+      ]
     },
-    {
-      "name": "meta.fb2k",
-      "match": "\\s+(AFTER|AND|BEFORE|DURING|DURING LAST|SECONDS|MINUTES|HOURS|DAYS|WEEKS|SECOND|MINUTE|HOUR|DAY|WEEK|EQUAL|GREATER|HAS|IS|LESS|MISSING|NOT|OR|PRESENT|SINCE|SORT BY|SORT ASCENDING BY|SORT DESCENDING BY)\\s+",
-      "captures": {
-        "1": {
-          "name": "keyword.operator.fb2k"
+    "tags": {
+      "patterns": [
+        {
+          "name": "variable.other.tag.f2k",
+          "match": "%(album artist|album|artist|date|genre|discnumber|totaldiscs|track artist|title|tracknumber|track number|totaltracks|bitrate|channels|channel_mask|codec|codec_profile|codec_long|filesize|filesize_natural|length|length_ex|length_seconds|length_seconds_fp|length_samples|samplerate|__codec|__codec_profile|__samplerate|__bitrate|__tool|__encoding|__channels|__bitspersample|__decoded_bitspersample|__bitspersample_extra|__tagtype|__cue_embedded|__md5|__WAVEFORMATEXTENSIBLE_CHANNEL_MASK|__ENC_DELAY|__ENC_PADDING|__MP3_ACCURATE_LENGTH|__MP3_STEREO_MODE|__VERSION|__FLAGS|__channel_mode|replaygain_album_gain|replaygain_album_peak|replaygain_album_peak_db|replaygain_track_gain|replaygain_track_peak|replaygain_track_peak_db|filename|filename_ext|directoryname|last_modified|path|_path_raw|path_sort|subsong|_foobar2000_version|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|isplaying|ispaused|list_index|list_total|queue_index|queue_indexes|queue_total|play_counts|first_played|last_played|played_per_day|added|rating|rating_stars|rating_stars_fixed|node_name|is_folder|count|playlist_duration|playlist_size|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|is_locked|lock_name|size|length|filesize|filesize_raw|is_active|is_playing|default_font_face|default_font_size)%"
+        },
+        {
+          "name": "constant.other.user-tag.fb2k",
+          "match": "%([a-zA-Z0-9 _]+)%",
+          "captures": {
+            "1": {
+              "name": "constant.other.user-tag.name.fb2k"
+            }
+          }
+        },
+        {
+          "name": "variable.other.album-list-tag.f2k",
+          "match": "%<(album artist|album|artist|date|genre|discnumber|totaldiscs|track artist|title|tracknumber|track number|totaltracks|bitrate|channels|channel_mask|codec|codec_profile|codec_long|filesize|filesize_natural|length|length_ex|length_seconds|length_seconds_fp|length_samples|samplerate|__codec|__codec_profile|__samplerate|__bitrate|__tool|__encoding|__channels|__bitspersample|__decoded_bitspersample|__bitspersample_extra|__tagtype|__cue_embedded|__md5|__WAVEFORMATEXTENSIBLE_CHANNEL_MASK|__ENC_DELAY|__ENC_PADDING|__MP3_ACCURATE_LENGTH|__MP3_STEREO_MODE|__VERSION|__FLAGS|__channel_mode|replaygain_album_gain|replaygain_album_peak|replaygain_album_peak_db|replaygain_track_gain|replaygain_track_peak|replaygain_track_peak_db|filename|filename_ext|directoryname|last_modified|path|_path_raw|path_sort|subsong|_foobar2000_version|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|isplaying|ispaused|list_index|list_total|queue_index|queue_indexes|queue_total|play_counts|first_played|last_played|played_per_day|added|rating|rating_stars|rating_stars_fixed|node_name|is_folder|count|playlist_duration|playlist_size|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|is_locked|lock_name|size|length|filesize|filesize_raw|is_active|is_playing|default_font_face|default_font_size)>%"
+        },
+        {
+          "name": "constant.other.album-list-tag.fb2k",
+          "match": "%<([a-zA-Z0-9 _]+)>%",
+          "captures": {
+            "1": {
+              "name": "constant.other.user-tag.name.fb2k"
+            }
+          }
         }
-      }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.operator.fb2k",
+          "match": "\\b(AFTER|AND|BEFORE|DURING|DURING LAST|SECONDS|MINUTES|HOURS|DAYS|WEEKS|SECOND|MINUTE|HOUR|DAY|WEEK|EQUAL|GREATER|HAS|IS|LESS|MISSING|NOT|OR|PRESENT|SINCE|SORT BY|SORT ASCENDING BY|SORT DESCENDING BY)\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "meta.function.put-puts.fb2k",
+          "begin": "\\$(put|puts)\\s*\\(",
+          "beginCaptures": {
+            "1": {
+              "name": "support.function.fb2k"
+            }
+          },
+          "end": "\\)",
+          "patterns": [
+            {
+              "name": "constant.language.fb2k",
+              "match": "^\\s*([a-zA-Z0-9_]+)",
+              "captures": {
+                "1": {
+                  "name": "variable.parameter.fb2k"
+                }
+              }
+            },
+            {
+              "begin": ",",
+              "end": "(?=\\))",
+              "patterns": [
+                {
+                  "include": "$self"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "meta.function.get.fb2k",
+          "begin": "\\$get\\s*\\(",
+          "beginCaptures": {
+            "0": {
+              "name": "support.function.fb2k"
+            }
+          },
+          "end": "\\)",
+          "patterns": [
+            {
+              "name": "constant.language.fb2k",
+              "match": "[a-zA-Z0-9_]+"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  }
 }

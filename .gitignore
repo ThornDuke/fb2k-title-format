@@ -2,6 +2,7 @@
 node_modules/
 dist/
 tests/
+build/
 .vscode/
 package-lock.json
 project-notes.md
