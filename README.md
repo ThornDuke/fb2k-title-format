@@ -1,9 +1,5 @@
 # Foobar2000 Title Formatting Syntax
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/thornduke.foobar2000-title-formatting-syntax.svg?style=plastic&logo=visualstudiocode)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/thornduke.foobar2000-title-formatting-syntax.svg?style=plastic)
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/thornduke.foobar2000-title-formatting-syntax.svg?style=plastic)
-
 Provides syntax highlighting and code snippets for [Foobar2000](https://www.foobar2000.org/) title formatting scripts.
 
 Handles all scripting related to Foobar2000 [native tags and functions](https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Syntax), as well as those of [ColumnsUI](https://yuo.be/columns-ui).
@@ -18,10 +14,10 @@ All elements of the title-formatting syntax are recognized
 | ------------------ | ---------------------------- |
 | comments           | `// text`                    |
 | text               | `'text'`                     |
-| functions          | `$function(%name%,the)`      |
+| functions          | `$function(%name%,text)`     |
 | tags               | `%name% ... %<name>%`        |
 | constants          | `$puts(name) ... $get(name)` |
-| query keywords     | `name HAS something`         |
+| query keywords     | `name GREATER something`     |
 | conditional blocks | `[%name_one% - %name_two%]`  |
 
 - **Functions** are highlighted in two ways:
