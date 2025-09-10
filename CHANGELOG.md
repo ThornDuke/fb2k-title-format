@@ -13,7 +13,7 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
-## [1.4.1] - 2025-09-10
+## [1.4.7] - 2025-09-10
 
 ### Fixed
 
