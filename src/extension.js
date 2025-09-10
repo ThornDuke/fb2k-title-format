@@ -1,8 +1,8 @@
-/*---------------------------------------------------------
- * Copyright 2025 Thorn Duke. All rights reserved.
- * Licensed under the MIT License.
- * See LICENSE in the project root for license information.
- *--------------------------------------------------------*/
+// ---------------------------------------------------------
+// Copyright 2025 Thorn Duke. All rights reserved.
+// Licensed under the MIT License.
+// See LICENSE in the project root for license information.
+// ---------------------------------------------------------
 const vscode = require('vscode');
 const path = require('path');
 const fs = require('fs');
@@ -20,7 +20,7 @@ function loadSnippets(context) {
   try {
     const fileContent = fs.readFileSync(snippetPath, 'utf8');
     fb2kSnippets = JSON.parse(fileContent);
-    // console.log('§>', { fileContent, fb2kSnippets });
+    // console.log('§> 1:', { fileContent, fb2kSnippets });
   } catch (err) {
     console.error('Error loading snippets:', err);
     vscode.window.showErrorMessage(
@@ -32,6 +32,7 @@ function loadSnippets(context) {
 function activate(context) {
   // Carica gli snippet all'attivazione dell'estensione
   loadSnippets(context);
+  // console.log('§> 2:', { fb2kSnippets });
 
   // Registra il CompletionItemProvider per il linguaggio 'fb2k'
   const completionProvider = vscode.languages.registerCompletionItemProvider(
