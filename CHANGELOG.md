@@ -22,6 +22,10 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 - README.md: minor updates
 - icon
 
+### Added
+
+- config/language-configuration.json: "%%" and "<>" are surrounding pairs and can envelope a selected string
+
 ## [1.4.7] - 2025-09-10
 
 ### Fixed
