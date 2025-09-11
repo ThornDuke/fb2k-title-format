@@ -20,6 +20,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 - foobar2000.tmLanguage.json: completely restructured
 - README.md: removed the badges
 - README.md: minor updates
+- icon
 
 ## [1.4.7] - 2025-09-10
 

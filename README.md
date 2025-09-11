@@ -10,15 +10,15 @@ Handles all scripting related to Foobar2000 [native tags and functions](https://
 
 All elements of the title-formatting syntax are recognized
 
-| element            | example                      |
-| ------------------ | ---------------------------- |
-| comments           | `// text`                    |
-| text               | `'text'`                     |
-| functions          | `$function(%name%,text)`     |
-| tags               | `%name% ... %<name>%`        |
-| constants          | `$puts(name) ... $get(name)` |
-| query keywords     | `name GREATER something`     |
-| conditional blocks | `[%name_one% - %name_two%]`  |
+| element            | example                         |
+| ------------------ | ------------------------------- |
+| comments           | `// text`                       |
+| text               | `'text'`                        |
+| functions          | `$function(%field%,text)`       |
+| tags               | `%field_one% ... %<field_two>%` |
+| constants          | `$puts(name) ... $get(name)`    |
+| query keywords     | `field GREATER expression`      |
+| conditional blocks | `[%field_one%[ - %field_two%]]` |
 
 - **Functions** are highlighted in two ways:
   - _Predefined functions_ (recognized by Foobar2000) are colored as valid functions.
@@ -100,10 +100,6 @@ Whether you have
 
 please don't hesitate to reach out to us on GitHub and
 [open an issue](https://github.com/ThornDuke/fb2k-title-format/issues).
-
-## Acknowledgements
-
-The icon is created by [ncrow](https://www.iconarchive.com/artist/ncrow.html)
 
 ## Disclaimer
 
