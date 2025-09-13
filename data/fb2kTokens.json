@@ -1,0 +1,1456 @@
+[
+  {
+    "token": "add",
+    "code": "Function: $add(a,b,...)",
+    "description": "adds a and b\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "div",
+    "code": "Function: $div(a,b,...)",
+    "description": "Divides a by b and rounds down to an integer. If b evaluates to zero, it returns a. Can be used with an arbitrary number of arguments.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "sub",
+    "code": "Function: $sub(a,b,..)",
+    "description": "Subtracts b from a. Can be used with an arbitrary number of arguments.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "mul",
+    "code": "Function: $mul(a,b,..)",
+    "description": "Multiplies a and b. Can be used with an arbitrary number of arguments.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "muldiv",
+    "code": "Function: $muldiv(a,b,c)",
+    "description": "Multiplies a and b, then divides by c. The result is rounded to the nearest integer.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "greater",
+    "code": "Function: $greater(a,b)",
+    "description": "Returns true, if a is greater than b, otherwise false.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "max",
+    "code": "Function: $max(a,b,...)",
+    "description": "Returns the maximum of a and b. Can be used with an arbitrary number of arguments.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "min",
+    "code": "Function: $min(a,b,...)",
+    "description": "Returns the minimum of a and b. Can be used with an arbitrary number of arguments.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "mod",
+    "code": "Function: $mod(a,b,...)",
+    "description": "Computes the remainder of dividing a through b. The result has the same sign as a. If b evaluates to zero, the result is a. Can be used with an arbitrary number of arguments.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "rand",
+    "code": "Function: $rand()",
+    "description": "Generates a random number in the range from 0 to 2^32-1.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "and",
+    "code": "Function: $and(expr,...)",
+    "description": "Logical And of an arbitrary number of arguments. Returns true, if and only if all expr arguments evaluate to true.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "or",
+    "code": "Function: $or(expr,...)",
+    "description": "Logical Or of an arbitrary number of arguments. Returns true, if at least one expression evaluates to true.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "not",
+    "code": "Function: $not(expr)",
+    "description": "Logical Not. Returns the logical opposite of EXPR: false, if expr is true and true if expr is false.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "xor",
+    "code": "Function: $xor(expr,...)",
+    "description": "Logical Exclusive-or of an arbitrary number of arguments. Returns true, if an odd number of arguments evaluate to true.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "if",
+    "code": "Function: $if(X,Y)",
+    "description": "If cond contains at least one present field, executes/displays Y.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "if",
+    "code": "Function: $if(X,Y,Z)",
+    "description": "If X contains at least one present field, executes/displays Y, otherwise executes/displays Z.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "if2",
+    "code": "Function: $if2(X,Y)",
+    "description": "If X contains at least one present field, executes/displays X, otherwise executes/displays Y. Same as $if(X,X,Y).\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "if3",
+    "code": "Function: $if3(X,Y,Z,..)",
+    "description": "Returns the first of parameters that contains at least one present field.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "ifgreater",
+    "code": "Function: $ifgreater(A,B,C,D)",
+    "description": "If the number A is greater than the number B, executes/returns C, otherwise executes/returns D.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "iflonger",
+    "code": "Function: $iflonger(A,B,C,D)",
+    "description": "If the string A is longer than B characters, executes/returns C, otherwise executes/returns D.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "ifequal",
+    "code": "Function: $ifequal(A,B,C,D)",
+    "description": "If the number A is equal to the number B, executes/returns C, otherwise executes/returns D.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "longest",
+    "code": "Function: $longest(A,B,C,….)",
+    "description": "Compares lengths of of A,B,C… and returns the longest one.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "select",
+    "code": "Function: $select(N,A,B,C,….)",
+    "description": "Returns N-th of A,B,C… parameters.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "abbr",
+    "code": "Function: $abbr(str)",
+    "description": "Returns abbreviation of string str. Words which begin with an alphanumeric character are shortened to the first character. Spaces and parentheses are stripped.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "ansi",
+    "code": "Function: $ansi(str)",
+    "description": "Converts string str to system codepage and back. Any characters that are not present in the system codepage will be removed / replaced.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "ascii",
+    "code": "Function: $ascii(str)",
+    "description": "Converts string str to ASCII. Any characters that are not present in ASCII will be removed / replaced.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "caps",
+    "code": "Function: $caps(str)",
+    "description": "Converts first letter in every word of string str to uppercase, and all other letters to lowercase.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "caps2",
+    "code": "Function: $caps2(str)",
+    "description": "Converts first letter in every word of string str to uppercase, and leaves all other letters as they are.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "char",
+    "code": "Function: $char(nbr)",
+    "description": "Returns Unicode character of nbr.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "crc32",
+    "code": "Function: $crc32(str)",
+    "description": "Computes the CRC32 of the string str as a number.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "crlf",
+    "code": "Function: $crlf()",
+    "description": "Inserts end-of-line marker (carriage return, line feed).\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "tab",
+    "code": "Function: $tab()",
+    "description": "Inserts one tabulator character.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "tab",
+    "code": "Function: $tab(count)",
+    "description": "Inserts count tabulator characters.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "cut",
+    "code": "Function: $cut(str,len)",
+    "description": "Returns first len characters from the left of the string str. This function is the same as $left(a,len). Negative numbers produce the entire string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "directory",
+    "code": "Function: $directory(path)",
+    "description": "Extracts only the directory name.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "directory",
+    "code": "Function: $directory(path,n)",
+    "description": "Extracts directory name from the file path; goes up by n levels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "directory_path",
+    "code": "Function: $directory_path(path)",
+    "description": "Extracts directory path from the file path.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "ext",
+    "code": "Function: $ext(path)",
+    "description": "Extracts file extension from string path, a file name or full path.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "filename",
+    "code": "Function: $filename(path)",
+    "description": "Extracts file name from full path.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "fix_eol",
+    "code": "Function: $fix_eol(str)",
+    "description": "If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by ' (...)'. Otherwise str is returned unaltered.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "fix_eol",
+    "code": "Function: $fix_eol(str,indicator)",
+    "description": "If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by indicator. Otherwise str is returned unaltered.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "hex",
+    "code": "Function: $hex(int,len)",
+    "description": "Formats the integer number int in hexadecimal notation with len digits. Pads with zeros from the left if necessary.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "insert",
+    "code": "Function: $insert(str,insert,n)",
+    "description": "Inserts 'insert' into str after n characters.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "left",
+    "code": "Function: $left(str,len)",
+    "description": "Returns first len characters from the left of the string str. This function is the same as $cut(str,len). Negative numbers produce the entire string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "len",
+    "code": "Function: $len(str)",
+    "description": "Returns length of string str in characters.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "len2",
+    "code": "Function: $len2(str)",
+    "description": "Returns length of string str in characters, respecting double-width character rules (double-width characters will be counted as two).\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "longer",
+    "code": "Function: $longer(str1,str2)",
+    "description": "Returns true, if string str1 is longer than string str2, false otherwise.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "lower",
+    "code": "Function: $lower(str)",
+    "description": "Converts string str to lowercase.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "longest",
+    "code": "Function: $longest(str1,...)",
+    "description": "Returns the longest of its arguments. Can be used with an arbitrary number of strings.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "num",
+    "code": "Function: $num(num,len)",
+    "description": "Formats the integer number nbr in decimal notation with len characters. Pads with zeros from the left if necessary. len includes the dash when the number is negative. If nbr is not numeric, it is treated as zero.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "pad",
+    "code": "Function: $pad(str,len)",
+    "description": "Creates a left-aligned version of the string str. If str is shorter than len characters, the function adds spaces to the right of str to make the result len characters long. Otherwise the function returns str unchanged.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "pad_right",
+    "code": "Function: $pad_right(str,len)",
+    "description": "Creates a right-aligned version of the string str. If str is shorter than len characters, the function adds spaces to the left of str to make the result len characters long. Otherwise the function returns str unchanged.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "pad",
+    "code": "Function: $pad(str,len,char)",
+    "description": "Creates a left-aligned version of the string str. If str is shorter than len characters, the function adds char to the right of str to make the result len characters long. Otherwise the function returns str unchanged.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "pad_right",
+    "code": "Function: $pad_right(str,len,char)",
+    "description": "Creates a right-aligned version of the string str. If str is shorter than len characters, the function adds char to the left of str to make the result len characters long. Otherwise the function returns str unchanged.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "padcut",
+    "code": "Function: $padcut(str,len)",
+    "description": "Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds spaces to the right of str to make the result len characters long.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "padcut",
+    "code": "Function: $padcut(str,len,char)",
+    "description": "Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds char to the right of str to make the result len characters long.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "padcut_right",
+    "code": "Function: $padcut_right(str,len)",
+    "description": "Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds spaces to the left of str to make the result len characters long.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "padcut_right",
+    "code": "Function: $padcut_right(str,len,char)",
+    "description": "Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds char to the left of str to make the result len characters long.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "repeat",
+    "code": "Function: $repeat(expr,count)",
+    "description": "Returns count copies of expr.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "right",
+    "code": "Function: $right(str,len)",
+    "description": "Returns the first len characters from the right of string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "roman",
+    "code": "Function: $roman(int)",
+    "description": "Formats the integer number int in roman notation.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "rot13",
+    "code": "Function: $rot13(str)",
+    "description": "Performs ROT13 transformation to given string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "shortest",
+    "code": "Function: $shortest(str,...)",
+    "description": "Returns the first shortest element of its arguments. Can be used with an arbitrary number of strings.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "strchr",
+    "code": "Function: $strchr(str,char)",
+    "description": "Returns position of first occurrence of character char in string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "strrchr",
+    "code": "Function: $strrchr(str,char)",
+    "description": "Returns positions of last occurrence of character char in string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "strstr",
+    "code": "Function: $strstr(str1,str2)",
+    "description": "Returns position of first occurrence of string str2 in string str1. Function is case-sensitive.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "stricmp",
+    "code": "Function: $stricmp(str1,str2)",
+    "description": "Performs a case-insensitive comparison of the strings str1 and str2.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "stripprefix",
+    "code": "Function: $stripprefix(str,prefix1,prefix2,...)",
+    "description": "Removes the specified prefixes from string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "substr",
+    "code": "Function: $substr(str,from,to)",
+    "description": "Returns substring of string str, starting from FROM-th character and ending at TO-th character.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "swapprefix",
+    "code": "Function: $swapprefix(str)",
+    "description": "Moves A and The prefixes to the end of string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "swapprefix",
+    "code": "Function: $swapprefix(str,prefix1,prefix2,...)",
+    "description": "Moves the specified prefixes to the end of string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "trim",
+    "code": "Function: $trim(str)",
+    "description": "Removes leading and trailing spaces from string str.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "upper",
+    "code": "Function: $upper(str)",
+    "description": "Converts string str to uppercase.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta",
+    "code": "Function: $meta(name)",
+    "description": "Returns value of tag called name. If multiple values of that tag exist, they are concatenated with ', ' as separator.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta",
+    "code": "Function: $meta(name,n)",
+    "description": "Returns value of n-th (0,1,2 and so on) tag called name.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta_sep",
+    "code": "Function: $meta_sep(name,sep)",
+    "description": "Returns value of tag called name. If multiple values of that tag exist, they are concatenated with sep as separator.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta_sep",
+    "code": "Function: $meta_sep(name,sep,lastsep)",
+    "description": "Returns value of tag called name. If multiple values of that tag exist, they are concatenated with sep as separator between all but the last two values which are concatenated with lastsep.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta_test",
+    "code": "Function: $meta_test(tag,...)",
+    "description": "Returns 1, if all given tags exist, undefined otherwise. Example: $meta_test(artist,title) → true\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta_num",
+    "code": "Function: $meta_num(name)",
+    "description": "Returns the number of values for the tag called name.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "channels",
+    "code": "Function: $channels()",
+    "description": "The number of channels in text format.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "year",
+    "code": "Function: $year(time)",
+    "description": "Retrieves the year part (formatted as four digits) from a time/date string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "month",
+    "code": "Function: $month(time)",
+    "description": "Retrieves the month part (formatted as two digits) from a time/date string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "day_of_month",
+    "code": "Function: $day_of_month(time)",
+    "description": "Retrieves the day of month part (formatted as two digits) from a time/date string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "date",
+    "code": "Function: $date(time)",
+    "description": "Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "time",
+    "code": "Function: $time(time)",
+    "description": "Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "put",
+    "code": "Function: $put(name,value)",
+    "description": "Stores value in the variable name and returns value unaltered.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "puts",
+    "code": "Function: $puts(name,value)",
+    "description": "Stores value in the variable name and returns nothing.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "get",
+    "code": "Function: $get(name)",
+    "description": "Returns the value that was last stored in the variable name, if the variable was not defined (yet), it returns nothing.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "blend",
+    "code": "Function: $blend(color1,color2,part,total)",
+    "description": "Returns a color that is a blend between 'color1' and 'color2'.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "hsl",
+    "code": "Function: $hsl()",
+    "description": "resets the text color to the default color.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "hsl",
+    "code": "Function: $hsl(h,s,l)",
+    "description": "Sets the color for text in the HSL color space.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "rgb",
+    "code": "Function: $rgb()",
+    "description": "Resets the text color to the default color.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "rgb",
+    "code": "Function: $rgb(r,g,b)",
+    "description": "Sets the color for text.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "transition",
+    "code": "Function: $transition(string,color1,color2)",
+    "description": "Inserts color codes into string, so that the first character has color1, the last character has color2, and intermediate characters have blended colors.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta_branch_remap",
+    "code": "Function: $meta_branch_remap(name)",
+    "description": "It is identical to '%<name>%' except it does not produce a '?', if the tag does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "meta_branch",
+    "code": "Function: $meta_branch(name)",
+    "description": "Like '$meta_branch_remap(name)', but without the tag remapping.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "$rgb",
+    "code": "Function: $rgb(R,G,B)",
+    "description": "Returns a colour value from the specified red, green and blue components (0–255).\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "$set_global",
+    "code": "Function: $set_global(variable name,variable value)",
+    "description": "Sets a global variable to the specified value.\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "$get_global",
+    "code": "Function: $get_global(variable name)",
+    "description": "Returns the value of the specified global variable.\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "$calculate_blend_target",
+    "code": "Function: $calculate_blend_target(colour)",
+    "description": "Returns black if the mean of the red, green and blue components of a colour is greater than or equal to 128; otherwise it returns white.\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "$offset_colour",
+    "code": "Function: $offset_colour(colour_from,colour_to,offset)",
+    "description": "Shifts one colour towards another colour. Intended to be used with black or white for colour_to. offset should be between 0 and 255.\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "$reset_format",
+    "code": "Function: $reset_format()",
+    "description": "Restores font and text styling for subsequent text to the panel defaults.\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "$reset_font",
+    "code": "Function: $reset_font()",
+    "description": "Restores the font used for subsequent text to the panel defaults.\n\n[CUI reference](https://www.example.com)"
+  },
+  {
+    "token": "%album artist%",
+    "code": "Tag: %album artist%",
+    "description": "Name of the artist of the album specified track belongs to.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<album artist>%",
+    "code": "Tag: %<album artist>%",
+    "description": "Name of the artist of the album specified track belongs to.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%album%",
+    "code": "Tag: %album%",
+    "description": "Name of the album specified track belongs to.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<album>%",
+    "code": "Tag: %<album>%",
+    "description": "Name of the album specified track belongs to.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%artist%",
+    "code": "Tag: %artist%",
+    "description": "Name of the artist of the track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<artist>%",
+    "code": "Tag: %<artist>%",
+    "description": "Name of the artist of the track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%date%",
+    "code": "Tag: %date%",
+    "description": "Recording date of the album specified track belongs to, using 'date' metadata field.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<date>%",
+    "code": "Tag: %<date>%",
+    "description": "Recording date of the album specified track belongs to, using 'date' metadata field.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%discnumber%",
+    "code": "Tag: %discnumber%",
+    "description": "Index of disc specified track belongs to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<discnumber>%",
+    "code": "Tag: %<discnumber>%",
+    "description": "Index of disc specified track belongs to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%totaldiscs%",
+    "code": "Tag: %totaldiscs%",
+    "description": "Index of total discs specified tracks belong to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<totaldiscs>%",
+    "code": "Tag: %<totaldiscs>%",
+    "description": "Index of total discs specified tracks belong to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%track artist%",
+    "code": "Tag: %track artist%",
+    "description": "Name of the artist of the track; present only if %album artist% is different than %artist% for specific track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<track artist>%",
+    "code": "Tag: %<track artist>%",
+    "description": "Name of the artist of the track; present only if %album artist% is different than %artist% for specific track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%title%",
+    "code": "Tag: %title%",
+    "description": "Title of the track. If 'title' metadata field is missing, file name is used instead.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<title>%",
+    "code": "Tag: %<title>%",
+    "description": "Title of the track. If 'title' metadata field is missing, file name is used instead.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%tracknumber%",
+    "code": "Tag: %tracknumber%",
+    "description": "Index of specified track within the album. Available only when 'tracknumber' field is present in track’s metadata. An extra '0' is placed in front of single digit track numbers.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<tracknumber>%",
+    "code": "Tag: %<tracknumber>%",
+    "description": "Index of specified track within the album. Available only when 'tracknumber' field is present in track’s metadata. An extra '0' is placed in front of single digit track numbers.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%track number%",
+    "code": "Tag: %track number%",
+    "description": "Similar to %tracknumber%, however single digit track numbers are not reformatted to have an extra 0.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<track number>%",
+    "code": "Tag: %<track number>%",
+    "description": "Similar to %tracknumber%, however single digit track numbers are not reformatted to have an extra 0.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%totaltracks%",
+    "code": "Tag: %totaltracks%",
+    "description": "Index of total tracks specified tracks belong to, within the album.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<totaltracks>%",
+    "code": "Tag: %<totaltracks>%",
+    "description": "Index of total tracks specified tracks belong to, within the album.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%bitrate%",
+    "code": "Tag: %bitrate%",
+    "description": "Bitrate of the track in kilobits per second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<bitrate>%",
+    "code": "Tag: %<bitrate>%",
+    "description": "Bitrate of the track in kilobits per second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%channels%",
+    "code": "Tag: %channels%",
+    "description": "Number of channels in the track, as text.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<channels>%",
+    "code": "Tag: %<channels>%",
+    "description": "Number of channels in the track, as text.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%channel_mask%",
+    "code": "Tag: %channel_mask%",
+    "description": "Description of the used audio channels in the track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<channel_mask>%",
+    "code": "Tag: %<channel_mask>%",
+    "description": "Description of the used audio channels in the track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%codec%",
+    "code": "Tag: %codec%",
+    "description": "Name of codec used to encode the track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<codec>%",
+    "code": "Tag: %<codec>%",
+    "description": "Name of codec used to encode the track.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%codec_profile%",
+    "code": "Tag: %codec_profile%",
+    "description": "Additional information about encoding settings used.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<codec_profile>%",
+    "code": "Tag: %<codec_profile>%",
+    "description": "Additional information about encoding settings used.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%codec_long%",
+    "code": "Tag: %codec_long%",
+    "description": "Long name of the codec, including profile.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<codec_long>%",
+    "code": "Tag: %<codec_long>%",
+    "description": "Long name of the codec, including profile.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%filesize%",
+    "code": "Tag: %filesize%",
+    "description": "The exact file size in bytes\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<filesize>%",
+    "code": "Tag: %<filesize>%",
+    "description": "The exact file size in bytes\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%filesize_natural%",
+    "code": "Tag: %filesize_natural%",
+    "description": "The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<filesize_natural>%",
+    "code": "Tag: %<filesize_natural>%",
+    "description": "The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%length%",
+    "code": "Tag: %length%",
+    "description": "The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<length>%",
+    "code": "Tag: %<length>%",
+    "description": "The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%length_ex%",
+    "code": "Tag: %length_ex%",
+    "description": "The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<length_ex>%",
+    "code": "Tag: %<length_ex>%",
+    "description": "The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%length_seconds%",
+    "code": "Tag: %length_seconds%",
+    "description": "The length of the track in seconds, rounded to the nearest second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<length_seconds>%",
+    "code": "Tag: %<length_seconds>%",
+    "description": "The length of the track in seconds, rounded to the nearest second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%length_seconds_fp%",
+    "code": "Tag: %length_seconds_fp%",
+    "description": "The length of the track in seconds as a floating point number.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<length_seconds_fp>%",
+    "code": "Tag: %<length_seconds_fp>%",
+    "description": "The length of the track in seconds as a floating point number.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%length_samples%",
+    "code": "Tag: %length_samples%",
+    "description": "The length of the track in samples.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<length_samples>%",
+    "code": "Tag: %<length_samples>%",
+    "description": "The length of the track in samples.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%samplerate%",
+    "code": "Tag: %samplerate%",
+    "description": "Sample rate of the track, in Hz.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<samplerate>%",
+    "code": "Tag: %<samplerate>%",
+    "description": "Sample rate of the track, in Hz.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__codec%",
+    "code": "Tag: %__codec%",
+    "description": "Codec.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__codec>%",
+    "code": "Tag: %<__codec>%",
+    "description": "Codec.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__codec_profile%",
+    "code": "Tag: %__codec_profile%",
+    "description": "Codec Profile.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__codec_profile>%",
+    "code": "Tag: %<__codec_profile>%",
+    "description": "Codec Profile.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__samplerate%",
+    "code": "Tag: %__samplerate%",
+    "description": "Sample Rate, in hertz.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__samplerate>%",
+    "code": "Tag: %<__samplerate>%",
+    "description": "Sample Rate, in hertz.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__bitrate%",
+    "code": "Tag: %__bitrate%",
+    "description": "Bitrate, in kilobits per second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__bitrate>%",
+    "code": "Tag: %<__bitrate>%",
+    "description": "Bitrate, in kilobits per second.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__tool%",
+    "code": "Tag: %__tool%",
+    "description": "Tool used to produce the file, possibly guessed.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__tool>%",
+    "code": "Tag: %<__tool>%",
+    "description": "Tool used to produce the file, possibly guessed.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__encoding%",
+    "code": "Tag: %__encoding%",
+    "description": "Encoding lossiness.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__encoding>%",
+    "code": "Tag: %<__encoding>%",
+    "description": "Encoding lossiness.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__channels%",
+    "code": "Tag: %__channels%",
+    "description": "Channels count.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__channels>%",
+    "code": "Tag: %<__channels>%",
+    "description": "Channels count.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__bitspersample%",
+    "code": "Tag: %__bitspersample%",
+    "description": "Bits Per Sample.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__bitspersample>%",
+    "code": "Tag: %<__bitspersample>%",
+    "description": "Bits Per Sample.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__decoded_bitspersample%",
+    "code": "Tag: %__decoded_bitspersample%",
+    "description": "Bits Per Sample after decoding.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__decoded_bitspersample>%",
+    "code": "Tag: %<__decoded_bitspersample>%",
+    "description": "Bits Per Sample after decoding.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__bitspersample_extra%",
+    "code": "Tag: %__bitspersample_extra%",
+    "description": "Format of 32-bit audio data.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__bitspersample_extra>%",
+    "code": "Tag: %<__bitspersample_extra>%",
+    "description": "Format of 32-bit audio data.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__tagtype%",
+    "code": "Tag: %__tagtype%",
+    "description": "Tag Type, comma-separated list of tag formats.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__tagtype>%",
+    "code": "Tag: %<__tagtype>%",
+    "description": "Tag Type, comma-separated list of tag formats.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__cue_embedded%",
+    "code": "Tag: %__cue_embedded%",
+    "description": "Embedded Cuesheet presence.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__cue_embedded>%",
+    "code": "Tag: %<__cue_embedded>%",
+    "description": "Embedded Cuesheet presence.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__md5%",
+    "code": "Tag: %__md5%",
+    "description": "Audio MD5 hash, if container defines it.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__md5>%",
+    "code": "Tag: %<__md5>%",
+    "description": "Audio MD5 hash, if container defines it.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%",
+    "code": "Tag: %__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%",
+    "description": "Channel mask, channel layout of the track coded as hex.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__WAVEFORMATEXTENSIBLE_CHANNEL_MASK>%",
+    "code": "Tag: %<__WAVEFORMATEXTENSIBLE_CHANNEL_MASK>%",
+    "description": "Channel mask, channel layout of the track coded as hex.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__ENC_DELAY%",
+    "code": "Tag: %__ENC_DELAY%",
+    "description": "LAME proprietary MP3 enc_delay value for gapless playback.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__ENC_DELAY>%",
+    "code": "Tag: %<__ENC_DELAY>%",
+    "description": "LAME proprietary MP3 enc_delay value for gapless playback.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__ENC_PADDING%",
+    "code": "Tag: %__ENC_PADDING%",
+    "description": "LAME proprietary MP3 enc_padding value for gapless playback.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__ENC_PADDING>%",
+    "code": "Tag: %<__ENC_PADDING>%",
+    "description": "LAME proprietary MP3 enc_padding value for gapless playback.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__MP3_ACCURATE_LENGTH%",
+    "code": "Tag: %__MP3_ACCURATE_LENGTH%",
+    "description": "MP3 duration.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__MP3_ACCURATE_LENGTH>%",
+    "code": "Tag: %<__MP3_ACCURATE_LENGTH>%",
+    "description": "MP3 duration.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__MP3_STEREO_MODE%",
+    "code": "Tag: %__MP3_STEREO_MODE%",
+    "description": "Stereo mode used in MP3 file.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__MP3_STEREO_MODE>%",
+    "code": "Tag: %<__MP3_STEREO_MODE>%",
+    "description": "Stereo mode used in MP3 file.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__VERSION%",
+    "code": "Tag: %__VERSION%",
+    "description": "Version of tool.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__VERSION>%",
+    "code": "Tag: %<__VERSION>%",
+    "description": "Version of tool.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__FLAGS%",
+    "code": "Tag: %__FLAGS%",
+    "description": "Flags of tool.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__FLAGS>%",
+    "code": "Tag: %<__FLAGS>%",
+    "description": "Flags of tool.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%__channel_mode%",
+    "code": "Tag: %__channel_mode%",
+    "description": "Channel Mode, description of channels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<__channel_mode>%",
+    "code": "Tag: %<__channel_mode>%",
+    "description": "Channel Mode, description of channels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%replaygain_album_gain%",
+    "code": "Tag: %replaygain_album_gain%",
+    "description": "he ReplayGain album gain value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<replaygain_album_gain>%",
+    "code": "Tag: %<replaygain_album_gain>%",
+    "description": "he ReplayGain album gain value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%replaygain_album_peak%",
+    "code": "Tag: %replaygain_album_peak%",
+    "description": "The ReplayGain album peak value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<replaygain_album_peak>%",
+    "code": "Tag: %<replaygain_album_peak>%",
+    "description": "The ReplayGain album peak value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%replaygain_album_peak_db%",
+    "code": "Tag: %replaygain_album_peak_db%",
+    "description": "The ReplayGain album peak value in decibels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<replaygain_album_peak_db>%",
+    "code": "Tag: %<replaygain_album_peak_db>%",
+    "description": "The ReplayGain album peak value in decibels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%replaygain_track_gain%",
+    "code": "Tag: %replaygain_track_gain%",
+    "description": "The ReplayGain track gain value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<replaygain_track_gain>%",
+    "code": "Tag: %<replaygain_track_gain>%",
+    "description": "The ReplayGain track gain value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%replaygain_track_peak%",
+    "code": "Tag: %replaygain_track_peak%",
+    "description": "The ReplayGain track peak value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<replaygain_track_peak>%",
+    "code": "Tag: %<replaygain_track_peak>%",
+    "description": "The ReplayGain track peak value.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%replaygain_track_peak_db%",
+    "code": "Tag: %replaygain_track_peak_db%",
+    "description": "The ReplayGain track peak value in decibels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<replaygain_track_peak_db>%",
+    "code": "Tag: %<replaygain_track_peak_db>%",
+    "description": "The ReplayGain track peak value in decibels.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%filename%",
+    "code": "Tag: %filename%",
+    "description": "The filename without directory and extension.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<filename>%",
+    "code": "Tag: %<filename>%",
+    "description": "The filename without directory and extension.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%filename_ext%",
+    "code": "Tag: %filename_ext%",
+    "description": "The filename with extension, but without the directory.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<filename_ext>%",
+    "code": "Tag: %<filename_ext>%",
+    "description": "The filename with extension, but without the directory.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%directoryname%",
+    "code": "Tag: %directoryname%",
+    "description": "The name of the parent directory only, not the complete path.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<directoryname>%",
+    "code": "Tag: %<directoryname>%",
+    "description": "The name of the parent directory only, not the complete path.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%last_modified%",
+    "code": "Tag: %last_modified%",
+    "description": "The date and time the file was last modified. Eg: 2005-12-22 00:04:10\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<last_modified>%",
+    "code": "Tag: %<last_modified>%",
+    "description": "The date and time the file was last modified. Eg: 2005-12-22 00:04:10\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%path%",
+    "code": "Tag: %path%",
+    "description": "The complete path, including the filename and extension.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<path>%",
+    "code": "Tag: %<path>%",
+    "description": "The complete path, including the filename and extension.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%_path_raw%",
+    "code": "Tag: %_path_raw%",
+    "description": "The path as URL including the protocol scheme.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<_path_raw>%",
+    "code": "Tag: %<_path_raw>%",
+    "description": "The path as URL including the protocol scheme.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%subsong%",
+    "code": "Tag: %subsong%",
+    "description": "The subsong index.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<subsong>%",
+    "code": "Tag: %<subsong>%",
+    "description": "The subsong index.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%_foobar2000_version%",
+    "code": "Tag: %_foobar2000_version%",
+    "description": "The version of foobar2000.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<_foobar2000_version>%",
+    "code": "Tag: %<_foobar2000_version>%",
+    "description": "The version of foobar2000.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%playback_time%",
+    "code": "Tag: %playback_time%",
+    "description": "The elapsed time formatted as [HH:]MM:SS.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<playback_time>%",
+    "code": "Tag: %<playback_time>%",
+    "description": "The elapsed time formatted as [HH:]MM:SS.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%playback_time_seconds%",
+    "code": "Tag: %playback_time_seconds%",
+    "description": "The elapsed time in seconds.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<playback_time_seconds>%",
+    "code": "Tag: %<playback_time_seconds>%",
+    "description": "The elapsed time in seconds.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%playback_time_remaining%",
+    "code": "Tag: %playback_time_remaining%",
+    "description": "The time remaining until the track ends, formatted as [HH:]MM:SS.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<playback_time_remaining>%",
+    "code": "Tag: %<playback_time_remaining>%",
+    "description": "The time remaining until the track ends, formatted as [HH:]MM:SS.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%playback_time_remaining_seconds%",
+    "code": "Tag: %playback_time_remaining_seconds%",
+    "description": "The time remaining until the track ends, in seconds.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<playback_time_remaining_seconds>%",
+    "code": "Tag: %<playback_time_remaining_seconds>%",
+    "description": "The time remaining until the track ends, in seconds.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%isplaying%",
+    "code": "Tag: %isplaying%",
+    "description": "'1' if file is currently playing, empty string otherwise.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<isplaying>%",
+    "code": "Tag: %<isplaying>%",
+    "description": "'1' if file is currently playing, empty string otherwise.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%ispaused%",
+    "code": "Tag: %ispaused%",
+    "description": "'1' if playback is paused, empty string otherwise.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<ispaused>%",
+    "code": "Tag: %<ispaused>%",
+    "description": "'1' if playback is paused, empty string otherwise.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%list_index%",
+    "code": "Tag: %list_index%",
+    "description": "A zero-padded playlist index of specified item. The first item is at index 1.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<list_index>%",
+    "code": "Tag: %<list_index>%",
+    "description": "A zero-padded playlist index of specified item. The first item is at index 1.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%list_total%",
+    "code": "Tag: %list_total%",
+    "description": "The number of items in the playlist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<list_total>%",
+    "code": "Tag: %<list_total>%",
+    "description": "The number of items in the playlist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%queue_index%",
+    "code": "Tag: %queue_index%",
+    "description": "Index of the specified item in the playback queue. If the item has been queued multiple times, %queue_index% evaluates to the first index.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<queue_index>%",
+    "code": "Tag: %<queue_index>%",
+    "description": "Index of the specified item in the playback queue. If the item has been queued multiple times, %queue_index% evaluates to the first index.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%queue_indexes%",
+    "code": "Tag: %queue_indexes%",
+    "description": "List of indexes of the specified item in the playback queue. Same as %queue_index% unless the item has been queued more than once.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<queue_indexes>%",
+    "code": "Tag: %<queue_indexes>%",
+    "description": "List of indexes of the specified item in the playback queue. Same as %queue_index% unless the item has been queued more than once.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%queue_total%",
+    "code": "Tag: %queue_total%",
+    "description": "Total amount of tracks in playback queue.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<queue_total>%",
+    "code": "Tag: %<queue_total>%",
+    "description": "Total amount of tracks in playback queue.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%play_counts%",
+    "code": "Tag: %play_counts%",
+    "description": "Returns how many times this tracks has been played. If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<play_counts>%",
+    "code": "Tag: %<play_counts>%",
+    "description": "Returns how many times this tracks has been played. If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%first_played%",
+    "code": "Tag: %first_played%",
+    "description": "Returns the date and time when the track was first played. If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<first_played>%",
+    "code": "Tag: %<first_played>%",
+    "description": "Returns the date and time when the track was first played. If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%last_played%",
+    "code": "Tag: %last_played%",
+    "description": "Returns the date and time when the track was last played. If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<last_played>%",
+    "code": "Tag: %<last_played>%",
+    "description": "Returns the date and time when the track was last played. If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%played_per_day%",
+    "code": "Tag: %played_per_day%",
+    "description": "Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between %first_played% and %last_played%). If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<played_per_day>%",
+    "code": "Tag: %<played_per_day>%",
+    "description": "Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between %first_played% and %last_played%). If the track has not been played yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%added%",
+    "code": "Tag: %added%",
+    "description": "Returns the date and time at which track has been added to Media Library. Even if the track has not been played yet, the field exists, logically.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<added>%",
+    "code": "Tag: %<added>%",
+    "description": "Returns the date and time at which track has been added to Media Library. Even if the track has not been played yet, the field exists, logically.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%rating%",
+    "code": "Tag: %rating%",
+    "description": "Returns Rating Value (can be integer from 1 to 5). If the track has not been rated yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<rating>%",
+    "code": "Tag: %<rating>%",
+    "description": "Returns Rating Value (can be integer from 1 to 5). If the track has not been rated yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%rating_stars%",
+    "code": "Tag: %rating_stars%",
+    "description": "Returns Song's Rating Value, formatted as up to five stars, e.g. ★★★. If the track has not been rated yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<rating_stars>%",
+    "code": "Tag: %<rating_stars>%",
+    "description": "Returns Song's Rating Value, formatted as up to five stars, e.g. ★★★. If the track has not been rated yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%rating_stars_fixed%",
+    "code": "Tag: %rating_stars_fixed%",
+    "description": "Returns Song's Rating Value, formatted as five stars, e.g. ★★★☆☆. If the track has not been rated yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<rating_stars_fixed>%",
+    "code": "Tag: %<rating_stars_fixed>%",
+    "description": "Returns Song's Rating Value, formatted as five stars, e.g. ★★★☆☆. If the track has not been rated yet, the field does not exist.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%node_name%",
+    "code": "Tag: %node_name%",
+    "description": "Name of the node, either a playlist or a folder.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<node_name>%",
+    "code": "Tag: %<node_name>%",
+    "description": "Name of the node, either a playlist or a folder.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%is_folder%",
+    "code": "Tag: %is_folder%",
+    "description": "A boolean value for use in '$if( ...)' expressions and is true when the node is a folder.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<is_folder>%",
+    "code": "Tag: %<is_folder>%",
+    "description": "A boolean value for use in '$if( ...)' expressions and is true when the node is a folder.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%count%",
+    "code": "Tag: %count%",
+    "description": "Will provide the number of children (folders or playlists) for each folder or the number of items for playlists.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<count>%",
+    "code": "Tag: %<count>%",
+    "description": "Will provide the number of children (folders or playlists) for each folder or the number of items for playlists.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%playlist_duration%",
+    "code": "Tag: %playlist_duration%",
+    "description": "Will provide the duration of playlists.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<playlist_duration>%",
+    "code": "Tag: %<playlist_duration>%",
+    "description": "Will provide the duration of playlists.\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%playlist_size%",
+    "code": "Tag: %playlist_size%",
+    "description": "Will provide the size of playlists (in kB, MB or GB).\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "%<playlist_size>%",
+    "code": "Tag: %<playlist_size>%",
+    "description": "Will provide the size of playlists (in kB, MB or GB).\n\n[FB2K reference](https://www.example.com)"
+  },
+  {
+    "token": "AFTER",
+    "code": "Keyword: AFTER",
+    "description": "returns only items where time1 value is after time2\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "AND",
+    "code": "Keyword: AND",
+    "description": "returns only items where both expression1 and expression2 are true\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "BEFORE",
+    "code": "Keyword: BEFORE",
+    "description": "returns only items where time1 value is before time2\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "DURING",
+    "code": "Keyword: DURING",
+    "description": "Returns only items where time1 value is a subset of time2 period\n\n[FB2 reference](https://www.example.com)"
+  },
+  {
+    "token": "DURING LAST",
+    "code": "Keyword: DURING LAST (singular form)",
+    "description": "returns items where time value is contained in the specified period\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "EQUAL",
+    "code": "Keyword: EQUAL",
+    "description": "returns only items where field value is equal to number\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "GREATER",
+    "code": "Keyword: GREATER",
+    "description": "returns only items where field value is greater than number\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "HAS",
+    "code": "Keyword: HAS",
+    "description": "returns only items where field contains string (case-insensitive). If * is used instead of a field name, returns items where any field contains string.\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "IS",
+    "code": "Keyword: IS",
+    "description": "returns only items where field is exactly equal to string (case-insensitive)\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "LESS",
+    "code": "Keyword: LESS",
+    "description": "returns only items where field value is less than number\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "MISSING",
+    "code": "Keyword: MISSING",
+    "description": "returns only items that don't have a metadata field named field\n\n[FB2 reference](https://www.example.com)"
+  },
+  {
+    "token": "OR",
+    "code": "Keyword: OR",
+    "description": "returns only items where either expression1 or expression2 (or both) are true\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "PRESENT",
+    "code": "Keyword: PRESENT",
+    "description": "returns only items that have a metadata field named field\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "SINCE",
+    "code": "Keyword: SINCE",
+    "description": "returns only items where time1 value is not before time2\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "SORT BY",
+    "code": "Keyword: SORT BY",
+    "description": "Sort results in ascending order\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "SORT ASCENDING BY",
+    "code": "Keyword: SORT ASCENDING BY",
+    "description": "Sort results in ascending order\n\n[FB2 reference](https://www.example.com)"
+  },
+
+  {
+    "token": "SORT DESCENDING BY",
+    "code": "Keyword: SORT DESCENDING BY",
+    "description": "Sort results in descending order\n\n[FB2 reference](https://www.example.com)"
+  }
+]

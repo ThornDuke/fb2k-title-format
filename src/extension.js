@@ -31,10 +31,14 @@ function loadSnippets(context) {
 }
 
 function loadTokens(context) {
-  const tokensPath = path.join(context.extensionPath, 'src', 'tokens.json');
+  const fb2kTokensPath = path.join(
+    context.extensionPath,
+    'data',
+    'fb2kTokens.json'
+  );
 
   try {
-    const fileContent = fs.readFileSync(tokensPath, 'utf8');
+    const fileContent = fs.readFileSync(fb2kTokensPath, 'utf8');
     fb2kTokens = JSON.parse(fileContent);
     tokensArray = fb2kTokens.map((item) => item.token);
     console.log('§> 1:', { fb2kTokens, tokensArray });
@@ -231,7 +235,7 @@ function activate(context) {
     }
   );
 
-  // // Registra un Hover Provider per il linguaggio
+  // Registra un Hover Provider per il linguaggio
   let hoverProvider = vscode.languages.registerHoverProvider('fb2k', {
     provideHover(document, position, token) {
       // Ottiene la parola sotto il cursore
@@ -239,29 +243,21 @@ function activate(context) {
       const hoveredWord = document.getText(wordRange);
       console.log('§>', { hoveredWord });
 
-      // Esempio: Controlla se la parola è 'myFunction'
+      // Esempio: Controlla se la parola è inserita nell'array dei fb2kTokens
       if (tokensArray.includes(hoveredWord)) {
         const fb2kToken = fb2kTokens.find((item) => item.token === hoveredWord);
         const markdownString = new vscode.MarkdownString();
 
-        // // Aggiunge il markdown
+        // Aggiunge il markdown
+        markdownString.appendCodeblock(fb2kToken.code);
         markdownString.appendMarkdown(fb2kToken.description);
         console.log('§> 3:', { hoveredWord, fb2kToken });
-
-        // // Aggiunge una descrizione
-        // markdownString.appendMarkdown(
-        //   'Questa funzione fa qualcosa di utile. Accetta un parametro e restituisce un valore.'
-        // );
-
-        // // Esempi di codice
-        // markdownString.appendCodeblock('myFunction(10);');
 
         return new vscode.Hover(markdownString);
       }
 
       // Se non si trova una corrispondenza, non restituisce nulla
-      console.log('§> non trovata corrispondenza');
-
+      console.log('§> error finding a match');
       return undefined;
     }
   });
