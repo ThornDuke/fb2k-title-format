@@ -8,6 +8,8 @@ const path = require('path');
 const fs = require('fs');
 
 let fb2kSnippets = {};
+let fb2kTokens = [];
+let tokensArray = [];
 
 function loadSnippets(context) {
   const snippetPath = path.join(
@@ -15,7 +17,6 @@ function loadSnippets(context) {
     'snippets',
     'FB2k-title-formatting.code-snippets'
   );
-  // console.log('§>', { snippetPath });
 
   try {
     const fileContent = fs.readFileSync(snippetPath, 'utf8');
@@ -29,10 +30,26 @@ function loadSnippets(context) {
   }
 }
 
+function loadTokens(context) {
+  const tokensPath = path.join(context.extensionPath, 'src', 'tokens.json');
+
+  try {
+    const fileContent = fs.readFileSync(tokensPath, 'utf8');
+    fb2kTokens = JSON.parse(fileContent);
+    tokensArray = fb2kTokens.map((item) => item.token);
+    console.log('§> 1:', { fb2kTokens, tokensArray });
+  } catch (err) {
+    console.error('Error loading tokens:', err);
+    vscode.window.showErrorMessage(
+      'Unable to load snippets for Foobar2000 Title Formatting language.'
+    );
+  }
+}
+
 function activate(context) {
   // Carica gli snippet all'attivazione dell'estensione
   loadSnippets(context);
-  // console.log('§> 2:', { fb2kSnippets });
+  loadTokens(context);
 
   // Registra il CompletionItemProvider per il linguaggio 'fb2k'
   const completionProvider = vscode.languages.registerCompletionItemProvider(
@@ -214,10 +231,46 @@ function activate(context) {
     }
   );
 
+  // // Registra un Hover Provider per il linguaggio
+  let hoverProvider = vscode.languages.registerHoverProvider('fb2k', {
+    provideHover(document, position, token) {
+      // Ottiene la parola sotto il cursore
+      const wordRange = document.getWordRangeAtPosition(position);
+      const hoveredWord = document.getText(wordRange);
+      console.log('§>', { hoveredWord });
+
+      // Esempio: Controlla se la parola è 'myFunction'
+      if (tokensArray.includes(hoveredWord)) {
+        const fb2kToken = fb2kTokens.find((item) => item.token === hoveredWord);
+        const markdownString = new vscode.MarkdownString();
+
+        // // Aggiunge il markdown
+        markdownString.appendMarkdown(fb2kToken.description);
+        console.log('§> 3:', { hoveredWord, fb2kToken });
+
+        // // Aggiunge una descrizione
+        // markdownString.appendMarkdown(
+        //   'Questa funzione fa qualcosa di utile. Accetta un parametro e restituisce un valore.'
+        // );
+
+        // // Esempi di codice
+        // markdownString.appendCodeblock('myFunction(10);');
+
+        return new vscode.Hover(markdownString);
+      }
+
+      // Se non si trova una corrispondenza, non restituisce nulla
+      console.log('§> non trovata corrispondenza');
+
+      return undefined;
+    }
+  });
+
   context.subscriptions.push(completionProvider);
   context.subscriptions.push(disposableJoinLines);
   context.subscriptions.push(disposableJoinLinesNoComments);
   context.subscriptions.push(disposableRemoveIndentation);
+  context.subscriptions.push(hoverProvider);
 }
 
 function deactivate() {}
