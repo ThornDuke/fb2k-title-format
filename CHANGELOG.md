@@ -13,14 +13,14 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
-## [Unreleased]
+## [1.4.18] - 2025-09-13
 
 ### Changed
 
 - foobar2000.tmLanguage.json: completely restructured
 - README.md: removed the badges
 - README.md: minor updates
-- icon
+- a new icon
 
 ### Added
 
