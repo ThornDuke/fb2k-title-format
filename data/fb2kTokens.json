@@ -123,5 +123,135 @@
     "description": ["Subtracts `b` from `a`.", "Can be used with an arbitrary number of arguments. `$sub(a,b,...)` is the same as `$sub($sub(a,b),...)`."],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$sub(a,b)"
+  },
+  {
+    "token": "and",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$and(expr,...)",
+    "snippet-body": [""],
+    "description": [
+      "Logical `AND` of an arbitrary number of arguments. Returns `true`, if and only if all `expr` arguments evaluate to `true`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$and(expr,_...)"
+  },
+  {
+    "token": "or",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$or(expr,...)",
+    "snippet-body": [""],
+    "description": [
+      "Logical `OR` of an arbitrary number of arguments. Returns `true`, if at least one expression evaluate to `true`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$or(expr,_...)"
+  },
+  {
+    "token": "not",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$not(expr)",
+    "snippet-body": [""],
+    "description": [
+      "Logical `NOT`. Returns the logical opposite of `expr`: `false`, if `expr` is `true` and `true` if `expr` is `false`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$not(expr)"
+  },
+  {
+    "token": "if",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$if(X,Y)",
+    "snippet-body": [""],
+    "description": [
+      "If `X` contains at least one present field, executes/displays `Y`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then)"
+  },
+  {
+    "token": "if",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$if(X,Y,Z)",
+    "snippet-body": [""],
+    "description": [
+      "If `X` contains at least one present field, executes/displays `Y`, otherwise executes/displays `Z`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then,else)"
+  },
+  {
+    "token": "if2",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$if2(X,Y)",
+    "snippet-body": [""],
+    "description": [
+      "If `X` contains at least one present field, executes/displays `X`, otherwise executes/displays `Y`. Same as `$if(X,X,Y)`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if2(expr,else)"
+  },
+  {
+    "token": "if3",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$if3(X,Y,Z,...)",
+    "snippet-body": [""],
+    "description": [
+      "Returns the first of parameters that contains at least one present field."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if3(a1,a2,...,aN,else)"
+  },
+  {
+    "token": "ifequal",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$ifequal(int1,int2,then,else)",
+    "snippet-body": [""],
+    "description": [
+      "Compares the integer numbers `int1` and `int2`, if `int1` is equal to `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifequal(int1,int2,then,else)"
+  }
+  {
+    "token": "ifgreater",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$ifgreater(int1,int2,then,else)",
+    "snippet-body": [""],
+    "description": [
+      "Compares the integer numbers `int1` and `int2`, if `int1` is greater than `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifgreater(int1,int2,then,else)"
+  },
+  {
+    "token": "iflonger",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$iflonger(str,n,then,else)",
+    "snippet-body": [""],
+    "description": [
+      "Compares the length of the string `str` to the number `n`, if `str` is longer than `n` characters, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$iflonger(str,n,then,else)"
+  },
+  {
+    "token": "select",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$select(N,A,B,C,….)",
+    "snippet-body": [""],
+    "description": ["Returns `N`-th of `A`,`B`,`C`… parameters."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#select(n,a1,...,aN)"
   }
 ]
