@@ -243,7 +243,7 @@ function activate(context) {
       const hoveredWord = document.getText(wordRange);
       console.log('§>', { hoveredWord });
 
-      // Esempio: Controlla se la parola è inserita nell'array dei fb2kTokens
+      // Controlla se la parola è inserita nell'array dei fb2kTokens
       if (tokensArray.includes(hoveredWord)) {
         const fb2kToken = fb2kTokens.find((item) => item.token === hoveredWord);
         const markdownString = new vscode.MarkdownString();
