@@ -4,7 +4,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$add(a,b,...)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$add(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Adds `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$add(a,b,...)` is the same as `$add($add(a,b),...)`."
@@ -17,7 +17,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$div(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$div(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Divides `a` by `b` and rounds down to an integer. If `b` evaluates to zero, it returns `a`.",
       "Can be used with an arbitrary number of arguments. `$div(a,b,...)` is the same as `$div($div(a,b),...)`."
@@ -30,19 +30,19 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$greater(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$greater(${1:num a},${2:num b})"],
     "description": [
       "Returns true, if `a` is greater than `b`, otherwise false."
     ],
     "example": [""],
-    "ref-link": "hhttps://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$greater(a,b)"
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$greater(a,b)"
   },
   {
     "token": "max",
     "realm": "FB2K",
     "role": "function",
     "sign": "$max(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$max(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Returns the maximum of `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$max(a,b,...)` is the same as `$max($max(a,b),...)`."
@@ -55,7 +55,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$min(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$min(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Returns the minimum of `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$min(a,b,...)` is the same as `$min($min(a,b),...)`."
@@ -68,7 +68,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$mod(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$mod(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Computes the remainder of dividing `a` through `b`. The result has the same sign as `a`. If `b` evaluates to zero, the result is `a`.",
       "Can be used with an arbitrary number of arguments. `$mod(a,b,...)` is the same as `$mod($mod(a,b),...)`."
@@ -81,7 +81,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$mul(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$mul(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Multiplies `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$mul(a,b,...)` is the same as `$mul($mul(a,b),...)`."
@@ -94,7 +94,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$muldiv(a,b,c)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$muldiv(${1:num a},${2:num b},${3:num c})"],
     "description": [
       "Multiplies `a` and `b`, then divides by `c`. The result is rounded to the nearest integer."
     ],
@@ -106,7 +106,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$rand()",
-    "snippet-body": [""],
+    "snippet-body": ["\\$rand()"],
     "description": [
       "Generates a random number in the range from 0 to 2<sup>32</sup>-1. Available only in sort-related contexts, such as the `.` menu command."
     ],
@@ -118,7 +118,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$sub(a,b)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$sub(${1:num a},${2:num b}${3:[,...]})"],
     "description": [
       "Subtracts `b` from `a`.",
       "Can be used with an arbitrary number of arguments. `$sub(a,b,...)` is the same as `$sub($sub(a,b),...)`."
@@ -131,7 +131,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$and(expr,...)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$and(${1:expr}${2:[,...]})"],
     "description": [
       "Logical `AND` of an arbitrary number of arguments. Returns `true`, if and only if all `expr` arguments evaluate to `true`."
     ],
@@ -143,7 +143,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$or(expr,...)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$or(${1:expr}${2:[,...]})"],
     "description": [
       "Logical `OR` of an arbitrary number of arguments. Returns `true`, if at least one expression evaluate to `true`."
     ],
@@ -155,7 +155,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$not(expr)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$not(${1:expr})"],
     "description": [
       "Logical `NOT`. Returns the logical opposite of `expr`: `false`, if `expr` is `true` and `true` if `expr` is `false`."
     ],
@@ -167,7 +167,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$if(X,Y)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$if(${1:X},${2:Y})"],
     "description": [
       "If `X` contains at least one present field, executes/displays `Y`."
     ],
@@ -175,11 +175,24 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then)"
   },
   {
+    "token": "xor",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$xor(expr,...)",
+    "snippet-body": ["\\$xor(${1:expr}${2:[,...]})"],
+    "description": [
+      "Logical Exclusive-`or` of an arbitrary number of arguments. Returns `true`, if an odd number of arguments evaluate to true.",
+      "Special case: `$xor(expr1,expr2)` returns `true`, if `EXPR1` or `EXPR2` is `true`. If both expressions are `true`, returns `false`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$xor(expr,...)"
+  },
+  {
     "token": "if",
     "realm": "FB2K",
     "role": "function",
     "sign": "$if(X,Y,Z)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$if(${1:X},${2:Y},${3:Z})"],
     "description": [
       "If `X` contains at least one present field, executes/displays `Y`, otherwise executes/displays `Z`."
     ],
@@ -191,7 +204,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$if2(X,Y)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$if2(${1:X},${2:Y})"],
     "description": [
       "If `X` contains at least one present field, executes/displays `X`, otherwise executes/displays `Y`. Same as `$if(X,X,Y)`."
     ],
@@ -203,7 +216,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$if3(X,Y,Z,...)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$if3(${1:X},${2:Y},${3:Z}${4:[,...]})"],
     "description": [
       "Returns the first of parameters that contains at least one present field."
     ],
@@ -215,7 +228,9 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$ifequal(int1,int2,then,else)",
-    "snippet-body": [""],
+    "snippet-body": [
+      "\\$ifequal(${1:num int1},${2:num int2},${3:then},${4:else})"
+    ],
     "description": [
       "Compares the integer numbers `int1` and `int2`, if `int1` is equal to `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
     ],
@@ -227,7 +242,9 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$ifgreater(int1,int2,then,else)",
-    "snippet-body": [""],
+    "snippet-body": [
+      "\\$ifgreater(${1:num int1},${2:num int2},${3:then},${4:else})"
+    ],
     "description": [
       "Compares the integer numbers `int1` and `int2`, if `int1` is greater than `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
     ],
@@ -239,7 +256,9 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$iflonger(str,n,then,else)",
-    "snippet-body": [""],
+    "snippet-body": [
+      "\\$iflonger(${1:string str},${2:num n},${3:then},${4:else})"
+    ],
     "description": [
       "Compares the length of the string `str` to the number `n`, if `str` is longer than `n` characters, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
     ],
@@ -251,7 +270,7 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$select(N,A,B,C,….)",
-    "snippet-body": [""],
+    "snippet-body": ["\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"],
     "description": ["Returns `N`-th of `A`,`B`,`C`… parameters."],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#select(n,a1,...,aN)"
@@ -541,7 +560,9 @@
     "realm": "FB2K",
     "role": "function",
     "sign": "$longest(arg,...)",
-    "snippet-body": [""],
+    "snippet-body": [
+      "\\$longest(${1:string arg1},${2:string arg2}${3:[,...]})"
+    ],
     "description": [
       "Returns the longest of its arguments. Can be used with an arbitrary number of strings."
     ],
@@ -1570,5 +1591,947 @@
     ],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining_seconds%"
+  },
+  {
+    "token": "isplaying",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%isplaying%",
+    "snippet-body": [""],
+    "description": [
+      "'1' if file is currently playing, empty string otherwise."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%isplaying%"
+  },
+  {
+    "token": "ispaused",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%ispaused%",
+    "snippet-body": [""],
+    "description": ["'1' if playback is paused, empty string otherwise."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%ispaused%"
+  },
+  {
+    "token": "list_index",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%list_index%",
+    "snippet-body": [""],
+    "description": [
+      "A zero-padded playlist index of specified item. The first item is at index 1."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_index%"
+  },
+  {
+    "token": "list_total",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%list_total%",
+    "snippet-body": [""],
+    "description": ["The number of items in the playlist."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_total%"
+  },
+  {
+    "token": "queue_index",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%queue_index%",
+    "snippet-body": [""],
+    "description": [
+      "Index of the specified item in the playback queue. If the item has been queued multiple times, `%queue_index%` evaluates to the first index."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_index%"
+  },
+  {
+    "token": "queue_indexes",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%queue_indexes%",
+    "snippet-body": [""],
+    "description": [
+      "List of indexes of the specified item in the playback queue. Same as `%queue_index%` unless the item has been queued more than once."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_indexes%"
+  },
+  {
+    "token": "queue_total",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%queue_total%",
+    "snippet-body": [""],
+    "description": [
+      "Total amount of tracks in playback queue.",
+      "Available only for queued tracks, for technical reasons."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_total%"
+  },
+  {
+    "token": "blend",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$blend(color1,color2,part,total)",
+    "snippet-body": [""],
+    "description": [
+      "Returns a color that is a blend between `color1` and `color2`. If `part` is smaller than or equal to zero, `color1` is returned. If `part` is greater than or equal to `total`, `color2` is returned. Otherwise a blended color is returned that is `part` parts `color1` and total-part `parts` `color2`. The blending is performed in the RGB color space."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$blend(color1,color2,part,total)"
+  },
+  {
+    "token": "hsl",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$hsl()",
+    "snippet-body": [""],
+    "description": ["Resets the text color to the default color."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
+  },
+  {
+    "token": "hsl",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$hsl(h,s,l)",
+    "snippet-body": [""],
+    "description": [
+      "Sets the color for text in the HSL color space. `h1`, `s1` and `l1` are the hue, saturation, and lightness of the color for unselected text. `h2`, `s2` and `l2` are the hue, saturation, and lightness of the color for selected text."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h,s,l)"
+  },
+  {
+    "token": "hsl",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$hsl(h,s,l)",
+    "snippet-body": [""],
+    "description": [
+      "Sets the color for text in the HSL color space.",
+      "`h`, `s` and `l` are the hue, saturation, and lightness of the color for unselected text. The color for selected text is set to the inverse color.",
+      "The ranges of `h`, `s`, and `l` are from 0 to 240; the function is designed to interpret those values in the same way as the standard Windows color dialog."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h,s,l)"
+  },
+  {
+    "token": "hsl",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$hsl(h1,s1,l1,h2,s2,l2)",
+    "snippet-body": [""],
+    "description": [
+      "Sets the color for text in the HSL color space.",
+      "`h1`, `s1` and `l1` are the hue, saturation, and lightness of the color for unselected text. `h2`, `s2` and `l2` are the hue, saturation, and lightness of the color for selected text."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h1,s1,l1,h2,s2,l2)"
+  },
+  {
+    "token": "rgb",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$rgb()",
+    "snippet-body": [""],
+    "description": ["Resets the text color to the default color."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
+  },
+  {
+    "token": "rgb",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$rgb(r,g,b)",
+    "snippet-body": [""],
+    "description": [
+      "Sets the color for text.",
+      "`r`, `g` and `b` are the red, green and blue component of the color for unselected text.",
+      "The color for selected text is set to the inverse color."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r,g,b)"
+  },
+  {
+    "token": "rgb",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$rgb(r1,g1,b1,r2,g2,b2)",
+    "snippet-body": [""],
+    "description": [
+      "Sets the color for text.",
+      "`r1`, `g1` and `b1` are the red, green and blue component of the color for unselected text.",
+      "`r2`, `g2` and `b2` are the red, green and blue component of the color for selected text."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r1,g1,b1,r2,g2,b2)"
+  },
+  {
+    "token": "transition",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$transition(string,color1,color2)",
+    "snippet-body": [""],
+    "description": [
+      "Inserts color codes into `string`, so that the first character has `color1`, the last character has `color2`, and intermediate characters have blended colors.",
+      "The blending is performed in the RGB color space.",
+      "Note that color codes are additional characters that will also be counted by string manipulation functions.",
+      "For example, if you need to truncate a string, you should do this before applying $transition."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$transition(string,color1,color2)"
+  },
+  {
+    "token": "album artist",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<album artist>%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`. The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+  },
+  {
+    "token": "album",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<album>%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the album specified track belongs to. Checks following metadata fields, in this order: `album`, `venue`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+  },
+  {
+    "token": "artist",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<artist>%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the artist of the track. Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`. For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+  },
+  {
+    "token": "discnumber",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<discnumber>%",
+    "snippet-body": [""],
+    "description": [
+      "Index of disc specified track belongs to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%discnumber%"
+  },
+  {
+    "token": "totaldiscs",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<totaldiscs>%",
+    "snippet-body": [""],
+    "description": [
+      "Index of total discs specified tracks belong to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaldiscs%"
+  },
+  {
+    "token": "track artist",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<track artist>%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
+      "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+  },
+  {
+    "token": "title",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<title>%",
+    "snippet-body": [""],
+    "description": [
+      "Title of the track. If `title` metadata field is missing, file name is used instead.",
+      "For a SHOUTcast stream which contains metadata, it is the StreamTitle after the first '-' character."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%title%"
+  },
+  {
+    "token": "tracknumber",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<tracknumber>%",
+    "snippet-body": [""],
+    "description": [
+      "Two-digit index of specified track within the album.",
+      "Available only when `tracknumber` field is present in track’s metadata.",
+      "An extra '0' is placed in front of single digit track numbers (5 becomes 05) – otherwise the `tracknumber` field is returned unchanged (e.g. the following values remain as they are: 006, 05, 104, A3, two, -1, -)."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%tracknumber%"
+  },
+  {
+    "token": "track number",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<track number>%",
+    "snippet-body": [""],
+    "description": [
+      "Similar to `%tracknumber%`, however single digit track numbers are not reformatted to have an extra 0."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_number%"
+  },
+  {
+    "token": "totaltracks",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<totaltracks>%",
+    "snippet-body": [""],
+    "description": [
+      "Index of total tracks specified tracks belong to, within the album. Available only when `totaltracks` field is present in track’s metadata."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaltracks%"
+  },
+  {
+    "token": "meta_branch_remap",
+    "realm": "FB2K Album List",
+    "role": "function",
+    "sign": "$meta_branch_remap(name)",
+    "snippet-body": [""],
+    "description": [
+      "This is identical to `%<name>%` except it does not produce a '?', if the tag does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch_remap(name)"
+  },
+  {
+    "token": "meta_branch",
+    "realm": "FB2K Album List",
+    "role": "function",
+    "sign": "$meta_branch(name)",
+    "snippet-body": [""],
+    "description": [
+      "Like `$meta_branch_remap(name)`, but without the tag remapping."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch(name)"
+  },
+  {
+    "token": "play_count",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%play_count%",
+    "snippet-body": [""],
+    "description": [
+      "Returns how many times this tracks has been played.",
+      "If the track has not been played yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%play_count%"
+  },
+  {
+    "token": "first_played",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%first_played%",
+    "snippet-body": [""],
+    "description": [
+      "Returns the date and time when the track was first played.",
+      "If the track has not been played yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%first_played%"
+  },
+  {
+    "token": "last_played",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%last_played%",
+    "snippet-body": [""],
+    "description": [
+      "Returns the date and time when the track was last played.",
+      "If the track has not been played yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%last_played%"
+  },
+  {
+    "token": "played_per_day",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%played_per_day%",
+    "snippet-body": [""],
+    "description": [
+      "Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between `%first_played%` and `%last_played%`).",
+      "If the track has not been played yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%played_per_day%"
+  },
+  {
+    "token": "added",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%added%",
+    "snippet-body": [""],
+    "description": [
+      "Returns the date and time at which track has been added to Media Library.",
+      "Even if the track has not been played yet, the field exists, logically."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%25added%"
+  },
+  {
+    "token": "rating",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%rating%",
+    "snippet-body": [""],
+    "description": [
+      "Returns `rating` value (can be integer from 1 to 5).",
+      "If the track has not been rated yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating%"
+  },
+  {
+    "token": "rating_stars",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%rating_stars%",
+    "snippet-body": [""],
+    "description": [
+      "Returns song's rating value, formatted as up to five stars, e.g. `★★★`.",
+      "If the track has not been rated yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars%"
+  },
+  {
+    "token": "rating_stars_fixed",
+    "realm": "FB2K Playback Statistics",
+    "role": "tag",
+    "sign": "%rating_stars_fixed%",
+    "snippet-body": [""],
+    "description": [
+      "Returns song's `rating` value, formatted as five stars, e.g. `★★★☆☆`.",
+      "If the track has not been rated yet, the field does not exist."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars_fixed%"
+  },
+  {
+    "token": "node_name",
+    "realm": "FB2K Playlist Organizer",
+    "role": "tag",
+    "sign": "%node_name%",
+    "snippet-body": [""],
+    "description": ["Is the name of the node, either a playlist or a folder."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+  },
+  {
+    "token": "is_folder",
+    "realm": "FB2K Playlist Organizer",
+    "role": "tag",
+    "sign": "%is_folder%",
+    "snippet-body": [""],
+    "description": [
+      "Is a boolean value for use in `$if( ...)` expressions and is true when the node is a folder."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+  },
+  {
+    "token": "count",
+    "realm": "FB2K Playlist Organizer",
+    "role": "tag",
+    "sign": "%count%",
+    "snippet-body": [""],
+    "description": [
+      "Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+  },
+  {
+    "token": "playlist_duration",
+    "realm": "FB2K Playlist Organizer",
+    "role": "tag",
+    "sign": "%playlist_duration%",
+    "snippet-body": [""],
+    "description": ["Will provide the duration of playlists."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+  },
+  {
+    "token": "playlist_size",
+    "realm": "FB2K Playlist Organizer",
+    "role": "tag",
+    "sign": "%playlist_size%",
+    "snippet-body": [""],
+    "description": ["Will provide the size of playlists (in kB, MB or GB)."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+  },
+  {
+    "token": "set_global",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$set_global(name,value)",
+    "snippet-body": [""],
+    "description": ["Set the `name` variable to the `value` value."],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
+  },
+  {
+    "token": "set_style",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$set_style(...)",
+    "snippet-body": [""],
+    "description": [
+      "Is used to set colours.",
+      "Colours are specified using the `$rgb()` function."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "calculate_blend_target",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$calculate_blend_target(color)",
+    "snippet-body": [""],
+    "description": [
+      "Returns black if the mean of the red, green and blue components of `color` is greater than or equal to 128; otherwise it returns white."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "offset_colour",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$offset_colour(colour_from,colour_to,offset)",
+    "snippet-body": [""],
+    "description": ["Shifts one colour towards another colour."],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_text",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_text%",
+    "snippet-body": [""],
+    "description": [
+      "Return the relevant colour before any modifications by the current style script."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_selected_text",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_selected_text%",
+    "snippet-body": [""],
+    "description": [
+      "Return the relevant colour before any modifications by the current style script."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_selected_text_no_focus",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_selected_text_no_focus%",
+    "snippet-body": [""],
+    "description": [
+      "Return the relevant colour before any modifications by the current style script."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_back",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_back%",
+    "snippet-body": [""],
+    "description": [
+      "Return the relevant colour before any modifications by the current style script."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_selected_back",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_selected_back%",
+    "snippet-body": [""],
+    "description": [
+      "Return the relevant colour before any modifications by the current style script."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_selected_back_no_focus",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_selected_back_no_focus%",
+    "snippet-body": [""],
+    "description": [
+      "Return the relevant colour before any modifications by the current style script."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_display_index",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_display_index%",
+    "snippet-body": [""],
+    "description": [
+      "The current row number in the playlist view (including group headings)."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_is_group",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_is_group%",
+    "snippet-body": [""],
+    "description": ["Whether a group heading is currently being formatted."],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_is_themed",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_is_themed%",
+    "snippet-body": [""],
+    "description": [
+      "Whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+  },
+  {
+    "token": "_system_year",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_system_year%",
+    "snippet-body": [""],
+    "description": [
+      "The current year.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "_system_day",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_system_day%",
+    "snippet-body": [""],
+    "description": [
+      "The current day of the month, as a number.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "_system_month",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_system_month%",
+    "snippet-body": [""],
+    "description": [
+      "The current month of the year, as a number.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "_system_day_of_week",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_system_day_of_week%",
+    "snippet-body": [""],
+    "description": [
+      "The current day of the week, as a number.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "_system_hour",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_system_hour%",
+    "snippet-body": [""],
+    "description": [
+      "The current hour.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "_system_julian_day",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%_system_julian_day%",
+    "snippet-body": [""],
+    "description": [
+      "The current Julian day.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "playlist_name",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%playlist_name%",
+    "snippet-body": [""],
+    "description": [
+      "The name of the active playlist.",
+      "This field is available in display scripts, style scripts and global variables scripts"
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+  },
+  {
+    "token": "title",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%title%",
+    "snippet-body": [""],
+    "description": [
+      "The title of the playlist.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "is_locked",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%is_locked%",
+    "snippet-body": [""],
+    "description": [
+      "Exists if the playlist is locked.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "lock_name",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%lock_name%",
+    "snippet-body": [""],
+    "description": [
+      "The name of the playlist lock, if the playlist is locked.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "size",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%size%",
+    "snippet-body": [""],
+    "description": [
+      "The number of items in the playlist.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "length",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%length%",
+    "snippet-body": [""],
+    "description": [
+      "The total length of the items in the playlist.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "filesize",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%filesize%",
+    "snippet-body": [""],
+    "description": [
+      "The sum of the known file sizes of the items in the playlist.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "filesize_raw",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%filesize_raw%",
+    "snippet-body": [""],
+    "description": [
+      "The sum of the known file sizes of the items in the playlist, in bytes.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "is_active",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%is_active%",
+    "snippet-body": [""],
+    "description": [
+      "Exists if the playlist is the active playlist.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "is_playing",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%is_playing%",
+    "snippet-body": [""],
+    "description": [
+      "Exists if the playlist is playing.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+  },
+  {
+    "token": "set_format",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$set_format(prop1: val1, prop2: val2,...)",
+    "snippet-body": [""],
+    "description": [
+      "Changes font and text styling for subsequent text.",
+      "This function is available in item details scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+  },
+  {
+    "token": "reset_format",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$reset_format()",
+    "snippet-body": [""],
+    "description": [
+      "Restores font and text styling for subsequent text to the panel defaults.",
+      "This function is available in item details scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+  },
+  {
+    "token": "set_font",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$set_font(font face,point size,modifiers)",
+    "snippet-body": [""],
+    "description": [
+      "Changes the font used for subsequent text.",
+      "This function is available in item details scripts.",
+      "Deprecated in Columns UI 3.0.0. It’s been replaced by `$set_format()`."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+  },
+  {
+    "token": "reset_font",
+    "realm": "CUI",
+    "role": "function",
+    "sign": "$reset_font()",
+    "snippet-body": [""],
+    "description": [
+      "Restores font and text styling for subsequent text to the panel defaults.",
+      "This function is available in item details scripts.",
+      "Deprecated in Columns UI 3.0.0. It’s been replaced by `$reset_format()`."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+  },
+  {
+    "token": "default_font_face",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%default_font_face%",
+    "snippet-body": [""],
+    "description": [
+      "The default font family for the panel. This is a legacy, GDI-compatible font family name.",
+      "This field is available in playlist switcher scripts.",
+      "Deprecated in Columns UI 3.0.0. Use `$set_format(font-family: initial;)` instead."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+  },
+  {
+    "token": "default_font_size",
+    "realm": "CUI",
+    "role": "tag",
+    "sign": "%default_font_size%",
+    "snippet-body": [""],
+    "description": [
+      "The default font size for the panel, in points.",
+      "The value is rounded to the nearest whole number.",
+      "This field is available in playlist switcher scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   }
 ]
