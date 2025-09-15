@@ -3,7 +3,7 @@
     "token": "add",
     "realm": "FB2K",
     "role": "function",
-    "sign": "$add(a,b,_...)",
+    "sign": "$add(a,b,...)",
     "snippet-body": [""],
     "description": [
       "Adds `a` and `b`.",
@@ -798,5 +798,462 @@
     ],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stricmp(str1,str2)"
+  },
+  {
+    "token": "stripprefix",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$stripprefix(str)",
+    "snippet-body": [""],
+    "description": ["Removes 'A' and 'The' prefixes from string `str`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str)"
+  },
+  {
+    "token": "stripprefix",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$stripprefix(str,prefix1,prefix2,...)",
+    "snippet-body": [""],
+    "description": ["Removes the specified prefixes from string `str`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
+  },
+  {
+    "token": "substr",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$substr(str,from,to)",
+    "snippet-body": [""],
+    "description": [
+      "Returns substring of string `str`, starting from `FROM`-th character and ending at `TO`-th character."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$substr(str,from,to)"
+  },
+  {
+    "token": "swapprefix",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$swapprefix(str)",
+    "snippet-body": [""],
+    "description": ["Moves 'A' and 'The' prefixes to the end of string `str`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$swapprefix(str)"
+  },
+  {
+    "token": "swapprefix",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$swapprefix(str,prefix1,prefix2,...)",
+    "snippet-body": [""],
+    "description": ["Moves the specified prefixes to the end of string `str`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
+  },
+  {
+    "token": "trim",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$trim(str)",
+    "snippet-body": [""],
+    "description": ["Removes leading and trailing spaces from string `str`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
+  },
+  {
+    "token": "tab",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$tab()",
+    "snippet-body": [""],
+    "description": ["Inserts one tabulator character."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$tab()"
+  },
+  {
+    "token": "tab",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$tab(count)",
+    "snippet-body": [""],
+    "description": ["Inserts `count` tabulator characters."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$tab(count)"
+  },
+  {
+    "token": "upper",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$upper(str)",
+    "snippet-body": [""],
+    "description": ["Converts string `str` to uppercase."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$upper(str)"
+  },
+  {
+    "token": "meta",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$meta(name)",
+    "snippet-body": [""],
+    "description": [
+      "Returns value of tag called `name`. If multiple values of that tag exist, they are concatenated with ', ' as separator."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta(name)"
+  },
+  {
+    "token": "meta",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$meta(name,n)",
+    "snippet-body": [""],
+    "description": [
+      "Returns value of `n`-th (0,1,2 and so on) tag called `name`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta(name,n)"
+  },
+  {
+    "token": "meta_sep",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$meta_sep(name,sep)",
+    "snippet-body": [""],
+    "description": [
+      "Returns value of tag called `name`. If multiple values of that tag exist, they are concatenated with `sep` as separator."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_sep(name,sep)"
+  },
+  {
+    "token": "meta_sep",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$meta_sep(name,sep,lastsep)",
+    "snippet-body": [""],
+    "description": [
+      "Returns value of tag called `name`. If multiple values of that tag exist, they are concatenated with `sep` as separator between all but the last two values which are concatenated with `lastsep`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_sep(name,sep,lastsep)"
+  },
+  {
+    "token": "meta_test",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$meta_test(...)",
+    "snippet-body": [""],
+    "description": ["Returns 1, if all given tags exist, undefined otherwise."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
+  },
+  {
+    "token": "meta_num",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$meta_num(name)",
+    "snippet-body": [""],
+    "description": ["Returns the number of values for the tag called `name`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
+  },
+  {
+    "token": "album artist",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%album artist%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`. The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+  },
+  {
+    "token": "album",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%album%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the album specified track belongs to. Checks following metadata fields, in this order: `album`, `venue`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+  },
+  {
+    "token": "artist",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%artist%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the artist of the track. Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`. For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+  },
+  {
+    "token": "discnumber",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%discnumber%",
+    "snippet-body": [""],
+    "description": [
+      "Index of disc specified track belongs to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%discnumber%"
+  },
+  {
+    "token": "totaldiscs",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%totaldiscs%",
+    "snippet-body": [""],
+    "description": [
+      "Index of total discs specified tracks belong to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaldiscs%"
+  },
+  {
+    "token": "track artist",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%track artist%",
+    "snippet-body": [""],
+    "description": [
+      "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
+      "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+  },
+  {
+    "token": "title",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%title%",
+    "snippet-body": [""],
+    "description": [
+      "Title of the track. If `title` metadata field is missing, file name is used instead.",
+      "For a SHOUTcast stream which contains metadata, it is the StreamTitle after the first '-' character."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%title%"
+  },
+  {
+    "token": "tracknumber",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%tracknumber%",
+    "snippet-body": [""],
+    "description": [
+      "Two-digit index of specified track within the album.",
+      "Available only when `tracknumber` field is present in track’s metadata.",
+      "An extra '0' is placed in front of single digit track numbers (5 becomes 05) – otherwise the `tracknumber` field is returned unchanged (e.g. the following values remain as they are: 006, 05, 104, A3, two, -1, -)."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%tracknumber%"
+  },
+  {
+    "token": "track number",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%track number%",
+    "snippet-body": [""],
+    "description": [
+      "Similar to `%tracknumber%`, however single digit track numbers are not reformatted to have an extra 0."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_number%"
+  },
+  {
+    "token": "totaltracks",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%totaltracks%",
+    "snippet-body": [""],
+    "description": [
+      "Index of total tracks specified tracks belong to, within the album. Available only when `totaltracks` field is present in track’s metadata."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaltracks%"
+  },
+  {
+    "token": "bitrate",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%bitrate%",
+    "snippet-body": [""],
+    "description": [
+      "Bitrate of the track in kilobits per second.",
+      "VBR files will show a dynamic display for currently played track (outside of the playlist)."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%bitrate%"
+  },
+  {
+    "token": "channels",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%channels%",
+    "snippet-body": [""],
+    "description": [
+      "Number of channels in the track, as text; either 'mono', 'stereo' for 1 or 2 channels, respectively, otherwise a number followed by 'ch', e.g. '6ch'."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channels%"
+  },
+  {
+    "token": "channel_mask",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%channel_mask%",
+    "snippet-body": [""],
+    "description": [
+      "Description of the used audio channels in the track, e.g. 'FL FR FC LFE SL SR'.",
+      "Introduced in foobar2000 preview 2024-06-30."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channel_mask%"
+  },
+  {
+    "token": "codec",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%codec%",
+    "snippet-body": [""],
+    "description": [
+      "Name of codec used to encode the track, e.g. 'PCM', 'FLAC', 'MP3', or 'AAC'.",
+      "If exact codec name is not available, file extension is used."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec%"
+  },
+  {
+    "token": "codec_profile",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%codec_profile%",
+    "snippet-body": [""],
+    "description": [
+      "Additional information about encoding settings used, e.g. 'CBR'.",
+      "Not always available."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_profile%"
+  },
+  {
+    "token": "codec_long",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%codec_long%",
+    "snippet-body": [""],
+    "description": [
+      "Long name of the codec, including profile, e.g. 'HE-AACv2'. Some codecs, such as HE-AAC, supply this.",
+      "If long name isn't supplied by the codec, `%codec_long%` falls back to `%codec%` / `%codec_profile%`.",
+      "The Default UI's standard Codec column displays the same info."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_long%"
+  },
+  {
+    "token": "filesize",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%filesize%",
+    "snippet-body": [""],
+    "description": [
+      "The exact file size in bytes.",
+      "Old version: `%_filesize%`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize%"
+  },
+  {
+    "token": "filesize_natural",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%filesize_natural%",
+    "snippet-body": [""],
+    "description": [
+      "The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes, e.g. '8.49 MB'."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize_natural%"
+  },
+  {
+    "token": "length",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%length%",
+    "snippet-body": [""],
+    "description": [
+      "The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second.",
+      "Old version: `%_time_total%`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length%"
+  },
+  {
+    "token": "length_ex",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%length_ex%",
+    "snippet-body": [""],
+    "description": [
+      "The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_ex%"
+  },
+  {
+    "token": "length_seconds",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%length_seconds%",
+    "snippet-body": [""],
+    "description": [
+      "The length of the track in seconds, rounded to the nearest second.",
+      "Old version: `%_time_total_seconds%`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds%"
+  },
+  {
+    "token": "length_seconds_fp",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%length_seconds_fp%",
+    "snippet-body": [""],
+    "description": [
+      "The length of the track in seconds as a floating point number."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds_fp%"
+  },
+  {
+    "token": "length_samples",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%length_samples%",
+    "snippet-body": [""],
+    "description": ["The length of the track in samples."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_samples%"
+  },
+  {
+    "token": "samplerate",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%samplerate%",
+    "snippet-body": [""],
+    "description": ["Sample rate of the track, in Hz."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%samplerate%"
   }
 ]

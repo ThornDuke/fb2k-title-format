@@ -30,6 +30,8 @@ example code
 See <link> for more information.
 ```
 
-1. Eliminare tutte le stringhe vuote dagli array e lasciare un array vuoto.
-2. Inserire gli esempi dal reference.
-3. Cercare la stringa "example" nel sito wiki e inserirli negli esempi vuoti.
+- [ ] Completare l'elenco di tag, funzioni e keywords
+- [ ] aggiungere le snippet body
+- [ ] Eliminare tutte le stringhe vuote dagli array e lasciare un array vuoto.
+- [ ] Inserire gli esempi dal reference.
+- [ ] Cercare la stringa "example" nel sito wiki e inserirli negli esempi vuoti.
