@@ -96,8 +96,7 @@
     "sign": "$muldiv(a,b,c)",
     "snippet-body": [""],
     "description": [
-      "Multiplies `a` and `b`, then divides by `c`. The result is rounded to the
-  nearest integer."
+      "Multiplies `a` and `b`, then divides by `c`. The result is rounded to the nearest integer."
     ],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$muldiv(a,b,c)"
@@ -120,7 +119,10 @@
     "role": "function",
     "sign": "$sub(a,b)",
     "snippet-body": [""],
-    "description": ["Subtracts `b` from `a`.", "Can be used with an arbitrary number of arguments. `$sub(a,b,...)` is the same as `$sub($sub(a,b),...)`."],
+    "description": [
+      "Subtracts `b` from `a`.",
+      "Can be used with an arbitrary number of arguments. `$sub(a,b,...)` is the same as `$sub($sub(a,b),...)`."
+    ],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$sub(a,b)"
   },
@@ -219,7 +221,7 @@
     ],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifequal(int1,int2,then,else)"
-  }
+  },
   {
     "token": "ifgreater",
     "realm": "FB2K",
@@ -253,5 +255,548 @@
     "description": ["Returns `N`-th of `A`,`B`,`C`… parameters."],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#select(n,a1,...,aN)"
+  },
+  {
+    "token": "abbr",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$abbr(str)",
+    "snippet-body": [""],
+    "description": [
+      "Returns abbreviation of string `str`. Words which begin with an alphanumeric character are shortened to the first character. Spaces and parentheses are stripped."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$abbr(str)"
+  },
+  {
+    "token": "abbr",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$abbr(str,len)",
+    "snippet-body": [""],
+    "description": [
+      "Returns abbreviation of `str`, if `str` is longer than `len` characters, otherwise returns `str`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$abbr(str,len)"
+  },
+  {
+    "token": "ansi",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$ansi(str)",
+    "snippet-body": [""],
+    "description": [
+      "Converts string `str` to system codepage and back. Any characters that are not present in the system codepage will be removed / replaced. Useful for mass-renaming files to ensure compatibility with non-unicode-capable software."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ansi(str)"
+  },
+  {
+    "token": "ascii",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$ascii(str)",
+    "snippet-body": [""],
+    "description": [
+      "Converts string `str` to ASCII. Any characters that are not present in ASCII will be removed / replaced."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ascii(str)"
+  },
+  {
+    "token": "caps",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$caps(str)",
+    "snippet-body": [""],
+    "description": [
+      "Converts first letter in every word of string `str` to uppercase, and all other letters to lowercase."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps(str)"
+  },
+  {
+    "token": "caps2",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$caps2(str)",
+    "snippet-body": [""],
+    "description": [
+      "Converts first letter in every word of string `str` to uppercase, and leaves all other letters as they are."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps2(str)"
+  },
+  {
+    "token": "char",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$char(nbr)",
+    "snippet-body": [""],
+    "description": [
+      "Returns Unicode character of nbr. You can search for characters and find the matching decimal number on (this site)[http://www.fileformat.info/info/unicode/char/search.htm]."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$char(nbr)"
+  },
+  {
+    "token": "crc32",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$crc32(str)",
+    "snippet-body": [""],
+    "description": [
+      "Computes the CRC32 of the string `str` as a number. Intended for use in coloring scripts."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crc32(str)"
+  },
+  {
+    "token": "crlf",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$crlf()",
+    "snippet-body": [""],
+    "description": [
+      "Inserts end-of-line marker (carriage return, line feed). Can be used to generate multiple lines in the output, for example for the tooltip of the system notification area (_systray_) icon."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crlf()"
+  },
+  {
+    "token": "cut",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$cut(str,len)",
+    "snippet-body": [""],
+    "description": [
+      "Returns first `len` characters from the left of the string `str`. This function is the same as `$left(a,len)`. Negative numbers produce the entire string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$cut(str,len)"
+  },
+  {
+    "token": "directory",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$directory(path)",
+    "snippet-body": [""],
+    "description": [
+      "Extracts only the directory name (not full path, ie given path as 'D:\\music\\jazz\\filename.mp3', this will output 'jazz') from the file path."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory(path)"
+  },
+  {
+    "token": "directory",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$directory(path,n)",
+    "snippet-body": [""],
+    "description": [
+      "Extracts directory name from the file `path`; goes up by `n` levels."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory(path,n)"
+  },
+  {
+    "token": "directory_path",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$directory_path(path)",
+    "snippet-body": [""],
+    "description": [
+      "Extracts directory path from the file path. ie. given path as 'D:\\music\\jazz\\filename.mp3', this will output 'D:\\music\\jazz'"
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory_path(path)"
+  },
+  {
+    "token": "ext",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$ext(path)",
+    "snippet-body": [""],
+    "description": [
+      "Extracts file extension from string `path`; a file name or full path."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ext(path)"
+  },
+  {
+    "token": "filename",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$filename(path)",
+    "snippet-body": [""],
+    "description": ["Extracts file name from full `path`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$filename(path)"
+  },
+  {
+    "token": "fix_eol",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$fix_eol(path)",
+    "snippet-body": [""],
+    "description": [
+      "If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `(...)`. Otherwise `str` is returned unaltered."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$fix_eol(str)"
+  },
+  {
+    "token": "fix_eol",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$fix_eol(path,indicator)",
+    "snippet-body": [""],
+    "description": [
+      "If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `indicator`. Otherwise `str` is returned unaltered."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$fix_eol(str,indicator)"
+  },
+  {
+    "token": "hex",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$hex(int,len)",
+    "snippet-body": [""],
+    "description": [
+      "Formats the integer number `int` in hexadecimal notation with `len` digits. Pads with zeros from the left if necessary."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hex(int,len)"
+  },
+  {
+    "token": "insert",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$insert(str,insert,n)",
+    "snippet-body": [""],
+    "description": ["Inserts `insert` into `str` after `n` characters."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$insert(str,insert,n)"
+  },
+  {
+    "token": "left",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$left(str,n)",
+    "snippet-body": [""],
+    "description": [
+      "Returns first `len` characters from the left of the string `str`. This function is the same as `$cut(str,len)`. Negative numbers produce the entire string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$left(str,len)"
+  },
+  {
+    "token": "len",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$len(str)",
+    "snippet-body": [""],
+    "description": ["Returns length of string `str` in characters."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len(str)"
+  },
+  {
+    "token": "len2",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$len2(str)",
+    "snippet-body": [""],
+    "description": [
+      "Returns length of string `str` in characters, respecting double-width character rules (double-width characters will be counted as two)."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len2(str)"
+  },
+  {
+    "token": "longer",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$longer(str1,str2)",
+    "snippet-body": [""],
+    "description": [
+      "Returns `true`, if string `str1` is longer than string `str2`, `false` otherwise."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longer(str1,str2)"
+  },
+  {
+    "token": "lower",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$lower(str)",
+    "snippet-body": [""],
+    "description": ["Converts string `str` to lowercase."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$lower(str)"
+  },
+  {
+    "token": "longest",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$longest(arg,...)",
+    "snippet-body": [""],
+    "description": [
+      "Returns the longest of its arguments. Can be used with an arbitrary number of strings."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longest(arg,...)"
+  },
+  {
+    "token": "num",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$num(nbr,len)",
+    "snippet-body": [""],
+    "description": [
+      "Formats the integer number `nbr` in decimal notation with `len` characters. Pads with zeros from the left if necessary. `len` includes the dash when the number is negative. If `nbr` is not numeric, it is treated as zero."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$num(nbr,len)"
+  },
+  {
+    "token": "pad",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$pad(str,len)",
+    "snippet-body": [""],
+    "description": [
+      "Creates a left-aligned version of the string `str`. If `str` is shorter than `len` characters, the function adds spaces to the right of `str` to make the result `len` characters long. Otherwise the function returns `str` unchanged."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad(str,len)"
+  },
+  {
+    "token": "pad_right",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$pad_right(str,len)",
+    "snippet-body": [""],
+    "description": [
+      "Creates a right-aligned version of the string `str`. If `str` is shorter than `len` characters, the function adds spaces to the left of `str` to make the result `len` characters long. Otherwise the function returns `str` unchanged."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad_right(str,len)"
+  },
+  {
+    "token": "pad",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$pad(str,len,char)",
+    "snippet-body": [""],
+    "description": [
+      "Creates a left-aligned version of the string `str`. If `str` is shorter than `len` characters, the function adds `char` to the right of `str` to make the result `len` characters long. Otherwise the function returns `str` unchanged."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad(str,len,char)"
+  },
+  {
+    "token": "pad_right",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$pad_right(str,len,char)",
+    "snippet-body": [""],
+    "description": [
+      "Creates a right-aligned version of the string `str`. If `str` is shorter than `len` characters, the function adds `char` to the left of `str` to make the result `len` characters long. Otherwise the function returns `str` unchanged."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad_right(str,len,char)"
+  },
+  {
+    "token": "padcut",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$padcut(str,len)",
+    "snippet-body": [""],
+    "description": [
+      "Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters. Otherwise adds spaces to the right of `str` to make the result `len` characters long."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut(str,len)"
+  },
+  {
+    "token": "padcut",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$padcut(str,len,char)",
+    "snippet-body": [""],
+    "description": [
+      "Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters. Otherwise adds `char` to the right of `str` to make the result `len` characters long."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut(str,len,char)"
+  },
+  {
+    "token": "padcut_right",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$padcut_right(str,len,char)",
+    "snippet-body": [""],
+    "description": [
+      "Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters. Otherwise adds `char` to the left of `str` to make the result `len` characters long."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut_right(str,len,char)"
+  },
+  {
+    "token": "progress",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$$progress(pos,range,len,char1,char2)",
+    "snippet-body": [""],
+    "description": [
+      "Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress(pos,range,len,char1,char2)"
+  },
+  {
+    "token": "progress2",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$progress2(pos,range,len,char1,char2)",
+    "snippet-body": [""],
+    "description": [
+      "Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with. Produces different appearance than `$progress`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress2(pos,range,len,char1,char2)"
+  },
+  {
+    "token": "repeat",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$repeat(expr,count)",
+    "snippet-body": [""],
+    "description": [
+      "Returns `count` copies of `expr`. Note that `expr` is evaluated once before its value is used, so `$repeat` cannot be used for loops."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$repeat(expr,count)"
+  },
+  {
+    "token": "replace",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$replace(str,search,replace)",
+    "snippet-body": [""],
+    "description": [
+      "Replaces all occurrences of string `search` in string `str` with string `replace`.",
+      "Can also be used with an arbitrary number of arguments. Note that `$replace(str,search1,replace1,search2,replace2)` is generally not the same as `$replace($replace(str,search1,replace1),search2,replace2)`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$replace(str,search,replace)"
+  },
+  {
+    "token": "right",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$right(str,len)",
+    "snippet-body": [""],
+    "description": [
+      "Returns the first `len` characters from the right of string `str`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$right(str,len)"
+  },
+  {
+    "token": "roman",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$roman(int)",
+    "snippet-body": [""],
+    "description": ["Formats the integer number `int` in roman notation."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$roman(int)"
+  },
+  {
+    "token": "rot13",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$rot13(str)",
+    "snippet-body": [""],
+    "description": [
+      "Performs [ROT13](http://en.wikipedia.org/wiki/ROT13) transformation to given string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rot13(str)"
+  },
+  {
+    "token": "shortest",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$shortest(str,...strN)",
+    "snippet-body": [""],
+    "description": [
+      "Returns the first shortest element of its arguments. Can be used with an arbitrary number of strings."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$shortest(str,...strN)"
+  },
+  {
+    "token": "strchr",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$strchr(str,char)",
+    "snippet-body": [""],
+    "description": [
+      "Returns position of first occurrence of character `char` in string `str`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strchr(str,char)"
+  },
+  {
+    "token": "strrchr",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$strrchr(str,char)",
+    "snippet-body": [""],
+    "description": [
+      "Returns positions of last occurrence of character `char` in string `str`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strrchr(str,char)"
+  },
+  {
+    "token": "strstr",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$strstr(str1,str2)",
+    "snippet-body": [""],
+    "description": [
+      "Returns position of first occurrence of string `str2` in string `str1`. Function is case-sensitive."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strstr(str1,str2)"
+  },
+  {
+    "token": "strcmp",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$strcmp(str1,str2)",
+    "snippet-body": [""],
+    "description": [
+      "Performs a case-sensitive comparison of the strings `str1` and `str2`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strcmp(str1,str2)"
+  },
+  {
+    "token": "stricmp",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$stricmp(str1,str2)",
+    "snippet-body": [""],
+    "description": [
+      "Performs a case-insensitive comparison of the strings `str1` and `str2`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stricmp(str1,str2)"
   }
 ]

@@ -18,7 +18,7 @@ struttura della base di elementi:
 ]
 ```
 
-## popup:
+## popup
 
 ```text
 function $funcname(par1,par2,...)
@@ -29,3 +29,7 @@ example code
 
 See <link> for more information.
 ```
+
+1. Eliminare tutte le stringhe vuote dagli array e lasciare un array vuoto.
+2. Inserire gli esempi dal reference.
+3. Cercare la stringa "example" nel sito wiki e inserirli negli esempi vuoti.
