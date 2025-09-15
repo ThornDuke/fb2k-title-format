@@ -1255,5 +1255,320 @@
     "description": ["Sample rate of the track, in Hz."],
     "example": [""],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%samplerate%"
+  },
+  {
+    "token": "info",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$info(name)",
+    "snippet-body": [""],
+    "description": [
+      "Returns value of technical information field called `name`.",
+      "For convenience, the `%__name%` alias is also available."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+  },
+  {
+    "token": "channels",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$channels()",
+    "snippet-body": [""],
+    "description": ["The number of channels in text format."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$channels()"
+  },
+  {
+    "token": "replaygain_album_gain",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%replaygain_album_gain%",
+    "snippet-body": [""],
+    "description": ["The ReplayGain album gain value."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_gain%"
+  },
+  {
+    "token": "replaygain_album_peak",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%replaygain_album_peak%",
+    "snippet-body": [""],
+    "description": ["The ReplayGain album peak value."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak%"
+  },
+  {
+    "token": "replaygain_album_peak_db",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%replaygain_album_peak_db%",
+    "snippet-body": [""],
+    "description": ["The ReplayGain album peak value in decibels."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak_db%"
+  },
+  {
+    "token": "replaygain_track_gain",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%replaygain_track_gain%",
+    "snippet-body": [""],
+    "description": ["The ReplayGain track gain value."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_gain%"
+  },
+  {
+    "token": "replaygain_track_peak",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%replaygain_track_peak%",
+    "snippet-body": [""],
+    "description": ["The ReplayGain track peak value."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak%"
+  },
+  {
+    "token": "replaygain_track_peak_db",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%replaygain_track_peak_db%",
+    "snippet-body": [""],
+    "description": ["The ReplayGain track peak value in decibels."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak_db%"
+  },
+  {
+    "token": "filename",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%filename%",
+    "snippet-body": [""],
+    "description": ["The filename without directory and extension."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename%"
+  },
+  {
+    "token": "filename_ext",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%filename_ext%",
+    "snippet-body": [""],
+    "description": ["The filename with extension, but without the directory."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename_ext%"
+  },
+  {
+    "token": "directoryname",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%directoryname%",
+    "snippet-body": [""],
+    "description": [
+      "The name of the parent directory only, not the complete path."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%directoryname%"
+  },
+  {
+    "token": "last_modified",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%last_modified%",
+    "snippet-body": [""],
+    "description": [
+      "The date and time the file was last modified. Eg: `2005-12-22 00:04:10`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%last_modified%"
+  },
+  {
+    "token": "path",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%path%",
+    "snippet-body": [""],
+    "description": ["The complete path, including the filename and extension."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%path%"
+  },
+  {
+    "token": "_path_raw",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%_path_raw%",
+    "snippet-body": [""],
+    "description": ["The path as URL including the protocol scheme."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_path_raw%"
+  },
+  {
+    "token": "subsong",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%subsong%",
+    "snippet-body": [""],
+    "description": [
+      "The subsong index. The subsong index is used to distuingish multiple tracks in a single file, for example for cue sheets, tracker modules and various container formats."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%subsong%"
+  },
+  {
+    "token": "_foobar2000_version",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%_foobar2000_version%",
+    "snippet-body": [""],
+    "description": ["A string representing the version of foobar2000."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_foobar2000_version%"
+  },
+  {
+    "token": "year",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$year(time)",
+    "snippet-body": [""],
+    "description": [
+      "Retrieves the year part (formatted as four digits) from a time/date string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$year(time)"
+  },
+  {
+    "token": "month",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$month(time)",
+    "snippet-body": [""],
+    "description": [
+      "Retrieves the month part (formatted as two digits) from a time/date string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$month(time)"
+  },
+  {
+    "token": "day_of_month",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$day_of_month(time)",
+    "snippet-body": [""],
+    "description": [
+      "Retrieves the day of month part (formatted as two digits) from a time/date string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$day_of_month(time)"
+  },
+  {
+    "token": "date",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$date(time)",
+    "snippet-body": [""],
+    "description": [
+      "Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$date(time)"
+  },
+  {
+    "token": "time",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$time(time)",
+    "snippet-body": [""],
+    "description": [
+      "Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$time(time)"
+  },
+  {
+    "token": "get",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$get(name)",
+    "snippet-body": [""],
+    "description": [
+      "Returns the value that was last stored in the variable name, if the variable was not defined (yet), it returns nothing.",
+      "The truth value returned by `$get` indicates if the variable name was defined and is a non-empty string."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$get(name)"
+  },
+  {
+    "token": "put",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$put(name,value)",
+    "snippet-body": [""],
+    "description": [
+      "Stores `value` in the variable `name` and returns `value` unaltered."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$put(name,value)"
+  },
+  {
+    "token": "puts",
+    "realm": "FB2K",
+    "role": "function",
+    "sign": "$puts(name,value)",
+    "snippet-body": [""],
+    "description": [
+      "Stores `value` in the variable `name` and returns `nothing."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$puts(name,value)"
+  },
+  {
+    "token": "playback_time",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%playback_time%",
+    "snippet-body": [""],
+    "description": ["The elapsed time formatted as `[HH:]MM:SS`."],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time%"
+  },
+  {
+    "token": "playback_time_seconds",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%playback_time_seconds%",
+    "snippet-body": [""],
+    "description": [
+      "The elapsed time in seconds.",
+      "Old version: `%_time_elapsed%`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_seconds%"
+  },
+  {
+    "token": "playback_time_remaining",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%playback_time_remaining%",
+    "snippet-body": [""],
+    "description": [
+      "The time remaining until the track ends, formatted as `[HH:]MM:SS`.",
+      "Old version: `%_time_remaining%`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining%"
+  },
+  {
+    "token": "playback_time_remaining_seconds",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%playback_time_remaining_seconds%",
+    "snippet-body": [""],
+    "description": [
+      "The time remaining until the track ends, in seconds.",
+      "Old version: `%_time_remaining_seconds%`."
+    ],
+    "example": [""],
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining_seconds%"
   }
 ]
