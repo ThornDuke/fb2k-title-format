@@ -15,6 +15,11 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 ## [Unreleased]
 
+### Added
+
+- scripts/update-snippets.js
+- scripts/update-syntax.js
+
 ### Changed
 
 - [rewritten the list of tokens into the syntax definition]

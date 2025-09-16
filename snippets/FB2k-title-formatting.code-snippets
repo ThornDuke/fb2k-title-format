@@ -1,1829 +1,1731 @@
 {
   "Function: $add(a,b,...)": {
-    "prefix": "$add",
-    "body": ["\\$add(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: adds a and b"
+    "prefix": "add",
+    "body": [
+      "\\$add(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Adds `a` and `b`."
   },
-  "Function: $div(a,b,...)": {
-    "prefix": "$div",
-    "body": ["\\$div(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: Divides a by b and rounds down to an integer. If b evaluates to zero, it returns a. Can be used with an arbitrary number of arguments."
-  },
-  "Function: $sub(a,b,..)": {
-    "prefix": "$sub",
-    "body": ["\\$sub(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: Subtracts b from a. Can be used with an arbitrary number of arguments."
-  },
-  "Function: $mul(a,b,..)": {
-    "prefix": "$mul",
-    "body": ["\\$mul(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: Multiplies a and b. Can be used with an arbitrary number of arguments."
-  },
-  "Function: $muldiv(a,b,c)": {
-    "prefix": "$muldiv",
-    "body": ["\\$muldiv(${1:num a},${2:num b},${3:num c})"],
-    "description": "FB2K: Multiplies a and b, then divides by c. The result is rounded to the nearest integer."
+  "Function: $div(a,b)": {
+    "prefix": "div",
+    "body": [
+      "\\$div(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Divides `a` by `b` and rounds down to an integer. If `b` evaluates to zero, it returns `a`."
   },
   "Function: $greater(a,b)": {
-    "prefix": "$greater",
-    "body": ["\\$greater(${1:num a},${2:num b})"],
-    "description": "FB2K: Returns true, if a is greater than b, otherwise false."
+    "prefix": "greater",
+    "body": [
+      "\\$greater(${1:num a},${2:num b})"
+    ],
+    "description": "FB2K: Returns true, if `a` is greater than `b`, otherwise false."
   },
-  "Function: $max(a,b,...)": {
-    "prefix": "$max",
-    "body": ["\\$max(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: Returns the maximum of a and b. Can be used with an arbitrary number of arguments."
+  "Function: $max(a,b)": {
+    "prefix": "max",
+    "body": [
+      "\\$max(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Returns the maximum of `a` and `b`."
   },
-  "Function: $min(a,b,...)": {
-    "prefix": "$min",
-    "body": ["\\$min(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: Returns the minimum of a and b. Can be used with an arbitrary number of arguments."
+  "Function: $min(a,b)": {
+    "prefix": "min",
+    "body": [
+      "\\$min(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Returns the minimum of `a` and `b`."
   },
-  "Function: $mod(a,b,...)": {
-    "prefix": "$mod",
-    "body": ["\\$mod(${1:num a},${2:num b}${3:[,...]})"],
-    "description": "FB2K: Computes the remainder of dividing a through b. The result has the same sign as a. If b evaluates to zero, the result is a. Can be used with an arbitrary number of arguments."
+  "Function: $mod(a,b)": {
+    "prefix": "mod",
+    "body": [
+      "\\$mod(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Computes the remainder of dividing `a` through `b`."
+  },
+  "Function: $mul(a,b)": {
+    "prefix": "mul",
+    "body": [
+      "\\$mul(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Multiplies `a` and `b`."
+  },
+  "Function: $muldiv(a,b,c)": {
+    "prefix": "muldiv",
+    "body": [
+      "\\$muldiv(${1:num a},${2:num b},${3:num c})"
+    ],
+    "description": "FB2K: Multiplies `a` and `b`, then divides by `c`."
   },
   "Function: $rand()": {
-    "prefix": "$rand",
-    "body": ["\\$rand()"],
-    "description": "FB2K: Generates a random number in the range from 0 to 2^32-1."
+    "prefix": "rand",
+    "body": [
+      "\\$rand()"
+    ],
+    "description": "FB2K: Generates a random number in the range from 0 to 2<sup>32</sup>-1."
+  },
+  "Function: $sub(a,b)": {
+    "prefix": "sub",
+    "body": [
+      "\\$sub(${1:num a},${2:num b}${3:[,...]})"
+    ],
+    "description": "FB2K: Subtracts `b` from `a`."
   },
   "Function: $and(expr,...)": {
-    "prefix": "$and",
-    "body": ["\\$and(${1:expr}${2:[,...]})"],
-    "description": "FB2K: Logical And of an arbitrary number of arguments. Returns true, if and only if all expr arguments evaluate to true."
+    "prefix": "and",
+    "body": [
+      "\\$and(${1:expr}${2:[,...]})"
+    ],
+    "description": "FB2K: Logical `AND` of an arbitrary number of arguments."
   },
   "Function: $or(expr,...)": {
-    "prefix": "$or",
-    "body": ["\\$or(${1:expr}${2:[,...]})"],
-    "description": "FB2K: Logical Or of an arbitrary number of arguments. Returns true, if at least one expression evaluates to true."
+    "prefix": "or",
+    "body": [
+      "\\$or(${1:expr}${2:[,...]})"
+    ],
+    "description": "FB2K: Logical `OR` of an arbitrary number of arguments."
   },
   "Function: $not(expr)": {
-    "prefix": "$not",
-    "body": ["\\$not(${1:expr})"],
-    "description": "FB2K: Logical Not. Returns the logical opposite of EXPR: false, if expr is true and true if expr is false."
-  },
-  "Function: $xor(expr,...)": {
-    "prefix": "$xor",
-    "body": ["\\$xor(${1:expr}${2:[,...]})"],
-    "description": "FB2K: Logical Exclusive-or of an arbitrary number of arguments. Returns true, if an odd number of arguments evaluate to true."
+    "prefix": "not",
+    "body": [
+      "\\$not(${1:expr})"
+    ],
+    "description": "FB2K: Logical `NOT`."
   },
   "Function: $if(X,Y)": {
-    "prefix": "$if",
-    "body": ["\\$if(${1:X},${2:Y})"],
-    "description": "FB2K: If cond contains at least one present field, executes/displays Y."
+    "prefix": "if",
+    "body": [
+      "\\$if(${1:X},${2:Y})"
+    ],
+    "description": "FB2K: If `X` contains at least one present field, executes/displays `Y`."
+  },
+  "Function: $xor(expr,...)": {
+    "prefix": "xor",
+    "body": [
+      "\\$xor(${1:expr}${2:[,...]})"
+    ],
+    "description": "FB2K: Logical Exclusive-`or` of an arbitrary number of arguments."
   },
   "Function: $if(X,Y,Z)": {
-    "prefix": "$if",
-    "body": ["\\$if(${1:X},${2:Y},${3:Z})"],
-    "description": "FB2K: If X contains at least one present field, executes/displays Y, otherwise executes/displays Z."
+    "prefix": "if",
+    "body": [
+      "\\$if(${1:X},${2:Y},${3:Z})"
+    ],
+    "description": "FB2K: If `X` contains at least one present field, executes/displays `Y`, otherwise executes/displays `Z`."
   },
   "Function: $if2(X,Y)": {
-    "prefix": "$if2",
-    "body": ["\\$if2(${1:X},${2:Y})"],
-    "description": "FB2K: If X contains at least one present field, executes/displays X, otherwise executes/displays Y. Same as $if(X,X,Y)."
+    "prefix": "if2",
+    "body": [
+      "\\$if2(${1:X},${2:Y})"
+    ],
+    "description": "FB2K: If `X` contains at least one present field, executes/displays `X`, otherwise executes/displays `Y`."
   },
-  "Function: $if3(X,Y,Z,..)": {
-    "prefix": "$if3",
-    "body": ["\\$if3(${1:X},${2:Y},${3:Z}${4:[,...]})"],
+  "Function: $if3(X,Y,Z,...)": {
+    "prefix": "if3",
+    "body": [
+      "\\$if3(${1:X},${2:Y},${3:Z}${4:[,...]})"
+    ],
     "description": "FB2K: Returns the first of parameters that contains at least one present field."
   },
-  "Function: $ifgreater(A,B,C,D)": {
-    "prefix": "$ifgreater",
-    "body": ["\\$ifgreater(${1:num A},${2:num B},${3:C},${4:D})"],
-    "description": "FB2K: If the number A is greater than the number B, executes/returns C, otherwise executes/returns D."
+  "Function: $ifequal(int1,int2,then,else)": {
+    "prefix": "ifequal",
+    "body": [
+      "\\$ifequal(${1:num int1},${2:num int2},${3:then},${4:else})"
+    ],
+    "description": "FB2K: Compares the integer numbers `int1` and `int2`, if `int1` is equal to `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
   },
-  "Function: $iflonger(A,B,C,D)": {
-    "prefix": "$iflonger",
-    "body": ["\\$iflonger(${1:string A},${2:num B},${3:C},${4:D})"],
-    "description": "FB2K: If the string A is longer than B characters, executes/returns C, otherwise executes/returns D."
+  "Function: $ifgreater(int1,int2,then,else)": {
+    "prefix": "ifgreater",
+    "body": [
+      "\\$ifgreater(${1:num int1},${2:num int2},${3:then},${4:else})"
+    ],
+    "description": "FB2K: Compares the integer numbers `int1` and `int2`, if `int1` is greater than `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
   },
-  "Function: $ifequal(A,B,C,D)": {
-    "prefix": "$ifequal",
-    "body": ["\\$ifequal(${1:num A},${2:num B},${3:C},${4:D})"],
-    "description": "FB2K: If the number A is equal to the number B, executes/returns C, otherwise executes/returns D."
-  },
-  "Function: $longest(A,B,C,….)": {
-    "prefix": "$longest",
-    "body": ["\\$longest(${1:string A},${2:string B}${3:[,...]})"],
-    "description": "FB2K: Compares lengths of of A,B,C… and returns the longest one."
+  "Function: $iflonger(str,n,then,else)": {
+    "prefix": "iflonger",
+    "body": [
+      "\\$iflonger(${1:string str},${2:num n},${3:then},${4:else})"
+    ],
+    "description": "FB2K: Compares the length of the string `str` to the number `n`, if `str` is longer than `n` characters, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
   },
   "Function: $select(N,A,B,C,….)": {
-    "prefix": "$select",
-    "body": ["\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"],
-    "description": "FB2K: Returns N-th of A,B,C… parameters."
+    "prefix": "select",
+    "body": [
+      "\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"
+    ],
+    "description": "FB2K: Returns `N`-th of `A`,`B`,`C`… parameters."
   },
   "Function: $abbr(str)": {
-    "prefix": "$abbr",
-    "body": ["\\$abbr(${1:str})"],
-    "description": "FB2K: Returns abbreviation of string str. Words which begin with an alphanumeric character are shortened to the first character. Spaces and parentheses are stripped."
+    "prefix": "abbr",
+    "body": [
+      "\\$abbr(${1:str})"
+    ],
+    "description": "FB2K: Returns abbreviation of string `str`."
+  },
+  "Function: $abbr(str,len)": {
+    "prefix": "abbr",
+    "body": [
+      "\\$ansi(${1:str}),${2:len})"
+    ],
+    "description": "FB2K: Returns abbreviation of `str`, if `str` is longer than `len` characters, otherwise returns `str`."
   },
   "Function: $ansi(str)": {
-    "prefix": "$ansi",
-    "body": ["\\$ansi(${1:str})"],
-    "description": "FB2K: Converts string str to system codepage and back. Any characters that are not present in the system codepage will be removed / replaced."
+    "prefix": "ansi",
+    "body": [
+      "\\$ansi(${1:str})"
+    ],
+    "description": "FB2K: Converts string `str` to system codepage and back."
   },
   "Function: $ascii(str)": {
-    "prefix": "$ascii",
-    "body": ["\\$ascii(${1:str})"],
-    "description": "FB2K: Converts string str to ASCII. Any characters that are not present in ASCII will be removed / replaced."
+    "prefix": "ascii",
+    "body": [
+      "\\$ascii(${1:str})"
+    ],
+    "description": "FB2K: Converts string `str` to ASCII."
   },
   "Function: $caps(str)": {
-    "prefix": "$caps",
-    "body": ["\\$caps(${1:str})"],
-    "description": "FB2K: Converts first letter in every word of string str to uppercase, and all other letters to lowercase."
+    "prefix": "caps",
+    "body": [
+      "\\$caps(${1:str})"
+    ],
+    "description": "FB2K: Converts first letter in every word of string `str` to uppercase, and all other letters to lowercase."
   },
   "Function: $caps2(str)": {
-    "prefix": "$caps2",
-    "body": ["\\$caps2(${1:str})"],
-    "description": "FB2K: Converts first letter in every word of string str to uppercase, and leaves all other letters as they are."
+    "prefix": "caps2",
+    "body": [
+      "\\$caps2(${1:str})"
+    ],
+    "description": "FB2K: Converts first letter in every word of string `str` to uppercase, and leaves all other letters as they are."
   },
   "Function: $char(nbr)": {
-    "prefix": "$char",
-    "body": ["\\$char(${1:nbr})"],
+    "prefix": "char",
+    "body": [
+      "\\$char(${1:nbr})"
+    ],
     "description": "FB2K: Returns Unicode character of nbr."
   },
   "Function: $crc32(str)": {
-    "prefix": "$crc32",
-    "body": ["\\$crc32(${1:str})"],
-    "description": "FB2K: Computes the CRC32 of the string str as a number."
+    "prefix": "crc32",
+    "body": [
+      "\\$crc32(${1:str})"
+    ],
+    "description": "FB2K: Computes the CRC32 of the string `str` as a number."
   },
   "Function: $crlf()": {
-    "prefix": "$crlf",
-    "body": ["\\$crlf()"],
+    "prefix": "crlf",
+    "body": [
+      "\\$crlf()"
+    ],
     "description": "FB2K: Inserts end-of-line marker (carriage return, line feed)."
   },
-  "Function: $tab()": {
-    "prefix": "$tab",
-    "body": ["\\$tab()"],
-    "description": "FB2K: Inserts one tabulator character."
-  },
-  "Function: $tab(count)": {
-    "prefix": "$tab",
-    "body": ["\\$tab(${1:count})"],
-    "description": "FB2K: Inserts count tabulator characters."
-  },
   "Function: $cut(str,len)": {
-    "prefix": "$cut",
-    "body": ["\\$cut(${1:str},${2:len})"],
-    "description": "FB2K: Returns first len characters from the left of the string str. This function is the same as $left(a,len). Negative numbers produce the entire string."
+    "prefix": "cut",
+    "body": [
+      "\\$cut(${1:str},${2:len})"
+    ],
+    "description": "FB2K: Returns first `len` characters from the left of the string `str`."
   },
   "Function: $directory(path)": {
-    "prefix": "$directory",
-    "body": ["\\$directory(${1:path})"],
-    "description": "FB2K: Extracts only the directory name."
+    "prefix": "directory",
+    "body": [
+      "\\$directory(${1:path})"
+    ],
+    "description": "FB2K: Extracts only the directory name (not full path)"
   },
   "Function: $directory(path,n)": {
-    "prefix": "$directory",
-    "body": ["\\$directory(${1:path},${2:num n})"],
-    "description": "FB2K: Extracts directory name from the file path; goes up by n levels."
+    "prefix": "directory",
+    "body": [
+      "\\$directory(${1:path},${2:num n})"
+    ],
+    "description": "FB2K: Extracts directory name from the file `path`; goes up by `n` levels."
   },
   "Function: $directory_path(path)": {
-    "prefix": "$directory_path",
-    "body": ["\\$directory_path(${1:path})"],
+    "prefix": "directory_path",
+    "body": [
+      "\\$directory_path(${1:path})"
+    ],
     "description": "FB2K: Extracts directory path from the file path."
   },
   "Function: $ext(path)": {
-    "prefix": "$ext",
-    "body": ["\\$ext(${1:path})"],
-    "description": "FB2K: Extracts file extension from string path, a file name or full path."
+    "prefix": "ext",
+    "body": [
+      "\\$ext(${1:path})"
+    ],
+    "description": "FB2K: Extracts file extension from string `path`; a file name or full path."
   },
   "Function: $filename(path)": {
-    "prefix": "$filename",
-    "body": ["\\$filename(${1:path})"],
-    "description": "FB2K: Extracts file name from full path."
+    "prefix": "filename",
+    "body": [
+      "\\$filename(${1:path})"
+    ],
+    "description": "FB2K: Extracts file name from full `path`."
   },
-  "Function: $fix_eol(str)": {
-    "prefix": "$fix_eol",
-    "body": ["\\$fix_eol(${1:str})"],
-    "description": "FB2K: If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by ' (...)'. Otherwise str is returned unaltered."
+  "Function: $fix_eol(path)": {
+    "prefix": "fix_eol",
+    "body": [
+      "\\$fix_eol(${1:str})"
+    ],
+    "description": "FB2K: If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `(...)`. Otherwise `str` is returned unaltered."
   },
-  "Function: $fix_eol(str,indicator)": {
-    "prefix": "$fix_eol",
-    "body": ["\\$fix_eol(${1:str},${2:indicator})"],
-    "description": "FB2K: If str contains an end-of-line marker (CR-LF), the end-of-line marker and all text to the right of it is replaced by indicator. Otherwise str is returned unaltered."
+  "Function: $fix_eol(path,indicator)": {
+    "prefix": "fix_eol",
+    "body": [
+      "\\$fix_eol(${1:str},${2:indicator})"
+    ],
+    "description": "FB2K: If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `indicator`. Otherwise `str` is returned unaltered."
   },
   "Function: $hex(int,len)": {
-    "prefix": "$hex",
-    "body": ["\\$hex(${1:int},${2:len})"],
-    "description": "FB2K: Formats the integer number int in hexadecimal notation with len digits. Pads with zeros from the left if necessary."
+    "prefix": "hex",
+    "body": [
+      "\\$hex(${1:int},${2:len})"
+    ],
+    "description": "FB2K: Formats the integer number `int` in hexadecimal notation with `len` digits."
   },
   "Function: $insert(str,insert,n)": {
-    "prefix": "$insert",
-    "body": ["\\$insert(${1:str},${2:string insert},${3:num n})"],
-    "description": "FB2K: Inserts 'insert' into str after n characters."
+    "prefix": "insert",
+    "body": [
+      "\\$insert(${1:str},${2:string insert},${3:num n})"
+    ],
+    "description": "FB2K: Inserts `insert` into `str` after `n` characters."
   },
-  "Function: $left(str,len)": {
-    "prefix": "$left",
-    "body": ["\\$left(${1:str},${2:len})"],
-    "description": "FB2K: Returns first len characters from the left of the string str. This function is the same as $cut(str,len). Negative numbers produce the entire string."
+  "Function: $left(str,n)": {
+    "prefix": "left",
+    "body": [
+      "\\$left(${1:str},${2:len})"
+    ],
+    "description": "FB2K: Returns first `len` characters from the left of the string `str`."
   },
   "Function: $len(str)": {
-    "prefix": "$len",
-    "body": ["\\$len(${1:str})"],
-    "description": "FB2K: Returns length of string str in characters."
+    "prefix": "len",
+    "body": [
+      "\\$len(${1:str})"
+    ],
+    "description": "FB2K: Returns length of string `str` in characters."
   },
   "Function: $len2(str)": {
-    "prefix": "$len2",
-    "body": ["\\$len2(${1:str})"],
-    "description": "FB2K: Returns length of string str in characters, respecting double-width character rules (double-width characters will be counted as two)."
+    "prefix": "len2",
+    "body": [
+      "\\$len2(${1:str})"
+    ],
+    "description": "FB2K: Returns length of string `str` in characters, respecting double-width character rules (double-width characters will be counted as two)."
   },
   "Function: $longer(str1,str2)": {
-    "prefix": "$longer",
-    "body": ["\\$longer(${1:str1},${2:str2})"],
-    "description": "FB2K: Returns true, if string str1 is longer than string str2, false otherwise."
+    "prefix": "longer",
+    "body": [
+      "\\$longer(${1:str1},${2:str2})"
+    ],
+    "description": "FB2K: Returns `true`, if string `str1` is longer than string `str2`, `false` otherwise."
   },
   "Function: $lower(str)": {
-    "prefix": "$lower",
-    "body": ["\\$lower(${1:str})"],
-    "description": "FB2K: Converts string str to lowercase."
+    "prefix": "lower",
+    "body": [
+      "\\$lower(${1:str})"
+    ],
+    "description": "FB2K: Converts string `str` to lowercase."
   },
-  "Function: $longest(str1,...)": {
-    "prefix": "$longest",
-    "body": ["\\$longest(${1:str1}${2:[,...]})"],
-    "description": "FB2K: Returns the longest of its arguments. Can be used with an arbitrary number of strings."
+  "Function: $longest(arg,...)": {
+    "prefix": "longest",
+    "body": [
+      "\\$longest(${1:string arg1},${2:string arg2}${3:[,...]})"
+    ],
+    "description": "FB2K: Returns the longest of its arguments."
   },
-  "Function: $num(num,len)": {
-    "prefix": "$num",
-    "body": ["\\$num(${1:nbr},${2:num len})"],
-    "description": "FB2K: Formats the integer number nbr in decimal notation with len characters. Pads with zeros from the left if necessary. len includes the dash when the number is negative. If nbr is not numeric, it is treated as zero."
+  "Function: $num(nbr,len)": {
+    "prefix": "num",
+    "body": [
+      "\\$num(${1:num nbr},${2:num len})"
+    ],
+    "description": "FB2K: Formats the integer number `nbr` in decimal notation with `len` characters."
   },
   "Function: $pad(str,len)": {
-    "prefix": "$pad",
-    "body": ["\\$pad(${1:str},${2:num len})"],
-    "description": "FB2K: Creates a left-aligned version of the string str. If str is shorter than len characters, the function adds spaces to the right of str to make the result len characters long. Otherwise the function returns str unchanged."
+    "prefix": "pad",
+    "body": [
+      "\\$pad(${1:str},${2:num len})"
+    ],
+    "description": "FB2K: Creates a left-aligned version of the string `str`."
   },
   "Function: $pad_right(str,len)": {
-    "prefix": "$pad_right",
-    "body": ["\\$pad_right(${1:str},${2:num len})"],
-    "description": "FB2K: Creates a right-aligned version of the string str. If str is shorter than len characters, the function adds spaces to the left of str to make the result len characters long. Otherwise the function returns str unchanged."
+    "prefix": "pad_right",
+    "body": [
+      "\\$pad_right(${1:str},${2:num len})"
+    ],
+    "description": "FB2K: Creates a right-aligned version of the string `str`."
   },
   "Function: $pad(str,len,char)": {
-    "prefix": "$pad",
-    "body": ["\\$pad(${1:str},${2:num len},${3:char})"],
-    "description": "FB2K: Creates a left-aligned version of the string str. If str is shorter than len characters, the function adds char to the right of str to make the result len characters long. Otherwise the function returns str unchanged."
+    "prefix": "pad",
+    "body": [
+      "\\$pad(${1:str},${2:num len},${3:char})"
+    ],
+    "description": "FB2K: Creates a left-aligned version of the string `str`."
   },
   "Function: $pad_right(str,len,char)": {
-    "prefix": "$pad_right",
-    "body": ["\\$pad_right(${1:str},${2:num len},${3:char})"],
-    "description": "FB2K: Creates a right-aligned version of the string str. If str is shorter than len characters, the function adds char to the left of str to make the result len characters long. Otherwise the function returns str unchanged."
+    "prefix": "pad_right",
+    "body": [
+      "\\$pad_right(${1:str},${2:num len},${3:char})"
+    ],
+    "description": "FB2K: Creates a right-aligned version of the string `str`."
   },
   "Function: $padcut(str,len)": {
-    "prefix": "$padcut",
-    "body": ["\\$padcut(${1:str},${2:num len})"],
-    "description": "FB2K: Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds spaces to the right of str to make the result len characters long."
+    "prefix": "padcut",
+    "body": [
+      "\\$padcut(${1:str},${2:num len})"
+    ],
+    "description": "FB2K: Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters."
   },
   "Function: $padcut(str,len,char)": {
-    "prefix": "$padcut",
-    "body": ["\\$padcut(${1:str},${2:num len},${3:char})"],
-    "description": "FB2K: Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds char to the right of str to make the result len characters long."
+    "prefix": "padcut",
+    "body": [
+      "\\$padcut(${1:str},${2:num len},${3:char})"
+    ],
+    "description": "FB2K: Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters."
   },
   "Function: $padcut_right(str,len)": {
-    "prefix": "$padcut_right",
-    "body": ["\\$padcut_right(${1:str},${2:num len})"],
-    "description": "FB2K: Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds spaces to the left of str to make the result len characters long."
+    "prefix": "padcut_right",
+    "body": [
+      "\\$padcut_right(${1:str},${2:num len})"
+    ],
+    "description": "FB2K: Returns first len characters from the left of str, if str is longer than len characters."
   },
   "Function: $padcut_right(str,len,char)": {
-    "prefix": "$padcut_right",
-    "body": ["\\$padcut_right(${1:str},${2:num len},${3:char})"],
-    "description": "FB2K: Returns first len characters from the left of str, if str is longer than len characters. Otherwise adds char to the left of str to make the result len characters long."
+    "prefix": "padcut_right",
+    "body": [
+      "\\$padcut_right(${1:str},${2:num len})"
+    ],
+    "description": "FB2K: Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters."
   },
   "Function: $progress(pos,range,len,char1,char2)": {
-    "prefix": "$progress",
+    "prefix": "progress",
     "body": [
       "\\$progress(${1:num pos},${2:num range},${3:num len},${4:char1},${5:char2})"
     ],
-    "description": "FB2K: Creates a progress bar: 'pos' contains position, 'range' contains range, 'len' progress bar length in characters, 'char1' and 'char2' are characters to build progress bar with."
+    "description": "FB2K: Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with."
   },
   "Function: $progress2(pos,range,len,char1,char2)": {
-    "prefix": "$progress2",
+    "prefix": "progress2",
     "body": [
       "\\$progress2(${1:num pos},${2:num range},${3:num len},${4:char1},${5:char2})"
     ],
-    "description": "FB2K: Creates a progress bar: pos contains position, range contains range, len progress bar length in characters, char1 and char2 are characters to build progress bar with. Produces different appearance than '$progress.'"
+    "description": "FB2K: Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with. Produces different appearance than `$progress`."
   },
   "Function: $repeat(expr,count)": {
-    "prefix": "$repeat",
-    "body": ["\\$repeat(${1:expr},${2:num count})"],
-    "description": "FB2K: Returns count copies of expr."
-  },
-  "Function: $replace(str,search1,replace1[,search2,replace2,...])": {
-    "prefix": "$replace",
+    "prefix": "repeat",
     "body": [
-      "\\$replace(${1:str},${2:string search1},${3:string replace1}${4:[,search2,replace2,...]})"
+      "\\$repeat(${1:expr},${2:num count})"
     ],
-    "description": "FB2K: Replaces all occurrences of string 'search1' in string 'str' with string 'replace1'. Can also be used with an arbitrary number of arguments."
+    "description": "FB2K: Returns `count` copies of `expr`."
+  },
+  "Function: $replace(str,search,replace)": {
+    "prefix": "replace",
+    "body": [
+      "\\$replace(${1:str},${2:string search1},${3:string replace1}${4:[,search2,replace2,...]}"
+    ],
+    "description": "FB2K: Replaces all occurrences of string `search` in string `str` with string `replace`."
   },
   "Function: $right(str,len)": {
-    "prefix": "$right",
-    "body": ["\\$right(${1:str},${2:num len})"],
-    "description": "FB2K: Returns the first len characters from the right of string str."
+    "prefix": "right",
+    "body": [
+      "\\$right(${1:str},${2:num len})"
+    ],
+    "description": "FB2K: Returns the first `len` characters from the right of string `str`."
   },
   "Function: $roman(int)": {
-    "prefix": "$roman",
-    "body": ["\\$roman(${1:int})"],
-    "description": "FB2K: Formats the integer number int in roman notation."
+    "prefix": "roman",
+    "body": [
+      "\\$roman(${1:int})"
+    ],
+    "description": "FB2K: Formats the integer number `int` in roman notation."
   },
   "Function: $rot13(str)": {
-    "prefix": "$rot13",
-    "body": ["\\$rot13(${1:str})"],
-    "description": "FB2K: Performs ROT13 transformation to given string."
+    "prefix": "rot13",
+    "body": [
+      "\\$rot13(${1:str})"
+    ],
+    "description": "FB2K: Performs [ROT13](http://en.wikipedia.org/wiki/ROT13) transformation to given string."
   },
-  "Function: $shortest(str,...)": {
-    "prefix": "$shortest",
-    "body": ["\\$shortest(${1:str}${2:[,...]})"],
-    "description": "FB2K: Returns the first shortest element of its arguments. Can be used with an arbitrary number of strings."
+  "Function: $shortest(str,...strN)": {
+    "prefix": "shortest",
+    "body": [
+      "\\$shortest(${1:str}${2:[,...]})"
+    ],
+    "description": "FB2K: Returns the first shortest element of its arguments."
   },
   "Function: $strchr(str,char)": {
-    "prefix": "$strchr",
-    "body": ["\\$strchr(${1:str},${2:char})"],
-    "description": "FB2K: Returns position of first occurrence of character char in string str."
+    "prefix": "strchr",
+    "body": [
+      "\\$strchr(${1:str},${2:char})"
+    ],
+    "description": "FB2K: Returns position of first occurrence of character `char` in string `str`."
   },
   "Function: $strrchr(str,char)": {
-    "prefix": "$strrchr",
-    "body": ["\\$strrchr(${1:str},${2:char})"],
-    "description": "FB2K: Returns positions of last occurrence of character char in string str."
+    "prefix": "strrchr",
+    "body": [
+      "\\$strrchr(${1:str},${2:char})"
+    ],
+    "description": "FB2K: Returns positions of last occurrence of character `char` in string `str`."
   },
   "Function: $strstr(str1,str2)": {
-    "prefix": "$strstr",
-    "body": ["\\$strstr(${1:str1},${2:str2})"],
-    "description": "FB2K: Returns position of first occurrence of string str2 in string str1. Function is case-sensitive."
+    "prefix": "strstr",
+    "body": [
+      "\\$strstr(${1:str1},${2:str2})"
+    ],
+    "description": "FB2K: Returns position of first occurrence of string `str2` in string `str1`. Function is case-sensitive."
   },
-  "Function $strcmp(str1,str2)": {
-    "prefix": "$strcmp",
-    "body": ["\\$strcmp(${1:str1},${2:str2})"],
-    "description": "FB2K: Performs a case-sensitive comparison of the strings str1 and str2."
+  "Function: $strcmp(str1,str2)": {
+    "prefix": "strcmp",
+    "body": [
+      "\\$strcmp(${1:str1},${2:str2})"
+    ],
+    "description": "FB2K: Performs a case-sensitive comparison of the strings `str1` and `str2`."
   },
   "Function: $stricmp(str1,str2)": {
-    "prefix": "$stricmp",
-    "body": ["\\$stricmp(${1:str1},${2:str2})"],
-    "description": "FB2K: Performs a case-insensitive comparison of the strings str1 and str2."
+    "prefix": "stricmp",
+    "body": [
+      "\\$stricmp(${1:str1},${2:str2})"
+    ],
+    "description": "FB2K: Performs a case-insensitive comparison of the strings `str1` and `str2`."
   },
-  "Function $stripprefix(str)": {
-    "prefix": "$stripprefix",
-    "body": ["\\$stripprefix(${1:str})"],
-    "description": "FB2K: Removes A and The prefixes from string str."
+  "Function: $stripprefix(str)": {
+    "prefix": "stripprefix",
+    "body": [
+      "\\$stripprefix(${1:str})"
+    ],
+    "description": "FB2K: Removes 'A' and 'The' prefixes from string `str`."
   },
   "Function: $stripprefix(str,prefix1,prefix2,...)": {
-    "prefix": "$stripprefix",
-    "body": ["\\$stripprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"],
-    "description": "FB2K: Removes the specified prefixes from string str."
+    "prefix": "stripprefix",
+    "body": [
+      "\\$stripprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"
+    ],
+    "description": "FB2K: Removes the specified prefixes from string `str`."
   },
   "Function: $substr(str,from,to)": {
-    "prefix": "$substr",
-    "body": ["\\$substr(${1:str},${2:num from},${3:num to})"],
-    "description": "FB2K: Returns substring of string str, starting from FROM-th character and ending at TO-th character."
+    "prefix": "substr",
+    "body": [
+      "\\$substr(${1:str},${2:num from},${3:num to})"
+    ],
+    "description": "FB2K: Returns substring of string `str`, starting from `FROM`-th character and ending at `TO`-th character."
   },
   "Function: $swapprefix(str)": {
-    "prefix": "$swapprefix",
-    "body": ["\\$swapprefix(${1:str})"],
-    "description": "FB2K: Moves A and The prefixes to the end of string str."
+    "prefix": "swapprefix",
+    "body": [
+      "\\$swapprefix(${1:str})"
+    ],
+    "description": "FB2K: Moves 'A' and 'The' prefixes to the end of string `str`."
   },
   "Function: $swapprefix(str,prefix1,prefix2,...)": {
-    "prefix": "$swapprefix",
-    "body": ["\\$swapprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"],
-    "description": "FB2K: Moves the specified prefixes to the end of string str."
+    "prefix": "swapprefix",
+    "body": [
+      "\\$swapprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"
+    ],
+    "description": "FB2K: Moves the specified prefixes to the end of string `str`."
   },
   "Function: $trim(str)": {
-    "prefix": "$trim",
-    "body": ["\\$trim(${1:str})"],
-    "description": "FB2K: Removes leading and trailing spaces from string str."
+    "prefix": "trim",
+    "body": [
+      "\\$trim(${1:str})"
+    ],
+    "description": "FB2K: Removes leading and trailing spaces from string `str`."
+  },
+  "Function: $tab()": {
+    "prefix": "tab",
+    "body": [
+      "\\$tab()"
+    ],
+    "description": "FB2K: Inserts one tabulator character."
+  },
+  "Function: $tab(count)": {
+    "prefix": "tab",
+    "body": [
+      "\\$tab(${1:count})"
+    ],
+    "description": "FB2K: Inserts `count` tabulator characters."
   },
   "Function: $upper(str)": {
-    "prefix": "$upper",
-    "body": ["\\$upper(${1:str})"],
-    "description": "FB2K: Converts string str to uppercase."
+    "prefix": "upper",
+    "body": [
+      "\\$upper(${1:str})"
+    ],
+    "description": "FB2K: Converts string `str` to uppercase."
   },
   "Function: $meta(name)": {
-    "prefix": "$meta",
-    "body": ["\\$meta(${1:name})"],
-    "description": "FB2K: Returns value of tag called name. If multiple values of that tag exist, they are concatenated with ', ' as separator."
+    "prefix": "meta",
+    "body": [
+      "\\$meta(${1:name})"
+    ],
+    "description": "FB2K: Returns value of tag called `name`."
   },
   "Function: $meta(name,n)": {
-    "prefix": "$meta",
-    "body": ["\\$meta(${1:name},${2:num n})"],
-    "description": "FB2K: Returns value of n-th (0,1,2 and so on) tag called name."
+    "prefix": "meta",
+    "body": [
+      "\\$meta(${1:name},${2:num n})"
+    ],
+    "description": "FB2K: Returns value of `n`-th (0,1,2 and so on) tag called `name`."
   },
   "Function: $meta_sep(name,sep)": {
-    "prefix": "$meta_sep",
-    "body": ["\\$meta_sep(${1:name},${2:string sep})"],
-    "description": "FB2K: Returns value of tag called name. If multiple values of that tag exist, they are concatenated with sep as separator."
+    "prefix": "meta_sep",
+    "body": [
+      "\\$meta_sep(${1:name},${2:string sep})"
+    ],
+    "description": "FB2K: Returns value of tag called `name`."
   },
   "Function: $meta_sep(name,sep,lastsep)": {
-    "prefix": "$meta_sep",
-    "body": ["\\$meta_sep(${1:name},${2:string sep},${3:string lastsep})"],
-    "description": "FB2K: Returns value of tag called name. If multiple values of that tag exist, they are concatenated with sep as separator between all but the last two values which are concatenated with lastsep."
+    "prefix": "meta_sep",
+    "body": [
+      "\\$meta_sep(${1:name},${2:string sep},${3:string lastsep})"
+    ],
+    "description": "FB2K: Returns value of tag called `name`."
   },
-  "Function: $meta_test(tag,...)": {
-    "prefix": "$meta_test",
-    "body": ["\\$meta_test(${1:tag}${2:[,...]})"],
-    "description": "FB2K: Returns 1, if all given tags exist, undefined otherwise. Example: $meta_test(artist,title) → true"
+  "Function: $meta_test(...)": {
+    "prefix": "meta_test",
+    "body": [
+      "\\$meta_test(${1:tag}${2:[,...]})"
+    ],
+    "description": "FB2K: Returns 1, if all given tags exist, undefined otherwise."
   },
   "Function: $meta_num(name)": {
-    "prefix": "$meta_num",
-    "body": ["\\$meta_num(${1:name})"],
-    "description": "FB2K: Returns the number of values for the tag called name."
-  },
-  "Function: $peak_to_db(X)": {
-    "prefix": "$peak_to_db",
-    "body": ["\\$peak_to_db(${1:num X})"],
-    "description": "Converts audio peak value from 0..1 PCM to decibels."
+    "prefix": "meta_num",
+    "body": [
+      "\\$meta_num(${1:name})"
+    ],
+    "description": "FB2K: Returns the number of values for the tag called `name`."
   },
   "Tag: %album artist%": {
-    "prefix": "%album artist%",
-    "body": ["%album artist%"],
-    "description": "FB2K: Name of the artist of the album specified track belongs to."
-  },
-  "Tag: %<album artist>%": {
-    "prefix": "%<album artist>%",
-    "body": ["%<album artist>%"],
+    "prefix": "album artist",
+    "body": [
+      "%album artist%"
+    ],
     "description": "FB2K: Name of the artist of the album specified track belongs to."
   },
   "Tag: %album%": {
-    "prefix": "%album%",
-    "body": ["%album%"],
-    "description": "FB2K: Name of the album specified track belongs to."
-  },
-  "Tag: %<album>%": {
-    "prefix": "%<album>%",
-    "body": ["%<album>%"],
+    "prefix": "album",
+    "body": [
+      "%album%"
+    ],
     "description": "FB2K: Name of the album specified track belongs to."
   },
   "Tag: %artist%": {
-    "prefix": "%artist%",
-    "body": ["%artist%"],
-    "description": "FB2K: Name of the artist of the track."
-  },
-  "Tag: %<artist>%": {
-    "prefix": "%<artist>%",
-    "body": ["%<artist>%"],
+    "prefix": "artist",
+    "body": [
+      "%artist%"
+    ],
     "description": "FB2K: Name of the artist of the track."
   },
   "Tag: %date%": {
-    "prefix": "%date%",
-    "body": ["%date%"],
-    "description": "FB2K: Recording date of the album specified track belongs to, using 'date' metadata field."
-  },
-  "Tag: %<date>%": {
-    "prefix": "%<date>%",
-    "body": ["%<date>%"],
-    "description": "FB2K: Recording date of the album specified track belongs to, using 'date' metadata field."
+    "prefix": "date",
+    "body": [
+      "%date%"
+    ],
+    "description": "FB2K: Recording date (year) of the album specified track belongs to, using `date` metadata field."
   },
   "Tag: %genre%": {
-    "prefix": "%genre%",
-    "body": ["%genre%"],
-    "description": "Genre of the album specified track belongs to, using 'genre' metadata field."
-  },
-  "Tag: %<genre>%": {
-    "prefix": "%<genre>%",
-    "body": ["%<genre>%"],
-    "description": "Genre of the album specified track belongs to, using 'genre' metadata field."
+    "prefix": "genre",
+    "body": [
+      "%genre%"
+    ],
+    "description": "FB2K: Genre of the album specified track belongs to, using “genre” metadata field. "
   },
   "Tag: %discnumber%": {
-    "prefix": "%discnumber%",
-    "body": ["%discnumber%"],
-    "description": "FB2K: Index of disc specified track belongs to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata."
-  },
-  "Tag: %<discnumber>%": {
-    "prefix": "%<discnumber>%",
-    "body": ["%<discnumber>%"],
-    "description": "FB2K: Index of disc specified track belongs to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata."
+    "prefix": "discnumber",
+    "body": [
+      "%discnumber%"
+    ],
+    "description": "FB2K: Index of disc specified track belongs to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
   },
   "Tag: %totaldiscs%": {
-    "prefix": "%totaldiscs%",
-    "body": ["%totaldiscs%"],
-    "description": "FB2K: Index of total discs specified tracks belong to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata."
-  },
-  "Tag: %<totaldiscs>%": {
-    "prefix": "%<totaldiscs>%",
-    "body": ["%<totaldiscs>%"],
-    "description": "FB2K: Index of total discs specified tracks belong to, within the album. Available only when 'discnumber'/'disc' field is present in track’s metadata."
+    "prefix": "totaldiscs",
+    "body": [
+      "%totaldiscs%"
+    ],
+    "description": "FB2K: Index of total discs specified tracks belong to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
   },
   "Tag: %track artist%": {
-    "prefix": "%track artist%",
-    "body": ["%track artist%"],
-    "description": "FB2K: Name of the artist of the track; present only if %album artist% is different than %artist% for specific track."
-  },
-  "Tag: %<track artist>%": {
-    "prefix": "%<track artist>%",
-    "body": ["%<track artist>%"],
-    "description": "FB2K: Name of the artist of the track; present only if %album artist% is different than %artist% for specific track."
+    "prefix": "track artist",
+    "body": [
+      "%track artist%"
+    ],
+    "description": "FB2K: Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track."
   },
   "Tag: %title%": {
-    "prefix": "%title%",
-    "body": ["%title%"],
-    "description": "FB2K: Title of the track. If 'title' metadata field is missing, file name is used instead."
-  },
-  "Tag: %<title>%": {
-    "prefix": "%<title>%",
-    "body": ["%<title>%"],
-    "description": "FB2K: Title of the track. If 'title' metadata field is missing, file name is used instead."
+    "prefix": "title",
+    "body": [
+      "%title%"
+    ],
+    "description": "CUI: The title of the playlist."
   },
   "Tag: %tracknumber%": {
-    "prefix": "%tracknumber%",
-    "body": ["%tracknumber%"],
-    "description": "FB2K: Index of specified track within the album. Available only when 'tracknumber' field is present in track’s metadata. An extra '0' is placed in front of single digit track numbers."
-  },
-  "Tag: %<tracknumber>%": {
-    "prefix": "%<tracknumber>%",
-    "body": ["%<tracknumber>%"],
-    "description": "FB2K: Index of specified track within the album. Available only when 'tracknumber' field is present in track’s metadata. An extra '0' is placed in front of single digit track numbers."
+    "prefix": "tracknumber",
+    "body": [
+      "%title%"
+    ],
+    "description": "FB2K: Two-digit index of specified track within the album."
   },
   "Tag: %track number%": {
-    "prefix": "%track number%",
-    "body": ["%track number%"],
-    "description": "FB2K: Similar to %tracknumber%, however single digit track numbers are not reformatted to have an extra 0."
-  },
-  "Tag: %<track number>%": {
-    "prefix": "%<track number>%",
-    "body": ["%<track number>%"],
-    "description": "FB2K: Similar to %tracknumber%, however single digit track numbers are not reformatted to have an extra 0."
+    "prefix": "track number",
+    "body": [
+      "%track number%"
+    ],
+    "description": "FB2K: Similar to `%tracknumber%`, however single digit track numbers are not reformatted to have an extra 0."
   },
   "Tag: %totaltracks%": {
-    "prefix": "%totaltracks%",
-    "body": ["%totaltracks%"],
-    "description": "FB2K: Index of total tracks specified tracks belong to, within the album."
-  },
-  "Tag: %<totaltracks>%": {
-    "prefix": "%<totaltracks>%",
-    "body": ["%<totaltracks>%"],
-    "description": "FB2K: Index of total tracks specified tracks belong to, within the album."
+    "prefix": "totaltracks",
+    "body": [
+      "%totaltracks%"
+    ],
+    "description": "FB2K: Index of total tracks specified tracks belong to, within the album. Available only when `totaltracks` field is present in track’s metadata."
   },
   "Tag: %bitrate%": {
-    "prefix": "%bitrate%",
-    "body": ["%bitrate%"],
-    "description": "FB2K: Bitrate of the track in kilobits per second."
-  },
-  "Tag: %<bitrate>%": {
-    "prefix": "%<bitrate>%",
-    "body": ["%<bitrate>%"],
+    "prefix": "bitrate",
+    "body": [
+      "%bitrate%"
+    ],
     "description": "FB2K: Bitrate of the track in kilobits per second."
   },
   "Tag: %channels%": {
-    "prefix": "%channels%",
-    "body": ["%channels%"],
-    "description": "FB2K: Number of channels in the track, as text."
-  },
-  "Tag: %<channels>%": {
-    "prefix": "%<channels>%",
-    "body": ["%<channels>%"],
-    "description": "FB2K: Number of channels in the track, as text."
+    "prefix": "channels",
+    "body": [
+      "%channels%"
+    ],
+    "description": "FB2K: Number of channels in the track, as text; either 'mono', 'stereo' for 1 or 2 channels, respectively, otherwise a number followed by 'ch', e.g. '6ch'."
   },
   "Tag: %channel_mask%": {
-    "prefix": "%channel_mask%",
-    "body": ["%channel_mask%"],
-    "description": "FB2K: Description of the used audio channels in the track."
-  },
-  "Tag: %<channel_mask>%": {
-    "prefix": "%<channel_mask>%",
-    "body": ["%<channel_mask>%"],
-    "description": "FB2K: Description of the used audio channels in the track."
+    "prefix": "channel_mask",
+    "body": [
+      "%channel_mask%"
+    ],
+    "description": "FB2K: Description of the used audio channels in the track, e.g. 'FL FR FC LFE SL SR'."
   },
   "Tag: %codec%": {
-    "prefix": "%codec%",
-    "body": ["%codec%"],
-    "description": "FB2K: Name of codec used to encode the track."
-  },
-  "Tag: %<codec>%": {
-    "prefix": "%<codec>%",
-    "body": ["%<codec>%"],
-    "description": "FB2K: Name of codec used to encode the track."
+    "prefix": "codec",
+    "body": [
+      "%codec%"
+    ],
+    "description": "FB2K: Name of codec used to encode the track, e.g. 'PCM', 'FLAC', 'MP3', or 'AAC'."
   },
   "Tag: %codec_profile%": {
-    "prefix": "%codec_profile%",
-    "body": ["%codec_profile%"],
-    "description": "FB2K: Additional information about encoding settings used."
-  },
-  "Tag: %<codec_profile>%": {
-    "prefix": "%<codec_profile>%",
-    "body": ["%<codec_profile>%"],
-    "description": "FB2K: Additional information about encoding settings used."
+    "prefix": "codec_profile",
+    "body": [
+      "%codec_profile%"
+    ],
+    "description": "FB2K: Additional information about encoding settings used, e.g. 'CBR'."
   },
   "Tag: %codec_long%": {
-    "prefix": "%codec_long%",
-    "body": ["%codec_long%"],
-    "description": "FB2K: Long name of the codec, including profile."
-  },
-  "Tag: %<codec_long>%": {
-    "prefix": "%<codec_long>%",
-    "body": ["%<codec_long>%"],
-    "description": "FB2K: Long name of the codec, including profile."
-  },
-  "Tag: %path_sort%": {
-    "prefix": "%path_sort%",
-    "body": ["%path_sort%"],
-    "description": "Path of the file; for use with sorting, where order of subsongs within a file needs to be preserved."
-  },
-  "Tag: %<path_sort>%": {
-    "prefix": "%<path_sort>%",
-    "body": ["%<path_sort>%"],
-    "description": "Path of the file; for use with sorting, where order of subsongs within a file needs to be preserved."
+    "prefix": "codec_long",
+    "body": [
+      "%codec_long%"
+    ],
+    "description": "FB2K: Long name of the codec, including profile, e.g. 'HE-AACv2'. Some codecs, such as HE-AAC, supply this."
   },
   "Tag: %filesize%": {
-    "prefix": "%filesize%",
-    "body": ["%filesize%"],
-    "description": "FB2K: The exact file size in bytes"
-  },
-  "Tag: %<filesize>%": {
-    "prefix": "%<filesize>%",
-    "body": ["%<filesize>%"],
-    "description": "FB2K: The exact file size in bytes"
+    "prefix": "filesize",
+    "body": [
+      "%filesize%"
+    ],
+    "description": "CUI: The sum of the known file sizes of the items in the playlist."
   },
   "Tag: %filesize_natural%": {
-    "prefix": "%filesize_natural%",
-    "body": ["%filesize_natural%"],
-    "description": "FB2K: The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes."
-  },
-  "Tag: %<filesize_natural>%": {
-    "prefix": "%<filesize_natural>%",
-    "body": ["%<filesize_natural>%"],
-    "description": "FB2K: The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes."
+    "prefix": "filesize_natural",
+    "body": [
+      "%filesize_natural%"
+    ],
+    "description": "FB2K: The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes, e.g. '8.49 MB'."
   },
   "Tag: %length%": {
-    "prefix": "%length%",
-    "body": ["%length%"],
-    "description": "FB2K: The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second."
-  },
-  "Tag: %<length>%": {
-    "prefix": "%<length>%",
-    "body": ["%<length>%"],
-    "description": "FB2K: The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second."
+    "prefix": "length",
+    "body": [
+      "%length%"
+    ],
+    "description": "CUI: The total length of the items in the playlist."
   },
   "Tag: %length_ex%": {
-    "prefix": "%length_ex%",
-    "body": ["%length_ex%"],
-    "description": "FB2K: The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond."
-  },
-  "Tag: %<length_ex>%": {
-    "prefix": "%<length_ex>%",
-    "body": ["%<length_ex>%"],
+    "prefix": "length_ex",
+    "body": [
+      "%length_ex%"
+    ],
     "description": "FB2K: The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond."
   },
   "Tag: %length_seconds%": {
-    "prefix": "%length_seconds%",
-    "body": ["%length_seconds%"],
-    "description": "FB2K: The length of the track in seconds, rounded to the nearest second."
-  },
-  "Tag: %<length_seconds>%": {
-    "prefix": "%<length_seconds>%",
-    "body": ["%<length_seconds>%"],
+    "prefix": "length_seconds",
+    "body": [
+      "%length_seconds%"
+    ],
     "description": "FB2K: The length of the track in seconds, rounded to the nearest second."
   },
   "Tag: %length_seconds_fp%": {
-    "prefix": "%length_seconds_fp%",
-    "body": ["%length_seconds_fp%"],
-    "description": "FB2K: The length of the track in seconds as a floating point number."
-  },
-  "Tag: %<length_seconds_fp>%": {
-    "prefix": "%<length_seconds_fp>%",
-    "body": ["%<length_seconds_fp>%"],
+    "prefix": "length_seconds_fp",
+    "body": [
+      "%length_seconds_fp%"
+    ],
     "description": "FB2K: The length of the track in seconds as a floating point number."
   },
   "Tag: %length_samples%": {
-    "prefix": "%length_samples%",
-    "body": ["%length_samples%"],
-    "description": "FB2K: The length of the track in samples."
-  },
-  "Tag: %<length_samples>%": {
-    "prefix": "%<length_samples>%",
-    "body": ["%<length_samples>%"],
+    "prefix": "length_samples",
+    "body": [
+      "%length_samples%"
+    ],
     "description": "FB2K: The length of the track in samples."
   },
   "Tag: %samplerate%": {
-    "prefix": "%samplerate%",
-    "body": ["%samplerate%"],
+    "prefix": "samplerate",
+    "body": [
+      "%samplerate%"
+    ],
     "description": "FB2K: Sample rate of the track, in Hz."
   },
-  "Tag: %<samplerate>%": {
-    "prefix": "%<samplerate>%",
-    "body": ["%<samplerate>%"],
-    "description": "FB2K: Sample rate of the track, in Hz."
-  },
-  "Function: $info(field)": {
-    "prefix": "$info",
+  "Function: $info(name)": {
+    "prefix": "info",
     "body": [
       "\\$info(${1|codec|codec_profile|samplerate|bitrate|tool|encoding|channels|bitspersample|decoded_bitspersample|bitspersample_extra|tagtype|cue_embedded|md5|WAVEFORMATEXTENSIBLE_CHANNEL_MASK|ENC_DELAY|ENC_PADDING|MP3_ACCURATE_LENGTH|MP3_STEREO_MODE|VERSION|FLAGS|channel_mode|})"
     ],
-    "description": "FB2K: Returns value of technical information field."
-  },
-  "Tag: %__codec%": {
-    "prefix": "%__codec%",
-    "body": ["%__codec%"],
-    "description": "FB2K: Codec."
-  },
-  "Tag: %<__codec>%": {
-    "prefix": "%<__codec>%",
-    "body": ["%<__codec>%"],
-    "description": "FB2K: Codec."
-  },
-  "Tag: %__codec_profile%": {
-    "prefix": "%__codec_profile%",
-    "body": ["%__codec_profile%"],
-    "description": "FB2k: Codec Profile."
-  },
-  "Tag: %<__codec_profile>%": {
-    "prefix": "%<__codec_profile>%",
-    "body": ["%<__codec_profile>%"],
-    "description": "FB2k: Codec Profile."
-  },
-  "Tag: %__samplerate%": {
-    "prefix": "%__samplerate%",
-    "body": ["%__samplerate%"],
-    "description": "FB2k: Sample Rate, in hertz."
-  },
-  "Tag: %<__samplerate>%": {
-    "prefix": "%<__samplerate>%",
-    "body": ["%<__samplerate>%"],
-    "description": "FB2k: Sample Rate, in hertz."
-  },
-  "Tag: %__bitrate%": {
-    "prefix": "%__bitrate%",
-    "body": ["%__bitrate%"],
-    "description": "FB2k: Bitrate, in kilobits per second."
-  },
-  "Tag: %<__bitrate>%": {
-    "prefix": "%<__bitrate>%",
-    "body": ["%<__bitrate>%"],
-    "description": "FB2k: Bitrate, in kilobits per second."
-  },
-  "Tag: %__tool%": {
-    "prefix": "%__tool%",
-    "body": ["%__tool%"],
-    "description": "FB2k: Tool used to produce the file, possibly guessed."
-  },
-  "Tag: %<__tool>%": {
-    "prefix": "%<__tool>%",
-    "body": ["%<__tool>%"],
-    "description": "FB2k: Tool used to produce the file, possibly guessed."
-  },
-  "Tag: %__encoding%": {
-    "prefix": "%__encoding%",
-    "body": ["%__encoding%"],
-    "description": "FB2k: Encoding lossiness."
-  },
-  "Tag: %<__encoding>%": {
-    "prefix": "%<__encoding>%",
-    "body": ["%<__encoding>%"],
-    "description": "FB2k: Encoding lossiness."
-  },
-  "Tag: %__channels%": {
-    "prefix": "%__channels%",
-    "body": ["%__channels%"],
-    "description": "FB2k: Channels count."
-  },
-  "Tag: %<__channels>%": {
-    "prefix": "%<__channels>%",
-    "body": ["%<__channels>%"],
-    "description": "FB2k: Channels count."
-  },
-  "Tag: %__bitspersample%": {
-    "prefix": "%__bitspersample%",
-    "body": ["%__bitspersample%"],
-    "description": "FB2k: Bits Per Sample."
-  },
-  "Tag: %<__bitspersample>%": {
-    "prefix": "%<__bitspersample>%",
-    "body": ["%<__bitspersample>%"],
-    "description": "FB2k: Bits Per Sample."
-  },
-  "Tag: %__decoded_bitspersample%": {
-    "prefix": "%__decoded_bitspersample%",
-    "body": ["%__decoded_bitspersample%"],
-    "description": "FB2k: Bits Per Sample after decoding."
-  },
-  "Tag: %<__decoded_bitspersample>%": {
-    "prefix": "%<__decoded_bitspersample>%",
-    "body": ["%<__decoded_bitspersample>%"],
-    "description": "FB2k: Bits Per Sample after decoding."
-  },
-  "Tag: %__bitspersample_extra%": {
-    "prefix": "%__bitspersample_extra%",
-    "body": ["%__bitspersample_extra%"],
-    "description": "FB2k: Format of 32-bit audio data."
-  },
-  "Tag: %<__bitspersample_extra>%": {
-    "prefix": "%<__bitspersample_extra>%",
-    "body": ["%<__bitspersample_extra>%"],
-    "description": "FB2k: Format of 32-bit audio data."
-  },
-  "Tag: %__tagtype%": {
-    "prefix": "%__tagtype%",
-    "body": ["%__tagtype%"],
-    "description": "FB2k: Tag Type, comma-separated list of tag formats."
-  },
-  "Tag: %<__tagtype>%": {
-    "prefix": "%<__tagtype>%",
-    "body": ["%<__tagtype>%"],
-    "description": "FB2k: Tag Type, comma-separated list of tag formats."
-  },
-  "Tag: %__cue_embedded%": {
-    "prefix": "%__cue_embedded%",
-    "body": ["%__cue_embedded%"],
-    "description": "FB2k: Embedded Cuesheet presence."
-  },
-  "Tag: %<__cue_embedded>%": {
-    "prefix": "%<__cue_embedded>%",
-    "body": ["%<__cue_embedded>%"],
-    "description": "FB2k: Embedded Cuesheet presence."
-  },
-  "Tag: %__md5%": {
-    "prefix": "%__md5%",
-    "body": ["%__md5%"],
-    "description": "FB2k: Audio MD5 hash, if container defines it."
-  },
-  "Tag: %<__md5>%": {
-    "prefix": "%<__md5>%",
-    "body": ["%<__md5>%"],
-    "description": "FB2k: Audio MD5 hash, if container defines it."
-  },
-  "Tag: %__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%": {
-    "prefix": "%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%",
-    "body": ["%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%"],
-    "description": "FB2k: Channel mask, channel layout of the track coded as hex."
-  },
-  "Tag: %<__WAVEFORMATEXTENSIBLE_CHANNEL_MASK>%": {
-    "prefix": "%<__WAVEFORMATEXTENSIBLE_CHANNEL_MASK>%",
-    "body": ["%<__WAVEFORMATEXTENSIBLE_CHANNEL_MASK>%"],
-    "description": "FB2k: Channel mask, channel layout of the track coded as hex."
-  },
-  "Tag: %__ENC_DELAY%": {
-    "prefix": "%__ENC_DELAY%",
-    "body": ["%__ENC_DELAY%"],
-    "description": "FB2k: LAME proprietary MP3 enc_delay value for gapless playback."
-  },
-  "Tag: %<__ENC_DELAY>%": {
-    "prefix": "%<__ENC_DELAY>%",
-    "body": ["%<__ENC_DELAY>%"],
-    "description": "FB2k: LAME proprietary MP3 enc_delay value for gapless playback."
-  },
-  "Tag: %__ENC_PADDING%": {
-    "prefix": "%__ENC_PADDING%",
-    "body": ["%__ENC_PADDING%"],
-    "description": "FB2k: LAME proprietary MP3 enc_padding value for gapless playback."
-  },
-  "Tag: %<__ENC_PADDING>%": {
-    "prefix": "%<__ENC_PADDING>%",
-    "body": ["%<__ENC_PADDING>%"],
-    "description": "FB2k: LAME proprietary MP3 enc_padding value for gapless playback."
-  },
-  "Tag: %__MP3_ACCURATE_LENGTH%": {
-    "prefix": "%__MP3_ACCURATE_LENGTH%",
-    "body": ["%__MP3_ACCURATE_LENGTH%"],
-    "description": "FB2k: MP3 duration."
-  },
-  "Tag: %<__MP3_ACCURATE_LENGTH>%": {
-    "prefix": "%<__MP3_ACCURATE_LENGTH>%",
-    "body": ["%<__MP3_ACCURATE_LENGTH>%"],
-    "description": "FB2k: MP3 duration."
-  },
-  "Tag: %__MP3_STEREO_MODE%": {
-    "prefix": "%__MP3_STEREO_MODE%",
-    "body": ["%__MP3_STEREO_MODE%"],
-    "description": "FB2k: Stereo mode used in MP3 file."
-  },
-  "Tag: %<__MP3_STEREO_MODE>%": {
-    "prefix": "%<__MP3_STEREO_MODE>%",
-    "body": ["%<__MP3_STEREO_MODE>%"],
-    "description": "FB2k: Stereo mode used in MP3 file."
-  },
-  "Tag: %__VERSION%": {
-    "prefix": "%__VERSION%",
-    "body": ["%__VERSION%"],
-    "description": "FB2k: Version of tool."
-  },
-  "Tag: %<__VERSION>%": {
-    "prefix": "%<__VERSION>%",
-    "body": ["%<__VERSION>%"],
-    "description": "FB2k: Version of tool."
-  },
-  "Tag: %__FLAGS%": {
-    "prefix": "%__FLAGS%",
-    "body": ["%__FLAGS%"],
-    "description": "FB2k: Flags of tool."
-  },
-  "Tag: %<__FLAGS>%": {
-    "prefix": "%<__FLAGS>%",
-    "body": ["%<__FLAGS>%"],
-    "description": "FB2k: Flags of tool."
-  },
-  "Tag: %__channel_mode%": {
-    "prefix": "%__channel_mode%",
-    "body": ["%__channel_mode%"],
-    "description": "FB2k: Channel Mode, description of channels."
-  },
-  "Tag: %<__channel_mode>%": {
-    "prefix": "%<__channel_mode>%",
-    "body": ["%<__channel_mode>%"],
-    "description": "FB2k: Channel Mode, description of channels."
+    "description": "FB2K: Returns value of technical information field called `name`."
   },
   "Function: $channels()": {
-    "prefix": "$channels",
-    "body": ["\\$channels()"],
+    "prefix": "channels",
+    "body": [
+      "\\$channels()"
+    ],
     "description": "FB2K: The number of channels in text format."
   },
   "Tag: %replaygain_album_gain%": {
-    "prefix": "%replaygain_album_gain%",
-    "body": ["%replaygain_album_gain%"],
-    "description": "FB2K: he ReplayGain album gain value."
-  },
-  "Tag: %<replaygain_album_gain>%": {
-    "prefix": "%<replaygain_album_gain>%",
-    "body": ["%<replaygain_album_gain>%"],
-    "description": "FB2K: he ReplayGain album gain value."
+    "prefix": "replaygain_album_gain",
+    "body": [
+      "%replaygain_album_gain%"
+    ],
+    "description": "FB2K: The ReplayGain album gain value."
   },
   "Tag: %replaygain_album_peak%": {
-    "prefix": "%replaygain_album_peak%",
-    "body": ["%replaygain_album_peak%"],
-    "description": "FB2K: The ReplayGain album peak value."
-  },
-  "Tag: %<replaygain_album_peak>%": {
-    "prefix": "%<replaygain_album_peak>%",
-    "body": ["%<replaygain_album_peak>%"],
+    "prefix": "replaygain_album_peak",
+    "body": [
+      "%replaygain_album_peak%"
+    ],
     "description": "FB2K: The ReplayGain album peak value."
   },
   "Tag: %replaygain_album_peak_db%": {
-    "prefix": "%replaygain_album_peak_db%",
-    "body": ["%replaygain_album_peak_db%"],
+    "prefix": "replaygain_album_peak_db",
+    "body": [
+      "%replaygain_album_peak_db%"
+    ],
     "description": "FB2K: The ReplayGain album peak value in decibels."
   },
-  "Tag: %<replaygain_album_peak_db>%": {
-    "prefix": "%<replaygain_album_peak_db>%",
-    "body": ["%<replaygain_album_peak_db>%"],
-    "description": "FB2K: The ReplayGain album peak value in decibels."
+  "Function: $peak_to_db(X)": {
+    "prefix": "$peak_to_db",
+    "body": [
+      "\\$peak_to_db(${1:num X})"
+    ],
+    "description": "FB2K: Converts audio peak value from 0..1 PCM to decibels."
   },
   "Tag: %replaygain_track_gain%": {
-    "prefix": "%replaygain_track_gain%",
-    "body": ["%replaygain_track_gain%"],
-    "description": "FB2K: The ReplayGain track gain value."
-  },
-  "Tag: %<replaygain_track_gain>%": {
-    "prefix": "%<replaygain_track_gain>%",
-    "body": ["%<replaygain_track_gain>%"],
+    "prefix": "replaygain_track_gain",
+    "body": [
+      "%replaygain_track_gain%"
+    ],
     "description": "FB2K: The ReplayGain track gain value."
   },
   "Tag: %replaygain_track_peak%": {
-    "prefix": "%replaygain_track_peak%",
-    "body": ["%replaygain_track_peak%"],
-    "description": "FB2K: The ReplayGain track peak value."
-  },
-  "Tag: %<replaygain_track_peak>%": {
-    "prefix": "%<replaygain_track_peak>%",
-    "body": ["%<replaygain_track_peak>%"],
+    "prefix": "replaygain_track_peak",
+    "body": [
+      "%replaygain_track_peak%"
+    ],
     "description": "FB2K: The ReplayGain track peak value."
   },
   "Tag: %replaygain_track_peak_db%": {
-    "prefix": "%replaygain_track_peak_db%",
-    "body": ["%replaygain_track_peak_db%"],
-    "description": "FB2K: The ReplayGain track peak value in decibels."
-  },
-  "Tag: %<replaygain_track_peak_db>%": {
-    "prefix": "%<replaygain_track_peak_db>%",
-    "body": ["%<replaygain_track_peak_db>%"],
+    "prefix": "replaygain_track_peak_db",
+    "body": [
+      "%replaygain_track_peak_db%"
+    ],
     "description": "FB2K: The ReplayGain track peak value in decibels."
   },
   "Tag: %filename%": {
-    "prefix": "%filename%",
-    "body": ["%filename%"],
-    "description": "FB2K: The filename without directory and extension."
-  },
-  "Tag: %<filename>%": {
-    "prefix": "%<filename>%",
-    "body": ["%<filename>%"],
+    "prefix": "filename",
+    "body": [
+      "%filename%"
+    ],
     "description": "FB2K: The filename without directory and extension."
   },
   "Tag: %filename_ext%": {
-    "prefix": "%filename_ext%",
-    "body": ["%filename_ext%"],
-    "description": "FB2K: The filename with extension, but without the directory."
-  },
-  "Tag: %<filename_ext>%": {
-    "prefix": "%<filename_ext>%",
-    "body": ["%<filename_ext>%"],
+    "prefix": "filename_ext",
+    "body": [
+      "%filename_ext%"
+    ],
     "description": "FB2K: The filename with extension, but without the directory."
   },
   "Tag: %directoryname%": {
-    "prefix": "%directoryname%",
-    "body": ["%directoryname%"],
-    "description": "FB2K: The name of the parent directory only, not the complete path."
-  },
-  "Tag: %<directoryname>%": {
-    "prefix": "%<directoryname>%",
-    "body": ["%<directoryname>%"],
+    "prefix": "directoryname",
+    "body": [
+      "%directoryname%"
+    ],
     "description": "FB2K: The name of the parent directory only, not the complete path."
   },
   "Tag: %last_modified%": {
-    "prefix": "%last_modified%",
-    "body": ["%last_modified%"],
-    "description": "FB2K: The date and time the file was last modified. Eg: 2005-12-22 00:04:10"
-  },
-  "Tag: %<last_modified>%": {
-    "prefix": "%<last_modified>%",
-    "body": ["%<last_modified>%"],
-    "description": "FB2K: The date and time the file was last modified. Eg: 2005-12-22 00:04:10"
+    "prefix": "last_modified",
+    "body": [
+      "%last_modified%"
+    ],
+    "description": "FB2K: The date and time the file was last modified. Eg: `2005-12-22 00:04:10`."
   },
   "Tag: %path%": {
-    "prefix": "%path%",
-    "body": ["%path%"],
-    "description": "FB2K: The complete path, including the filename and extension."
-  },
-  "Tag: %<path>%": {
-    "prefix": "%<path>%",
-    "body": ["%<path>%"],
+    "prefix": "path",
+    "body": [
+      "%path%"
+    ],
     "description": "FB2K: The complete path, including the filename and extension."
   },
   "Tag: %_path_raw%": {
-    "prefix": "%_path_raw%",
-    "body": ["%_path_raw%"],
+    "prefix": "_path_raw",
+    "body": [
+      "%_path_raw%"
+    ],
     "description": "FB2K: The path as URL including the protocol scheme."
   },
-  "Tag: %<_path_raw>%": {
-    "prefix": "%<_path_raw>%",
-    "body": ["%<_path_raw>%"],
-    "description": "FB2K: The path as URL including the protocol scheme."
+  "Tag: %path_sort%": {
+    "prefix": "%path_sort%",
+    "body": [
+      "%path_sort%"
+    ],
+    "description": "FB2K: Path of the file."
   },
   "Tag: %subsong%": {
-    "prefix": "%subsong%",
-    "body": ["%subsong%"],
-    "description": "FB2K: The subsong index."
-  },
-  "Tag: %<subsong>%": {
-    "prefix": "%<subsong>%",
-    "body": ["%<subsong>%"],
+    "prefix": "subsong",
+    "body": [
+      "%subsong%"
+    ],
     "description": "FB2K: The subsong index."
   },
   "Tag: %_foobar2000_version%": {
-    "prefix": "%_foobar2000_version%",
-    "body": ["%_foobar2000_version%"],
-    "description": "FB2K: The version of foobar2000."
-  },
-  "Tag: %<_foobar2000_version>%": {
-    "prefix": "%<_foobar2000_version>%",
-    "body": ["%<_foobar2000_version>%"],
-    "description": "FB2K: The version of foobar2000."
+    "prefix": "_foobar2000_version",
+    "body": [
+      "%_foobar2000_version%"
+    ],
+    "description": "FB2K: A string representing the version of foobar2000."
   },
   "Function: $year(time)": {
-    "prefix": "$year",
-    "body": ["\\$year(${1:time})"],
+    "prefix": "year",
+    "body": [
+      "\\$year(${1:time})"
+    ],
     "description": "FB2K: Retrieves the year part (formatted as four digits) from a time/date string."
   },
   "Function: $month(time)": {
-    "prefix": "$month",
-    "body": ["\\$month(${1:time})"],
+    "prefix": "month",
+    "body": [
+      "\\$month(${1:time})"
+    ],
     "description": "FB2K: Retrieves the month part (formatted as two digits) from a time/date string."
   },
   "Function: $day_of_month(time)": {
-    "prefix": "$day_of_month",
-    "body": ["\\$day_of_month(${1:time})"],
+    "prefix": "day_of_month",
+    "body": [
+      "\\$day_of_month(${1:time})"
+    ],
     "description": "FB2K: Retrieves the day of month part (formatted as two digits) from a time/date string."
   },
   "Function: $date(time)": {
-    "prefix": "$date",
-    "body": ["\\$date(${1:time})"],
+    "prefix": "date",
+    "body": [
+      "\\$date(${1:time})"
+    ],
     "description": "FB2K: Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string."
   },
   "Function: $time(time)": {
-    "prefix": "$time",
-    "body": ["\\$time(${1:time})"],
+    "prefix": "time",
+    "body": [
+      "\\$time(${1:time})"
+    ],
     "description": "FB2K: Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string."
   },
+  "Function: $get(name)": {
+    "prefix": "get",
+    "body": [
+      "\\$get(${1:name})"
+    ],
+    "description": "FB2K: Returns the value that was last stored in the variable name."
+  },
   "Function: $put(name,value)": {
-    "prefix": "$put",
-    "body": ["\\$put(${1:name},${2:value})"],
-    "description": "FB2K: tores value in the variable name and returns value unaltered."
+    "prefix": "put",
+    "body": [
+      "\\$put(${1:name},${2:value})"
+    ],
+    "description": "FB2K: Stores `value` in the variable `name` and returns `value` unaltered."
   },
   "Function: $puts(name,value)": {
-    "prefix": "$puts",
-    "body": ["\\$puts(${1:name},${2:value})"],
-    "description": "FB2K: tores value in the variable name and returns nothing."
-  },
-  "Function: $get(name)": {
-    "prefix": "$get",
-    "body": ["\\$get(${1:name})"],
-    "description": "FB2K: Returns the value that was last stored in the variable name, if the variable was not defined (yet), it returns nothing."
+    "prefix": "puts",
+    "body": [
+      "\\$puts(${1:name},${2:value})"
+    ],
+    "description": "FB2K: Stores `value` in the variable `name` and returns nothing."
   },
   "Tag: %playback_time%": {
-    "prefix": "%playback_time%",
-    "body": ["%playback_time%"],
-    "description": "FB2K: The elapsed time formatted as [HH:]MM:SS."
-  },
-  "Tag: %<playback_time>%": {
-    "prefix": "%<playback_time>%",
-    "body": ["%<playback_time>%"],
-    "description": "FB2K: The elapsed time formatted as [HH:]MM:SS."
+    "prefix": "playback_time",
+    "body": [
+      "%playback_time%"
+    ],
+    "description": "FB2K: The elapsed time formatted as `[HH:]MM:SS`."
   },
   "Tag: %playback_time_seconds%": {
-    "prefix": "%playback_time_seconds%",
-    "body": ["%playback_time_seconds%"],
-    "description": "FB2K: The elapsed time in seconds."
-  },
-  "Tag: %<playback_time_seconds>%": {
-    "prefix": "%<playback_time_seconds>%",
-    "body": ["%<playback_time_seconds>%"],
+    "prefix": "playback_time_seconds",
+    "body": [
+      "%playback_time_seconds%"
+    ],
     "description": "FB2K: The elapsed time in seconds."
   },
   "Tag: %playback_time_remaining%": {
-    "prefix": "%playback_time_remaining%",
-    "body": ["%playback_time_remaining%"],
-    "description": "FB2K: The time remaining until the track ends, formatted as [HH:]MM:SS."
-  },
-  "Tag: %<playback_time_remaining>%": {
-    "prefix": "%<playback_time_remaining>%",
-    "body": ["%<playback_time_remaining>%"],
-    "description": "FB2K: The time remaining until the track ends, formatted as [HH:]MM:SS."
+    "prefix": "playback_time_remaining",
+    "body": [
+      "%playback_time_remaining%"
+    ],
+    "description": "FB2K: The time remaining until the track ends, formatted as `[HH:]MM:SS`."
   },
   "Tag: %playback_time_remaining_seconds%": {
-    "prefix": "%playback_time_remaining_seconds%",
-    "body": ["%playback_time_remaining_seconds%"],
-    "description": "FB2K: The time remaining until the track ends, in seconds."
-  },
-  "Tag: %<playback_time_remaining_seconds>%": {
-    "prefix": "%<playback_time_remaining_seconds>%",
-    "body": ["%<playback_time_remaining_seconds>%"],
+    "prefix": "playback_time_remaining_seconds",
+    "body": [
+      "%playback_time_remaining_seconds%"
+    ],
     "description": "FB2K: The time remaining until the track ends, in seconds."
   },
   "Tag: %isplaying%": {
-    "prefix": "%isplaying%",
-    "body": ["%isplaying%"],
-    "description": "FB2K: '1' if file is currently playing, empty string otherwise."
-  },
-  "Tag: %<isplaying>%": {
-    "prefix": "%<isplaying>%",
-    "body": ["%<isplaying>%"],
+    "prefix": "isplaying",
+    "body": [
+      "%isplaying%"
+    ],
     "description": "FB2K: '1' if file is currently playing, empty string otherwise."
   },
   "Tag: %ispaused%": {
-    "prefix": "%ispaused%",
-    "body": ["%ispaused%"],
-    "description": "FB2K: '1' if playback is paused, empty string otherwise."
-  },
-  "Tag: %<ispaused>%": {
-    "prefix": "%<ispaused>%",
-    "body": ["%<ispaused>%"],
+    "prefix": "ispaused",
+    "body": [
+      "%ispaused%"
+    ],
     "description": "FB2K: '1' if playback is paused, empty string otherwise."
   },
   "Tag: %list_index%": {
-    "prefix": "%list_index%",
-    "body": ["%list_index%"],
-    "description": "FB2K: A zero-padded playlist index of specified item. The first item is at index 1."
-  },
-  "Tag: %<list_index>%": {
-    "prefix": "%<list_index>%",
-    "body": ["%<list_index>%"],
+    "prefix": "list_index",
+    "body": [
+      "%list_index%"
+    ],
     "description": "FB2K: A zero-padded playlist index of specified item. The first item is at index 1."
   },
   "Tag: %list_total%": {
-    "prefix": "%list_total%",
-    "body": ["%list_total%"],
-    "description": "FB2K: The number of items in the playlist."
-  },
-  "Tag: %<list_total>%": {
-    "prefix": "%<list_total>%",
-    "body": ["%<list_total>%"],
+    "prefix": "list_total",
+    "body": [
+      "%list_total%"
+    ],
     "description": "FB2K: The number of items in the playlist."
   },
   "Tag: %queue_index%": {
-    "prefix": "%queue_index%",
-    "body": ["%queue_index%"],
-    "description": "FB2K: Index of the specified item in the playback queue. If the item has been queued multiple times, %queue_index% evaluates to the first index."
-  },
-  "Tag: %<queue_index>%": {
-    "prefix": "%<queue_index>%",
-    "body": ["%<queue_index>%"],
-    "description": "FB2K: Index of the specified item in the playback queue. If the item has been queued multiple times, %queue_index% evaluates to the first index."
+    "prefix": "queue_index",
+    "body": [
+      "%queue_index%"
+    ],
+    "description": "FB2K: Index of the specified item in the playback queue."
   },
   "Tag: %queue_indexes%": {
-    "prefix": "%queue_indexes%",
-    "body": ["%queue_indexes%"],
-    "description": "FB2K: List of indexes of the specified item in the playback queue. Same as %queue_index% unless the item has been queued more than once."
-  },
-  "Tag: %<queue_indexes>%": {
-    "prefix": "%<queue_indexes>%",
-    "body": ["%<queue_indexes>%"],
-    "description": "FB2K: List of indexes of the specified item in the playback queue. Same as %queue_index% unless the item has been queued more than once."
+    "prefix": "queue_indexes",
+    "body": [
+      "%queue_indexes%"
+    ],
+    "description": "FB2K: List of indexes of the specified item in the playback queue."
   },
   "Tag: %queue_total%": {
-    "prefix": "%queue_total%",
-    "body": ["%queue_total%"],
-    "description": "FB2K: Total amount of tracks in playback queue."
-  },
-  "Tag: %<queue_total>%": {
-    "prefix": "%<queue_total>%",
-    "body": ["%<queue_total>%"],
+    "prefix": "queue_total",
+    "body": [
+      "%queue_total%"
+    ],
     "description": "FB2K: Total amount of tracks in playback queue."
   },
   "Function: $blend(color1,color2,part,total)": {
-    "prefix": "$blend",
-    "body": ["\\$blend(${1:color1},${2:color2},${3:num part},${4:total})"],
-    "description": "FB2K: Returns a color that is a blend between 'color1' and 'color2'."
+    "prefix": "blend",
+    "body": [
+      "\\$blend(${1:color1},${2:color2},${3:num part},${4:total})"
+    ],
+    "description": "CUI: Returns a color that is a blend between `color1` and `color2`."
   },
   "Function: $hsl()": {
-    "prefix": "$hsl",
-    "body": ["\\$hsl()"],
-    "description": "FB2K: resets the text color to the default color."
+    "prefix": "hsl",
+    "body": [
+      "\\$hsl()"
+    ],
+    "description": "CUI: Resets the text color to the default color."
   },
   "Function: $hsl(h,s,l)": {
-    "prefix": "$hsl",
-    "body": ["\\$hsl(${1:num h},${2:num s},${3:num l})"],
-    "description": "FB2K: Sets the color for text in the HSL color space."
+    "prefix": "hsl",
+    "body": [
+      "\\$hsl(${1:num h},${2:num s},${3:num l})"
+    ],
+    "description": "CUI: Sets the color for text in the HSL color space."
   },
   "Function: $hsl(h1,s1,l1,h2,s2,l2)": {
-    "prefix": "$hsl",
+    "prefix": "hsl",
     "body": [
       "\\$hsl(${1:num h1},${2:num s1},${3:num l1},${4:num h2},${5:num s2},${6:num l2})"
     ],
-    "description": "FB2K: Sets the color for text in the HSL color space."
+    "description": "CUI: Sets the color for text in the HSL color space."
   },
   "Function: $rgb()": {
-    "prefix": "$rgb",
-    "body": ["\\$rgb()"],
-    "description": "FB2K: Resets the text color to the default color."
+    "prefix": "rgb",
+    "body": [
+      "\\$rgb()"
+    ],
+    "description": "CUI: Resets the text color to the default color."
   },
   "Function: $rgb(r,g,b)": {
-    "prefix": "$rgb",
-    "body": ["\\$rgb(${1:num r},${2:num g},${3:num b})"],
-    "description": "FB2K: Sets the color for text."
+    "prefix": "rgb",
+    "body": [
+      "\\$rgb(${1:num r},${2:num g},${3:num b})"
+    ],
+    "description": "CUI: Sets the color for text."
   },
   "Function: $rgb(r1,g1,b1,r2,g2,b2)": {
-    "prefix": "$rgb",
+    "prefix": "rgb",
     "body": [
       "\\$rgb(${1:num r1},${2:num g1},${3:num b1},${4:num r2},${5:num g2},${6:num b2})"
     ],
-    "description": "FB2K: Sets the color for text."
+    "description": "CUI: Sets the color for text."
   },
   "Function: $transition(string,color1,color2)": {
-    "prefix": "$transition",
-    "body": ["\\$transition(${1:string},${2:color1},${3:color2})"],
-    "description": "FB2K: Inserts color codes into string, so that the first character has color1, the last character has color2, and intermediate characters have blended colors."
+    "prefix": "transition",
+    "body": [
+      "\\$transition(${1:string},${2:color1},${3:color2})"
+    ],
+    "description": "CUI: Inserts color codes into `string`, so that the first character has `color1`, the last character has `color2`, and intermediate characters have blended colors."
+  },
+  "Tag: %<album artist>%": {
+    "prefix": "album artist",
+    "body": [
+      "%<album artist>%"
+    ],
+    "description": "FB2K Album List: Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`. The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
+  },
+  "Tag: %<album>%": {
+    "prefix": "album",
+    "body": [
+      "%<album>%"
+    ],
+    "description": "FB2K Album List: Name of the album specified track belongs to. Checks following metadata fields, in this order: `album`, `venue`."
+  },
+  "Tag: %<artist>%": {
+    "prefix": "artist",
+    "body": [
+      "%<artist>%"
+    ],
+    "description": "FB2K Album List: Name of the artist of the track. Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`. For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
+  },
+  "Tag: %<track artist>%": {
+    "prefix": "track artist",
+    "body": [
+      "%<track artist>%"
+    ],
+    "description": "FB2K Album List: Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track."
   },
   "Function: $meta_branch_remap(name)": {
-    "prefix": "$meta_branch_remap",
-    "body": ["\\$meta_branch_remap(${1:name})"],
-    "description": "FB2K: It is identical to '%<name>%' except it does not produce a '?', if the tag does not exist."
+    "prefix": "meta_branch_remap",
+    "body": [
+      "\\$meta_branch_remap(${1:name})"
+    ],
+    "description": "FB2K Album List: This is identical to `%<name>%` except it does not produce a '?', if the tag does not exist."
   },
   "Function: $meta_branch(name)": {
-    "prefix": "$meta_branch",
-    "body": ["\\$meta_branch(${1:name})"],
-    "description": "FB2K: Like '$meta_branch_remap(name)', but without the tag remapping."
+    "prefix": "meta_branch",
+    "body": [
+      "\\$meta_branch(${1:name})"
+    ],
+    "description": "FB2K Album List: Like `$meta_branch_remap(name)`, but without the tag remapping."
   },
-  "Tag: %play_counts%": {
-    "prefix": "%play_counts%",
-    "body": ["%play_counts%"],
-    "description": "FB2K: Returns how many times this tracks has been played. If the track has not been played yet, the field does not exist."
-  },
-  "Tag: %<play_counts>%": {
-    "prefix": "%<play_counts>%",
-    "body": ["%<play_counts>%"],
-    "description": "FB2K: Returns how many times this tracks has been played. If the track has not been played yet, the field does not exist."
+  "Tag: %play_count%": {
+    "prefix": "play_count",
+    "body": [
+      "%play_counts%"
+    ],
+    "description": "FB2K Playback Statistics: Returns how many times this tracks has been played."
   },
   "Tag: %first_played%": {
-    "prefix": "%first_played%",
-    "body": ["%first_played%"],
-    "description": "FB2K: Returns the date and time when the track was first played. If the track has not been played yet, the field does not exist."
-  },
-  "Tag: %<first_played>%": {
-    "prefix": "%<first_played>%",
-    "body": ["%<first_played>%"],
-    "description": "FB2K: Returns the date and time when the track was first played. If the track has not been played yet, the field does not exist."
+    "prefix": "first_played",
+    "body": [
+      "%first_played%"
+    ],
+    "description": "FB2K Playback Statistics: Returns the date and time when the track was first played."
   },
   "Tag: %last_played%": {
-    "prefix": "%last_played%",
-    "body": ["%last_played%"],
-    "description": "FB2K: Returns the date and time when the track was last played. If the track has not been played yet, the field does not exist."
-  },
-  "Tag: %<last_played>%": {
-    "prefix": "%<last_played>%",
-    "body": ["%<last_played>%"],
-    "description": "FB2K: Returns the date and time when the track was last played. If the track has not been played yet, the field does not exist."
+    "prefix": "last_played",
+    "body": [
+      "%last_played%"
+    ],
+    "description": "FB2K Playback Statistics: Returns the date and time when the track was last played."
   },
   "Tag: %played_per_day%": {
-    "prefix": "%played_per_day%",
-    "body": ["%played_per_day%"],
-    "description": "FB2K: Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between %first_played% and %last_played%). If the track has not been played yet, the field does not exist."
-  },
-  "Tag: %<played_per_day>%": {
-    "prefix": "%<played_per_day>%",
-    "body": ["%<played_per_day>%"],
-    "description": "FB2K: Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between %first_played% and %last_played%). If the track has not been played yet, the field does not exist."
+    "prefix": "played_per_day",
+    "body": [
+      "%played_per_day%"
+    ],
+    "description": "FB2K Playback Statistics: Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between `%first_played%` and `%last_played%`)."
   },
   "Tag: %added%": {
-    "prefix": "%added%",
-    "body": ["%added%"],
-    "description": "FB2K: Returns the date and time at which track has been added to Media Library. Even if the track has not been played yet, the field exists, logically."
-  },
-  "Tag: %<added>%": {
-    "prefix": "%<added>%",
-    "body": ["%<added>%"],
-    "description": "FB2K: Returns the date and time at which track has been added to Media Library. Even if the track has not been played yet, the field exists, logically."
+    "prefix": "added",
+    "body": [
+      "%added%"
+    ],
+    "description": "FB2K Playback Statistics: Returns the date and time at which track has been added to Media Library."
   },
   "Tag: %rating%": {
-    "prefix": "%rating%",
-    "body": ["%rating%"],
-    "description": "FB2K: Returns Rating Value (can be integer from 1 to 5). If the track has not been rated yet, the field does not exist."
-  },
-  "Tag: %<rating>%": {
-    "prefix": "%<rating>%",
-    "body": ["%<rating>%"],
-    "description": "FB2K: Returns Rating Value (can be integer from 1 to 5). If the track has not been rated yet, the field does not exist."
+    "prefix": "rating",
+    "body": [
+      "%rating%"
+    ],
+    "description": "FB2K Playback Statistics: Returns `rating` value (can be integer from 1 to 5)."
   },
   "Tag: %rating_stars%": {
-    "prefix": "%rating_stars%",
-    "body": ["%rating_stars%"],
-    "description": "FB2K: Returns Song's Rating Value, formatted as up to five stars, e.g. ★★★. If the track has not been rated yet, the field does not exist."
-  },
-  "Tag: %<rating_stars>%": {
-    "prefix": "%<rating_stars>%",
-    "body": ["%<rating_stars>%"],
-    "description": "FB2K: Returns Song's Rating Value, formatted as up to five stars, e.g. ★★★. If the track has not been rated yet, the field does not exist."
+    "prefix": "rating_stars",
+    "body": [
+      "%rating_stars%"
+    ],
+    "description": "FB2K Playback Statistics: Returns song's rating value, formatted as up to five stars, e.g. `★★★`."
   },
   "Tag: %rating_stars_fixed%": {
-    "prefix": "%rating_stars_fixed%",
-    "body": ["%rating_stars_fixed%"],
-    "description": "FB2K: Returns Song's Rating Value, formatted as five stars, e.g. ★★★☆☆. If the track has not been rated yet, the field does not exist."
-  },
-  "Tag: %<rating_stars_fixed>%": {
-    "prefix": "%<rating_stars_fixed>%",
-    "body": ["%<rating_stars_fixed>%"],
-    "description": "FB2K: Returns Song's Rating Value, formatted as five stars, e.g. ★★★☆☆. If the track has not been rated yet, the field does not exist."
+    "prefix": "rating_stars_fixed",
+    "body": [
+      "%rating_stars_fixed%"
+    ],
+    "description": "FB2K Playback Statistics: Returns song's `rating` value, formatted as five stars, e.g. `★★★☆☆`."
   },
   "Tag: %node_name%": {
-    "prefix": "%node_name%",
-    "body": ["%node_name%"],
-    "description": "FB2K: Name of the node, either a playlist or a folder."
-  },
-  "Tag: %<node_name>%": {
-    "prefix": "%<node_name>%",
-    "body": ["%<node_name>%"],
-    "description": "FB2K: Name of the node, either a playlist or a folder."
+    "prefix": "node_name",
+    "body": [
+      "%node_name%"
+    ],
+    "description": "FB2K Playlist Organizer: Is the name of the node, either a playlist or a folder."
   },
   "Tag: %is_folder%": {
-    "prefix": "%is_folder%",
-    "body": ["%is_folder%"],
-    "description": "FB2K: A boolean value for use in '$if( ...)' expressions and is true when the node is a folder."
-  },
-  "Tag: %<is_folder>%": {
-    "prefix": "%<is_folder>%",
-    "body": ["%<is_folder>%"],
-    "description": "FB2K: A boolean value for use in '$if( ...)' expressions and is true when the node is a folder."
+    "prefix": "is_folder",
+    "body": [
+      "%is_folder%"
+    ],
+    "description": "FB2K Playlist Organizer: Is a boolean value for use in `$if( ...)` expressions and is true when the node is a folder."
   },
   "Tag: %count%": {
-    "prefix": "%count%",
-    "body": ["%count%"],
-    "description": "FB2K: Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
-  },
-  "Tag: %<count>%": {
-    "prefix": "%<count>%",
-    "body": ["%<count>%"],
-    "description": "FB2K: Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
+    "prefix": "count",
+    "body": [
+      "%count%"
+    ],
+    "description": "FB2K Playlist Organizer: Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
   },
   "Tag: %playlist_duration%": {
-    "prefix": "%playlist_duration%",
-    "body": ["%playlist_duration%"],
-    "description": "FB2K: Will provide the duration of playlists."
-  },
-  "Tag: %<playlist_duration>%": {
-    "prefix": "%<playlist_duration>%",
-    "body": ["%<playlist_duration>%"],
-    "description": "FB2K: Will provide the duration of playlists."
+    "prefix": "playlist_duration",
+    "body": [
+      "%playlist_duration%"
+    ],
+    "description": "FB2K Playlist Organizer: Will provide the duration of playlists."
   },
   "Tag: %playlist_size%": {
-    "prefix": "%playlist_size%",
-    "body": ["%playlist_size%"],
-    "description": "FB2K: Will provide the size of playlists (in kB, MB or GB)."
-  },
-  "Tag: %<playlist_size>%": {
-    "prefix": "%<playlist_size>%",
-    "body": ["%<playlist_size>%"],
-    "description": "FB2K: Will provide the size of playlists (in kB, MB or GB)."
-  },
-  "Tag: %_text%": {
-    "prefix": "%_text%",
-    "body": ["%_text%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %<_text>%": {
-    "prefix": "%<_text>%",
-    "body": ["%<_text>%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %_selected_text%": {
-    "prefix": "%_selected_text%",
-    "body": ["%_selected_text%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %<_selected_text>%": {
-    "prefix": "%<_selected_text>%",
-    "body": ["%<_selected_text>%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %_selected_text_no_focus%": {
-    "prefix": "%_selected_text_no_focus%",
-    "body": ["%_selected_text_no_focus%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %<_selected_text_no_focus>%": {
-    "prefix": "%<_selected_text_no_focus>%",
-    "body": ["%<_selected_text_no_focus>%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %_back%": {
-    "prefix": "%_back%",
-    "body": ["%_back%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %<_back>%": {
-    "prefix": "%<_back>%",
-    "body": ["%<_back>%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %_selected_back%": {
-    "prefix": "%_selected_back%",
-    "body": ["%_selected_back%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %<_selected_back>%": {
-    "prefix": "%<_selected_back>%",
-    "body": ["%<_selected_back>%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %_selected_back_no_focus%": {
-    "prefix": "%_selected_back_no_focus%",
-    "body": ["%_selected_back_no_focus%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %<_selected_back_no_focus>%": {
-    "prefix": "%<_selected_back_no_focus>%",
-    "body": ["%<_selected_back_no_focus>%"],
-    "description": "CUI: return the relevant colour before any modifications by the current style script."
-  },
-  "Tag: %_display_index%": {
-    "prefix": "%_display_index%",
-    "body": ["%_display_index%"],
-    "description": "CUI: the current row number in the playlist view (including group headings)"
-  },
-  "Tag: %<_display_index>%": {
-    "prefix": "%<_display_index>%",
-    "body": ["%<_display_index>%"],
-    "description": "CUI: the current row number in the playlist view (including group headings)"
-  },
-  "Tag: %_is_group%": {
-    "prefix": "%_is_group%",
-    "body": ["%_is_group%"],
-    "description": "CUI: whether a group heading is currently being formatted"
-  },
-  "Tag: %<_is_group>%": {
-    "prefix": "%<_is_group>%",
-    "body": ["%<_is_group>%"],
-    "description": "CUI: whether a group heading is currently being formatted"
-  },
-  "Tag: %_is_themed%": {
-    "prefix": "%_is_themed%",
-    "body": ["%_is_themed%"],
-    "description": "CUI: whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences"
-  },
-  "Tag: %<_is_themed>%": {
-    "prefix": "%<_is_themed>%",
-    "body": ["%<_is_themed>%"],
-    "description": "CUI: whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences"
-  },
-  "Tag: %_system_year%": {
-    "prefix": "%_system_year%",
-    "body": ["%_system_year%"],
-    "description": "CUI: the current year"
-  },
-  "Tag: %<_system_year>%": {
-    "prefix": "%<_system_year>%",
-    "body": ["%<_system_year>%"],
-    "description": "CUI: the current year"
-  },
-  "Tag: %_system_day%": {
-    "prefix": "%_system_day%",
-    "body": ["%_system_day%"],
-    "description": "CUI: the current day of the month, as a number"
-  },
-  "Tag: %<_system_day>%": {
-    "prefix": "%<_system_day>%",
-    "body": ["%<_system_day>%"],
-    "description": "CUI: the current day of the month, as a number"
-  },
-  "Tag: %_system_month%": {
-    "prefix": "%_system_month%",
-    "body": ["%_system_month%"],
-    "description": "CUI: the current month of the year, as a number"
-  },
-  "Tag: %<_system_month>%": {
-    "prefix": "%<_system_month>%",
-    "body": ["%<_system_month>%"],
-    "description": "CUI: the current month of the year, as a number"
-  },
-  "Tag: %_system_day_of_week%": {
-    "prefix": "%_system_day_of_week%",
-    "body": ["%_system_day_of_week%"],
-    "description": "CUI: the current day of the week, as a number"
-  },
-  "Tag: %<_system_day_of_week>%": {
-    "prefix": "%<_system_day_of_week>%",
-    "body": ["%<_system_day_of_week>%"],
-    "description": "CUI: the current day of the week, as a number"
-  },
-  "Tag: %_system_hour%": {
-    "prefix": "%_system_hour%",
-    "body": ["%_system_hour%"],
-    "description": "CUI: the current hour"
-  },
-  "Tag: %<_system_hour>%": {
-    "prefix": "%<_system_hour>%",
-    "body": ["%<_system_hour>%"],
-    "description": "CUI: the current hour"
-  },
-  "Tag: %_system_julian_day%": {
-    "prefix": "%_system_julian_day%",
-    "body": ["%_system_julian_day%"],
-    "description": "CUI: the current Julian day"
-  },
-  "Tag: %<_system_julian_day>%": {
-    "prefix": "%<_system_julian_day>%",
-    "body": ["%<_system_julian_day>%"],
-    "description": "CUI: the current Julian day"
-  },
-  "Tag: %playlist_name%": {
-    "prefix": "%playlist_name%",
-    "body": ["%playlist_name%"],
-    "description": "CUI: the name of the active playlist"
-  },
-  "Tag: %<playlist_name>%": {
-    "prefix": "%<playlist_name>%",
-    "body": ["%<playlist_name>%"],
-    "description": "CUI: the name of the active playlist"
-  },
-  "Tag: CUI %title%": {
-    "prefix": "%title%",
-    "body": ["%title%"],
-    "description": "CUI: the title of the playlist"
-  },
-  "Tag: CUI %<title>%": {
-    "prefix": "%<title>%",
-    "body": ["%<title>%"],
-    "description": "CUI: the title of the playlist"
-  },
-  "Tag: %is_locked%": {
-    "prefix": "%is_locked%",
-    "body": ["%is_locked%"],
-    "description": "CUI: exists if the playlist is locked"
-  },
-  "Tag: %<is_locked>%": {
-    "prefix": "%<is_locked>%",
-    "body": ["%<is_locked>%"],
-    "description": "CUI: exists if the playlist is locked"
-  },
-  "Tag: %lock_name%": {
-    "prefix": "%lock_name%",
-    "body": ["%lock_name%"],
-    "description": "CUI: the name of the playlist lock, if the playlist is locked"
-  },
-  "Tag: %<lock_name>%": {
-    "prefix": "%<lock_name>%",
-    "body": ["%<lock_name>%"],
-    "description": "CUI: the name of the playlist lock, if the playlist is locked"
-  },
-  "Tag: %size%": {
-    "prefix": "%size%",
-    "body": ["%size%"],
-    "description": "CUI: the number of items in the playlist"
-  },
-  "Tag: %<size>%": {
-    "prefix": "%<size>%",
-    "body": ["%<size>%"],
-    "description": "CUI: the number of items in the playlist"
-  },
-  "Tag: CUI %length%": {
-    "prefix": "%length%",
-    "body": ["%length%"],
-    "description": "CUI: the total length of the items in the playlist"
-  },
-  "Tag: CUI %<length>%": {
-    "prefix": "%<length>%",
-    "body": ["%<length>%"],
-    "description": "CUI: the total length of the items in the playlist"
-  },
-  "Tag: CUI %filesize%": {
-    "prefix": "%filesize%",
-    "body": ["%filesize%"],
-    "description": "CUI: the sum of the known file sizes of the items in the playlist"
-  },
-  "Tag: CUI %<filesize>%": {
-    "prefix": "%<filesize>%",
-    "body": ["%<filesize>%"],
-    "description": "CUI: the sum of the known file sizes of the items in the playlist"
-  },
-  "Tag: %filesize_raw%": {
-    "prefix": "%filesize_raw%",
-    "body": ["%filesize_raw%"],
-    "description": "CUI: the sum of the known file sizes of the items in the playlist, in bytes"
-  },
-  "Tag: %<filesize_raw>%": {
-    "prefix": "%<filesize_raw>%",
-    "body": ["%<filesize_raw>%"],
-    "description": "CUI: the sum of the known file sizes of the items in the playlist, in bytes"
-  },
-  "Tag: %is_active%": {
-    "prefix": "%is_active%",
-    "body": ["%is_active%"],
-    "description": "CUI: exists if the playlist is the active playlist"
-  },
-  "Tag: %<is_active>%": {
-    "prefix": "%<is_active>%",
-    "body": ["%<is_active>%"],
-    "description": "CUI: exists if the playlist is the active playlist"
-  },
-  "Tag: %is_playing%": {
-    "prefix": "%is_playing%",
-    "body": ["%is_playing%"],
-    "description": "CUI: exists if the playlist is playing"
-  },
-  "Tag: %<is_playing>%": {
-    "prefix": "%<is_playing>%",
-    "body": ["%<is_playing>%"],
-    "description": "CUI: exists if the playlist is playing"
-  },
-  "Tag: %default_font_face%": {
-    "prefix": "%default_font_face%",
-    "body": ["%default_font_face%"],
-    "description": "CUI: the default font family for the panel."
-  },
-  "Tag: %<default_font_face>%": {
-    "prefix": "%<default_font_face>%",
-    "body": ["%<default_font_face>%"],
-    "description": "CUI: the default font family for the panel."
-  },
-  "Tag: %default_font_size%": {
-    "prefix": "%default_font_size%",
-    "body": ["%default_font_size%"],
-    "description": "CUI: the default font size for the panel, in points."
-  },
-  "Tag: %<default_font_size>%": {
-    "prefix": "%<default_font_size>%",
-    "body": ["%<default_font_size>%"],
-    "description": "CUI: the default font size for the panel, in points."
-  },
-  "Function: $rgb(R,G,B)": {
-    "prefix": "$rgb",
-    "body": ["\\$rgb(${1:R},${2:G},${3:B})"],
-    "description": "CUI: Returns a colour value from the specified red, green and blue components (0–255)."
-  },
-  "Function: $set_global(variable name,variable value)": {
-    "prefix": "$set_global",
-    "body": ["\\$set_global(${1:variable name},${2:variable value})"],
-    "description": "CUI: Sets a global variable to the specified value."
-  },
-  "Function: $get_global(variable name)": {
-    "prefix": "$get_global",
-    "body": ["\\$get_global(${1:variable name})"],
-    "description": "CUI: Returns the value of the specified global variable."
-  },
-  "Function: $set_style(text,text colour,selected item text colour)": {
-    "prefix": "$set_style",
+    "prefix": "playlist_size",
     "body": [
-      "\\$set_style(${1:text},${2:text colour},${3:selected item text colour})"
+      "%playlist_size%"
     ],
-    "description": "CUI: Sets the text colour for normal and selected items. Colours are specified using the $rgb() function."
+    "description": "FB2K Playlist Organizer: Will provide the size of playlists (in kB, MB or GB)."
   },
-  "Function: $set_style(text,text colour,selected item text colour,selected item text colour when window is not focused)": {
-    "prefix": "$set_style",
+  "Function: $set_global(name,value)": {
+    "prefix": "set_global",
+    "body": [
+      "\\$set_global(${1:name},${2:value})"
+    ],
+    "description": "CUI: Set the `name` variable to the `value` value."
+  },
+  "Function: $set_global(name)": {
+    "prefix": "get_global",
+    "body": [
+      "\\$get_global(${1:name})"
+    ],
+    "description": "CUI: Get the value of the global variable `name`."
+  },
+  "Function: $set_style(...)": {
+    "prefix": "set_style",
     "body": [
       "\\$set_style(${1:text},${2:text colour},${3:selected item text colour},${4:selected item text colour when window is not focused})"
     ],
-    "description": "CUI: Sets the text colour for normal and selected items. The fourth parameter sets the text colour for selected items when the window is not focuseds."
+    "description": "CUI: Is used to set colours."
   },
-  "Function: $calculate_blend_target(colour)": {
-    "prefix": "$calculate_blend_target",
-    "body": ["\\$calculate_blend_target(${1:colour})"],
-    "description": "CUI: Returns black if the mean of the red, green and blue components of a colour is greater than or equal to 128; otherwise it returns white."
+  "Function: $calculate_blend_target(color)": {
+    "prefix": "calculate_blend_target",
+    "body": [
+      "\\$calculate_blend_target(${1:colour})"
+    ],
+    "description": "CUI: Returns black if the mean of the red, green and blue components of `color` is greater than or equal to 128; otherwise it returns white."
   },
   "Function: $offset_colour(colour_from,colour_to,offset)": {
-    "prefix": "$offset_colour",
-    "body": ["\\$offset_colour(${1:colour_from},${2:colour_to},${3:offset})"],
-    "description": "CUI: Shifts one colour towards another colour. Intended to be used with black or white for colour_to. offset should be between 0 and 255."
+    "prefix": "offset_colour",
+    "body": [
+      "\\$offset_colour(${1:colour_from},${2:colour_to},${3:offset})"
+    ],
+    "description": "CUI: Shifts one colour towards another colour."
   },
-  "Function: $set_format()": {
-    "prefix": "$set_format",
+  "Tag: %_text%": {
+    "prefix": "_text",
+    "body": [
+      "%_text%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_text%": {
+    "prefix": "_selected_text",
+    "body": [
+      "%_selected_text%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_text_no_focus%": {
+    "prefix": "_selected_text_no_focus",
+    "body": [
+      "%_selected_text_no_focus%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_back%": {
+    "prefix": "_back",
+    "body": [
+      "%_back%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_back%": {
+    "prefix": "_selected_back",
+    "body": [
+      "%_selected_back%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_back_no_focus%": {
+    "prefix": "_selected_back_no_focus",
+    "body": [
+      "%_selected_back_no_focus%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_display_index%": {
+    "prefix": "_display_index",
+    "body": [
+      "%_display_index%"
+    ],
+    "description": "CUI: The current row number in the playlist view (including group headings)."
+  },
+  "Tag: %_is_group%": {
+    "prefix": "_is_group",
+    "body": [
+      "%_is_group%"
+    ],
+    "description": "CUI: Whether a group heading is currently being formatted."
+  },
+  "Tag: %_is_themed%": {
+    "prefix": "_is_themed",
+    "body": [
+      "%_is_themed%"
+    ],
+    "description": "CUI: Whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences."
+  },
+  "Tag: %_system_year%": {
+    "prefix": "_system_year",
+    "body": [
+      "%_system_year%"
+    ],
+    "description": "CUI: The current year."
+  },
+  "Tag: %_system_day%": {
+    "prefix": "_system_day",
+    "body": [
+      "%_system_day%"
+    ],
+    "description": "CUI: The current day of the month, as a number."
+  },
+  "Tag: %_system_month%": {
+    "prefix": "_system_month",
+    "body": [
+      "%_system_month%"
+    ],
+    "description": "CUI: The current month of the year, as a number."
+  },
+  "Tag: %_system_day_of_week%": {
+    "prefix": "_system_day_of_week",
+    "body": [
+      "%_system_day_of_week%"
+    ],
+    "description": "CUI: The current day of the week, as a number."
+  },
+  "Tag: %_system_hour%": {
+    "prefix": "_system_hour",
+    "body": [
+      "%_system_hour%"
+    ],
+    "description": "CUI: The current hour."
+  },
+  "Tag: %_system_julian_day%": {
+    "prefix": "_system_julian_day",
+    "body": [
+      "%_system_julian_day%"
+    ],
+    "description": "CUI: The current Julian day."
+  },
+  "Tag: %playlist_name%": {
+    "prefix": "playlist_name",
+    "body": [
+      "%playlist_name%"
+    ],
+    "description": "CUI: The name of the active playlist."
+  },
+  "Tag: %is_locked%": {
+    "prefix": "is_locked",
+    "body": [
+      "%is_locked%"
+    ],
+    "description": "CUI: Exists if the playlist is locked."
+  },
+  "Tag: %lock_name%": {
+    "prefix": "lock_name",
+    "body": [
+      "%lock_name%"
+    ],
+    "description": "CUI: The name of the playlist lock, if the playlist is locked."
+  },
+  "Tag: %size%": {
+    "prefix": "size",
+    "body": [
+      "%size%"
+    ],
+    "description": "CUI: The number of items in the playlist."
+  },
+  "Tag: %filesize_raw%": {
+    "prefix": "filesize_raw",
+    "body": [
+      "%filesize_raw%"
+    ],
+    "description": "CUI: The sum of the known file sizes of the items in the playlist, in bytes."
+  },
+  "Tag: %is_active%": {
+    "prefix": "is_active",
+    "body": [
+      "%is_active%"
+    ],
+    "description": "CUI: Exists if the playlist is the active playlist."
+  },
+  "Tag: %is_playing%": {
+    "prefix": "is_playing",
+    "body": [
+      "%is_playing%"
+    ],
+    "description": "CUI: Exists if the playlist is playing."
+  },
+  "Function: $set_format(name: value; name2: value2; ...)": {
+    "prefix": "set_format",
     "body": [
       "\\$set_format(${1|font-family,font-size,font-weight,font-stretch,font-style,text-decoration|}: ${2|value,initial|})"
     ],
     "description": "CUI: Changes font and text styling for subsequent text."
   },
   "Function: $reset_format()": {
-    "prefix": "$reset_format",
-    "body": ["\\$reset_format()"],
+    "prefix": "reset_format",
+    "body": [
+      "\\$reset_format()"
+    ],
     "description": "CUI: Restores font and text styling for subsequent text to the panel defaults."
   },
   "Function: $set_font(font face,point size,modifiers)": {
-    "prefix": "$set_font",
+    "prefix": "set_font",
     "body": [
       "\\$set_font(${1:font face},${2:point size},${3|bold,italic,underline|})"
     ],
     "description": "CUI: Changes the font used for subsequent text."
   },
   "Function: $reset_font()": {
-    "prefix": "$reset_font",
-    "body": ["\\$reset_font()"],
-    "description": "CUI: Restores the font used for subsequent text to the panel defaults."
+    "prefix": "reset_font",
+    "body": [
+      "\\$reset_font()"
+    ],
+    "description": "CUI: Restores font and text styling for subsequent text to the panel defaults."
   },
-  "Keyword: AFTER": {
-    "prefix": ["AFTER", "after"],
-    "body": ["${1:time1} AFTER ${2:time2}"],
-    "description": "FB2K keyword: returns only items where time1 value is after time2"
+  "Tag: %default_font_face%": {
+    "prefix": "default_font_face",
+    "body": [
+      "%default_font_face%"
+    ],
+    "description": "CUI: The default font family for the panel."
   },
-  "Keyword: AND": {
-    "prefix": ["AND", "and"],
-    "body": ["${1:expression1} AND ${2:expression2}"],
-    "description": "FB2K keyword: returns only items where both expression1 and expression2 are true"
+  "Tag: %default_font_size%": {
+    "prefix": "default_font_size",
+    "body": [
+      "%default_font_size%"
+    ],
+    "description": "CUI: The default font size for the panel, in points."
+  },
+  "Keyword: HAS": {
+    "prefix": "HAS",
+    "body": [
+      "${1|field,*|} HAS ${2:string}"
+    ],
+    "description": "FB2K Query: Returns only items that have all words from `string` in metadata field named `field`."
+  },
+  "Keyword: IS": {
+    "prefix": "IS",
+    "body": [
+      "${1:field} IS ${2:string}"
+    ],
+    "description": "FB2K Query: Returns only items where (at least one) metadata field `field` is equal to `string`."
+  },
+  "Keyword: ALL": {
+    "prefix": "ALL",
+    "body": [
+      "ALL"
+    ],
+    "description": "FB2K Query: No operators can be used. This single keyword simply returns all items within the Media Library."
+  },
+  "Keyword: GREATER": {
+    "prefix": "GREATER",
+    "body": [
+      "${1:field} GREATER ${2:number}"
+    ],
+    "description": "FB2K Query: Performs integral number comparison between the value of a `field` and a `number`."
+  },
+  "Keyword: LESS": {
+    "prefix": "LESS",
+    "body": [
+      "${1:field} LESS ${2:number}"
+    ],
+    "description": "FB2K Query: Performs integral number comparison between the value of a `field` and a `number`."
+  },
+  "Keyword: EQUAL": {
+    "prefix": "EQUAL",
+    "body": [
+      "${1:field} EQUAL ${2:number}"
+    ],
+    "description": "FB2K Query: Performs integral number comparison between the value of a `field` and a `number`."
+  },
+  "Keyword: MISSING": {
+    "prefix": "MISSING",
+    "body": [
+      "${1:field} MISSING"
+    ],
+    "description": "FB2K Query: Returns only items that don't have a metadata field named `field`."
+  },
+  "Keyword: PRESENT": {
+    "prefix": "PRESENT",
+    "body": [
+      "${1:field} PRESENT"
+    ],
+    "description": "FB2K Query: Returns only items that have a metadata field named `field`."
   },
   "Keyword: BEFORE": {
-    "prefix": ["BEFORE", "before"],
-    "body": ["${1:time1} BEFORE ${2:time2}"],
-    "description": "FB2K keyword: returns only items where time1 value is before time2"
+    "prefix": "BEFORE",
+    "body": [
+      "${1:time1} BEFORE ${2:time2}"
+    ],
+    "description": "FB2K Query: Returns only items where `time1` value is before `time2`."
+  },
+  "Keyword: AFTER": {
+    "prefix": "AFTER",
+    "body": [
+      "${1:time1} AFTER ${2:time2}"
+    ],
+    "description": "FB2K Query: Returns only items where `time1` value is after `time2`."
+  },
+  "Keyword: SINCE": {
+    "prefix": "SINCE",
+    "body": [
+      "${1:time1} SINCE ${2:time2}"
+    ],
+    "description": "FB2K Query: Returns only items where `time1` value is not before `time2`."
   },
   "Keyword: DURING": {
-    "prefix": ["DURING", "during"],
-    "body": ["${1:time1} DURING ${2:time2}"],
-    "description": "FB2K keyword: Returns only items where time1 value is a subset of time2 period"
+    "prefix": "DURING",
+    "body": [
+      "${1:time1} DURING ${2:time2}"
+    ],
+    "description": "FB2K Query: Returns only items where `time1` value is a subset of `time2`."
   },
-  "Keyword: DURING LAST (plural form)": {
-    "prefix": ["DURING LAST", "during last"],
+  "Keyword: DURING LAST": {
+    "prefix": "DURING LAST",
     "body": [
       "${1:time} DURING LAST ${2:number} ${3|SECONDS,MINUTES,HOURS,DAYS,WEEKS|}"
     ],
-    "description": "FB2K keyword: returns items where time value is contained in the specified period"
+    "description": "FB2K Query: Returns items where `time` value is contained in the specified period. `time-unit` can be one of SECONDS, MINUTES, HOURS, DAYS, or WEEKS."
   },
-  "Keyword: DURING LAST (singular form)": {
-    "prefix": ["DURING LAST", "during last"],
-    "body": ["${1:time} DURING LAST ${2|SECOND,MINUTE,HOUR,DAY,WEEK|}"],
-    "description": "FB2K keyword: returns items where time value is contained in the specified period"
-  },
-  "Keyword: EQUAL": {
-    "prefix": ["EQUAL", "equal"],
-    "body": ["${1:field} EQUAL ${2:number}"],
-    "description": "FB2K keyword: returns only items where field value is equal to number"
-  },
-  "Keyword: GREATER": {
-    "prefix": ["GREATER", "greater"],
-    "body": ["${1:field} GREATER ${2:number}"],
-    "description": "FB2K keyword: returns only items where field value is greater than number"
-  },
-  "Keyword: HAS": {
-    "prefix": ["HAS", "has"],
-    "body": ["${1|field,*|} HAS ${2:string}"],
-    "description": "FB2K keyword: returns only items where field contains string (case-insensitive). If * is used instead of a field name, returns items where any field contains string."
-  },
-  "Keyword: IS": {
-    "prefix": ["IS", "is"],
-    "body": ["${1:field} IS ${2:string}"],
-    "description": "FB2K keyword: returns only items where field is exactly equal to string (case-insensitive)"
-  },
-  "Keyword: LESS": {
-    "prefix": ["LESS", "less"],
-    "body": ["${1:field} LESS ${2:number}"],
-    "description": "FB2K keyword: returns only items where field value is less than number"
-  },
-  "Keyword: MISSING": {
-    "prefix": ["MISSING", "missing"],
-    "body": ["${1:field} MISSING"],
-    "description": "FB2K keyword: returns only items that don't have a metadata field named field"
-  },
-  "Keyword: NOT": {
-    "prefix": ["NOT", "not"],
-    "body": ["NOT ${1:expression}"],
-    "description": "FB2K keywords: returns only items where the expression is false"
+  "Keyword: AND": {
+    "prefix": "AND",
+    "body": [
+      "${1:expression1} AND ${2:expression2}"
+    ],
+    "description": "FB2K Query: Returns only items where both `expressions` are `true`"
   },
   "Keyword: OR": {
-    "prefix": ["OR", "or"],
-    "body": ["${1:expression1} OR ${2:expression2}"],
-    "description": "FB2K keyword: returns only items where either expression1 or expression2 (or both) are true"
+    "prefix": "OR",
+    "body": [
+      "${1:expression1} OR ${2:expression2}"
+    ],
+    "description": "FB2K Query: Returns only items where at least one `expression` is `true`"
   },
-  "Keyword: PRESENT": {
-    "prefix": ["PRESENT", "present"],
-    "body": ["${1:field} PRESENT"],
-    "description": "FB2K keyword: returns only items that have a metadata field named field"
-  },
-  "Keyword: SINCE": {
-    "prefix": ["SINCE", "since"],
-    "body": ["${1:time1} SINCE ${2:time2}"],
-    "description": "FB2K keyword: returns only items where time1 value is not before time2"
+  "Keyword: NOT": {
+    "prefix": "NOT",
+    "body": [
+      "NOT ${1:expression}"
+    ],
+    "description": "FB2K Query: Returns only items where the `expression` is `false`."
   },
   "Keyword: SORT BY": {
-    "prefix": ["SORT BY", "sort by"],
-    "body": ["SORT BY ${1:sort-pattern}"],
-    "description": "FB2K keyword: Sort results in ascending order"
+    "prefix": "SORT BY",
+    "body": [
+      "SORT BY ${1:sort-pattern}"
+    ],
+    "description": "FB2K Query: Sort results in ascending order."
   },
   "Keyword: SORT ASCENDING BY": {
-    "prefix": ["SORT ASCENDING BY", "sort ascending by"],
-    "body": ["SORT ASCENDING BY ${1:sort-pattern}"],
-    "description": "FB2K keyword: Sort results in ascending order"
+    "prefix": "SORT ASCENDING BY",
+    "body": [
+      "SORT ASCENDING BY ${1:sort-pattern}"
+    ],
+    "description": "FB2K Query: Sort results in ascending order."
   },
   "Keyword: SORT DESCENDING BY": {
-    "prefix": ["SORT DESCENDING BY", "sort descending by"],
-    "body": ["SORT DESCENDING BY ${1:sort-pattern}"],
-    "description": "FB2K keyword: Sort results in descending order"
+    "prefix": "SORT DESCENDING BY",
+    "body": [
+      "SORT DESCENDING BY ${1:sort-pattern}"
+    ],
+    "description": "FB2K Query: Sort results in descending order."
+  },
+  "Tag: %__codec%": {
+    "prefix": "__codec",
+    "body": [
+      "%__codec%"
+    ],
+    "description": "FB2K: Codec."
+  },
+  "Tag: %__codec_profile%": {
+    "prefix": "__codec_profile",
+    "body": [
+      "%__codec_profile%"
+    ],
+    "description": "FB2K: Codec Profile."
+  },
+  "Tag: %__samplerate%": {
+    "prefix": "__samplerate",
+    "body": [
+      "%__samplerate%"
+    ],
+    "description": "FB2K: Sample Rate, in hertz."
+  },
+  "Tag: %__bitrate%": {
+    "prefix": "__bitrate",
+    "body": [
+      "%__bitrate%"
+    ],
+    "description": "FB2K: Bitrate, in kilobits per second."
+  },
+  "Tag: %__tool%": {
+    "prefix": "__tool",
+    "body": [
+      "%__tool%"
+    ],
+    "description": "FB2K: Tool used to produce the file, possibly guessed."
+  },
+  "Tag: %__encoding%": {
+    "prefix": "__encoding",
+    "body": [
+      "%__encoding%"
+    ],
+    "description": "FB2K: Encoding lossiness."
+  },
+  "Tag: %__channels%": {
+    "prefix": "__channels",
+    "body": [
+      "%__channels%"
+    ],
+    "description": "FB2K: Channels count."
+  },
+  "Tag: %__bitspersample%": {
+    "prefix": "__bitspersample",
+    "body": [
+      "%__bitspersample%"
+    ],
+    "description": "FB2K: Bits Per Sample."
+  },
+  "Tag: %__decoded_bitspersample%": {
+    "prefix": "__decoded_bitspersample",
+    "body": [
+      "%__decoded_bitspersample%"
+    ],
+    "description": "FB2K: Bits Per Sample after decoding."
+  },
+  "Tag: %__bitspersample_extra%": {
+    "prefix": "__bitspersample_extra",
+    "body": [
+      "%__bitspersample_extra%"
+    ],
+    "description": "FB2K: Format of 32-bit audio data."
+  },
+  "Tag: %__tagtype%": {
+    "prefix": "__tagtype",
+    "body": [
+      "%__tagtype%"
+    ],
+    "description": "FB2K: Tag Type, comma-separated list of tag formats."
+  },
+  "Tag: %__cue_embedded%": {
+    "prefix": "__cue_embedded",
+    "body": [
+      "%__cue_embedded%"
+    ],
+    "description": "FB2K: Embedded Cuesheet presence."
+  },
+  "Tag: %__md5%": {
+    "prefix": "__md5",
+    "body": [
+      "%__md5%"
+    ],
+    "description": "FB2K: Audio MD5 hash, if container defines it."
+  },
+  "Tag: %__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%": {
+    "prefix": "__WAVEFORMATEXTENSIBLE_CHANNEL_MASK",
+    "body": [
+      "%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%"
+    ],
+    "description": "FB2K: Channel mask, channel layout of the track coded as hex."
+  },
+  "Tag: %__ENC_DELAY%": {
+    "prefix": "__ENC_DELAY",
+    "body": [
+      "%__ENC_DELAY%"
+    ],
+    "description": "FB2K: LAME proprietary MP3 `enc_delay` value for gapless playback."
+  },
+  "Tag: %__ENC_PADDING%": {
+    "prefix": "__ENC_PADDING",
+    "body": [
+      "%__ENC_PADDING%"
+    ],
+    "description": "FB2K: LAME proprietary MP3 `enc_padding` value for gapless playback."
+  },
+  "Tag: %__MP3_ACCURATE_LENGTH%": {
+    "prefix": "__MP3_ACCURATE_LENGTH",
+    "body": [
+      "%__MP3_ACCURATE_LENGTH%"
+    ],
+    "description": "FB2K: MP3 duration."
+  },
+  "Tag: %__MP3_STEREO_MODE%": {
+    "prefix": "__MP3_STEREO_MODE",
+    "body": [
+      "%__MP3_STEREO_MODE%"
+    ],
+    "description": "FB2K: Stereo mode used in MP3 file."
+  },
+  "Tag: %__VERSION%": {
+    "prefix": "__VERSION",
+    "body": [
+      "%__VERSION%"
+    ],
+    "description": "FB2K: Version of tool."
+  },
+  "Tag: %__FLAGS%": {
+    "prefix": "__FLAGS",
+    "body": [
+      "%__FLAGS%"
+    ],
+    "description": "FB2K: Flags of tool."
+  },
+  "Tag: %__channel_mode%": {
+    "prefix": "__channel_mode",
+    "body": [
+      "%__channel_mode%"
+    ],
+    "description": "FB2K: Channel Mode, description of channels."
   }
 }
