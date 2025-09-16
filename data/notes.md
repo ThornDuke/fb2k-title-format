@@ -44,13 +44,13 @@
 ## popup
 
 ```markdown
-function $funcname(par1,par2,...) // forse in formato code è meglio
+header: function $funcname(par1,par2,...) // forse in formato code è meglio
 
-description // prima lettera maiuscola e punto finale
+description: description // prima lettera maiuscola e punto finale
 
-example code
+example: example code
 
-See <link> for more information.
+footer: See <link> for more information.
 ```
 
 ## Richiesta

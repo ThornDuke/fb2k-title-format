@@ -50,6 +50,32 @@ function loadTokens(context) {
   }
 }
 
+function popupHeader(token) {
+  return `#### ${token.role} **${token.sign}**`;
+}
+
+function popupDescription(token) {
+  if (token.description.length > 0) {
+    const description = token.description.join('\n\n');
+    return `\n\n${description}`;
+  }
+  return '';
+}
+
+function popupExample(token) {
+  if (token.example.length > 0) {
+    return `\n\nExample: \`${token.example}\``;
+  }
+  return '';
+}
+
+function popupFooter(token) {
+  if (token['ref-link'].length > 0) {
+    return `\n\nSee [${token.realm} reference](${token['ref-link']}) for more information.`;
+  }
+  return '';
+}
+
 function activate(context) {
   // Carica gli snippet all'attivazione dell'estensione
   loadSnippets(context);
@@ -241,17 +267,20 @@ function activate(context) {
       // Ottiene la parola sotto il cursore
       const wordRange = document.getWordRangeAtPosition(position);
       const hoveredWord = document.getText(wordRange);
-      console.log('§>', { hoveredWord });
+      console.log('§> 2', { hoveredWord });
 
       // Controlla se la parola è inserita nell'array dei fb2kTokens
       if (tokensArray.includes(hoveredWord)) {
         const fb2kToken = fb2kTokens.find((item) => item.token === hoveredWord);
+        console.log('§> 3', { tokensArray, fb2kToken });
         const markdownString = new vscode.MarkdownString();
 
         // Aggiunge il markdown
-        markdownString.appendCodeblock(fb2kToken.code);
-        markdownString.appendMarkdown(fb2kToken.description);
-        console.log('§> 3:', { hoveredWord, fb2kToken });
+        markdownString.appendMarkdown(popupHeader(fb2kToken));
+        markdownString.appendMarkdown(popupDescription(fb2kToken));
+        markdownString.appendMarkdown(popupExample(fb2kToken), 'bash');
+        markdownString.appendMarkdown(popupFooter(fb2kToken));
+        console.log('§> 4:', { hoveredWord, md: markdownString.value });
 
         return new vscode.Hover(markdownString);
       }
