@@ -13,6 +13,12 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [Unreleased]
+
+### Changed
+
+- [rewritten the list of tokens into the syntax definition]
+
 ## [1.4.18] - 2025-09-13
 
 ### Changed
