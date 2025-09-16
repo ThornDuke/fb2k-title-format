@@ -1,22 +1,25 @@
 const fs = require('fs');
 
-function createSnippets() {
+function updateSnippets() {
+  const tokensPath = 'data/fb2kTokens.json';
+  const snippetsPath = 'snippets/FB2k-title-formatting.code-snippet';
+
   try {
     // Legge il file tokens.json
-    const tokensData = fs.readFileSync('data/fb2kTokens.json', 'utf8');
+    const tokensData = fs.readFileSync(tokensPath, 'utf8');
     const tokens = JSON.parse(tokensData);
 
     const snippets = {};
 
-    // Itera sull'array di token per creare gli snippet
+    // Iterates over the token array to create the snippets
     tokens.forEach((tokenObj) => {
       const { token, role, realm, sign, description } = tokenObj;
       const snippetBody = tokenObj['snippet-body'];
 
-      // Crea la chiave per lo snippet (es. "Function: $add(a,b,...)")
+      // Creates the key for the snippet (e.g. "Function: $add(a,b,...)")
       const key = `${role.charAt(0).toUpperCase() + tokenObj.role.slice(1)}: ${sign}`;
 
-      // Costruisce l'oggetto snippet
+      // Builds the snippet object
       snippets[key] = {
         prefix: token,
         body: snippetBody,
@@ -24,17 +27,13 @@ function createSnippets() {
       };
     });
 
-    // Scrive il file snippets.json
-    fs.writeFileSync(
-      'snippets/FB2k-title-formatting.code-snippets',
-      JSON.stringify(snippets, null, 2),
-      'utf8'
-    );
-    console.log('File snippets.json creato con successo!');
+    // Writes the snippets file
+    fs.writeFileSync(snippetsPath, JSON.stringify(snippets, null, 2), 'utf8');
+    console.log('Snippets have been updated correctly.');
   } catch (error) {
-    console.error('Si è verificato un errore:', error);
+    console.error('Error updating the snippets:', error);
   }
 }
 
-// Esegui la funzione
-createSnippets();
+// Executes the function
+updateSnippets();
