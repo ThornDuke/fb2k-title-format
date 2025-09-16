@@ -51,7 +51,7 @@ function loadTokens(context) {
 }
 
 function popupHeader(token) {
-  return `#### ${token.role} **${token.sign}**`;
+  return `### ${token.role} **${token.sign}**`;
 }
 
 function popupDescription(token) {
@@ -74,6 +74,80 @@ function popupFooter(token) {
     return `\n\nSee [${token.realm} reference](${token['ref-link']}) for more information.`;
   }
   return '';
+}
+
+/**
+ * Funzione per trovare le stringhe delimitate
+ */
+function findDelimitedToken(lineText, position, delimiter) {
+  const startDelimiter = delimiter;
+  let endDelimiter;
+
+  if (delimiter === '%') {
+    endDelimiter = '%';
+  } else if (delimiter === '$') {
+    endDelimiter = '(';
+  } else if (delimiter === '%<') {
+    endDelimiter = '>%';
+  }
+
+  if (!endDelimiter) return null;
+
+  let startIndex = -1;
+  let endIndex = -1;
+
+  for (let i = 0; i < lineText.length; i++) {
+    if (lineText.startsWith(startDelimiter, i)) {
+      const closingIndex = lineText.indexOf(
+        endDelimiter,
+        i + startDelimiter.length
+      );
+      if (closingIndex !== -1) {
+        if (
+          position.character >= i
+          && position.character <= closingIndex + endDelimiter.length
+        ) {
+          startIndex = i;
+          endIndex = closingIndex + endDelimiter.length;
+          break;
+        }
+      }
+    }
+  }
+
+  if (startIndex !== -1 && endIndex !== -1) {
+    const token = lineText.substring(
+      startIndex + startDelimiter.length,
+      endIndex - endDelimiter.length
+    );
+    const range = new vscode.Range(
+      new vscode.Position(position.line, startIndex),
+      new vscode.Position(position.line, endIndex)
+    );
+    return { token, range };
+  }
+
+  return null;
+}
+
+/**
+ * Funzione per trovare le parole chiave
+ */
+function findKeyword(lineText, position, keyword) {
+  const keywordIndex = lineText.indexOf(keyword);
+  if (keywordIndex !== -1) {
+    const keywordEndIndex = keywordIndex + keyword.length;
+    if (
+      position.character >= keywordIndex
+      && position.character <= keywordEndIndex
+    ) {
+      return new vscode.Range(
+        new vscode.Position(position.line, keywordIndex),
+        new vscode.Position(position.line, keywordEndIndex)
+      );
+    }
+  }
+  return null;
 }
 
 function activate(context) {
@@ -264,29 +338,75 @@ function activate(context) {
   // Registra un Hover Provider per il linguaggio
   let hoverProvider = vscode.languages.registerHoverProvider('fb2k', {
     provideHover(document, position, token) {
-      // Ottiene la parola sotto il cursore
-      const wordRange = document.getWordRangeAtPosition(position);
-      const hoveredWord = document.getText(wordRange);
-      console.log('§> 2', { hoveredWord });
+      // Ottiene l'intera riga su cui si trova il cursore
+      const line = document.lineAt(position);
+      const lineText = line.text;
 
-      // Controlla se la parola è inserita nell'array dei fb2kTokens
-      if (tokensArray.includes(hoveredWord)) {
-        const fb2kToken = fb2kTokens.find((item) => item.token === hoveredWord);
-        console.log('§> 3', { tokensArray, fb2kToken });
+      // Definisce un array con i delimitatori e le parole chiave
+      const delimiters = ['%', '%<', '$'];
+      const keywords = [
+        'HAS',
+        'IS',
+        'ALL',
+        'GREATER',
+        'LESS',
+        'EQUAL',
+        'MISSING',
+        'PRESENT',
+        'BEFORE',
+        'AFTER',
+        'SINCE',
+        'DURING',
+        'DURING LAST',
+        'AND',
+        'OR',
+        'NOT',
+        'SORT BY',
+        'SORT ASCENDING BY',
+        'SORT DESCENDING BY'
+      ];
+
+      // Trova il token corretto basandosi sulla posizione del cursore
+      let hoveredToken = null;
+      let tokenRange = null;
+
+      // Cerca i token delimitati
+      for (const delimiter of delimiters) {
+        const match = findDelimitedToken(lineText, position, delimiter);
+        if (match) {
+          hoveredToken = match.token;
+          tokenRange = match.range;
+          break;
+        }
+      }
+
+      // Se non trova un token delimitato, cerca le parole chiave
+      if (!hoveredToken) {
+        for (const keyword of keywords) {
+          const keywordRange = findKeyword(lineText, position, keyword);
+          if (keywordRange) {
+            hoveredToken = keyword;
+            tokenRange = keywordRange;
+            break;
+          }
+        }
+      }
+
+      // Se è stato trovato un token, cerca la sua descrizione e la restituisce
+      if (hoveredToken && tokensArray.includes(hoveredToken)) {
+        const fb2kToken = fb2kTokens.find(
+          (item) => item.token === hoveredToken
+        );
         const markdownString = new vscode.MarkdownString();
 
-        // Aggiunge il markdown
         markdownString.appendMarkdown(popupHeader(fb2kToken));
         markdownString.appendMarkdown(popupDescription(fb2kToken));
         markdownString.appendMarkdown(popupExample(fb2kToken), 'bash');
         markdownString.appendMarkdown(popupFooter(fb2kToken));
-        console.log('§> 4:', { hoveredWord, md: markdownString.value });
 
-        return new vscode.Hover(markdownString);
+        return new vscode.Hover(markdownString, tokenRange);
       }
 
-      // Se non si trova una corrispondenza, non restituisce nulla
-      console.log('§> error finding a match');
       return undefined;
     }
   });
