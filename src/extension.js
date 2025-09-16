@@ -10,6 +10,7 @@ const fs = require('fs');
 let fb2kSnippets = {};
 let fb2kTokens = [];
 let tokensArray = [];
+let keywordsArray = [];
 
 function loadSnippets(context) {
   const snippetPath = path.join(
@@ -49,6 +50,26 @@ function loadTokens(context) {
     );
   }
 }
+//////////////////////////////////////////////////////////////////////////////
+function loadKeywords(context) {
+  const basePath = path.join(context.extensionPath, 'data', 'fb2kTokens.json');
+
+  try {
+    const fileContent = fs.readFileSync(basePath, 'utf8');
+    const data = JSON.parse(fileContent);
+    keywordsArray = data
+      .filter((item) => item.role === 'keyword')
+      .map((item) => item.token)
+      .filter((item, index, arr) => arr.indexOf(item) === index);
+    console.log('§> 1:', { keywordsArray });
+  } catch (err) {
+    console.error('Error loading keywords:', err);
+    vscode.window.showErrorMessage(
+      'Unable to load keywords for Foobar2000 Title Formatting language.'
+    );
+  }
+}
+//////////////////////////////////////////////////////////////////////////////
 
 function popupHeader(token) {
   return `### ${token.role} **${token.sign}**`;
@@ -154,6 +175,7 @@ function activate(context) {
   // Carica gli snippet all'attivazione dell'estensione
   loadSnippets(context);
   loadTokens(context);
+  loadKeywords(context);
 
   // Registra il CompletionItemProvider per il linguaggio 'fb2k'
   const completionProvider = vscode.languages.registerCompletionItemProvider(
@@ -344,28 +366,6 @@ function activate(context) {
 
       // Definisce un array con i delimitatori e le parole chiave
       const delimiters = ['%', '%<', '$'];
-      const keywords = [
-        'HAS',
-        'IS',
-        'ALL',
-        'GREATER',
-        'LESS',
-        'EQUAL',
-        'MISSING',
-        'PRESENT',
-        'BEFORE',
-        'AFTER',
-        'SINCE',
-        'DURING',
-        'DURING LAST',
-        'AND',
-        'OR',
-        'NOT',
-        'SORT BY',
-        'SORT ASCENDING BY',
-        'SORT DESCENDING BY'
-      ];
-
       // Trova il token corretto basandosi sulla posizione del cursore
       let hoveredToken = null;
       let tokenRange = null;
@@ -382,7 +382,7 @@ function activate(context) {
 
       // Se non trova un token delimitato, cerca le parole chiave
       if (!hoveredToken) {
-        for (const keyword of keywords) {
+        for (const keyword of tokensArray) {
           const keywordRange = findKeyword(lineText, position, keyword);
           if (keywordRange) {
             hoveredToken = keyword;
