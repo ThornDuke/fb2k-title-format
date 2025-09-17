@@ -7,29 +7,28 @@ const vscode = require('vscode');
 const path = require('path');
 const fs = require('fs');
 
-let fb2kSnippets = {};
+// let fb2kSnippets = {};
 let fb2kTokens = [];
 let tokensArray = [];
 let keywordsArray = [];
 
-function loadSnippets(context) {
-  const snippetPath = path.join(
-    context.extensionPath,
-    'snippets',
-    'FB2k-title-formatting.code-snippets'
-  );
+// function loadSnippets(context) {
+//   const snippetPath = path.join(
+//     context.extensionPath,
+//     'snippets',
+//     'FB2k-title-formatting.code-snippets'
+//   );
 
-  try {
-    const fileContent = fs.readFileSync(snippetPath, 'utf8');
-    fb2kSnippets = JSON.parse(fileContent);
-    // console.log('§> 1:', { fileContent, fb2kSnippets });
-  } catch (err) {
-    console.error('Error loading snippets:', err);
-    vscode.window.showErrorMessage(
-      'Unable to load snippets for Foobar2000 Title Formatting language.'
-    );
-  }
-}
+//   try {
+//     const fileContent = fs.readFileSync(snippetPath, 'utf8');
+//     fb2kSnippets = JSON.parse(fileContent);
+//   } catch (err) {
+//     console.error('Error loading snippets:', err);
+//     vscode.window.showErrorMessage(
+//       'Unable to load snippets for Foobar2000 Title Formatting language.'
+//     );
+//   }
+// }
 
 function loadTokens(context) {
   const fb2kTokensPath = path.join(
@@ -42,7 +41,10 @@ function loadTokens(context) {
     const fileContent = fs.readFileSync(fb2kTokensPath, 'utf8');
     fb2kTokens = JSON.parse(fileContent);
     tokensArray = fb2kTokens.map((item) => item.token);
-    console.log('§> 1:', { fb2kTokens, tokensArray });
+    console.log('§> loadTokens 1:', {
+      B: tokensArray.includes('trim'),
+      TA: tokensArray.sort()
+    });
   } catch (err) {
     console.error('Error loading tokens:', err);
     vscode.window.showErrorMessage(
@@ -50,7 +52,7 @@ function loadTokens(context) {
     );
   }
 }
-//////////////////////////////////////////////////////////////////////////////
+
 function loadKeywords(context) {
   const basePath = path.join(context.extensionPath, 'data', 'fb2kTokens.json');
 
@@ -60,8 +62,10 @@ function loadKeywords(context) {
     keywordsArray = data
       .filter((item) => item.role === 'keyword')
       .map((item) => item.token)
-      .filter((item, index, arr) => arr.indexOf(item) === index);
-    console.log('§> 1:', { keywordsArray });
+      // elimina le ripetizioni
+      .filter((item, index, arr) => arr.indexOf(item) === index)
+      // ordina per lunghezza decrescente
+      .sort((a, b) => b.length - a.length);
   } catch (err) {
     console.error('Error loading keywords:', err);
     vscode.window.showErrorMessage(
@@ -69,10 +73,9 @@ function loadKeywords(context) {
     );
   }
 }
-//////////////////////////////////////////////////////////////////////////////
 
 function popupHeader(token) {
-  return `### ${token.role} **${token.sign}**`;
+  return `#### ${token.role} **${token.sign}**`;
 }
 
 function popupDescription(token) {
@@ -153,10 +156,16 @@ function findDelimitedToken(lineText, position, delimiter) {
 
 /**
  * Funzione per trovare le parole chiave
+ * Riveduta per scansionare l'intera riga
  */
 function findKeyword(lineText, position, keyword) {
-  const keywordIndex = lineText.indexOf(keyword);
-  if (keywordIndex !== -1) {
+  let offset = 0;
+  while (true) {
+    const keywordIndex = lineText.indexOf(keyword, offset);
+    if (keywordIndex === -1) {
+      return null;
+    }
+
     const keywordEndIndex = keywordIndex + keyword.length;
     if (
       position.character >= keywordIndex
@@ -167,38 +176,38 @@ function findKeyword(lineText, position, keyword) {
         new vscode.Position(position.line, keywordEndIndex)
       );
     }
+
+    offset = keywordIndex + 1;
   }
-  return null;
 }
 
 function activate(context) {
-  // Carica gli snippet all'attivazione dell'estensione
-  loadSnippets(context);
+  // loadSnippets(context);
   loadTokens(context);
   loadKeywords(context);
 
   // Registra il CompletionItemProvider per il linguaggio 'fb2k'
-  const completionProvider = vscode.languages.registerCompletionItemProvider(
-    'fb2k',
-    {
-      provideCompletionItems(document, position) {
-        const completions = [];
-        for (const key in fb2kSnippets) {
-          if (Object.prototype.hasOwnProperty.call(fb2kSnippets, key)) {
-            const snippet = fb2kSnippets[key];
-            const completionItem = new vscode.CompletionItem(key);
-            completionItem.kind = vscode.CompletionItemKind.Snippet;
-            completionItem.insertText = new vscode.SnippetString(
-              snippet.body.join('\n')
-            );
-            completionItem.detail = snippet.description;
-            completions.push(completionItem);
-          }
-        }
-        return completions;
-      }
-    }
-  );
+  // const completionProvider = vscode.languages.registerCompletionItemProvider(
+  //   'fb2k',
+  //   {
+  //     provideCompletionItems(document, position) {
+  //       const completions = [];
+  //       for (const key in fb2kSnippets) {
+  //         if (Object.prototype.hasOwnProperty.call(fb2kSnippets, key)) {
+  //           const snippet = fb2kSnippets[key];
+  //           const completionItem = new vscode.CompletionItem(key);
+  //           completionItem.kind = vscode.CompletionItemKind.Snippet;
+  //           completionItem.insertText = new vscode.SnippetString(
+  //             snippet.body.join('\n')
+  //           );
+  //           completionItem.detail = snippet.description;
+  //           completions.push(completionItem);
+  //         }
+  //       }
+  //       return completions;
+  //     }
+  //   }
+  // );
 
   let disposableJoinLines = vscode.commands.registerTextEditorCommand(
     'foobar2000-title-formatting-syntax.joinLinesSmart',
@@ -360,13 +369,11 @@ function activate(context) {
   // Registra un Hover Provider per il linguaggio
   let hoverProvider = vscode.languages.registerHoverProvider('fb2k', {
     provideHover(document, position, token) {
-      // Ottiene l'intera riga su cui si trova il cursore
       const line = document.lineAt(position);
       const lineText = line.text;
+      console.log('§> hover provider 1:', { lineText, position });
 
-      // Definisce un array con i delimitatori e le parole chiave
       const delimiters = ['%', '%<', '$'];
-      // Trova il token corretto basandosi sulla posizione del cursore
       let hoveredToken = null;
       let tokenRange = null;
 
@@ -379,10 +386,11 @@ function activate(context) {
           break;
         }
       }
+      console.log('§> hover provider 2:', { hoveredToken, tokenRange });
 
       // Se non trova un token delimitato, cerca le parole chiave
-      if (!hoveredToken) {
-        for (const keyword of tokensArray) {
+      if (!tokensArray.includes(hoveredToken)) {
+        for (const keyword of keywordsArray) {
           const keywordRange = findKeyword(lineText, position, keyword);
           if (keywordRange) {
             hoveredToken = keyword;
@@ -391,27 +399,32 @@ function activate(context) {
           }
         }
       }
+      console.log('§> hover provider 3:', { hoveredToken, tokenRange });
+      console.log('§> hover provider 4:', {
+        tokensArray,
+        hoveredToken,
+        bool: tokensArray.includes(hoveredToken)
+      });
 
-      // Se è stato trovato un token, cerca la sua descrizione e la restituisce
       if (hoveredToken && tokensArray.includes(hoveredToken)) {
         const fb2kToken = fb2kTokens.find(
           (item) => item.token === hoveredToken
         );
-        const markdownString = new vscode.MarkdownString();
+        console.log('§> hover provider 5:', { fb2kToken });
 
+        const markdownString = new vscode.MarkdownString();
         markdownString.appendMarkdown(popupHeader(fb2kToken));
         markdownString.appendMarkdown(popupDescription(fb2kToken));
-        markdownString.appendMarkdown(popupExample(fb2kToken), 'bash');
+        markdownString.appendMarkdown(popupExample(fb2kToken));
         markdownString.appendMarkdown(popupFooter(fb2kToken));
 
         return new vscode.Hover(markdownString, tokenRange);
       }
-
       return undefined;
     }
   });
 
-  context.subscriptions.push(completionProvider);
+  // context.subscriptions.push(completionProvider);
   context.subscriptions.push(disposableJoinLines);
   context.subscriptions.push(disposableJoinLinesNoComments);
   context.subscriptions.push(disposableRemoveIndentation);
