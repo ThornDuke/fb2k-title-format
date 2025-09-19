@@ -1,8 +1,27 @@
 # Foobar2000 Title Formatting Syntax
 
-Provides syntax highlighting and code snippets for [Foobar2000](https://www.foobar2000.org/) title formatting scripts.
+Provides syntax highlighting, code snippets and code context for [Foobar2000](https://www.foobar2000.org/) title formatting scripts.
 
 Handles all scripting related to Foobar2000 [native tags and functions](https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Syntax), as well as those of [ColumnsUI](https://yuo.be/columns-ui).
+
+Updated with Foobar2000 v2.25.1 and ColumnsUI v3.1.0.
+
+<details open>
+<summary><strong>Table of Contents</strong></summary>
+
+- [Features](#features)
+  - [Syntax highlighting](#syntax-highlighting)
+  - [Snippets](#snippets)
+  - [Code Context](#code-context)
+  - [Commands](#commands)
+    - [`Remove Indentation`](#remove-indentation)
+    - [`Join Lines`](#join-lines)
+    - [`Join Lines No Comments`](#join-lines-no-comments)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+</details>
 
 ## Features
 
@@ -10,15 +29,15 @@ Handles all scripting related to Foobar2000 [native tags and functions](https://
 
 All elements of the title-formatting syntax are recognized
 
-| element            | example                         |
-| ------------------ | ------------------------------- |
-| comments           | `// text`                       |
-| text               | `'text'`                        |
-| functions          | `$function(%field%,text)`       |
-| tags               | `%field_one% ... %<field_two>%` |
-| constants          | `$puts(name) ... $get(name)`    |
-| query keywords     | `field GREATER expression`      |
-| conditional blocks | `[%field_one%[ - %field_two%]]` |
+| element            | example                                  |
+| ------------------ | ---------------------------------------- |
+| comments           | `// text`                                |
+| text               | `'text'`                                 |
+| functions          | `$function(%field%,text)`                |
+| tags               | `%field_one% ... %<remapped_field_one>%` |
+| constants          | `$puts(name,42) ... $get(name)`          |
+| query keywords     | `field GREATER expression`               |
+| conditional blocks | `[%field_one%[ - %field_two%]]`          |
 
 - **Functions** are highlighted in two ways:
   - _Predefined functions_ (recognized by Foobar2000) are colored as valid functions.
@@ -30,6 +49,10 @@ All elements of the title-formatting syntax are recognized
 ### Snippets
 
 Complete code snippets are provided for all predefined tags, functions and query keywords.
+
+### Code Context
+
+This plugin delivers detailed, contextual information directly to your cursor via a simple hover. For each element of the language, a link to the official documentation is provided.
 
 ### Commands
 
