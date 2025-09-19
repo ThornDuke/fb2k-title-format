@@ -1,9 +1,11 @@
 # Ignore files and directories for npm package publishing
-node_modules/
-dist/
 .vscode/
-tests/
 build/
+data/
+node_modules/
+scripts/
+dist/
+tests/
 *.log
 .nvmrc
 CHANGELOG.md

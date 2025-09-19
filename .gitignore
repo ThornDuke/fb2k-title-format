@@ -1,9 +1,9 @@
 # A .gitignore file tells Git which files and directories to ignore and not track.
+.vscode/
+build/
 node_modules/
 dist/
 tests/
-build/
-.vscode/
 package-lock.json
 project-notes.md
 requisites.md
