@@ -31,7 +31,7 @@ function updateSnippets() {
     fs.writeFileSync(snippetsPath, JSON.stringify(snippets, null, 2), 'utf8');
     console.log('Snippets have been updated correctly.');
   } catch (error) {
-    console.error('Error updating the snippets:', error);
+    console.error('An error occurred while updating the snippets:', error);
   }
 }
 

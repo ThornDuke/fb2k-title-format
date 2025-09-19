@@ -104,7 +104,7 @@ function popupFooter(token) {
  * Funzione per trovare le stringhe delimitate
  */
 function findDelimitedToken(lineText, position) {
-  console.log('§> findDelimitedToken 1:', { lineText, position });
+  // console.log('§> findDelimitedToken 1:', { lineText, position });
 
   const delimiters = [
     { open: '$', close: ')', type: 'function' },
@@ -115,7 +115,7 @@ function findDelimitedToken(lineText, position) {
   for (const { open, close, type } of delimiters) {
     // Cerca all'indietro dal cursore il delimitatore di apertura
     let start = position.character;
-    console.log('§> findDelimitedToken 2:', { start, open, close, type });
+    // console.log('§> findDelimitedToken 2:', { start, open, close, type });
 
     while (start >= 0) {
       if (lineText.startsWith(open, start)) {
@@ -124,12 +124,12 @@ function findDelimitedToken(lineText, position) {
         if (end !== -1) {
           const tokenStart = start + open.length;
           const tokenEnd = end;
-          console.log('§> findDelimitedToken 3:', {
-            start,
-            end,
-            tokenStart,
-            tokenEnd
-          });
+          // console.log('§> findDelimitedToken 3:', {
+          //   start,
+          //   end,
+          //   tokenStart,
+          //   tokenEnd
+          // });
 
           // Il cursore è compreso tra apertura e chiusura?
           if (
@@ -137,19 +137,19 @@ function findDelimitedToken(lineText, position) {
             && position.character <= end + close.length
           ) {
             let token = lineText.substring(tokenStart, tokenEnd);
-            console.log('§> findDelimitedToken 4:', { token });
+            // console.log('§> findDelimitedToken 4:', { token });
 
             // Per le funzioni, prendi solo il nome
             if (type === 'function') {
               const match = token.match(/^([a-zA-Z0-9_]+)/);
               token = match ? match[1] : token;
-              console.log('§> findDelimitedToken 5:', { token, match });
+              // console.log('§> findDelimitedToken 5:', { token, match });
             }
             const range = new vscode.Range(
               new vscode.Position(position.line, start),
               new vscode.Position(position.line, end + close.length)
             );
-            console.log('§> findDelimitedToken 6:', { range, token });
+            // console.log('§> findDelimitedToken 6:', { range, token });
 
             return { token, range };
           }
@@ -380,9 +380,9 @@ function activate(context) {
     provideHover(document, position, token) {
       const line = document.lineAt(position);
       const lineText = line.text;
-      console.log('§> hover provider 1:', { lineText, position });
+      // console.log('§> hover provider 1:', { lineText, position });
 
-      const delimiters = ['%', '%<', '$'];
+      // const delimiters = ['%', '%<', '$'];
       let hoveredToken = null;
       let tokenRange = null;
 
@@ -392,7 +392,7 @@ function activate(context) {
         hoveredToken = match.token;
         tokenRange = match.range;
       }
-      console.log('§> hover provider 2:', { hoveredToken, tokenRange });
+      // console.log('§> hover provider 2:', { hoveredToken, tokenRange });
 
       // Se non trova un token delimitato, cerca le parole chiave
       if (!tokensArray.includes(hoveredToken)) {
@@ -405,12 +405,12 @@ function activate(context) {
           }
         }
       }
-      console.log('§> hover provider 3:', {
-        tokenRange,
-        tokensArray,
-        hoveredToken,
-        hoveredTokenInTokens: tokensArray.includes(hoveredToken)
-      });
+      // console.log('§> hover provider 3:', {
+      //   tokenRange,
+      //   tokensArray,
+      //   hoveredToken,
+      //   hoveredTokenInTokens: tokensArray.includes(hoveredToken)
+      // });
 
       if (hoveredToken && tokensArray.includes(hoveredToken)) {
         const fb2kToken = fb2kTokens.find(
@@ -424,7 +424,7 @@ function activate(context) {
         markdownString.appendMarkdown(popupExample(fb2kToken));
         markdownString.appendMarkdown(popupFooter(fb2kToken));
 
-        console.log('§> hover provider 5:', { MD: markdownString.value });
+        // console.log('§> hover provider 5:', { MD: markdownString.value });
 
         return new vscode.Hover(markdownString, tokenRange);
       }

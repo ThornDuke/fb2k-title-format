@@ -69,9 +69,9 @@ function updateSyntaxFile() {
 
     // Write the updated file
     fs.writeFileSync(syntaxPath, JSON.stringify(syntaxData, null, 2), 'utf8');
-    console.log('File mylanguage.json aggiornato con successo!');
+    console.log('The syntax file has been successfully updated');
   } catch (error) {
-    console.error('Si è verificato un errore:', error);
+    console.error('An error occurred:', error);
   }
 }
 
