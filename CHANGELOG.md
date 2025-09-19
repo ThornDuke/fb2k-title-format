@@ -17,12 +17,18 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 ### Added
 
+- data/fb2kTokens: is the list of title formatting elements, which is used to create and update the snippets file and the syntax file
 - scripts/update-snippets.js
 - scripts/update-syntax.js
+- src/extension.js: hover feature
 
 ### Changed
 
-- [rewritten the list of tokens into the syntax definition]
+- rewritten the list of tokens into the syntax definition
+
+### Removed
+
+- autocompletion, which conflicted with the snippets
 
 ## [1.4.18] - 2025-09-13
 
