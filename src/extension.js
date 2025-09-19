@@ -41,10 +41,10 @@ function loadTokens(context) {
     const fileContent = fs.readFileSync(fb2kTokensPath, 'utf8');
     fb2kTokens = JSON.parse(fileContent);
     tokensArray = fb2kTokens.map((item) => item.token);
-    console.log('§> loadTokens 1:', {
-      B: tokensArray.includes('trim'),
-      TA: tokensArray.sort()
-    });
+    // console.log('§> loadTokens 1:', {
+    //   B: tokensArray.includes('trim'),
+    //   TA: tokensArray.sort()
+    // });
   } catch (err) {
     console.error('Error loading tokens:', err);
     vscode.window.showErrorMessage(
@@ -103,54 +103,61 @@ function popupFooter(token) {
 /**
  * Funzione per trovare le stringhe delimitate
  */
-function findDelimitedToken(lineText, position, delimiter) {
-  const startDelimiter = delimiter;
-  let endDelimiter;
+function findDelimitedToken(lineText, position) {
+  console.log('§> findDelimitedToken 1:', { lineText, position });
 
-  if (delimiter === '%') {
-    endDelimiter = '%';
-  } else if (delimiter === '$') {
-    endDelimiter = '(';
-  } else if (delimiter === '%<') {
-    endDelimiter = '>%';
-  }
+  const delimiters = [
+    { open: '$', close: ')', type: 'function' },
+    { open: '%<', close: '>%', type: 'tag' },
+    { open: '%', close: '%', type: 'tag' }
+  ];
 
-  if (!endDelimiter) return null;
+  for (const { open, close, type } of delimiters) {
+    // Cerca all'indietro dal cursore il delimitatore di apertura
+    let start = position.character;
+    console.log('§> findDelimitedToken 2:', { start, open, close, type });
 
-  let startIndex = -1;
-  let endIndex = -1;
+    while (start >= 0) {
+      if (lineText.startsWith(open, start)) {
+        // Trova il delimitatore di chiusura in avanti
+        const end = lineText.indexOf(close, start + open.length);
+        if (end !== -1) {
+          const tokenStart = start + open.length;
+          const tokenEnd = end;
+          console.log('§> findDelimitedToken 3:', {
+            start,
+            end,
+            tokenStart,
+            tokenEnd
+          });
 
-  for (let i = 0; i < lineText.length; i++) {
-    if (lineText.startsWith(startDelimiter, i)) {
-      const closingIndex = lineText.indexOf(
-        endDelimiter,
-        i + startDelimiter.length
-      );
-      if (closingIndex !== -1) {
-        if (
-          position.character >= i
-          && position.character <= closingIndex + endDelimiter.length
-        ) {
-          startIndex = i;
-          endIndex = closingIndex + endDelimiter.length;
-          break;
+          // Il cursore è compreso tra apertura e chiusura?
+          if (
+            position.character >= start
+            && position.character <= end + close.length
+          ) {
+            let token = lineText.substring(tokenStart, tokenEnd);
+            console.log('§> findDelimitedToken 4:', { token });
+
+            // Per le funzioni, prendi solo il nome
+            if (type === 'function') {
+              const match = token.match(/^([a-zA-Z0-9_]+)/);
+              token = match ? match[1] : token;
+              console.log('§> findDelimitedToken 5:', { token, match });
+            }
+            const range = new vscode.Range(
+              new vscode.Position(position.line, start),
+              new vscode.Position(position.line, end + close.length)
+            );
+            console.log('§> findDelimitedToken 6:', { range, token });
+
+            return { token, range };
+          }
         }
       }
+      start--;
     }
   }
-
-  if (startIndex !== -1 && endIndex !== -1) {
-    const token = lineText.substring(
-      startIndex + startDelimiter.length,
-      endIndex - endDelimiter.length
-    );
-    const range = new vscode.Range(
-      new vscode.Position(position.line, startIndex),
-      new vscode.Position(position.line, endIndex)
-    );
-    return { token, range };
-  }
-
   return null;
 }
 
@@ -159,6 +166,8 @@ function findDelimitedToken(lineText, position, delimiter) {
  * Riveduta per scansionare l'intera riga
  */
 function findKeyword(lineText, position, keyword) {
+  // console.log('§> findKeyword 1:', { lineText, position, keyword });
+
   let offset = 0;
   while (true) {
     const keywordIndex = lineText.indexOf(keyword, offset);
@@ -378,13 +387,10 @@ function activate(context) {
       let tokenRange = null;
 
       // Cerca i token delimitati
-      for (const delimiter of delimiters) {
-        const match = findDelimitedToken(lineText, position, delimiter);
-        if (match) {
-          hoveredToken = match.token;
-          tokenRange = match.range;
-          break;
-        }
+      const match = findDelimitedToken(lineText, position);
+      if (match) {
+        hoveredToken = match.token;
+        tokenRange = match.range;
       }
       console.log('§> hover provider 2:', { hoveredToken, tokenRange });
 
@@ -399,24 +405,26 @@ function activate(context) {
           }
         }
       }
-      console.log('§> hover provider 3:', { hoveredToken, tokenRange });
-      console.log('§> hover provider 4:', {
+      console.log('§> hover provider 3:', {
+        tokenRange,
         tokensArray,
         hoveredToken,
-        bool: tokensArray.includes(hoveredToken)
+        hoveredTokenInTokens: tokensArray.includes(hoveredToken)
       });
 
       if (hoveredToken && tokensArray.includes(hoveredToken)) {
         const fb2kToken = fb2kTokens.find(
           (item) => item.token === hoveredToken
         );
-        console.log('§> hover provider 5:', { fb2kToken });
+        // console.log('§> hover provider 5:', { fb2kToken });
 
         const markdownString = new vscode.MarkdownString();
         markdownString.appendMarkdown(popupHeader(fb2kToken));
         markdownString.appendMarkdown(popupDescription(fb2kToken));
         markdownString.appendMarkdown(popupExample(fb2kToken));
         markdownString.appendMarkdown(popupFooter(fb2kToken));
+
+        console.log('§> hover provider 5:', { MD: markdownString.value });
 
         return new vscode.Hover(markdownString, tokenRange);
       }
