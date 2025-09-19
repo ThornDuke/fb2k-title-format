@@ -2165,7 +2165,7 @@
     "token": "get_global",
     "realm": "CUI",
     "role": "function",
-    "sign": "$set_global(name)",
+    "sign": "$get_global(name)",
     "snippet-body": ["\\$get_global(${1:name})"],
     "description": ["Get the value of the global variable `name`."],
     "example": [],

@@ -2,7 +2,7 @@ const fs = require('fs');
 
 function updateSnippets() {
   const tokensPath = 'data/fb2kTokens.json';
-  const snippetsPath = 'snippets/FB2k-title-formatting.code-snippet';
+  const snippetsPath = 'snippets/FB2k-title-formatting.code-snippets';
 
   try {
     // Legge il file tokens.json
@@ -20,8 +20,16 @@ function updateSnippets() {
       const key = `${role.charAt(0).toUpperCase() + tokenObj.role.slice(1)}: ${sign}`;
 
       // Builds the snippet object
+      let prefixStr;
+      if (role === 'function') {
+        prefixStr = `$${token}`;
+      } else if (role === 'tag') {
+        prefixStr = sign;
+      } else {
+        prefixStr = token;
+      }
       snippets[key] = {
-        prefix: token,
+        prefix: prefixStr,
         body: snippetBody,
         description: `${realm}: ${description[0]}`
       };
