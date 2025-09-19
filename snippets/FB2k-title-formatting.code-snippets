@@ -1451,14 +1451,14 @@
   "Keyword: HAS": {
     "prefix": "HAS",
     "body": [
-      "${1|field,*|} HAS ${2:string}"
+      "HAS"
     ],
     "description": "FB2K Query: Returns only items that have all words from `string` in metadata field named `field`."
   },
   "Keyword: IS": {
     "prefix": "IS",
     "body": [
-      "${1:field} IS ${2:string}"
+      "IS"
     ],
     "description": "FB2K Query: Returns only items where (at least one) metadata field `field` is equal to `string`."
   },
@@ -1472,112 +1472,112 @@
   "Keyword: GREATER": {
     "prefix": "GREATER",
     "body": [
-      "${1:field} GREATER ${2:number}"
+      "GREATER"
     ],
     "description": "FB2K Query: Performs integral number comparison between the value of a `field` and a `number`."
   },
   "Keyword: LESS": {
     "prefix": "LESS",
     "body": [
-      "${1:field} LESS ${2:number}"
+      "LESS"
     ],
     "description": "FB2K Query: Performs integral number comparison between the value of a `field` and a `number`."
   },
   "Keyword: EQUAL": {
     "prefix": "EQUAL",
     "body": [
-      "${1:field} EQUAL ${2:number}"
+      "EQUAL"
     ],
     "description": "FB2K Query: Performs integral number comparison between the value of a `field` and a `number`."
   },
   "Keyword: MISSING": {
     "prefix": "MISSING",
     "body": [
-      "${1:field} MISSING"
+      "MISSING"
     ],
     "description": "FB2K Query: Returns only items that don't have a metadata field named `field`."
   },
   "Keyword: PRESENT": {
     "prefix": "PRESENT",
     "body": [
-      "${1:field} PRESENT"
+      "PRESENT"
     ],
     "description": "FB2K Query: Returns only items that have a metadata field named `field`."
   },
   "Keyword: BEFORE": {
     "prefix": "BEFORE",
     "body": [
-      "${1:time1} BEFORE ${2:time2}"
+      "BEFORE"
     ],
     "description": "FB2K Query: Returns only items where `time1` value is before `time2`."
   },
   "Keyword: AFTER": {
     "prefix": "AFTER",
     "body": [
-      "${1:time1} AFTER ${2:time2}"
+      "AFTER"
     ],
     "description": "FB2K Query: Returns only items where `time1` value is after `time2`."
   },
   "Keyword: SINCE": {
     "prefix": "SINCE",
     "body": [
-      "${1:time1} SINCE ${2:time2}"
+      "SINCE"
     ],
     "description": "FB2K Query: Returns only items where `time1` value is not before `time2`."
   },
   "Keyword: DURING": {
     "prefix": "DURING",
     "body": [
-      "${1:time1} DURING ${2:time2}"
+      "DURING"
     ],
     "description": "FB2K Query: Returns only items where `time1` value is a subset of `time2`."
   },
   "Keyword: DURING LAST": {
     "prefix": "DURING LAST",
     "body": [
-      "${1:time} DURING LAST ${2:number} ${3|SECONDS,MINUTES,HOURS,DAYS,WEEKS|}"
+      "DURING"
     ],
     "description": "FB2K Query: Returns items where `time` value is contained in the specified period. `time-unit` can be one of SECONDS, MINUTES, HOURS, DAYS, or WEEKS."
   },
   "Keyword: AND": {
     "prefix": "AND",
     "body": [
-      "${1:expression1} AND ${2:expression2}"
+      "AND"
     ],
     "description": "FB2K Query: Returns only items where both `expressions` are `true`"
   },
   "Keyword: OR": {
     "prefix": "OR",
     "body": [
-      "${1:expression1} OR ${2:expression2}"
+      "OR"
     ],
     "description": "FB2K Query: Returns only items where at least one `expression` is `true`"
   },
   "Keyword: NOT": {
     "prefix": "NOT",
     "body": [
-      "NOT ${1:expression}"
+      "NOT"
     ],
     "description": "FB2K Query: Returns only items where the `expression` is `false`."
   },
   "Keyword: SORT BY": {
     "prefix": "SORT BY",
     "body": [
-      "SORT BY ${1:sort-pattern}"
+      "SORT BY"
     ],
     "description": "FB2K Query: Sort results in ascending order."
   },
   "Keyword: SORT ASCENDING BY": {
     "prefix": "SORT ASCENDING BY",
     "body": [
-      "SORT ASCENDING BY ${1:sort-pattern}"
+      "SORT ASCENDING BY"
     ],
     "description": "FB2K Query: Sort results in ascending order."
   },
   "Keyword: SORT DESCENDING BY": {
     "prefix": "SORT DESCENDING BY",
     "body": [
-      "SORT DESCENDING BY ${1:sort-pattern}"
+      "SORT DESCENDING BY"
     ],
     "description": "FB2K Query: Sort results in descending order."
   },

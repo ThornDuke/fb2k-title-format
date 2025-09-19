@@ -2632,7 +2632,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "HAS",
-    "snippet-body": ["${1|field,*|} HAS ${2:string}"],
+    "snippet-body": ["HAS"],
     "description": [
       "Returns only items that have all words from `string` in metadata field named `field`."
     ],
@@ -2644,7 +2644,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "IS",
-    "snippet-body": ["${1:field} IS ${2:string}"],
+    "snippet-body": ["IS"],
     "description": [
       "Returns only items where (at least one) metadata field `field` is equal to `string`."
     ],
@@ -2668,7 +2668,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "GREATER",
-    "snippet-body": ["${1:field} GREATER ${2:number}"],
+    "snippet-body": ["GREATER"],
     "description": [
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
@@ -2680,7 +2680,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "LESS",
-    "snippet-body": ["${1:field} LESS ${2:number}"],
+    "snippet-body": ["LESS"],
     "description": [
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
@@ -2692,7 +2692,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "EQUAL",
-    "snippet-body": ["${1:field} EQUAL ${2:number}"],
+    "snippet-body": ["EQUAL"],
     "description": [
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
@@ -2704,7 +2704,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "MISSING",
-    "snippet-body": ["${1:field} MISSING"],
+    "snippet-body": ["MISSING"],
     "description": [
       "Returns only items that don't have a metadata field named `field`."
     ],
@@ -2716,7 +2716,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "PRESENT",
-    "snippet-body": ["${1:field} PRESENT"],
+    "snippet-body": ["PRESENT"],
     "description": [
       "Returns only items that have a metadata field named `field`."
     ],
@@ -2728,10 +2728,10 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "BEFORE",
-    "snippet-body": ["${1:time1} BEFORE ${2:time2}"],
+    "snippet-body": ["BEFORE"],
     "description": [
       "Returns only items where `time1` value is before `time2`.",
-      "Time values must be in one of the following formats: YYYY, YYYY-MM, YYYY-MM-DD, YYYY-MM-DD hh, YYYY-MM-DD hh:mm, YYYY-MM-DD hh:mm:ss"
+      "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% BEFORE 2008"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
@@ -2741,10 +2741,10 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "AFTER",
-    "snippet-body": ["${1:time1} AFTER ${2:time2}"],
+    "snippet-body": ["AFTER"],
     "description": [
       "Returns only items where `time1` value is after `time2`.",
-      "Time values must be in one of the following formats: YYYY, YYYY-MM, YYYY-MM-DD, YYYY-MM-DD hh, YYYY-MM-DD hh:mm, YYYY-MM-DD hh:mm:ss"
+      "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% AFTER 2008"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
@@ -2754,10 +2754,10 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SINCE",
-    "snippet-body": ["${1:time1} SINCE ${2:time2}"],
+    "snippet-body": ["SINCE"],
     "description": [
       "Returns only items where `time1` value is not before `time2`.",
-      "Time values must be in one of the following formats: YYYY, YYYY-MM, YYYY-MM-DD, YYYY-MM-DD hh, YYYY-MM-DD hh:mm, YYYY-MM-DD hh:mm:ss"
+      "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% SINCE 2008"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
@@ -2767,10 +2767,10 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "DURING",
-    "snippet-body": ["${1:time1} DURING ${2:time2}"],
+    "snippet-body": ["DURING"],
     "description": [
       "Returns only items where `time1` value is a subset of `time2`.",
-      "Time values must be in one of the following formats: YYYY, YYYY-MM, YYYY-MM-DD, YYYY-MM-DD hh, YYYY-MM-DD hh:mm, YYYY-MM-DD hh:mm:ss"
+      "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% DURING 2008"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
@@ -2780,12 +2780,10 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "DURING LAST",
-    "snippet-body": [
-      "${1:time} DURING LAST ${2:number} ${3|SECONDS,MINUTES,HOURS,DAYS,WEEKS|}"
-    ],
+    "snippet-body": ["DURING"],
     "description": [
       "Returns items where `time` value is contained in the specified period. `time-unit` can be one of SECONDS, MINUTES, HOURS, DAYS, or WEEKS.",
-      "Time values must be in one of the following formats: YYYY, YYYY-MM, YYYY-MM-DD, YYYY-MM-DD hh, YYYY-MM-DD hh:mm, YYYY-MM-DD hh:mm:ss"
+      "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% DURING LAST 2 WEEKS"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
@@ -2795,7 +2793,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "AND",
-    "snippet-body": ["${1:expression1} AND ${2:expression2}"],
+    "snippet-body": ["AND"],
     "description": ["Returns only items where both `expressions` are `true`"],
     "example": ["artist IS blah AND title HAS blah"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
@@ -2805,7 +2803,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "OR",
-    "snippet-body": ["${1:expression1} OR ${2:expression2}"],
+    "snippet-body": ["OR"],
     "description": [
       "Returns only items where at least one `expression` is `true`"
     ],
@@ -2817,7 +2815,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "NOT",
-    "snippet-body": ["NOT ${1:expression}"],
+    "snippet-body": ["NOT"],
     "description": ["Returns only items where the `expression` is `false`."],
     "example": ["NOT last_played AFTER first_played"],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
@@ -2827,7 +2825,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SORT BY",
-    "snippet-body": ["SORT BY ${1:sort-pattern}"],
+    "snippet-body": ["SORT BY"],
     "description": ["Sort results in ascending order."],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
@@ -2837,7 +2835,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SORT ASCENDING BY",
-    "snippet-body": ["SORT ASCENDING BY ${1:sort-pattern}"],
+    "snippet-body": ["SORT ASCENDING BY"],
     "description": ["Sort results in ascending order."],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
@@ -2847,7 +2845,7 @@
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SORT DESCENDING BY",
-    "snippet-body": ["SORT DESCENDING BY ${1:sort-pattern}"],
+    "snippet-body": ["SORT DESCENDING BY"],
     "description": ["Sort results in descending order."],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
