@@ -2,7 +2,6 @@
 .vscode/**
 .vscode-test/**
 build/**
-data/**
 node_modules/**
 scripts/**
 tests/**
