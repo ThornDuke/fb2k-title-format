@@ -110,7 +110,8 @@
     "pack:prerelease": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && mkdir -p build && vsce package --githubBranch master --pre-release --out build",
     "pack": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && mkdir -p build && vsce package --out build",
     "publish:prerelease": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && vsce publish --githubBranch master --pre-release",
-    "publish": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && vsce publish --githubBranch master"
+    "publish": "unset npm_lifecycle_script && unset npm_config_prefix && source $NVM_DIR/nvm.sh && nvm use && vsce publish --githubBranch master",
+    "update": "node ./scripts/update-all.js"
   },
   "devDependencies": {
     "prettier": "^3.0.0"

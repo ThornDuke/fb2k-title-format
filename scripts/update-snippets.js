@@ -43,5 +43,9 @@ function updateSnippets() {
   }
 }
 
-// Executes the function
-updateSnippets();
+module.exports = updateSnippets;
+
+// If the script is run directly (not imported), execute the function
+if (require.main === module) {
+  updateSnippets();
+}

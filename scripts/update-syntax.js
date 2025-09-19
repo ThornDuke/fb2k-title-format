@@ -75,4 +75,9 @@ function updateSyntaxFile() {
   }
 }
 
-updateSyntaxFile();
+module.exports = updateSyntaxFile;
+
+// If the script is run directly (not imported), execute the function
+if (require.main === module) {
+  updateSyntaxFile();
+}
