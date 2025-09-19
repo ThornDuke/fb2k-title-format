@@ -107,7 +107,7 @@ function findDelimitedToken(lineText, position) {
   // console.log('§> findDelimitedToken 1:', { lineText, position });
 
   const delimiters = [
-    { open: '$', close: ')', type: 'function' },
+    { open: '$', close: '(', type: 'function' },
     { open: '%<', close: '>%', type: 'tag' },
     { open: '%', close: '%', type: 'tag' }
   ];
