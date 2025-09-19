@@ -1,8 +1,14 @@
 const fs = require('fs');
+const path = require('path');
 
 function updateSnippets() {
-  const tokensPath = 'data/fb2kTokens.json';
-  const snippetsPath = 'snippets/FB2k-title-formatting.code-snippets';
+  const tokensPath = path.join(__dirname, '..', 'data', 'fb2kTokens.json');
+  const snippetsPath = path.join(
+    __dirname,
+    '..',
+    'snippets',
+    'FB2k-title-formatting.code-snippets'
+  );
 
   try {
     // Legge il file tokens.json
@@ -22,7 +28,7 @@ function updateSnippets() {
       // Builds the snippet object
       let prefixStr;
       if (role === 'function') {
-        prefixStr = `$${token}`;
+        prefixStr = `$${token}(`;
       } else if (role === 'tag') {
         prefixStr = sign;
       } else {
@@ -37,9 +43,13 @@ function updateSnippets() {
 
     // Writes the snippets file
     fs.writeFileSync(snippetsPath, JSON.stringify(snippets, null, 2), 'utf8');
-    console.log('Snippets have been updated correctly.');
+    return { result: 'success', message: 'Snippets updated successfully.' };
   } catch (error) {
-    console.error('An error occurred while updating the snippets:', error);
+    return {
+      result: 'error',
+      message: `Error updating snippets:`,
+      error: error.message
+    };
   }
 }
 

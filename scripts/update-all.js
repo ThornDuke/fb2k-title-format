@@ -1,19 +1,24 @@
 const updateSnippets = require('./update-snippets');
 const updateSyntaxFile = require('./update-syntax');
 
+function logResult(result) {
+  const msg = `§> ${result.message}${result.result === 'error' ? '\n§> ' + result.error : ''}`;
+  const banner = `
+  §>------------------------------------------------
+  §>
+  ${msg}
+  §>
+  §>------------------------------------------------
+  `;
+  console.log(banner);
+}
+
 async function updateAll() {
-  try {
-    await updateSyntaxFile();
-    await updateSnippets();
-    console.log();
-    console.log('------------------------------------------------');
-    console.log();
-    console.log('All files have been updated successfully.');
-    console.log();
-    console.log('------------------------------------------------');
-    console.log();
-  } catch (error) {
-    console.error('An error occurred while updating files:', error);
+  const syntaxFileUpdated = updateSyntaxFile();
+  logResult(syntaxFileUpdated);
+  if (syntaxFileUpdated.result === 'success') {
+    const snippetsUpdated = updateSnippets();
+    logResult(snippetsUpdated);
   }
 }
 

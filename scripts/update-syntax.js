@@ -69,9 +69,13 @@ function updateSyntaxFile() {
 
     // Write the updated file
     fs.writeFileSync(syntaxPath, JSON.stringify(syntaxData, null, 2), 'utf8');
-    console.log('The syntax file has been successfully updated');
+    return { result: 'success', message: 'Syntax file updated successfully.' };
   } catch (error) {
-    console.error('An error occurred:', error);
+    return {
+      result: 'error',
+      message: `Error updating syntax file:`,
+      error: error.message
+    };
   }
 }
 

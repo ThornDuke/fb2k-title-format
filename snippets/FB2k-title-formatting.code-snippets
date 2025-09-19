@@ -1,587 +1,587 @@
 {
   "Function: $add(a,b,...)": {
-    "prefix": "$add",
+    "prefix": "$add(",
     "body": [
       "\\$add(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Adds `a` and `b`."
   },
   "Function: $div(a,b)": {
-    "prefix": "$div",
+    "prefix": "$div(",
     "body": [
       "\\$div(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Divides `a` by `b` and rounds down to an integer. If `b` evaluates to zero, it returns `a`."
   },
   "Function: $greater(a,b)": {
-    "prefix": "$greater",
+    "prefix": "$greater(",
     "body": [
       "\\$greater(${1:num a},${2:num b})"
     ],
     "description": "FB2K: Returns true, if `a` is greater than `b`, otherwise false."
   },
   "Function: $max(a,b)": {
-    "prefix": "$max",
+    "prefix": "$max(",
     "body": [
       "\\$max(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Returns the maximum of `a` and `b`."
   },
   "Function: $min(a,b)": {
-    "prefix": "$min",
+    "prefix": "$min(",
     "body": [
       "\\$min(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Returns the minimum of `a` and `b`."
   },
   "Function: $mod(a,b)": {
-    "prefix": "$mod",
+    "prefix": "$mod(",
     "body": [
       "\\$mod(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Computes the remainder of dividing `a` through `b`."
   },
   "Function: $mul(a,b)": {
-    "prefix": "$mul",
+    "prefix": "$mul(",
     "body": [
       "\\$mul(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Multiplies `a` and `b`."
   },
   "Function: $muldiv(a,b,c)": {
-    "prefix": "$muldiv",
+    "prefix": "$muldiv(",
     "body": [
       "\\$muldiv(${1:num a},${2:num b},${3:num c})"
     ],
     "description": "FB2K: Multiplies `a` and `b`, then divides by `c`."
   },
   "Function: $rand()": {
-    "prefix": "$rand",
+    "prefix": "$rand(",
     "body": [
       "\\$rand()"
     ],
     "description": "FB2K: Generates a random number in the range from 0 to 2<sup>32</sup>-1."
   },
   "Function: $sub(a,b)": {
-    "prefix": "$sub",
+    "prefix": "$sub(",
     "body": [
       "\\$sub(${1:num a},${2:num b}${3:[,...]})"
     ],
     "description": "FB2K: Subtracts `b` from `a`."
   },
   "Function: $and(expr,...)": {
-    "prefix": "$and",
+    "prefix": "$and(",
     "body": [
       "\\$and(${1:expr}${2:[,...]})"
     ],
     "description": "FB2K: Logical `AND` of an arbitrary number of arguments."
   },
   "Function: $or(expr,...)": {
-    "prefix": "$or",
+    "prefix": "$or(",
     "body": [
       "\\$or(${1:expr}${2:[,...]})"
     ],
     "description": "FB2K: Logical `OR` of an arbitrary number of arguments."
   },
   "Function: $not(expr)": {
-    "prefix": "$not",
+    "prefix": "$not(",
     "body": [
       "\\$not(${1:expr})"
     ],
     "description": "FB2K: Logical `NOT`."
   },
   "Function: $if(X,Y)": {
-    "prefix": "$if",
+    "prefix": "$if(",
     "body": [
       "\\$if(${1:X},${2:Y})"
     ],
     "description": "FB2K: If `X` contains at least one present field, executes/displays `Y`."
   },
   "Function: $xor(expr,...)": {
-    "prefix": "$xor",
+    "prefix": "$xor(",
     "body": [
       "\\$xor(${1:expr}${2:[,...]})"
     ],
     "description": "FB2K: Logical Exclusive-`or` of an arbitrary number of arguments."
   },
   "Function: $if(X,Y,Z)": {
-    "prefix": "$if",
+    "prefix": "$if(",
     "body": [
       "\\$if(${1:X},${2:Y},${3:Z})"
     ],
     "description": "FB2K: If `X` contains at least one present field, executes/displays `Y`, otherwise executes/displays `Z`."
   },
   "Function: $if2(X,Y)": {
-    "prefix": "$if2",
+    "prefix": "$if2(",
     "body": [
       "\\$if2(${1:X},${2:Y})"
     ],
     "description": "FB2K: If `X` contains at least one present field, executes/displays `X`, otherwise executes/displays `Y`."
   },
   "Function: $if3(X,Y,Z,...)": {
-    "prefix": "$if3",
+    "prefix": "$if3(",
     "body": [
       "\\$if3(${1:X},${2:Y},${3:Z}${4:[,...]})"
     ],
     "description": "FB2K: Returns the first of parameters that contains at least one present field."
   },
   "Function: $ifequal(int1,int2,then,else)": {
-    "prefix": "$ifequal",
+    "prefix": "$ifequal(",
     "body": [
       "\\$ifequal(${1:num int1},${2:num int2},${3:then},${4:else})"
     ],
     "description": "FB2K: Compares the integer numbers `int1` and `int2`, if `int1` is equal to `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
   },
   "Function: $ifgreater(int1,int2,then,else)": {
-    "prefix": "$ifgreater",
+    "prefix": "$ifgreater(",
     "body": [
       "\\$ifgreater(${1:num int1},${2:num int2},${3:then},${4:else})"
     ],
     "description": "FB2K: Compares the integer numbers `int1` and `int2`, if `int1` is greater than `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
   },
   "Function: $iflonger(str,n,then,else)": {
-    "prefix": "$iflonger",
+    "prefix": "$iflonger(",
     "body": [
       "\\$iflonger(${1:string str},${2:num n},${3:then},${4:else})"
     ],
     "description": "FB2K: Compares the length of the string `str` to the number `n`, if `str` is longer than `n` characters, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
   },
   "Function: $select(N,A,B,C,….)": {
-    "prefix": "$select",
+    "prefix": "$select(",
     "body": [
       "\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"
     ],
     "description": "FB2K: Returns `N`-th of `A`,`B`,`C`… parameters."
   },
   "Function: $abbr(str)": {
-    "prefix": "$abbr",
+    "prefix": "$abbr(",
     "body": [
       "\\$abbr(${1:str})"
     ],
     "description": "FB2K: Returns abbreviation of string `str`."
   },
   "Function: $abbr(str,len)": {
-    "prefix": "$abbr",
+    "prefix": "$abbr(",
     "body": [
       "\\$ansi(${1:str}),${2:len})"
     ],
     "description": "FB2K: Returns abbreviation of `str`, if `str` is longer than `len` characters, otherwise returns `str`."
   },
   "Function: $ansi(str)": {
-    "prefix": "$ansi",
+    "prefix": "$ansi(",
     "body": [
       "\\$ansi(${1:str})"
     ],
     "description": "FB2K: Converts string `str` to system codepage and back."
   },
   "Function: $ascii(str)": {
-    "prefix": "$ascii",
+    "prefix": "$ascii(",
     "body": [
       "\\$ascii(${1:str})"
     ],
     "description": "FB2K: Converts string `str` to ASCII."
   },
   "Function: $caps(str)": {
-    "prefix": "$caps",
+    "prefix": "$caps(",
     "body": [
       "\\$caps(${1:str})"
     ],
     "description": "FB2K: Converts first letter in every word of string `str` to uppercase, and all other letters to lowercase."
   },
   "Function: $caps2(str)": {
-    "prefix": "$caps2",
+    "prefix": "$caps2(",
     "body": [
       "\\$caps2(${1:str})"
     ],
     "description": "FB2K: Converts first letter in every word of string `str` to uppercase, and leaves all other letters as they are."
   },
   "Function: $char(nbr)": {
-    "prefix": "$char",
+    "prefix": "$char(",
     "body": [
       "\\$char(${1:nbr})"
     ],
     "description": "FB2K: Returns Unicode character of nbr."
   },
   "Function: $crc32(str)": {
-    "prefix": "$crc32",
+    "prefix": "$crc32(",
     "body": [
       "\\$crc32(${1:str})"
     ],
     "description": "FB2K: Computes the CRC32 of the string `str` as a number."
   },
   "Function: $crlf()": {
-    "prefix": "$crlf",
+    "prefix": "$crlf(",
     "body": [
       "\\$crlf()"
     ],
     "description": "FB2K: Inserts end-of-line marker (carriage return, line feed)."
   },
   "Function: $cut(str,len)": {
-    "prefix": "$cut",
+    "prefix": "$cut(",
     "body": [
       "\\$cut(${1:str},${2:len})"
     ],
     "description": "FB2K: Returns first `len` characters from the left of the string `str`."
   },
   "Function: $directory(path)": {
-    "prefix": "$directory",
+    "prefix": "$directory(",
     "body": [
       "\\$directory(${1:path})"
     ],
     "description": "FB2K: Extracts only the directory name (not full path)"
   },
   "Function: $directory(path,n)": {
-    "prefix": "$directory",
+    "prefix": "$directory(",
     "body": [
       "\\$directory(${1:path},${2:num n})"
     ],
     "description": "FB2K: Extracts directory name from the file `path`; goes up by `n` levels."
   },
   "Function: $directory_path(path)": {
-    "prefix": "$directory_path",
+    "prefix": "$directory_path(",
     "body": [
       "\\$directory_path(${1:path})"
     ],
     "description": "FB2K: Extracts directory path from the file path."
   },
   "Function: $ext(path)": {
-    "prefix": "$ext",
+    "prefix": "$ext(",
     "body": [
       "\\$ext(${1:path})"
     ],
     "description": "FB2K: Extracts file extension from string `path`; a file name or full path."
   },
   "Function: $filename(path)": {
-    "prefix": "$filename",
+    "prefix": "$filename(",
     "body": [
       "\\$filename(${1:path})"
     ],
     "description": "FB2K: Extracts file name from full `path`."
   },
   "Function: $fix_eol(path)": {
-    "prefix": "$fix_eol",
+    "prefix": "$fix_eol(",
     "body": [
       "\\$fix_eol(${1:str})"
     ],
     "description": "FB2K: If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `(...)`. Otherwise `str` is returned unaltered."
   },
   "Function: $fix_eol(path,indicator)": {
-    "prefix": "$fix_eol",
+    "prefix": "$fix_eol(",
     "body": [
       "\\$fix_eol(${1:str},${2:indicator})"
     ],
     "description": "FB2K: If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `indicator`. Otherwise `str` is returned unaltered."
   },
   "Function: $hex(int,len)": {
-    "prefix": "$hex",
+    "prefix": "$hex(",
     "body": [
       "\\$hex(${1:int},${2:len})"
     ],
     "description": "FB2K: Formats the integer number `int` in hexadecimal notation with `len` digits."
   },
   "Function: $insert(str,insert,n)": {
-    "prefix": "$insert",
+    "prefix": "$insert(",
     "body": [
       "\\$insert(${1:str},${2:string insert},${3:num n})"
     ],
     "description": "FB2K: Inserts `insert` into `str` after `n` characters."
   },
   "Function: $left(str,n)": {
-    "prefix": "$left",
+    "prefix": "$left(",
     "body": [
       "\\$left(${1:str},${2:len})"
     ],
     "description": "FB2K: Returns first `len` characters from the left of the string `str`."
   },
   "Function: $len(str)": {
-    "prefix": "$len",
+    "prefix": "$len(",
     "body": [
       "\\$len(${1:str})"
     ],
     "description": "FB2K: Returns length of string `str` in characters."
   },
   "Function: $len2(str)": {
-    "prefix": "$len2",
+    "prefix": "$len2(",
     "body": [
       "\\$len2(${1:str})"
     ],
     "description": "FB2K: Returns length of string `str` in characters, respecting double-width character rules (double-width characters will be counted as two)."
   },
   "Function: $longer(str1,str2)": {
-    "prefix": "$longer",
+    "prefix": "$longer(",
     "body": [
       "\\$longer(${1:str1},${2:str2})"
     ],
     "description": "FB2K: Returns `true`, if string `str1` is longer than string `str2`, `false` otherwise."
   },
   "Function: $lower(str)": {
-    "prefix": "$lower",
+    "prefix": "$lower(",
     "body": [
       "\\$lower(${1:str})"
     ],
     "description": "FB2K: Converts string `str` to lowercase."
   },
   "Function: $longest(arg,...)": {
-    "prefix": "$longest",
+    "prefix": "$longest(",
     "body": [
       "\\$longest(${1:string arg1},${2:string arg2}${3:[,...]})"
     ],
     "description": "FB2K: Returns the longest of its arguments."
   },
   "Function: $num(nbr,len)": {
-    "prefix": "$num",
+    "prefix": "$num(",
     "body": [
       "\\$num(${1:num nbr},${2:num len})"
     ],
     "description": "FB2K: Formats the integer number `nbr` in decimal notation with `len` characters."
   },
   "Function: $pad(str,len)": {
-    "prefix": "$pad",
+    "prefix": "$pad(",
     "body": [
       "\\$pad(${1:str},${2:num len})"
     ],
     "description": "FB2K: Creates a left-aligned version of the string `str`."
   },
   "Function: $pad_right(str,len)": {
-    "prefix": "$pad_right",
+    "prefix": "$pad_right(",
     "body": [
       "\\$pad_right(${1:str},${2:num len})"
     ],
     "description": "FB2K: Creates a right-aligned version of the string `str`."
   },
   "Function: $pad(str,len,char)": {
-    "prefix": "$pad",
+    "prefix": "$pad(",
     "body": [
       "\\$pad(${1:str},${2:num len},${3:char})"
     ],
     "description": "FB2K: Creates a left-aligned version of the string `str`."
   },
   "Function: $pad_right(str,len,char)": {
-    "prefix": "$pad_right",
+    "prefix": "$pad_right(",
     "body": [
       "\\$pad_right(${1:str},${2:num len},${3:char})"
     ],
     "description": "FB2K: Creates a right-aligned version of the string `str`."
   },
   "Function: $padcut(str,len)": {
-    "prefix": "$padcut",
+    "prefix": "$padcut(",
     "body": [
       "\\$padcut(${1:str},${2:num len})"
     ],
     "description": "FB2K: Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters."
   },
   "Function: $padcut(str,len,char)": {
-    "prefix": "$padcut",
+    "prefix": "$padcut(",
     "body": [
       "\\$padcut(${1:str},${2:num len},${3:char})"
     ],
     "description": "FB2K: Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters."
   },
   "Function: $padcut_right(str,len)": {
-    "prefix": "$padcut_right",
+    "prefix": "$padcut_right(",
     "body": [
       "\\$padcut_right(${1:str},${2:num len})"
     ],
     "description": "FB2K: Returns first len characters from the left of str, if str is longer than len characters."
   },
   "Function: $padcut_right(str,len,char)": {
-    "prefix": "$padcut_right",
+    "prefix": "$padcut_right(",
     "body": [
       "\\$padcut_right(${1:str},${2:num len})"
     ],
     "description": "FB2K: Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters."
   },
   "Function: $progress(pos,range,len,char1,char2)": {
-    "prefix": "$progress",
+    "prefix": "$progress(",
     "body": [
       "\\$progress(${1:num pos},${2:num range},${3:num len},${4:char1},${5:char2})"
     ],
     "description": "FB2K: Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with."
   },
   "Function: $progress2(pos,range,len,char1,char2)": {
-    "prefix": "$progress2",
+    "prefix": "$progress2(",
     "body": [
       "\\$progress2(${1:num pos},${2:num range},${3:num len},${4:char1},${5:char2})"
     ],
     "description": "FB2K: Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with. Produces different appearance than `$progress`."
   },
   "Function: $repeat(expr,count)": {
-    "prefix": "$repeat",
+    "prefix": "$repeat(",
     "body": [
       "\\$repeat(${1:expr},${2:num count})"
     ],
     "description": "FB2K: Returns `count` copies of `expr`."
   },
   "Function: $replace(str,search,replace)": {
-    "prefix": "$replace",
+    "prefix": "$replace(",
     "body": [
       "\\$replace(${1:str},${2:string search1},${3:string replace1}${4:[,search2,replace2,...]}"
     ],
     "description": "FB2K: Replaces all occurrences of string `search` in string `str` with string `replace`."
   },
   "Function: $right(str,len)": {
-    "prefix": "$right",
+    "prefix": "$right(",
     "body": [
       "\\$right(${1:str},${2:num len})"
     ],
     "description": "FB2K: Returns the first `len` characters from the right of string `str`."
   },
   "Function: $roman(int)": {
-    "prefix": "$roman",
+    "prefix": "$roman(",
     "body": [
       "\\$roman(${1:int})"
     ],
     "description": "FB2K: Formats the integer number `int` in roman notation."
   },
   "Function: $rot13(str)": {
-    "prefix": "$rot13",
+    "prefix": "$rot13(",
     "body": [
       "\\$rot13(${1:str})"
     ],
     "description": "FB2K: Performs [ROT13](http://en.wikipedia.org/wiki/ROT13) transformation to given string."
   },
   "Function: $shortest(str,...strN)": {
-    "prefix": "$shortest",
+    "prefix": "$shortest(",
     "body": [
       "\\$shortest(${1:str}${2:[,...]})"
     ],
     "description": "FB2K: Returns the first shortest element of its arguments."
   },
   "Function: $strchr(str,char)": {
-    "prefix": "$strchr",
+    "prefix": "$strchr(",
     "body": [
       "\\$strchr(${1:str},${2:char})"
     ],
     "description": "FB2K: Returns position of first occurrence of character `char` in string `str`."
   },
   "Function: $strrchr(str,char)": {
-    "prefix": "$strrchr",
+    "prefix": "$strrchr(",
     "body": [
       "\\$strrchr(${1:str},${2:char})"
     ],
     "description": "FB2K: Returns positions of last occurrence of character `char` in string `str`."
   },
   "Function: $strstr(str1,str2)": {
-    "prefix": "$strstr",
+    "prefix": "$strstr(",
     "body": [
       "\\$strstr(${1:str1},${2:str2})"
     ],
     "description": "FB2K: Returns position of first occurrence of string `str2` in string `str1`. Function is case-sensitive."
   },
   "Function: $strcmp(str1,str2)": {
-    "prefix": "$strcmp",
+    "prefix": "$strcmp(",
     "body": [
       "\\$strcmp(${1:str1},${2:str2})"
     ],
     "description": "FB2K: Performs a case-sensitive comparison of the strings `str1` and `str2`."
   },
   "Function: $stricmp(str1,str2)": {
-    "prefix": "$stricmp",
+    "prefix": "$stricmp(",
     "body": [
       "\\$stricmp(${1:str1},${2:str2})"
     ],
     "description": "FB2K: Performs a case-insensitive comparison of the strings `str1` and `str2`."
   },
   "Function: $stripprefix(str)": {
-    "prefix": "$stripprefix",
+    "prefix": "$stripprefix(",
     "body": [
       "\\$stripprefix(${1:str})"
     ],
     "description": "FB2K: Removes 'A' and 'The' prefixes from string `str`."
   },
   "Function: $stripprefix(str,prefix1,prefix2,...)": {
-    "prefix": "$stripprefix",
+    "prefix": "$stripprefix(",
     "body": [
       "\\$stripprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"
     ],
     "description": "FB2K: Removes the specified prefixes from string `str`."
   },
   "Function: $substr(str,from,to)": {
-    "prefix": "$substr",
+    "prefix": "$substr(",
     "body": [
       "\\$substr(${1:str},${2:num from},${3:num to})"
     ],
     "description": "FB2K: Returns substring of string `str`, starting from `FROM`-th character and ending at `TO`-th character."
   },
   "Function: $swapprefix(str)": {
-    "prefix": "$swapprefix",
+    "prefix": "$swapprefix(",
     "body": [
       "\\$swapprefix(${1:str})"
     ],
     "description": "FB2K: Moves 'A' and 'The' prefixes to the end of string `str`."
   },
   "Function: $swapprefix(str,prefix1,prefix2,...)": {
-    "prefix": "$swapprefix",
+    "prefix": "$swapprefix(",
     "body": [
       "\\$swapprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"
     ],
     "description": "FB2K: Moves the specified prefixes to the end of string `str`."
   },
   "Function: $trim(str)": {
-    "prefix": "$trim",
+    "prefix": "$trim(",
     "body": [
       "\\$trim(${1:str})"
     ],
     "description": "FB2K: Removes leading and trailing spaces from string `str`."
   },
   "Function: $tab()": {
-    "prefix": "$tab",
+    "prefix": "$tab(",
     "body": [
       "\\$tab()"
     ],
     "description": "FB2K: Inserts one tabulator character."
   },
   "Function: $tab(count)": {
-    "prefix": "$tab",
+    "prefix": "$tab(",
     "body": [
       "\\$tab(${1:count})"
     ],
     "description": "FB2K: Inserts `count` tabulator characters."
   },
   "Function: $upper(str)": {
-    "prefix": "$upper",
+    "prefix": "$upper(",
     "body": [
       "\\$upper(${1:str})"
     ],
     "description": "FB2K: Converts string `str` to uppercase."
   },
   "Function: $meta(name)": {
-    "prefix": "$meta",
+    "prefix": "$meta(",
     "body": [
       "\\$meta(${1:name})"
     ],
     "description": "FB2K: Returns value of tag called `name`."
   },
   "Function: $meta(name,n)": {
-    "prefix": "$meta",
+    "prefix": "$meta(",
     "body": [
       "\\$meta(${1:name},${2:num n})"
     ],
     "description": "FB2K: Returns value of `n`-th (0,1,2 and so on) tag called `name`."
   },
   "Function: $meta_sep(name,sep)": {
-    "prefix": "$meta_sep",
+    "prefix": "$meta_sep(",
     "body": [
       "\\$meta_sep(${1:name},${2:string sep})"
     ],
     "description": "FB2K: Returns value of tag called `name`."
   },
   "Function: $meta_sep(name,sep,lastsep)": {
-    "prefix": "$meta_sep",
+    "prefix": "$meta_sep(",
     "body": [
       "\\$meta_sep(${1:name},${2:string sep},${3:string lastsep})"
     ],
     "description": "FB2K: Returns value of tag called `name`."
   },
   "Function: $meta_test(...)": {
-    "prefix": "$meta_test",
+    "prefix": "$meta_test(",
     "body": [
       "\\$meta_test(${1:tag}${2:[,...]})"
     ],
     "description": "FB2K: Returns 1, if all given tags exist, undefined otherwise."
   },
   "Function: $meta_num(name)": {
-    "prefix": "$meta_num",
+    "prefix": "$meta_num(",
     "body": [
       "\\$meta_num(${1:name})"
     ],
@@ -770,14 +770,14 @@
     "description": "FB2K: Sample rate of the track, in Hz."
   },
   "Function: $info(name)": {
-    "prefix": "$info",
+    "prefix": "$info(",
     "body": [
       "\\$info(${1|codec|codec_profile|samplerate|bitrate|tool|encoding|channels|bitspersample|decoded_bitspersample|bitspersample_extra|tagtype|cue_embedded|md5|WAVEFORMATEXTENSIBLE_CHANNEL_MASK|ENC_DELAY|ENC_PADDING|MP3_ACCURATE_LENGTH|MP3_STEREO_MODE|VERSION|FLAGS|channel_mode|})"
     ],
     "description": "FB2K: Returns value of technical information field called `name`."
   },
   "Function: $channels()": {
-    "prefix": "$channels",
+    "prefix": "$channels(",
     "body": [
       "\\$channels()"
     ],
@@ -805,7 +805,7 @@
     "description": "FB2K: The ReplayGain album peak value in decibels."
   },
   "Function: $peak_to_db(X)": {
-    "prefix": "$$peak_to_db",
+    "prefix": "$$peak_to_db(",
     "body": [
       "\\$peak_to_db(${1:num X})"
     ],
@@ -896,56 +896,56 @@
     "description": "FB2K: A string representing the version of foobar2000."
   },
   "Function: $year(time)": {
-    "prefix": "$year",
+    "prefix": "$year(",
     "body": [
       "\\$year(${1:time})"
     ],
     "description": "FB2K: Retrieves the year part (formatted as four digits) from a time/date string."
   },
   "Function: $month(time)": {
-    "prefix": "$month",
+    "prefix": "$month(",
     "body": [
       "\\$month(${1:time})"
     ],
     "description": "FB2K: Retrieves the month part (formatted as two digits) from a time/date string."
   },
   "Function: $day_of_month(time)": {
-    "prefix": "$day_of_month",
+    "prefix": "$day_of_month(",
     "body": [
       "\\$day_of_month(${1:time})"
     ],
     "description": "FB2K: Retrieves the day of month part (formatted as two digits) from a time/date string."
   },
   "Function: $date(time)": {
-    "prefix": "$date",
+    "prefix": "$date(",
     "body": [
       "\\$date(${1:time})"
     ],
     "description": "FB2K: Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string."
   },
   "Function: $time(time)": {
-    "prefix": "$time",
+    "prefix": "$time(",
     "body": [
       "\\$time(${1:time})"
     ],
     "description": "FB2K: Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string."
   },
   "Function: $get(name)": {
-    "prefix": "$get",
+    "prefix": "$get(",
     "body": [
       "\\$get(${1:name})"
     ],
     "description": "FB2K: Returns the value that was last stored in the variable name."
   },
   "Function: $put(name,value)": {
-    "prefix": "$put",
+    "prefix": "$put(",
     "body": [
       "\\$put(${1:name},${2:value})"
     ],
     "description": "FB2K: Stores `value` in the variable `name` and returns `value` unaltered."
   },
   "Function: $puts(name,value)": {
-    "prefix": "$puts",
+    "prefix": "$puts(",
     "body": [
       "\\$puts(${1:name},${2:value})"
     ],
@@ -1029,56 +1029,56 @@
     "description": "FB2K: Total amount of tracks in playback queue."
   },
   "Function: $blend(color1,color2,part,total)": {
-    "prefix": "$blend",
+    "prefix": "$blend(",
     "body": [
       "\\$blend(${1:color1},${2:color2},${3:num part},${4:total})"
     ],
     "description": "CUI: Returns a color that is a blend between `color1` and `color2`."
   },
   "Function: $hsl()": {
-    "prefix": "$hsl",
+    "prefix": "$hsl(",
     "body": [
       "\\$hsl()"
     ],
     "description": "CUI: Resets the text color to the default color."
   },
   "Function: $hsl(h,s,l)": {
-    "prefix": "$hsl",
+    "prefix": "$hsl(",
     "body": [
       "\\$hsl(${1:num h},${2:num s},${3:num l})"
     ],
     "description": "CUI: Sets the color for text in the HSL color space."
   },
   "Function: $hsl(h1,s1,l1,h2,s2,l2)": {
-    "prefix": "$hsl",
+    "prefix": "$hsl(",
     "body": [
       "\\$hsl(${1:num h1},${2:num s1},${3:num l1},${4:num h2},${5:num s2},${6:num l2})"
     ],
     "description": "CUI: Sets the color for text in the HSL color space."
   },
   "Function: $rgb()": {
-    "prefix": "$rgb",
+    "prefix": "$rgb(",
     "body": [
       "\\$rgb()"
     ],
     "description": "CUI: Resets the text color to the default color."
   },
   "Function: $rgb(r,g,b)": {
-    "prefix": "$rgb",
+    "prefix": "$rgb(",
     "body": [
       "\\$rgb(${1:num r},${2:num g},${3:num b})"
     ],
     "description": "CUI: Sets the color for text."
   },
   "Function: $rgb(r1,g1,b1,r2,g2,b2)": {
-    "prefix": "$rgb",
+    "prefix": "$rgb(",
     "body": [
       "\\$rgb(${1:num r1},${2:num g1},${3:num b1},${4:num r2},${5:num g2},${6:num b2})"
     ],
     "description": "CUI: Sets the color for text."
   },
   "Function: $transition(string,color1,color2)": {
-    "prefix": "$transition",
+    "prefix": "$transition(",
     "body": [
       "\\$transition(${1:string},${2:color1},${3:color2})"
     ],
@@ -1113,14 +1113,14 @@
     "description": "FB2K Album List: Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track."
   },
   "Function: $meta_branch_remap(name)": {
-    "prefix": "$meta_branch_remap",
+    "prefix": "$meta_branch_remap(",
     "body": [
       "\\$meta_branch_remap(${1:name})"
     ],
     "description": "FB2K Album List: This is identical to `%<name>%` except it does not produce a '?', if the tag does not exist."
   },
   "Function: $meta_branch(name)": {
-    "prefix": "$meta_branch",
+    "prefix": "$meta_branch(",
     "body": [
       "\\$meta_branch(${1:name})"
     ],
@@ -1218,35 +1218,35 @@
     "description": "FB2K Playlist Organizer: Will provide the size of playlists (in kB, MB or GB)."
   },
   "Function: $set_global(name,value)": {
-    "prefix": "$set_global",
+    "prefix": "$set_global(",
     "body": [
       "\\$set_global(${1:name},${2:value})"
     ],
     "description": "CUI: Set the `name` variable to the `value` value."
   },
   "Function: $get_global(name)": {
-    "prefix": "$get_global",
+    "prefix": "$get_global(",
     "body": [
       "\\$get_global(${1:name})"
     ],
     "description": "CUI: Get the value of the global variable `name`."
   },
   "Function: $set_style(...)": {
-    "prefix": "$set_style",
+    "prefix": "$set_style(",
     "body": [
       "\\$set_style(${1:text},${2:text colour},${3:selected item text colour},${4:selected item text colour when window is not focused})"
     ],
     "description": "CUI: Is used to set colours."
   },
   "Function: $calculate_blend_target(color)": {
-    "prefix": "$calculate_blend_target",
+    "prefix": "$calculate_blend_target(",
     "body": [
       "\\$calculate_blend_target(${1:colour})"
     ],
     "description": "CUI: Returns black if the mean of the red, green and blue components of `color` is greater than or equal to 128; otherwise it returns white."
   },
   "Function: $offset_colour(colour_from,colour_to,offset)": {
-    "prefix": "$offset_colour",
+    "prefix": "$offset_colour(",
     "body": [
       "\\$offset_colour(${1:colour_from},${2:colour_to},${3:offset})"
     ],
@@ -1407,28 +1407,28 @@
     "description": "CUI: Exists if the playlist is playing."
   },
   "Function: $set_format(name: value; name2: value2; ...)": {
-    "prefix": "$set_format",
+    "prefix": "$set_format(",
     "body": [
       "\\$set_format(${1|font-family,font-size,font-weight,font-stretch,font-style,text-decoration|}: ${2|value,initial|})"
     ],
     "description": "CUI: Changes font and text styling for subsequent text."
   },
   "Function: $reset_format()": {
-    "prefix": "$reset_format",
+    "prefix": "$reset_format(",
     "body": [
       "\\$reset_format()"
     ],
     "description": "CUI: Restores font and text styling for subsequent text to the panel defaults."
   },
   "Function: $set_font(font face,point size,modifiers)": {
-    "prefix": "$set_font",
+    "prefix": "$set_font(",
     "body": [
       "\\$set_font(${1:font face},${2:point size},${3|bold,italic,underline|})"
     ],
     "description": "CUI: Changes the font used for subsequent text."
   },
   "Function: $reset_font()": {
-    "prefix": "$reset_font",
+    "prefix": "$reset_font(",
     "body": [
       "\\$reset_font()"
     ],
