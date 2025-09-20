@@ -1,10 +1,13 @@
 [
   {
+    "id": 1,
     "token": "add",
     "realm": "FB2K",
     "role": "function",
     "sign": "$add(a,b,...)",
-    "snippet-body": ["\\$add(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$add(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Adds `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$add(a,b,...)` is the same as `$add($add(a,b),...)`."
@@ -13,11 +16,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$add(a,b,_...)"
   },
   {
+    "id": 2,
     "token": "div",
     "realm": "FB2K",
     "role": "function",
     "sign": "$div(a,b)",
-    "snippet-body": ["\\$div(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$div(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Divides `a` by `b` and rounds down to an integer. If `b` evaluates to zero, it returns `a`.",
       "Can be used with an arbitrary number of arguments. `$div(a,b,...)` is the same as `$div($div(a,b),...)`."
@@ -26,11 +32,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$div(a,b)"
   },
   {
+    "id": 3,
     "token": "greater",
     "realm": "FB2K",
     "role": "function",
     "sign": "$greater(a,b)",
-    "snippet-body": ["\\$greater(${1:num a},${2:num b})"],
+    "snippet-body": [
+      "\\$greater(${1:num a},${2:num b})"
+    ],
     "description": [
       "Returns true, if `a` is greater than `b`, otherwise false."
     ],
@@ -38,11 +47,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$greater(a,b)"
   },
   {
+    "id": 4,
     "token": "max",
     "realm": "FB2K",
     "role": "function",
     "sign": "$max(a,b)",
-    "snippet-body": ["\\$max(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$max(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Returns the maximum of `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$max(a,b,...)` is the same as `$max($max(a,b),...)`."
@@ -51,11 +63,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$max(a,b)"
   },
   {
+    "id": 5,
     "token": "min",
     "realm": "FB2K",
     "role": "function",
     "sign": "$min(a,b)",
-    "snippet-body": ["\\$min(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$min(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Returns the minimum of `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$min(a,b,...)` is the same as `$min($min(a,b),...)`."
@@ -64,11 +79,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$min(a,b)"
   },
   {
+    "id": 6,
     "token": "mod",
     "realm": "FB2K",
     "role": "function",
     "sign": "$mod(a,b)",
-    "snippet-body": ["\\$mod(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$mod(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Computes the remainder of dividing `a` through `b`.",
       "The result has the same sign as `a`. If `b` evaluates to zero, the result is `a`.",
@@ -78,11 +96,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$mod(a,b)"
   },
   {
+    "id": 7,
     "token": "mul",
     "realm": "FB2K",
     "role": "function",
     "sign": "$mul(a,b)",
-    "snippet-body": ["\\$mul(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$mul(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Multiplies `a` and `b`.",
       "Can be used with an arbitrary number of arguments. `$mul(a,b,...)` is the same as `$mul($mul(a,b),...)`."
@@ -91,11 +112,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$mul(a,b)"
   },
   {
+    "id": 8,
     "token": "muldiv",
     "realm": "FB2K",
     "role": "function",
     "sign": "$muldiv(a,b,c)",
-    "snippet-body": ["\\$muldiv(${1:num a},${2:num b},${3:num c})"],
+    "snippet-body": [
+      "\\$muldiv(${1:num a},${2:num b},${3:num c})"
+    ],
     "description": [
       "Multiplies `a` and `b`, then divides by `c`.",
       "The result is rounded to the nearest integer."
@@ -104,11 +128,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$muldiv(a,b,c)"
   },
   {
+    "id": 9,
     "token": "rand",
     "realm": "FB2K",
     "role": "function",
     "sign": "$rand()",
-    "snippet-body": ["\\$rand()"],
+    "snippet-body": [
+      "\\$rand()"
+    ],
     "description": [
       "Generates a random number in the range from 0 to 2<sup>32</sup>-1.",
       "Available only in sort-related contexts, such as the `.` menu command."
@@ -117,11 +144,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rand()"
   },
   {
+    "id": 10,
     "token": "sub",
     "realm": "FB2K",
     "role": "function",
     "sign": "$sub(a,b)",
-    "snippet-body": ["\\$sub(${1:num a},${2:num b}${3:[,...]})"],
+    "snippet-body": [
+      "\\$sub(${1:num a},${2:num b}${3:[,...]})"
+    ],
     "description": [
       "Subtracts `b` from `a`.",
       "Can be used with an arbitrary number of arguments. `$sub(a,b,...)` is the same as `$sub($sub(a,b),...)`."
@@ -130,11 +160,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$sub(a,b)"
   },
   {
+    "id": 11,
     "token": "and",
     "realm": "FB2K",
     "role": "function",
     "sign": "$and(expr,...)",
-    "snippet-body": ["\\$and(${1:expr}${2:[,...]})"],
+    "snippet-body": [
+      "\\$and(${1:expr}${2:[,...]})"
+    ],
     "description": [
       "Logical `AND` of an arbitrary number of arguments.",
       "Returns `true`, if and only if all `expr` arguments evaluate to `true`."
@@ -143,11 +176,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$and(expr,_...)"
   },
   {
+    "id": 12,
     "token": "or",
     "realm": "FB2K",
     "role": "function",
     "sign": "$or(expr,...)",
-    "snippet-body": ["\\$or(${1:expr}${2:[,...]})"],
+    "snippet-body": [
+      "\\$or(${1:expr}${2:[,...]})"
+    ],
     "description": [
       "Logical `OR` of an arbitrary number of arguments.",
       "Returns `true`, if at least one expression evaluate to `true`."
@@ -156,11 +192,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$or(expr,_...)"
   },
   {
+    "id": 13,
     "token": "not",
     "realm": "FB2K",
     "role": "function",
     "sign": "$not(expr)",
-    "snippet-body": ["\\$not(${1:expr})"],
+    "snippet-body": [
+      "\\$not(${1:expr})"
+    ],
     "description": [
       "Logical `NOT`.",
       "Returns the logical opposite of `expr`: `false`, if `expr` is `true` and `true` if `expr` is `false`."
@@ -169,23 +208,31 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$not(expr)"
   },
   {
+    "id": 14,
     "token": "if",
     "realm": "FB2K",
     "role": "function",
     "sign": "$if(X,Y)",
-    "snippet-body": ["\\$if(${1:X},${2:Y})"],
+    "snippet-body": [
+      "\\$if(${1:X},${2:Y})"
+    ],
     "description": [
       "If `X` contains at least one present field, executes/displays `Y`."
     ],
-    "example": ["$if(%artist%,%artist%,unknown artist)"],
+    "example": [
+      "$if(%artist%,%artist%,unknown artist)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then)"
   },
   {
+    "id": 15,
     "token": "xor",
     "realm": "FB2K",
     "role": "function",
     "sign": "$xor(expr,...)",
-    "snippet-body": ["\\$xor(${1:expr}${2:[,...]})"],
+    "snippet-body": [
+      "\\$xor(${1:expr}${2:[,...]})"
+    ],
     "description": [
       "Logical Exclusive-`or` of an arbitrary number of arguments.",
       "Returns `true`, if an odd number of arguments evaluate to true.",
@@ -195,11 +242,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$xor(expr,...)"
   },
   {
+    "id": 16,
     "token": "if",
     "realm": "FB2K",
     "role": "function",
     "sign": "$if(X,Y,Z)",
-    "snippet-body": ["\\$if(${1:X},${2:Y},${3:Z})"],
+    "snippet-body": [
+      "\\$if(${1:X},${2:Y},${3:Z})"
+    ],
     "description": [
       "If `X` contains at least one present field, executes/displays `Y`, otherwise executes/displays `Z`."
     ],
@@ -207,11 +257,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then,else)"
   },
   {
+    "id": 17,
     "token": "if2",
     "realm": "FB2K",
     "role": "function",
     "sign": "$if2(X,Y)",
-    "snippet-body": ["\\$if2(${1:X},${2:Y})"],
+    "snippet-body": [
+      "\\$if2(${1:X},${2:Y})"
+    ],
     "description": [
       "If `X` contains at least one present field, executes/displays `X`, otherwise executes/displays `Y`.",
       "Same as `$if(X,X,Y)`."
@@ -220,11 +273,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if2(expr,else)"
   },
   {
+    "id": 18,
     "token": "if3",
     "realm": "FB2K",
     "role": "function",
     "sign": "$if3(X,Y,Z,...)",
-    "snippet-body": ["\\$if3(${1:X},${2:Y},${3:Z}${4:[,...]})"],
+    "snippet-body": [
+      "\\$if3(${1:X},${2:Y},${3:Z}${4:[,...]})"
+    ],
     "description": [
       "Returns the first of parameters that contains at least one present field."
     ],
@@ -232,6 +288,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if3(a1,a2,...,aN,else)"
   },
   {
+    "id": 19,
     "token": "ifequal",
     "realm": "FB2K",
     "role": "function",
@@ -246,6 +303,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifequal(int1,int2,then,else)"
   },
   {
+    "id": 20,
     "token": "ifgreater",
     "realm": "FB2K",
     "role": "function",
@@ -260,6 +318,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifgreater(int1,int2,then,else)"
   },
   {
+    "id": 21,
     "token": "iflonger",
     "realm": "FB2K",
     "role": "function",
@@ -274,123 +333,171 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$iflonger(str,n,then,else)"
   },
   {
+    "id": 22,
     "token": "select",
     "realm": "FB2K",
     "role": "function",
     "sign": "$select(N,A,B,C,….)",
-    "snippet-body": ["\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"],
-    "description": ["Returns `N`-th of `A`,`B`,`C`… parameters."],
+    "snippet-body": [
+      "\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"
+    ],
+    "description": [
+      "Returns `N`-th of `A`,`B`,`C`… parameters."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#select(n,a1,...,aN)"
   },
   {
+    "id": 23,
     "token": "abbr",
     "realm": "FB2K",
     "role": "function",
     "sign": "$abbr(str)",
-    "snippet-body": ["\\$abbr(${1:str})"],
+    "snippet-body": [
+      "\\$abbr(${1:str})"
+    ],
     "description": [
       "Returns abbreviation of string `str`.",
       "Words which begin with an alphanumeric character are shortened to the first character. Spaces and parentheses are stripped."
     ],
-    "example": ["$abbr(%album%)"],
+    "example": [
+      "$abbr(%album%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$abbr(str)"
   },
   {
+    "id": 24,
     "token": "abbr",
     "realm": "FB2K",
     "role": "function",
     "sign": "$abbr(str,len)",
-    "snippet-body": ["\\$ansi(${1:str}),${2:len})"],
+    "snippet-body": [
+      "\\$ansi(${1:str}),${2:len})"
+    ],
     "description": [
       "Returns abbreviation of `str`, if `str` is longer than `len` characters, otherwise returns `str`."
     ],
-    "example": ["$abbr(%album%,5)"],
+    "example": [
+      "$abbr(%album%,5)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$abbr(str,len)"
   },
   {
+    "id": 25,
     "token": "ansi",
     "realm": "FB2K",
     "role": "function",
     "sign": "$ansi(str)",
-    "snippet-body": ["\\$ansi(${1:str})"],
+    "snippet-body": [
+      "\\$ansi(${1:str})"
+    ],
     "description": [
       "Converts string `str` to system codepage and back.",
       "Any characters that are not present in the system codepage will be removed / replaced.",
       "Useful for mass-renaming files to ensure compatibility with non-unicode-capable software."
     ],
-    "example": ["$ansi(%title%), $ansi(%filename%)"],
+    "example": [
+      "$ansi(%title%), $ansi(%filename%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ansi(str)"
   },
   {
+    "id": 26,
     "token": "ascii",
     "realm": "FB2K",
     "role": "function",
     "sign": "$ascii(str)",
-    "snippet-body": ["\\$ascii(${1:str})"],
+    "snippet-body": [
+      "\\$ascii(${1:str})"
+    ],
     "description": [
       "Converts string `str` to ASCII.",
       "Any characters that are not present in ASCII will be removed / replaced."
     ],
-    "example": ["$ascii(%title%), $ascii(%filename%)"],
+    "example": [
+      "$ascii(%title%), $ascii(%filename%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ascii(str)"
   },
   {
+    "id": 27,
     "token": "caps",
     "realm": "FB2K",
     "role": "function",
     "sign": "$caps(str)",
-    "snippet-body": ["\\$caps(${1:str})"],
+    "snippet-body": [
+      "\\$caps(${1:str})"
+    ],
     "description": [
       "Converts first letter in every word of string `str` to uppercase, and all other letters to lowercase."
     ],
-    "example": ["$caps(%title%)"],
+    "example": [
+      "$caps(%title%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps(str)"
   },
   {
+    "id": 28,
     "token": "caps2",
     "realm": "FB2K",
     "role": "function",
     "sign": "$caps2(str)",
-    "snippet-body": ["\\$caps2(${1:str})"],
+    "snippet-body": [
+      "\\$caps2(${1:str})"
+    ],
     "description": [
       "Converts first letter in every word of string `str` to uppercase, and leaves all other letters as they are."
     ],
-    "example": ["$caps2(%title%)"],
+    "example": [
+      "$caps2(%title%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps2(str)"
   },
   {
+    "id": 29,
     "token": "char",
     "realm": "FB2K",
     "role": "function",
     "sign": "$char(nbr)",
-    "snippet-body": ["\\$char(${1:nbr})"],
+    "snippet-body": [
+      "\\$char(${1:nbr})"
+    ],
     "description": [
       "Returns Unicode character of nbr.",
       "You can search for characters and find the matching decimal number on (this site)[http://www.fileformat.info/info/unicode/char/search.htm]."
     ],
-    "example": ["$char(9674)"],
+    "example": [
+      "$char(9674)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$char(nbr)"
   },
   {
+    "id": 30,
     "token": "crc32",
     "realm": "FB2K",
     "role": "function",
     "sign": "$crc32(str)",
-    "snippet-body": ["\\$crc32(${1:str})"],
+    "snippet-body": [
+      "\\$crc32(${1:str})"
+    ],
     "description": [
       "Computes the CRC32 of the string `str` as a number.",
       "Intended for use in coloring scripts."
     ],
-    "example": ["$rgb($mod($crc32(%album%),256),128,128)"],
+    "example": [
+      "$rgb($mod($crc32(%album%),256),128,128)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crc32(str)"
   },
   {
+    "id": 31,
     "token": "crlf",
     "realm": "FB2K",
     "role": "function",
     "sign": "$crlf()",
-    "snippet-body": ["\\$crlf()"],
+    "snippet-body": [
+      "\\$crlf()"
+    ],
     "description": [
       "Inserts end-of-line marker (carriage return, line feed).",
       "Can be used to generate multiple lines in the output, for example for the tooltip of the system notification area (_systray_) icon."
@@ -399,38 +506,51 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crlf()"
   },
   {
+    "id": 32,
     "token": "cut",
     "realm": "FB2K",
     "role": "function",
     "sign": "$cut(str,len)",
-    "snippet-body": ["\\$cut(${1:str},${2:len})"],
+    "snippet-body": [
+      "\\$cut(${1:str},${2:len})"
+    ],
     "description": [
       "Returns first `len` characters from the left of the string `str`.",
       "This function is the same as `$left(a,len)`.",
       "Negative numbers produce the entire string."
     ],
-    "example": ["$cut('abc123',3) → abc"],
+    "example": [
+      "$cut('abc123',3) → abc"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$cut(str,len)"
   },
   {
+    "id": 33,
     "token": "directory",
     "realm": "FB2K",
     "role": "function",
     "sign": "$directory(path)",
-    "snippet-body": ["\\$directory(${1:path})"],
+    "snippet-body": [
+      "\\$directory(${1:path})"
+    ],
     "description": [
       "Extracts only the directory name (not full path)",
       "ie given path as 'D:\\music\\jazz\\filename.mp3', this will output 'jazz') from the file path."
     ],
-    "example": ["$directory(%path%,2)"],
+    "example": [
+      "$directory(%path%,2)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory(path)"
   },
   {
+    "id": 34,
     "token": "directory",
     "realm": "FB2K",
     "role": "function",
     "sign": "$directory(path,n)",
-    "snippet-body": ["\\$directory(${1:path},${2:num n})"],
+    "snippet-body": [
+      "\\$directory(${1:path},${2:num n})"
+    ],
     "description": [
       "Extracts directory name from the file `path`; goes up by `n` levels."
     ],
@@ -438,46 +558,64 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory(path,n)"
   },
   {
+    "id": 35,
     "token": "directory_path",
     "realm": "FB2K",
     "role": "function",
     "sign": "$directory_path(path)",
-    "snippet-body": ["\\$directory_path(${1:path})"],
+    "snippet-body": [
+      "\\$directory_path(${1:path})"
+    ],
     "description": [
       "Extracts directory path from the file path.",
       "ie. given path as 'D:\\music\\jazz\\filename.mp3', this will output 'D:\\music\\jazz'"
     ],
-    "example": ["$directory_path(%path%)"],
+    "example": [
+      "$directory_path(%path%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory_path(path)"
   },
   {
+    "id": 36,
     "token": "ext",
     "realm": "FB2K",
     "role": "function",
     "sign": "$ext(path)",
-    "snippet-body": ["\\$ext(${1:path})"],
+    "snippet-body": [
+      "\\$ext(${1:path})"
+    ],
     "description": [
       "Extracts file extension from string `path`; a file name or full path."
     ],
-    "example": ["$ext(%path%)"],
+    "example": [
+      "$ext(%path%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ext(path)"
   },
   {
+    "id": 37,
     "token": "filename",
     "realm": "FB2K",
     "role": "function",
     "sign": "$filename(path)",
-    "snippet-body": ["\\$filename(${1:path})"],
-    "description": ["Extracts file name from full `path`."],
+    "snippet-body": [
+      "\\$filename(${1:path})"
+    ],
+    "description": [
+      "Extracts file name from full `path`."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$filename(path)"
   },
   {
+    "id": 38,
     "token": "fix_eol",
     "realm": "FB2K",
     "role": "function",
     "sign": "$fix_eol(path)",
-    "snippet-body": ["\\$fix_eol(${1:str})"],
+    "snippet-body": [
+      "\\$fix_eol(${1:str})"
+    ],
     "description": [
       "If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `(...)`. Otherwise `str` is returned unaltered."
     ],
@@ -485,11 +623,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$fix_eol(str)"
   },
   {
+    "id": 39,
     "token": "fix_eol",
     "realm": "FB2K",
     "role": "function",
     "sign": "$fix_eol(path,indicator)",
-    "snippet-body": ["\\$fix_eol(${1:str},${2:indicator})"],
+    "snippet-body": [
+      "\\$fix_eol(${1:str},${2:indicator})"
+    ],
     "description": [
       "If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `indicator`. Otherwise `str` is returned unaltered."
     ],
@@ -497,11 +638,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$fix_eol(str,indicator)"
   },
   {
+    "id": 40,
     "token": "hex",
     "realm": "FB2K",
     "role": "function",
     "sign": "$hex(int,len)",
-    "snippet-body": ["\\$hex(${1:int},${2:len})"],
+    "snippet-body": [
+      "\\$hex(${1:int},${2:len})"
+    ],
     "description": [
       "Formats the integer number `int` in hexadecimal notation with `len` digits.",
       "Pads with zeros from the left if necessary."
@@ -510,45 +654,63 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hex(int,len)"
   },
   {
+    "id": 41,
     "token": "insert",
     "realm": "FB2K",
     "role": "function",
     "sign": "$insert(str,insert,n)",
-    "snippet-body": ["\\$insert(${1:str},${2:string insert},${3:num n})"],
-    "description": ["Inserts `insert` into `str` after `n` characters."],
+    "snippet-body": [
+      "\\$insert(${1:str},${2:string insert},${3:num n})"
+    ],
+    "description": [
+      "Inserts `insert` into `str` after `n` characters."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$insert(str,insert,n)"
   },
   {
+    "id": 42,
     "token": "left",
     "realm": "FB2K",
     "role": "function",
     "sign": "$left(str,n)",
-    "snippet-body": ["\\$left(${1:str},${2:len})"],
+    "snippet-body": [
+      "\\$left(${1:str},${2:len})"
+    ],
     "description": [
       "Returns first `len` characters from the left of the string `str`.",
       "This function is the same as `$cut(str,len)`.",
       "Negative numbers produce the entire string."
     ],
-    "example": ["$left('abc123',3) → abc"],
+    "example": [
+      "$left('abc123',3) → abc"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$left(str,len)"
   },
   {
+    "id": 43,
     "token": "len",
     "realm": "FB2K",
     "role": "function",
     "sign": "$len(str)",
-    "snippet-body": ["\\$len(${1:str})"],
-    "description": ["Returns length of string `str` in characters."],
+    "snippet-body": [
+      "\\$len(${1:str})"
+    ],
+    "description": [
+      "Returns length of string `str` in characters."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len(str)"
   },
   {
+    "id": 44,
     "token": "len2",
     "realm": "FB2K",
     "role": "function",
     "sign": "$len2(str)",
-    "snippet-body": ["\\$len2(${1:str})"],
+    "snippet-body": [
+      "\\$len2(${1:str})"
+    ],
     "description": [
       "Returns length of string `str` in characters, respecting double-width character rules (double-width characters will be counted as two)."
     ],
@@ -556,11 +718,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len2(str)"
   },
   {
+    "id": 45,
     "token": "longer",
     "realm": "FB2K",
     "role": "function",
     "sign": "$longer(str1,str2)",
-    "snippet-body": ["\\$longer(${1:str1},${2:str2})"],
+    "snippet-body": [
+      "\\$longer(${1:str1},${2:str2})"
+    ],
     "description": [
       "Returns `true`, if string `str1` is longer than string `str2`, `false` otherwise."
     ],
@@ -568,16 +733,22 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longer(str1,str2)"
   },
   {
+    "id": 46,
     "token": "lower",
     "realm": "FB2K",
     "role": "function",
     "sign": "$lower(str)",
-    "snippet-body": ["\\$lower(${1:str})"],
-    "description": ["Converts string `str` to lowercase."],
+    "snippet-body": [
+      "\\$lower(${1:str})"
+    ],
+    "description": [
+      "Converts string `str` to lowercase."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$lower(str)"
   },
   {
+    "id": 47,
     "token": "longest",
     "realm": "FB2K",
     "role": "function",
@@ -589,30 +760,40 @@
       "Returns the longest of its arguments.",
       "Can be used with an arbitrary number of strings."
     ],
-    "example": ["$longest(%title%,%filename%)"],
+    "example": [
+      "$longest(%title%,%filename%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longest(arg,...)"
   },
   {
+    "id": 48,
     "token": "num",
     "realm": "FB2K",
     "role": "function",
     "sign": "$num(nbr,len)",
-    "snippet-body": ["\\$num(${1:num nbr},${2:num len})"],
+    "snippet-body": [
+      "\\$num(${1:num nbr},${2:num len})"
+    ],
     "description": [
       "Formats the integer number `nbr` in decimal notation with `len` characters.",
       "Pads with zeros from the left if necessary.",
       "`len` includes the dash when the number is negative.",
       "If `nbr` is not numeric, it is treated as zero."
     ],
-    "example": ["$num(%tracknumber%,3) → 005"],
+    "example": [
+      "$num(%tracknumber%,3) → 005"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$num(nbr,len)"
   },
   {
+    "id": 49,
     "token": "pad",
     "realm": "FB2K",
     "role": "function",
     "sign": "$pad(str,len)",
-    "snippet-body": ["\\$pad(${1:str},${2:num len})"],
+    "snippet-body": [
+      "\\$pad(${1:str},${2:num len})"
+    ],
     "description": [
       "Creates a left-aligned version of the string `str`.",
       "If `str` is shorter than `len` characters, the function adds spaces to the right of `str` to make the result `len` characters long.",
@@ -622,11 +803,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad(str,len)"
   },
   {
+    "id": 50,
     "token": "pad_right",
     "realm": "FB2K",
     "role": "function",
     "sign": "$pad_right(str,len)",
-    "snippet-body": ["\\$pad_right(${1:str},${2:num len})"],
+    "snippet-body": [
+      "\\$pad_right(${1:str},${2:num len})"
+    ],
     "description": [
       "Creates a right-aligned version of the string `str`.",
       "If `str` is shorter than `len` characters, the function adds spaces to the left of `str` to make the result `len` characters long.",
@@ -636,11 +820,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad_right(str,len)"
   },
   {
+    "id": 51,
     "token": "pad",
     "realm": "FB2K",
     "role": "function",
     "sign": "$pad(str,len,char)",
-    "snippet-body": ["\\$pad(${1:str},${2:num len},${3:char})"],
+    "snippet-body": [
+      "\\$pad(${1:str},${2:num len},${3:char})"
+    ],
     "description": [
       "Creates a left-aligned version of the string `str`.",
       "If `str` is shorter than `len` characters, the function adds `char` to the right of `str` to make the result `len` characters long.",
@@ -650,11 +837,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad(str,len,char)"
   },
   {
+    "id": 52,
     "token": "pad_right",
     "realm": "FB2K",
     "role": "function",
     "sign": "$pad_right(str,len,char)",
-    "snippet-body": ["\\$pad_right(${1:str},${2:num len},${3:char})"],
+    "snippet-body": [
+      "\\$pad_right(${1:str},${2:num len},${3:char})"
+    ],
     "description": [
       "Creates a right-aligned version of the string `str`.",
       "If `str` is shorter than `len` characters, the function adds `char` to the left of `str` to make the result `len` characters long.",
@@ -664,11 +854,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad_right(str,len,char)"
   },
   {
+    "id": 53,
     "token": "padcut",
     "realm": "FB2K",
     "role": "function",
     "sign": "$padcut(str,len)",
-    "snippet-body": ["\\$padcut(${1:str},${2:num len})"],
+    "snippet-body": [
+      "\\$padcut(${1:str},${2:num len})"
+    ],
     "description": [
       "Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters.",
       "Otherwise adds spaces to the right of `str` to make the result `len` characters long."
@@ -677,11 +870,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut(str,len)"
   },
   {
+    "id": 54,
     "token": "padcut",
     "realm": "FB2K",
     "role": "function",
     "sign": "$padcut(str,len,char)",
-    "snippet-body": ["\\$padcut(${1:str},${2:num len},${3:char})"],
+    "snippet-body": [
+      "\\$padcut(${1:str},${2:num len},${3:char})"
+    ],
     "description": [
       "Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters.",
       "Otherwise adds `char` to the right of `str` to make the result `len` characters long."
@@ -690,11 +886,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut(str,len,char)"
   },
   {
+    "id": 55,
     "token": "padcut_right",
     "realm": "FB2K",
     "role": "function",
     "sign": "$padcut_right(str,len)",
-    "snippet-body": ["\\$padcut_right(${1:str},${2:num len})"],
+    "snippet-body": [
+      "\\$padcut_right(${1:str},${2:num len})"
+    ],
     "description": [
       "Returns first len characters from the left of str, if str is longer than len characters.",
       "Otherwise adds spaces to the left of str to make the result len characters long."
@@ -703,11 +902,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut_right(str,len)"
   },
   {
+    "id": 56,
     "token": "padcut_right",
     "realm": "FB2K",
     "role": "function",
     "sign": "$padcut_right(str,len,char)",
-    "snippet-body": ["\\$padcut_right(${1:str},${2:num len})"],
+    "snippet-body": [
+      "\\$padcut_right(${1:str},${2:num len})"
+    ],
     "description": [
       "Returns first `len` characters from the left of `str`, if `str` is longer than `len` characters.",
       "Otherwise adds `char` to the left of `str` to make the result `len` characters long."
@@ -716,6 +918,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut_right(str,len,char)"
   },
   {
+    "id": 57,
     "token": "progress",
     "realm": "FB2K",
     "role": "function",
@@ -730,6 +933,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress(pos,range,len,char1,char2)"
   },
   {
+    "id": 58,
     "token": "progress2",
     "realm": "FB2K",
     "role": "function",
@@ -744,11 +948,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress2(pos,range,len,char1,char2)"
   },
   {
+    "id": 59,
     "token": "repeat",
     "realm": "FB2K",
     "role": "function",
     "sign": "$repeat(expr,count)",
-    "snippet-body": ["\\$repeat(${1:expr},${2:num count})"],
+    "snippet-body": [
+      "\\$repeat(${1:expr},${2:num count})"
+    ],
     "description": [
       "Returns `count` copies of `expr`.",
       "Note that `expr` is evaluated once before its value is used, so `$repeat` cannot be used for loops."
@@ -757,6 +964,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$repeat(expr,count)"
   },
   {
+    "id": 60,
     "token": "replace",
     "realm": "FB2K",
     "role": "function",
@@ -769,15 +977,20 @@
       "Can also be used with an arbitrary number of arguments.",
       "Note that `$replace(str,search1,replace1,search2,replace2)` is generally not the same as `$replace($replace(str,search1,replace1),search2,replace2)`."
     ],
-    "example": ["$replace(ab,a,b,b,c) → bc"],
+    "example": [
+      "$replace(ab,a,b,b,c) → bc"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$replace(str,search,replace)"
   },
   {
+    "id": 61,
     "token": "right",
     "realm": "FB2K",
     "role": "function",
     "sign": "$right(str,len)",
-    "snippet-body": ["\\$right(${1:str},${2:num len})"],
+    "snippet-body": [
+      "\\$right(${1:str},${2:num len})"
+    ],
     "description": [
       "Returns the first `len` characters from the right of string `str`."
     ],
@@ -785,33 +998,46 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$right(str,len)"
   },
   {
+    "id": 62,
     "token": "roman",
     "realm": "FB2K",
     "role": "function",
     "sign": "$roman(int)",
-    "snippet-body": ["\\$roman(${1:int})"],
-    "description": ["Formats the integer number `int` in roman notation."],
+    "snippet-body": [
+      "\\$roman(${1:int})"
+    ],
+    "description": [
+      "Formats the integer number `int` in roman notation."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$roman(int)"
   },
   {
+    "id": 63,
     "token": "rot13",
     "realm": "FB2K",
     "role": "function",
     "sign": "$rot13(str)",
-    "snippet-body": ["\\$rot13(${1:str})"],
+    "snippet-body": [
+      "\\$rot13(${1:str})"
+    ],
     "description": [
       "Performs [ROT13](http://en.wikipedia.org/wiki/ROT13) transformation to given string."
     ],
-    "example": ["$rot13('foobar2000') → sbbone2000"],
+    "example": [
+      "$rot13('foobar2000') → sbbone2000"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rot13(str)"
   },
   {
+    "id": 64,
     "token": "shortest",
     "realm": "FB2K",
     "role": "function",
     "sign": "$shortest(str,...strN)",
-    "snippet-body": ["\\$shortest(${1:str}${2:[,...]})"],
+    "snippet-body": [
+      "\\$shortest(${1:str}${2:[,...]})"
+    ],
     "description": [
       "Returns the first shortest element of its arguments.",
       "Can be used with an arbitrary number of strings."
@@ -820,35 +1046,48 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$shortest(str,...strN)"
   },
   {
+    "id": 65,
     "token": "strchr",
     "realm": "FB2K",
     "role": "function",
     "sign": "$strchr(str,char)",
-    "snippet-body": ["\\$strchr(${1:str},${2:char})"],
+    "snippet-body": [
+      "\\$strchr(${1:str},${2:char})"
+    ],
     "description": [
       "Returns position of first occurrence of character `char` in string `str`."
     ],
-    "example": ["$strchr(abca,a) → 1"],
+    "example": [
+      "$strchr(abca,a) → 1"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strchr(str,char)"
   },
   {
+    "id": 66,
     "token": "strrchr",
     "realm": "FB2K",
     "role": "function",
     "sign": "$strrchr(str,char)",
-    "snippet-body": ["\\$strrchr(${1:str},${2:char})"],
+    "snippet-body": [
+      "\\$strrchr(${1:str},${2:char})"
+    ],
     "description": [
       "Returns positions of last occurrence of character `char` in string `str`."
     ],
-    "example": ["$strrchr(abca,a) → 4"],
+    "example": [
+      "$strrchr(abca,a) → 4"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strrchr(str,char)"
   },
   {
+    "id": 67,
     "token": "strstr",
     "realm": "FB2K",
     "role": "function",
     "sign": "$strstr(str1,str2)",
-    "snippet-body": ["\\$strstr(${1:str1},${2:str2})"],
+    "snippet-body": [
+      "\\$strstr(${1:str1},${2:str2})"
+    ],
     "description": [
       "Returns position of first occurrence of string `str2` in string `str1`. Function is case-sensitive."
     ],
@@ -856,11 +1095,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strstr(str1,str2)"
   },
   {
+    "id": 68,
     "token": "strcmp",
     "realm": "FB2K",
     "role": "function",
     "sign": "$strcmp(str1,str2)",
-    "snippet-body": ["\\$strcmp(${1:str1},${2:str2})"],
+    "snippet-body": [
+      "\\$strcmp(${1:str1},${2:str2})"
+    ],
     "description": [
       "Performs a case-sensitive comparison of the strings `str1` and `str2`."
     ],
@@ -868,11 +1110,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strcmp(str1,str2)"
   },
   {
+    "id": 69,
     "token": "stricmp",
     "realm": "FB2K",
     "role": "function",
     "sign": "$stricmp(str1,str2)",
-    "snippet-body": ["\\$stricmp(${1:str1},${2:str2})"],
+    "snippet-body": [
+      "\\$stricmp(${1:str1},${2:str2})"
+    ],
     "description": [
       "Performs a case-insensitive comparison of the strings `str1` and `str2`."
     ],
@@ -880,16 +1125,24 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stricmp(str1,str2)"
   },
   {
+    "id": 70,
     "token": "stripprefix",
     "realm": "FB2K",
     "role": "function",
     "sign": "$stripprefix(str)",
-    "snippet-body": ["\\$stripprefix(${1:str})"],
-    "description": ["Removes 'A' and 'The' prefixes from string `str`."],
-    "example": ["$stripprefix(%artist%) ⇒ 'The Prodigy' becomes 'Prodigy'"],
+    "snippet-body": [
+      "\\$stripprefix(${1:str})"
+    ],
+    "description": [
+      "Removes 'A' and 'The' prefixes from string `str`."
+    ],
+    "example": [
+      "$stripprefix(%artist%) ⇒ 'The Prodigy' becomes 'Prodigy'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str)"
   },
   {
+    "id": 71,
     "token": "stripprefix",
     "realm": "FB2K",
     "role": "function",
@@ -897,125 +1150,188 @@
     "snippet-body": [
       "\\$stripprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"
     ],
-    "description": ["Removes the specified prefixes from string `str`."],
+    "description": [
+      "Removes the specified prefixes from string `str`."
+    ],
     "example": [
       "$stripprefix(%artist%,a,the) ⇒ 'The Prodigy' becomes 'Prodigy'"
     ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
   },
   {
+    "id": 72,
     "token": "substr",
     "realm": "FB2K",
     "role": "function",
     "sign": "$substr(str,from,to)",
-    "snippet-body": ["\\$substr(${1:str},${2:num from},${3:num to})"],
+    "snippet-body": [
+      "\\$substr(${1:str},${2:num from},${3:num to})"
+    ],
     "description": [
       "Returns substring of string `str`, starting from `FROM`-th character and ending at `TO`-th character."
     ],
-    "example": ["$substr(blah,1,2) ⇒ bl"],
+    "example": [
+      "$substr(blah,1,2) ⇒ bl"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$substr(str,from,to)"
   },
   {
+    "id": 73,
     "token": "swapprefix",
     "realm": "FB2K",
     "role": "function",
     "sign": "$swapprefix(str)",
-    "snippet-body": ["\\$swapprefix(${1:str})"],
-    "description": ["Moves 'A' and 'The' prefixes to the end of string `str`."],
-    "example": ["$swapprefix(%artist%) ⇒ 'The Prodigy' becomes 'Prodigy, The'"],
+    "snippet-body": [
+      "\\$swapprefix(${1:str})"
+    ],
+    "description": [
+      "Moves 'A' and 'The' prefixes to the end of string `str`."
+    ],
+    "example": [
+      "$swapprefix(%artist%) ⇒ 'The Prodigy' becomes 'Prodigy, The'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$swapprefix(str)"
   },
   {
+    "id": 74,
     "token": "swapprefix",
     "realm": "FB2K",
     "role": "function",
     "sign": "$swapprefix(str,prefix1,prefix2,...)",
-    "snippet-body": ["\\$swapprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"],
-    "description": ["Moves the specified prefixes to the end of string `str`."],
+    "snippet-body": [
+      "\\$swapprefix(${1:str},${2:prefix1}${3:[,prefix2,...]})"
+    ],
+    "description": [
+      "Moves the specified prefixes to the end of string `str`."
+    ],
     "example": [
       "$swapprefix(%artist%a,the) ⇒ 'The Prodigy' becomes 'Prodigy, The'"
     ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
   },
   {
+    "id": 75,
     "token": "trim",
     "realm": "FB2K",
     "role": "function",
     "sign": "$trim(str)",
-    "snippet-body": ["\\$trim(${1:str})"],
-    "description": ["Removes leading and trailing spaces from string `str`."],
-    "example": ["$trim(%title%)"],
+    "snippet-body": [
+      "\\$trim(${1:str})"
+    ],
+    "description": [
+      "Removes leading and trailing spaces from string `str`."
+    ],
+    "example": [
+      "$trim(%title%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
   },
   {
+    "id": 76,
     "token": "tab",
     "realm": "FB2K",
     "role": "function",
     "sign": "$tab()",
-    "snippet-body": ["\\$tab()"],
-    "description": ["Inserts one tabulator character."],
-    "example": ["%title%$tab()%length%"],
+    "snippet-body": [
+      "\\$tab()"
+    ],
+    "description": [
+      "Inserts one tabulator character."
+    ],
+    "example": [
+      "%title%$tab()%length%"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$tab()"
   },
   {
+    "id": 77,
     "token": "tab",
     "realm": "FB2K",
     "role": "function",
     "sign": "$tab(count)",
-    "snippet-body": ["\\$tab(${1:count})"],
-    "description": ["Inserts `count` tabulator characters."],
-    "example": ["%title%$tab(2)%length%"],
+    "snippet-body": [
+      "\\$tab(${1:count})"
+    ],
+    "description": [
+      "Inserts `count` tabulator characters."
+    ],
+    "example": [
+      "%title%$tab(2)%length%"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$tab(count)"
   },
   {
+    "id": 78,
     "token": "upper",
     "realm": "FB2K",
     "role": "function",
     "sign": "$upper(str)",
-    "snippet-body": ["\\$upper(${1:str})"],
-    "description": ["Converts string `str` to uppercase."],
-    "example": ["$upper(%title%)"],
+    "snippet-body": [
+      "\\$upper(${1:str})"
+    ],
+    "description": [
+      "Converts string `str` to uppercase."
+    ],
+    "example": [
+      "$upper(%title%)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$upper(str)"
   },
   {
+    "id": 79,
     "token": "meta",
     "realm": "FB2K",
     "role": "function",
     "sign": "$meta(name)",
-    "snippet-body": ["\\$meta(${1:name})"],
+    "snippet-body": [
+      "\\$meta(${1:name})"
+    ],
     "description": [
       "Returns value of tag called `name`.",
       "If multiple values of that tag exist, they are concatenated with ', ' as separator."
     ],
-    "example": ["$meta(artist) → 'He, She, They'"],
+    "example": [
+      "$meta(artist) → 'He, She, They'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta(name)"
   },
   {
+    "id": 80,
     "token": "meta",
     "realm": "FB2K",
     "role": "function",
     "sign": "$meta(name,n)",
-    "snippet-body": ["\\$meta(${1:name},${2:num n})"],
+    "snippet-body": [
+      "\\$meta(${1:name},${2:num n})"
+    ],
     "description": [
       "Returns value of `n`-th (0,1,2 and so on) tag called `name`."
     ],
-    "example": ["$meta(artist,1) → 'She'"],
+    "example": [
+      "$meta(artist,1) → 'She'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta(name,n)"
   },
   {
+    "id": 81,
     "token": "meta_sep",
     "realm": "FB2K",
     "role": "function",
     "sign": "$meta_sep(name,sep)",
-    "snippet-body": ["\\$meta_sep(${1:name},${2:string sep})"],
+    "snippet-body": [
+      "\\$meta_sep(${1:name},${2:string sep})"
+    ],
     "description": [
       "Returns value of tag called `name`.",
       "If multiple values of that tag exist, they are concatenated with `sep` as separator."
     ],
-    "example": ["$meta_sep(artist,', ') ⇒ 'artist1, artist2, artist3'"],
+    "example": [
+      "$meta_sep(artist,', ') ⇒ 'artist1, artist2, artist3'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_sep(name,sep)"
   },
   {
+    "id": 82,
     "token": "meta_sep",
     "realm": "FB2K",
     "role": "function",
@@ -1027,35 +1343,54 @@
       "Returns value of tag called `name`.",
       "If multiple values of that tag exist, they are concatenated with `sep` as separator between all but the last two values which are concatenated with `lastsep`."
     ],
-    "example": ["$meta_sep(artist,', ',', and ') → 'He, She, and They'"],
+    "example": [
+      "$meta_sep(artist,', ',', and ') → 'He, She, and They'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_sep(name,sep,lastsep)"
   },
   {
+    "id": 83,
     "token": "meta_test",
     "realm": "FB2K",
     "role": "function",
     "sign": "$meta_test(...)",
-    "snippet-body": ["\\$meta_test(${1:tag}${2:[,...]})"],
-    "description": ["Returns 1, if all given tags exist, undefined otherwise."],
-    "example": ["$meta_test(artist,title) → true"],
+    "snippet-body": [
+      "\\$meta_test(${1:tag}${2:[,...]})"
+    ],
+    "description": [
+      "Returns 1, if all given tags exist, undefined otherwise."
+    ],
+    "example": [
+      "$meta_test(artist,title) → true"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
   },
   {
+    "id": 84,
     "token": "meta_num",
     "realm": "FB2K",
     "role": "function",
     "sign": "$meta_num(name)",
-    "snippet-body": ["\\$meta_num(${1:name})"],
-    "description": ["Returns the number of values for the tag called `name`."],
-    "example": ["$meta_num(artist) → 3"],
+    "snippet-body": [
+      "\\$meta_num(${1:name})"
+    ],
+    "description": [
+      "Returns the number of values for the tag called `name`."
+    ],
+    "example": [
+      "$meta_num(artist) → 3"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
   },
   {
+    "id": 85,
     "token": "album artist",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%album artist%",
-    "snippet-body": ["%album artist%"],
+    "snippet-body": [
+      "%album artist%"
+    ],
     "description": [
       "Name of the artist of the album specified track belongs to.",
       "Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`.",
@@ -1065,11 +1400,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
   },
   {
+    "id": 86,
     "token": "album",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%album%",
-    "snippet-body": ["%album%"],
+    "snippet-body": [
+      "%album%"
+    ],
     "description": [
       "Name of the album specified track belongs to.",
       "Checks following metadata fields, in this order: `album`, `venue`."
@@ -1078,11 +1416,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
   },
   {
+    "id": 87,
     "token": "artist",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%artist%",
-    "snippet-body": ["%artist%"],
+    "snippet-body": [
+      "%artist%"
+    ],
     "description": [
       "Name of the artist of the track.",
       "Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`.",
@@ -1092,11 +1433,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
   },
   {
+    "id": 88,
     "token": "date",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%date%",
-    "snippet-body": ["%date%"],
+    "snippet-body": [
+      "%date%"
+    ],
     "description": [
       "Recording date (year) of the album specified track belongs to, using `date` metadata field."
     ],
@@ -1104,11 +1448,14 @@
     "ref-link": ""
   },
   {
+    "id": 89,
     "token": "genre",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%genre%",
-    "snippet-body": ["%genre%"],
+    "snippet-body": [
+      "%genre%"
+    ],
     "description": [
       "Genre of the album specified track belongs to, using “genre” metadata field. "
     ],
@@ -1116,11 +1463,14 @@
     "ref-link": ""
   },
   {
+    "id": 90,
     "token": "discnumber",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%discnumber%",
-    "snippet-body": ["%discnumber%"],
+    "snippet-body": [
+      "%discnumber%"
+    ],
     "description": [
       "Index of disc specified track belongs to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
     ],
@@ -1128,11 +1478,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%discnumber%"
   },
   {
+    "id": 91,
     "token": "totaldiscs",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%totaldiscs%",
-    "snippet-body": ["%totaldiscs%"],
+    "snippet-body": [
+      "%totaldiscs%"
+    ],
     "description": [
       "Index of total discs specified tracks belong to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
     ],
@@ -1140,11 +1493,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaldiscs%"
   },
   {
+    "id": 92,
     "token": "track artist",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%track artist%",
-    "snippet-body": ["%track artist%"],
+    "snippet-body": [
+      "%track artist%"
+    ],
     "description": [
       "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
       "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
@@ -1153,11 +1509,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
   },
   {
+    "id": 93,
     "token": "title",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%title%",
-    "snippet-body": ["%title%"],
+    "snippet-body": [
+      "%title%"
+    ],
     "description": [
       "Title of the track. If `title` metadata field is missing, file name is used instead.",
       "For a SHOUTcast stream which contains metadata, it is the StreamTitle after the first '-' character."
@@ -1166,11 +1525,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%title%"
   },
   {
+    "id": 94,
     "token": "tracknumber",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%tracknumber%",
-    "snippet-body": ["%title%"],
+    "snippet-body": [
+      "%title%"
+    ],
     "description": [
       "Two-digit index of specified track within the album.",
       "Available only when `tracknumber` field is present in track’s metadata.",
@@ -1180,11 +1542,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%tracknumber%"
   },
   {
+    "id": 95,
     "token": "track number",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%track number%",
-    "snippet-body": ["%track number%"],
+    "snippet-body": [
+      "%track number%"
+    ],
     "description": [
       "Similar to `%tracknumber%`, however single digit track numbers are not reformatted to have an extra 0."
     ],
@@ -1192,11 +1557,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_number%"
   },
   {
+    "id": 96,
     "token": "totaltracks",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%totaltracks%",
-    "snippet-body": ["%totaltracks%"],
+    "snippet-body": [
+      "%totaltracks%"
+    ],
     "description": [
       "Index of total tracks specified tracks belong to, within the album. Available only when `totaltracks` field is present in track’s metadata."
     ],
@@ -1204,11 +1572,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaltracks%"
   },
   {
+    "id": 97,
     "token": "bitrate",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%bitrate%",
-    "snippet-body": ["%bitrate%"],
+    "snippet-body": [
+      "%bitrate%"
+    ],
     "description": [
       "Bitrate of the track in kilobits per second.",
       "VBR files will show a dynamic display for currently played track (outside of the playlist)."
@@ -1217,11 +1588,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%bitrate%"
   },
   {
+    "id": 98,
     "token": "channels",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%channels%",
-    "snippet-body": ["%channels%"],
+    "snippet-body": [
+      "%channels%"
+    ],
     "description": [
       "Number of channels in the track, as text; either 'mono', 'stereo' for 1 or 2 channels, respectively, otherwise a number followed by 'ch', e.g. '6ch'."
     ],
@@ -1229,11 +1603,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channels%"
   },
   {
+    "id": 99,
     "token": "channel_mask",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%channel_mask%",
-    "snippet-body": ["%channel_mask%"],
+    "snippet-body": [
+      "%channel_mask%"
+    ],
     "description": [
       "Description of the used audio channels in the track, e.g. 'FL FR FC LFE SL SR'.",
       "Introduced in foobar2000 preview 2024-06-30."
@@ -1242,11 +1619,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channel_mask%"
   },
   {
+    "id": 100,
     "token": "codec",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%codec%",
-    "snippet-body": ["%codec%"],
+    "snippet-body": [
+      "%codec%"
+    ],
     "description": [
       "Name of codec used to encode the track, e.g. 'PCM', 'FLAC', 'MP3', or 'AAC'.",
       "If exact codec name is not available, file extension is used."
@@ -1255,11 +1635,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec%"
   },
   {
+    "id": 101,
     "token": "codec_profile",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%codec_profile%",
-    "snippet-body": ["%codec_profile%"],
+    "snippet-body": [
+      "%codec_profile%"
+    ],
     "description": [
       "Additional information about encoding settings used, e.g. 'CBR'.",
       "Not always available."
@@ -1268,11 +1651,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_profile%"
   },
   {
+    "id": 102,
     "token": "codec_long",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%codec_long%",
-    "snippet-body": ["%codec_long%"],
+    "snippet-body": [
+      "%codec_long%"
+    ],
     "description": [
       "Long name of the codec, including profile, e.g. 'HE-AACv2'. Some codecs, such as HE-AAC, supply this.",
       "If long name isn't supplied by the codec, `%codec_long%` falls back to `%codec%` / `%codec_profile%`.",
@@ -1282,11 +1668,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_long%"
   },
   {
+    "id": 103,
     "token": "filesize",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%filesize%",
-    "snippet-body": ["%filesize%"],
+    "snippet-body": [
+      "%filesize%"
+    ],
     "description": [
       "The exact file size in bytes.",
       "Old version: `%_filesize%`."
@@ -1295,11 +1684,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize%"
   },
   {
+    "id": 104,
     "token": "filesize_natural",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%filesize_natural%",
-    "snippet-body": ["%filesize_natural%"],
+    "snippet-body": [
+      "%filesize_natural%"
+    ],
     "description": [
       "The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes, e.g. '8.49 MB'."
     ],
@@ -1307,11 +1699,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize_natural%"
   },
   {
+    "id": 105,
     "token": "length",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%length%",
-    "snippet-body": ["%length%"],
+    "snippet-body": [
+      "%length%"
+    ],
     "description": [
       "The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second.",
       "Old version: `%_time_total%`."
@@ -1320,11 +1715,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length%"
   },
   {
+    "id": 106,
     "token": "length_ex",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%length_ex%",
-    "snippet-body": ["%length_ex%"],
+    "snippet-body": [
+      "%length_ex%"
+    ],
     "description": [
       "The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond."
     ],
@@ -1332,11 +1730,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_ex%"
   },
   {
+    "id": 107,
     "token": "length_seconds",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%length_seconds%",
-    "snippet-body": ["%length_seconds%"],
+    "snippet-body": [
+      "%length_seconds%"
+    ],
     "description": [
       "The length of the track in seconds, rounded to the nearest second.",
       "Old version: `%_time_total_seconds%`."
@@ -1345,11 +1746,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds%"
   },
   {
+    "id": 108,
     "token": "length_seconds_fp",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%length_seconds_fp%",
-    "snippet-body": ["%length_seconds_fp%"],
+    "snippet-body": [
+      "%length_seconds_fp%"
+    ],
     "description": [
       "The length of the track in seconds as a floating point number."
     ],
@@ -1357,26 +1761,37 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds_fp%"
   },
   {
+    "id": 109,
     "token": "length_samples",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%length_samples%",
-    "snippet-body": ["%length_samples%"],
-    "description": ["The length of the track in samples."],
+    "snippet-body": [
+      "%length_samples%"
+    ],
+    "description": [
+      "The length of the track in samples."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_samples%"
   },
   {
+    "id": 110,
     "token": "samplerate",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%samplerate%",
-    "snippet-body": ["%samplerate%"],
-    "description": ["Sample rate of the track, in Hz."],
+    "snippet-body": [
+      "%samplerate%"
+    ],
+    "description": [
+      "Sample rate of the track, in Hz."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%samplerate%"
   },
   {
+    "id": 111,
     "token": "info",
     "realm": "FB2K",
     "role": "function",
@@ -1388,55 +1803,82 @@
       "Returns value of technical information field called `name`.",
       "For convenience, the `%__name%` alias is also available."
     ],
-    "example": ["$info(bitrate)"],
+    "example": [
+      "$info(bitrate)"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 112,
     "token": "channels",
     "realm": "FB2K",
     "role": "function",
     "sign": "$channels()",
-    "snippet-body": ["\\$channels()"],
-    "description": ["The number of channels in text format."],
-    "example": ["$channels() → 'stereo'"],
+    "snippet-body": [
+      "\\$channels()"
+    ],
+    "description": [
+      "The number of channels in text format."
+    ],
+    "example": [
+      "$channels() → 'stereo'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$channels()"
   },
   {
+    "id": 113,
     "token": "replaygain_album_gain",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%replaygain_album_gain%",
-    "snippet-body": ["%replaygain_album_gain%"],
-    "description": ["The ReplayGain album gain value."],
+    "snippet-body": [
+      "%replaygain_album_gain%"
+    ],
+    "description": [
+      "The ReplayGain album gain value."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_gain%"
   },
   {
+    "id": 114,
     "token": "replaygain_album_peak",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%replaygain_album_peak%",
-    "snippet-body": ["%replaygain_album_peak%"],
-    "description": ["The ReplayGain album peak value."],
+    "snippet-body": [
+      "%replaygain_album_peak%"
+    ],
+    "description": [
+      "The ReplayGain album peak value."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak%"
   },
   {
+    "id": 115,
     "token": "replaygain_album_peak_db",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%replaygain_album_peak_db%",
-    "snippet-body": ["%replaygain_album_peak_db%"],
-    "description": ["The ReplayGain album peak value in decibels."],
+    "snippet-body": [
+      "%replaygain_album_peak_db%"
+    ],
+    "description": [
+      "The ReplayGain album peak value in decibels."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak_db%"
   },
   {
+    "id": 116,
     "token": "$peak_to_db",
     "realm": "FB2K",
     "role": "function",
     "sign": "$peak_to_db(X)",
-    "snippet-body": ["\\$peak_to_db(${1:num X})"],
+    "snippet-body": [
+      "\\$peak_to_db(${1:num X})"
+    ],
     "description": [
       "Converts audio peak value from 0..1 PCM to decibels.",
       "See also: `%replaygain_track_peak_db%`, `%replaygain_album_peak_db%`."
@@ -1447,61 +1889,89 @@
     "ref-link": ""
   },
   {
+    "id": 117,
     "token": "replaygain_track_gain",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%replaygain_track_gain%",
-    "snippet-body": ["%replaygain_track_gain%"],
-    "description": ["The ReplayGain track gain value."],
+    "snippet-body": [
+      "%replaygain_track_gain%"
+    ],
+    "description": [
+      "The ReplayGain track gain value."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_gain%"
   },
   {
+    "id": 118,
     "token": "replaygain_track_peak",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%replaygain_track_peak%",
-    "snippet-body": ["%replaygain_track_peak%"],
-    "description": ["The ReplayGain track peak value."],
+    "snippet-body": [
+      "%replaygain_track_peak%"
+    ],
+    "description": [
+      "The ReplayGain track peak value."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak%"
   },
   {
+    "id": 119,
     "token": "replaygain_track_peak_db",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%replaygain_track_peak_db%",
-    "snippet-body": ["%replaygain_track_peak_db%"],
-    "description": ["The ReplayGain track peak value in decibels."],
+    "snippet-body": [
+      "%replaygain_track_peak_db%"
+    ],
+    "description": [
+      "The ReplayGain track peak value in decibels."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak_db%"
   },
   {
+    "id": 120,
     "token": "filename",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%filename%",
-    "snippet-body": ["%filename%"],
-    "description": ["The filename without directory and extension."],
+    "snippet-body": [
+      "%filename%"
+    ],
+    "description": [
+      "The filename without directory and extension."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename%"
   },
   {
+    "id": 121,
     "token": "filename_ext",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%filename_ext%",
-    "snippet-body": ["%filename_ext%"],
-    "description": ["The filename with extension, but without the directory."],
+    "snippet-body": [
+      "%filename_ext%"
+    ],
+    "description": [
+      "The filename with extension, but without the directory."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename_ext%"
   },
   {
+    "id": 122,
     "token": "directoryname",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%directoryname%",
-    "snippet-body": ["%directoryname%"],
+    "snippet-body": [
+      "%directoryname%"
+    ],
     "description": [
       "The name of the parent directory only, not the complete path."
     ],
@@ -1509,11 +1979,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%directoryname%"
   },
   {
+    "id": 123,
     "token": "last_modified",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%last_modified%",
-    "snippet-body": ["%last_modified%"],
+    "snippet-body": [
+      "%last_modified%"
+    ],
     "description": [
       "The date and time the file was last modified. Eg: `2005-12-22 00:04:10`."
     ],
@@ -1521,31 +1994,44 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%last_modified%"
   },
   {
+    "id": 124,
     "token": "path",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%path%",
-    "snippet-body": ["%path%"],
-    "description": ["The complete path, including the filename and extension."],
+    "snippet-body": [
+      "%path%"
+    ],
+    "description": [
+      "The complete path, including the filename and extension."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%path%"
   },
   {
+    "id": 125,
     "token": "_path_raw",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%_path_raw%",
-    "snippet-body": ["%_path_raw%"],
-    "description": ["The path as URL including the protocol scheme."],
+    "snippet-body": [
+      "%_path_raw%"
+    ],
+    "description": [
+      "The path as URL including the protocol scheme."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_path_raw%"
   },
   {
+    "id": 126,
     "token": "%path_sort%",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%path_sort%",
-    "snippet-body": ["%path_sort%"],
+    "snippet-body": [
+      "%path_sort%"
+    ],
     "description": [
       "Path of the file.",
       "For use with sorting, where order of subsongs within a file needs to be preserved.",
@@ -1555,11 +2041,14 @@
     "ref-link": ""
   },
   {
+    "id": 127,
     "token": "subsong",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%subsong%",
-    "snippet-body": ["%subsong%"],
+    "snippet-body": [
+      "%subsong%"
+    ],
     "description": [
       "The subsong index.",
       "The subsong index is used to distuingish multiple tracks in a single file, for example for cue sheets, tracker modules and various container formats."
@@ -1568,21 +2057,29 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%subsong%"
   },
   {
+    "id": 128,
     "token": "_foobar2000_version",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%_foobar2000_version%",
-    "snippet-body": ["%_foobar2000_version%"],
-    "description": ["A string representing the version of foobar2000."],
+    "snippet-body": [
+      "%_foobar2000_version%"
+    ],
+    "description": [
+      "A string representing the version of foobar2000."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_foobar2000_version%"
   },
   {
+    "id": 129,
     "token": "year",
     "realm": "FB2K",
     "role": "function",
     "sign": "$year(time)",
-    "snippet-body": ["\\$year(${1:time})"],
+    "snippet-body": [
+      "\\$year(${1:time})"
+    ],
     "description": [
       "Retrieves the year part (formatted as four digits) from a time/date string."
     ],
@@ -1590,11 +2087,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$year(time)"
   },
   {
+    "id": 130,
     "token": "month",
     "realm": "FB2K",
     "role": "function",
     "sign": "$month(time)",
-    "snippet-body": ["\\$month(${1:time})"],
+    "snippet-body": [
+      "\\$month(${1:time})"
+    ],
     "description": [
       "Retrieves the month part (formatted as two digits) from a time/date string."
     ],
@@ -1602,11 +2102,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$month(time)"
   },
   {
+    "id": 131,
     "token": "day_of_month",
     "realm": "FB2K",
     "role": "function",
     "sign": "$day_of_month(time)",
-    "snippet-body": ["\\$day_of_month(${1:time})"],
+    "snippet-body": [
+      "\\$day_of_month(${1:time})"
+    ],
     "description": [
       "Retrieves the day of month part (formatted as two digits) from a time/date string."
     ],
@@ -1614,11 +2117,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$day_of_month(time)"
   },
   {
+    "id": 132,
     "token": "date",
     "realm": "FB2K",
     "role": "function",
     "sign": "$date(time)",
-    "snippet-body": ["\\$date(${1:time})"],
+    "snippet-body": [
+      "\\$date(${1:time})"
+    ],
     "description": [
       "Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string."
     ],
@@ -1626,11 +2132,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$date(time)"
   },
   {
+    "id": 133,
     "token": "time",
     "realm": "FB2K",
     "role": "function",
     "sign": "$time(time)",
-    "snippet-body": ["\\$time(${1:time})"],
+    "snippet-body": [
+      "\\$time(${1:time})"
+    ],
     "description": [
       "Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string."
     ],
@@ -1638,11 +2147,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$time(time)"
   },
   {
+    "id": 134,
     "token": "get",
     "realm": "FB2K",
     "role": "function",
     "sign": "$get(name)",
-    "snippet-body": ["\\$get(${1:name})"],
+    "snippet-body": [
+      "\\$get(${1:name})"
+    ],
     "description": [
       "Returns the value that was last stored in the variable name.",
       "If the variable was not defined (yet), it returns nothing.",
@@ -1652,45 +2164,63 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$get(name)"
   },
   {
+    "id": 135,
     "token": "put",
     "realm": "FB2K",
     "role": "function",
     "sign": "$put(name,value)",
-    "snippet-body": ["\\$put(${1:name},${2:value})"],
+    "snippet-body": [
+      "\\$put(${1:name},${2:value})"
+    ],
     "description": [
       "Stores `value` in the variable `name` and returns `value` unaltered."
     ],
-    "example": ["$put(x,blah) sets variable x to 'blah' and returns 'blah'"],
+    "example": [
+      "$put(x,blah) sets variable x to 'blah' and returns 'blah'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$put(name,value)"
   },
   {
+    "id": 136,
     "token": "puts",
     "realm": "FB2K",
     "role": "function",
     "sign": "$puts(name,value)",
-    "snippet-body": ["\\$puts(${1:name},${2:value})"],
+    "snippet-body": [
+      "\\$puts(${1:name},${2:value})"
+    ],
     "description": [
       "Stores `value` in the variable `name` and returns nothing."
     ],
-    "example": ["$puts(x,blah)$get(x)$get(x) returns 'blahblah'"],
+    "example": [
+      "$puts(x,blah)$get(x)$get(x) returns 'blahblah'"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$puts(name,value)"
   },
   {
+    "id": 137,
     "token": "playback_time",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%playback_time%",
-    "snippet-body": ["%playback_time%"],
-    "description": ["The elapsed time formatted as `[HH:]MM:SS`."],
+    "snippet-body": [
+      "%playback_time%"
+    ],
+    "description": [
+      "The elapsed time formatted as `[HH:]MM:SS`."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time%"
   },
   {
+    "id": 138,
     "token": "playback_time_seconds",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%playback_time_seconds%",
-    "snippet-body": ["%playback_time_seconds%"],
+    "snippet-body": [
+      "%playback_time_seconds%"
+    ],
     "description": [
       "The elapsed time in seconds.",
       "Old version: `%_time_elapsed%`."
@@ -1699,11 +2229,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_seconds%"
   },
   {
+    "id": 139,
     "token": "playback_time_remaining",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%playback_time_remaining%",
-    "snippet-body": ["%playback_time_remaining%"],
+    "snippet-body": [
+      "%playback_time_remaining%"
+    ],
     "description": [
       "The time remaining until the track ends, formatted as `[HH:]MM:SS`.",
       "Old version: `%_time_remaining%`."
@@ -1712,11 +2245,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining%"
   },
   {
+    "id": 140,
     "token": "playback_time_remaining_seconds",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%playback_time_remaining_seconds%",
-    "snippet-body": ["%playback_time_remaining_seconds%"],
+    "snippet-body": [
+      "%playback_time_remaining_seconds%"
+    ],
     "description": [
       "The time remaining until the track ends, in seconds.",
       "Old version: `%_time_remaining_seconds%`."
@@ -1725,11 +2261,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining_seconds%"
   },
   {
+    "id": 141,
     "token": "isplaying",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%isplaying%",
-    "snippet-body": ["%isplaying%"],
+    "snippet-body": [
+      "%isplaying%"
+    ],
     "description": [
       "'1' if file is currently playing, empty string otherwise."
     ],
@@ -1737,21 +2276,29 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%isplaying%"
   },
   {
+    "id": 142,
     "token": "ispaused",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%ispaused%",
-    "snippet-body": ["%ispaused%"],
-    "description": ["'1' if playback is paused, empty string otherwise."],
+    "snippet-body": [
+      "%ispaused%"
+    ],
+    "description": [
+      "'1' if playback is paused, empty string otherwise."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%ispaused%"
   },
   {
+    "id": 143,
     "token": "list_index",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%list_index%",
-    "snippet-body": ["%list_index%"],
+    "snippet-body": [
+      "%list_index%"
+    ],
     "description": [
       "A zero-padded playlist index of specified item. The first item is at index 1."
     ],
@@ -1759,21 +2306,29 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_index%"
   },
   {
+    "id": 144,
     "token": "list_total",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%list_total%",
-    "snippet-body": ["%list_total%"],
-    "description": ["The number of items in the playlist."],
+    "snippet-body": [
+      "%list_total%"
+    ],
+    "description": [
+      "The number of items in the playlist."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_total%"
   },
   {
+    "id": 145,
     "token": "queue_index",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%queue_index%",
-    "snippet-body": ["%queue_index%"],
+    "snippet-body": [
+      "%queue_index%"
+    ],
     "description": [
       "Index of the specified item in the playback queue.",
       "If the item has been queued multiple times, `%queue_index%` evaluates to the first index."
@@ -1782,11 +2337,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_index%"
   },
   {
+    "id": 146,
     "token": "queue_indexes",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%queue_indexes%",
-    "snippet-body": ["%queue_indexes%"],
+    "snippet-body": [
+      "%queue_indexes%"
+    ],
     "description": [
       "List of indexes of the specified item in the playback queue.",
       "Same as `%queue_index%` unless the item has been queued more than once."
@@ -1795,11 +2353,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_indexes%"
   },
   {
+    "id": 147,
     "token": "queue_total",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%queue_total%",
-    "snippet-body": ["%queue_total%"],
+    "snippet-body": [
+      "%queue_total%"
+    ],
     "description": [
       "Total amount of tracks in playback queue.",
       "Available only for queued tracks, for technical reasons."
@@ -1808,6 +2369,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_total%"
   },
   {
+    "id": 148,
     "token": "blend",
     "realm": "CUI",
     "role": "function",
@@ -1826,21 +2388,29 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$blend(color1,color2,part,total)"
   },
   {
+    "id": 149,
     "token": "hsl",
     "realm": "CUI",
     "role": "function",
     "sign": "$hsl()",
-    "snippet-body": ["\\$hsl()"],
-    "description": ["Resets the text color to the default color."],
+    "snippet-body": [
+      "\\$hsl()"
+    ],
+    "description": [
+      "Resets the text color to the default color."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
   },
   {
+    "id": 150,
     "token": "hsl",
     "realm": "CUI",
     "role": "function",
     "sign": "$hsl(h,s,l)",
-    "snippet-body": ["\\$hsl(${1:num h},${2:num s},${3:num l})"],
+    "snippet-body": [
+      "\\$hsl(${1:num h},${2:num s},${3:num l})"
+    ],
     "description": [
       "Sets the color for text in the HSL color space.",
       "`h1`, `s1` and `l1` are the hue, saturation, and lightness of the color for unselected text.",
@@ -1850,6 +2420,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h,s,l)"
   },
   {
+    "id": 151,
     "token": "hsl",
     "realm": "CUI",
     "role": "function",
@@ -1866,21 +2437,29 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h1,s1,l1,h2,s2,l2)"
   },
   {
+    "id": 152,
     "token": "rgb",
     "realm": "CUI",
     "role": "function",
     "sign": "$rgb()",
-    "snippet-body": ["\\$rgb()"],
-    "description": ["Resets the text color to the default color."],
+    "snippet-body": [
+      "\\$rgb()"
+    ],
+    "description": [
+      "Resets the text color to the default color."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
   },
   {
+    "id": 153,
     "token": "rgb",
     "realm": "CUI",
     "role": "function",
     "sign": "$rgb(r,g,b)",
-    "snippet-body": ["\\$rgb(${1:num r},${2:num g},${3:num b})"],
+    "snippet-body": [
+      "\\$rgb(${1:num r},${2:num g},${3:num b})"
+    ],
     "description": [
       "Sets the color for text.",
       "`r`, `g` and `b` are the red, green and blue component of the color for unselected text.",
@@ -1890,6 +2469,7 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r,g,b)"
   },
   {
+    "id": 154,
     "token": "rgb",
     "realm": "CUI",
     "role": "function",
@@ -1906,11 +2486,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r1,g1,b1,r2,g2,b2)"
   },
   {
+    "id": 155,
     "token": "transition",
     "realm": "CUI",
     "role": "function",
     "sign": "$transition(string,color1,color2)",
-    "snippet-body": ["\\$transition(${1:string},${2:color1},${3:color2})"],
+    "snippet-body": [
+      "\\$transition(${1:string},${2:color1},${3:color2})"
+    ],
     "description": [
       "Inserts color codes into `string`, so that the first character has `color1`, the last character has `color2`, and intermediate characters have blended colors.",
       "The blending is performed in the RGB color space.",
@@ -1921,11 +2504,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$transition(string,color1,color2)"
   },
   {
+    "id": 156,
     "token": "album artist",
     "realm": "FB2K Album List",
     "role": "tag",
     "sign": "%<album artist>%",
-    "snippet-body": ["%<album artist>%"],
+    "snippet-body": [
+      "%<album artist>%"
+    ],
     "description": [
       "Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`. The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
     ],
@@ -1933,11 +2519,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
   },
   {
+    "id": 157,
     "token": "album",
     "realm": "FB2K Album List",
     "role": "tag",
     "sign": "%<album>%",
-    "snippet-body": ["%<album>%"],
+    "snippet-body": [
+      "%<album>%"
+    ],
     "description": [
       "Name of the album specified track belongs to. Checks following metadata fields, in this order: `album`, `venue`."
     ],
@@ -1945,11 +2534,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
   },
   {
+    "id": 158,
     "token": "artist",
     "realm": "FB2K Album List",
     "role": "tag",
     "sign": "%<artist>%",
-    "snippet-body": ["%<artist>%"],
+    "snippet-body": [
+      "%<artist>%"
+    ],
     "description": [
       "Name of the artist of the track. Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`. For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
     ],
@@ -1957,11 +2549,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
   },
   {
+    "id": 159,
     "token": "track artist",
     "realm": "FB2K Album List",
     "role": "tag",
     "sign": "%<track artist>%",
-    "snippet-body": ["%<track artist>%"],
+    "snippet-body": [
+      "%<track artist>%"
+    ],
     "description": [
       "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
       "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
@@ -1970,11 +2565,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
   },
   {
+    "id": 160,
     "token": "meta_branch_remap",
     "realm": "FB2K Album List",
     "role": "function",
     "sign": "$meta_branch_remap(name)",
-    "snippet-body": ["\\$meta_branch_remap(${1:name})"],
+    "snippet-body": [
+      "\\$meta_branch_remap(${1:name})"
+    ],
     "description": [
       "This is identical to `%<name>%` except it does not produce a '?', if the tag does not exist."
     ],
@@ -1982,11 +2580,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch_remap(name)"
   },
   {
+    "id": 161,
     "token": "meta_branch",
     "realm": "FB2K Album List",
     "role": "function",
     "sign": "$meta_branch(name)",
-    "snippet-body": ["\\$meta_branch(${1:name})"],
+    "snippet-body": [
+      "\\$meta_branch(${1:name})"
+    ],
     "description": [
       "Like `$meta_branch_remap(name)`, but without the tag remapping."
     ],
@@ -1994,11 +2595,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch(name)"
   },
   {
+    "id": 162,
     "token": "play_count",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%play_count%",
-    "snippet-body": ["%play_counts%"],
+    "snippet-body": [
+      "%play_counts%"
+    ],
     "description": [
       "Returns how many times this tracks has been played.",
       "If the track has not been played yet, the field does not exist."
@@ -2007,11 +2611,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%play_count%"
   },
   {
+    "id": 163,
     "token": "first_played",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%first_played%",
-    "snippet-body": ["%first_played%"],
+    "snippet-body": [
+      "%first_played%"
+    ],
     "description": [
       "Returns the date and time when the track was first played.",
       "If the track has not been played yet, the field does not exist."
@@ -2020,11 +2627,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%first_played%"
   },
   {
+    "id": 164,
     "token": "last_played",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%last_played%",
-    "snippet-body": ["%last_played%"],
+    "snippet-body": [
+      "%last_played%"
+    ],
     "description": [
       "Returns the date and time when the track was last played.",
       "If the track has not been played yet, the field does not exist."
@@ -2033,11 +2643,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%last_played%"
   },
   {
+    "id": 165,
     "token": "played_per_day",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%played_per_day%",
-    "snippet-body": ["%played_per_day%"],
+    "snippet-body": [
+      "%played_per_day%"
+    ],
     "description": [
       "Returns the average of how many times per day track has been played, based on time first played, time last played and times played (average daily playcount between `%first_played%` and `%last_played%`).",
       "If the track has not been played yet, the field does not exist."
@@ -2046,11 +2659,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%played_per_day%"
   },
   {
+    "id": 166,
     "token": "added",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%added%",
-    "snippet-body": ["%added%"],
+    "snippet-body": [
+      "%added%"
+    ],
     "description": [
       "Returns the date and time at which track has been added to Media Library.",
       "Even if the track has not been played yet, the field exists, logically."
@@ -2059,11 +2675,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%25added%"
   },
   {
+    "id": 167,
     "token": "rating",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%rating%",
-    "snippet-body": ["%rating%"],
+    "snippet-body": [
+      "%rating%"
+    ],
     "description": [
       "Returns `rating` value (can be integer from 1 to 5).",
       "If the track has not been rated yet, the field does not exist."
@@ -2072,11 +2691,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating%"
   },
   {
+    "id": 168,
     "token": "rating_stars",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%rating_stars%",
-    "snippet-body": ["%rating_stars%"],
+    "snippet-body": [
+      "%rating_stars%"
+    ],
     "description": [
       "Returns song's rating value, formatted as up to five stars, e.g. `★★★`.",
       "If the track has not been rated yet, the field does not exist."
@@ -2085,11 +2707,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars%"
   },
   {
+    "id": 169,
     "token": "rating_stars_fixed",
     "realm": "FB2K Playback Statistics",
     "role": "tag",
     "sign": "%rating_stars_fixed%",
-    "snippet-body": ["%rating_stars_fixed%"],
+    "snippet-body": [
+      "%rating_stars_fixed%"
+    ],
     "description": [
       "Returns song's `rating` value, formatted as five stars, e.g. `★★★☆☆`.",
       "If the track has not been rated yet, the field does not exist."
@@ -2098,21 +2723,29 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars_fixed%"
   },
   {
+    "id": 170,
     "token": "node_name",
     "realm": "FB2K Playlist Organizer",
     "role": "tag",
     "sign": "%node_name%",
-    "snippet-body": ["%node_name%"],
-    "description": ["Is the name of the node, either a playlist or a folder."],
+    "snippet-body": [
+      "%node_name%"
+    ],
+    "description": [
+      "Is the name of the node, either a playlist or a folder."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
   },
   {
+    "id": 171,
     "token": "is_folder",
     "realm": "FB2K Playlist Organizer",
     "role": "tag",
     "sign": "%is_folder%",
-    "snippet-body": ["%is_folder%"],
+    "snippet-body": [
+      "%is_folder%"
+    ],
     "description": [
       "Is a boolean value for use in `$if( ...)` expressions and is true when the node is a folder."
     ],
@@ -2120,11 +2753,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
   },
   {
+    "id": 172,
     "token": "count",
     "realm": "FB2K Playlist Organizer",
     "role": "tag",
     "sign": "%count%",
-    "snippet-body": ["%count%"],
+    "snippet-body": [
+      "%count%"
+    ],
     "description": [
       "Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
     ],
@@ -2132,46 +2768,67 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
   },
   {
+    "id": 173,
     "token": "playlist_duration",
     "realm": "FB2K Playlist Organizer",
     "role": "tag",
     "sign": "%playlist_duration%",
-    "snippet-body": ["%playlist_duration%"],
-    "description": ["Will provide the duration of playlists."],
+    "snippet-body": [
+      "%playlist_duration%"
+    ],
+    "description": [
+      "Will provide the duration of playlists."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
   },
   {
+    "id": 174,
     "token": "playlist_size",
     "realm": "FB2K Playlist Organizer",
     "role": "tag",
     "sign": "%playlist_size%",
-    "snippet-body": ["%playlist_size%"],
-    "description": ["Will provide the size of playlists (in kB, MB or GB)."],
+    "snippet-body": [
+      "%playlist_size%"
+    ],
+    "description": [
+      "Will provide the size of playlists (in kB, MB or GB)."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
   },
   {
+    "id": 175,
     "token": "set_global",
     "realm": "CUI",
     "role": "function",
     "sign": "$set_global(name,value)",
-    "snippet-body": ["\\$set_global(${1:name},${2:value})"],
-    "description": ["Set the `name` variable to the `value` value."],
+    "snippet-body": [
+      "\\$set_global(${1:name},${2:value})"
+    ],
+    "description": [
+      "Set the `name` variable to the `value` value."
+    ],
     "example": [],
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
   },
   {
+    "id": 176,
     "token": "get_global",
     "realm": "CUI",
     "role": "function",
     "sign": "$get_global(name)",
-    "snippet-body": ["\\$get_global(${1:name})"],
-    "description": ["Get the value of the global variable `name`."],
+    "snippet-body": [
+      "\\$get_global(${1:name})"
+    ],
+    "description": [
+      "Get the value of the global variable `name`."
+    ],
     "example": [],
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
   },
   {
+    "id": 177,
     "token": "set_style",
     "realm": "CUI",
     "role": "function",
@@ -2187,6 +2844,7 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 178,
     "token": "set_style",
     "realm": "CUI",
     "role": "function",
@@ -2203,11 +2861,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 179,
     "token": "calculate_blend_target",
     "realm": "CUI",
     "role": "function",
     "sign": "$calculate_blend_target(color)",
-    "snippet-body": ["\\$calculate_blend_target(${1:colour})"],
+    "snippet-body": [
+      "\\$calculate_blend_target(${1:colour})"
+    ],
     "description": [
       "Returns black if the mean of the red, green and blue components of `color` is greater than or equal to 128; otherwise it returns white."
     ],
@@ -2215,6 +2876,7 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 180,
     "token": "offset_colour",
     "realm": "CUI",
     "role": "function",
@@ -2222,16 +2884,21 @@
     "snippet-body": [
       "\\$offset_colour(${1:colour_from},${2:colour_to},${3:offset})"
     ],
-    "description": ["Shifts one colour towards another colour."],
+    "description": [
+      "Shifts one colour towards another colour."
+    ],
     "example": [],
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 181,
     "token": "_text",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_text%",
-    "snippet-body": ["%_text%"],
+    "snippet-body": [
+      "%_text%"
+    ],
     "description": [
       "Return the relevant colour before any modifications by the current style script."
     ],
@@ -2239,11 +2906,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 182,
     "token": "_selected_text",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_selected_text%",
-    "snippet-body": ["%_selected_text%"],
+    "snippet-body": [
+      "%_selected_text%"
+    ],
     "description": [
       "Return the relevant colour before any modifications by the current style script."
     ],
@@ -2251,11 +2921,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 183,
     "token": "_selected_text_no_focus",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_selected_text_no_focus%",
-    "snippet-body": ["%_selected_text_no_focus%"],
+    "snippet-body": [
+      "%_selected_text_no_focus%"
+    ],
     "description": [
       "Return the relevant colour before any modifications by the current style script."
     ],
@@ -2263,11 +2936,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 184,
     "token": "_back",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_back%",
-    "snippet-body": ["%_back%"],
+    "snippet-body": [
+      "%_back%"
+    ],
     "description": [
       "Return the relevant colour before any modifications by the current style script."
     ],
@@ -2275,11 +2951,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 185,
     "token": "_selected_back",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_selected_back%",
-    "snippet-body": ["%_selected_back%"],
+    "snippet-body": [
+      "%_selected_back%"
+    ],
     "description": [
       "Return the relevant colour before any modifications by the current style script."
     ],
@@ -2287,11 +2966,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 186,
     "token": "_selected_back_no_focus",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_selected_back_no_focus%",
-    "snippet-body": ["%_selected_back_no_focus%"],
+    "snippet-body": [
+      "%_selected_back_no_focus%"
+    ],
     "description": [
       "Return the relevant colour before any modifications by the current style script."
     ],
@@ -2299,11 +2981,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 187,
     "token": "_display_index",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_display_index%",
-    "snippet-body": ["%_display_index%"],
+    "snippet-body": [
+      "%_display_index%"
+    ],
     "description": [
       "The current row number in the playlist view (including group headings)."
     ],
@@ -2311,21 +2996,29 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 188,
     "token": "_is_group",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_is_group%",
-    "snippet-body": ["%_is_group%"],
-    "description": ["Whether a group heading is currently being formatted."],
+    "snippet-body": [
+      "%_is_group%"
+    ],
+    "description": [
+      "Whether a group heading is currently being formatted."
+    ],
     "example": [],
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 189,
     "token": "_is_themed",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_is_themed%",
-    "snippet-body": ["%_is_themed%"],
+    "snippet-body": [
+      "%_is_themed%"
+    ],
     "description": [
       "Whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences."
     ],
@@ -2333,11 +3026,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
   },
   {
+    "id": 190,
     "token": "_system_year",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_system_year%",
-    "snippet-body": ["%_system_year%"],
+    "snippet-body": [
+      "%_system_year%"
+    ],
     "description": [
       "The current year.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2346,11 +3042,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 191,
     "token": "_system_day",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_system_day%",
-    "snippet-body": ["%_system_day%"],
+    "snippet-body": [
+      "%_system_day%"
+    ],
     "description": [
       "The current day of the month, as a number.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2359,11 +3058,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 192,
     "token": "_system_month",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_system_month%",
-    "snippet-body": ["%_system_month%"],
+    "snippet-body": [
+      "%_system_month%"
+    ],
     "description": [
       "The current month of the year, as a number.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2372,11 +3074,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 193,
     "token": "_system_day_of_week",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_system_day_of_week%",
-    "snippet-body": ["%_system_day_of_week%"],
+    "snippet-body": [
+      "%_system_day_of_week%"
+    ],
     "description": [
       "The current day of the week, as a number.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2385,11 +3090,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 194,
     "token": "_system_hour",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_system_hour%",
-    "snippet-body": ["%_system_hour%"],
+    "snippet-body": [
+      "%_system_hour%"
+    ],
     "description": [
       "The current hour.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2398,11 +3106,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 195,
     "token": "_system_julian_day",
     "realm": "CUI",
     "role": "tag",
     "sign": "%_system_julian_day%",
-    "snippet-body": ["%_system_julian_day%"],
+    "snippet-body": [
+      "%_system_julian_day%"
+    ],
     "description": [
       "The current Julian day.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2411,11 +3122,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 196,
     "token": "playlist_name",
     "realm": "CUI",
     "role": "tag",
     "sign": "%playlist_name%",
-    "snippet-body": ["%playlist_name%"],
+    "snippet-body": [
+      "%playlist_name%"
+    ],
     "description": [
       "The name of the active playlist.",
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
@@ -2424,11 +3138,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
   },
   {
+    "id": 197,
     "token": "title",
     "realm": "CUI",
     "role": "tag",
     "sign": "%title%",
-    "snippet-body": ["%title%"],
+    "snippet-body": [
+      "%title%"
+    ],
     "description": [
       "The title of the playlist.",
       "This field is available in Playlist Switcher scripts."
@@ -2437,11 +3154,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 198,
     "token": "is_locked",
     "realm": "CUI",
     "role": "tag",
     "sign": "%is_locked%",
-    "snippet-body": ["%is_locked%"],
+    "snippet-body": [
+      "%is_locked%"
+    ],
     "description": [
       "Exists if the playlist is locked.",
       "This field is available in Playlist Switcher scripts."
@@ -2450,11 +3170,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 199,
     "token": "lock_name",
     "realm": "CUI",
     "role": "tag",
     "sign": "%lock_name%",
-    "snippet-body": ["%lock_name%"],
+    "snippet-body": [
+      "%lock_name%"
+    ],
     "description": [
       "The name of the playlist lock, if the playlist is locked.",
       "This field is available in Playlist Switcher scripts."
@@ -2463,11 +3186,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 200,
     "token": "size",
     "realm": "CUI",
     "role": "tag",
     "sign": "%size%",
-    "snippet-body": ["%size%"],
+    "snippet-body": [
+      "%size%"
+    ],
     "description": [
       "The number of items in the playlist.",
       "This field is available in Playlist Switcher scripts."
@@ -2476,11 +3202,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 201,
     "token": "length",
     "realm": "CUI",
     "role": "tag",
     "sign": "%length%",
-    "snippet-body": ["%length%"],
+    "snippet-body": [
+      "%length%"
+    ],
     "description": [
       "The total length of the items in the playlist.",
       "This field is available in Playlist Switcher scripts."
@@ -2489,11 +3218,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 202,
     "token": "filesize",
     "realm": "CUI",
     "role": "tag",
     "sign": "%filesize%",
-    "snippet-body": ["%filesize%"],
+    "snippet-body": [
+      "%filesize%"
+    ],
     "description": [
       "The sum of the known file sizes of the items in the playlist.",
       "This field is available in Playlist Switcher scripts."
@@ -2502,11 +3234,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 203,
     "token": "filesize_raw",
     "realm": "CUI",
     "role": "tag",
     "sign": "%filesize_raw%",
-    "snippet-body": ["%filesize_raw%"],
+    "snippet-body": [
+      "%filesize_raw%"
+    ],
     "description": [
       "The sum of the known file sizes of the items in the playlist, in bytes.",
       "This field is available in Playlist Switcher scripts."
@@ -2515,11 +3250,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 204,
     "token": "is_active",
     "realm": "CUI",
     "role": "tag",
     "sign": "%is_active%",
-    "snippet-body": ["%is_active%"],
+    "snippet-body": [
+      "%is_active%"
+    ],
     "description": [
       "Exists if the playlist is the active playlist.",
       "This field is available in Playlist Switcher scripts."
@@ -2528,11 +3266,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 205,
     "token": "is_playing",
     "realm": "CUI",
     "role": "tag",
     "sign": "%is_playing%",
-    "snippet-body": ["%is_playing%"],
+    "snippet-body": [
+      "%is_playing%"
+    ],
     "description": [
       "Exists if the playlist is playing.",
       "This field is available in Playlist Switcher scripts."
@@ -2541,6 +3282,7 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
   },
   {
+    "id": 206,
     "token": "set_format",
     "realm": "CUI",
     "role": "function",
@@ -2556,11 +3298,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   },
   {
+    "id": 207,
     "token": "reset_format",
     "realm": "CUI",
     "role": "function",
     "sign": "$reset_format()",
-    "snippet-body": ["\\$reset_format()"],
+    "snippet-body": [
+      "\\$reset_format()"
+    ],
     "description": [
       "Restores font and text styling for subsequent text to the panel defaults.",
       "This function is available in Item Details scripts."
@@ -2569,6 +3314,7 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   },
   {
+    "id": 208,
     "token": "set_font",
     "realm": "CUI",
     "role": "function",
@@ -2585,11 +3331,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   },
   {
+    "id": 209,
     "token": "reset_font",
     "realm": "CUI",
     "role": "function",
     "sign": "$reset_font()",
-    "snippet-body": ["\\$reset_font()"],
+    "snippet-body": [
+      "\\$reset_font()"
+    ],
     "description": [
       "Restores font and text styling for subsequent text to the panel defaults.",
       "This function is available in Item Details scripts.",
@@ -2599,11 +3348,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   },
   {
+    "id": 210,
     "token": "default_font_face",
     "realm": "CUI",
     "role": "tag",
     "sign": "%default_font_face%",
-    "snippet-body": ["%default_font_face%"],
+    "snippet-body": [
+      "%default_font_face%"
+    ],
     "description": [
       "The default font family for the panel.",
       "This is a legacy, GDI-compatible font family name.",
@@ -2614,11 +3366,14 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   },
   {
+    "id": 211,
     "token": "default_font_size",
     "realm": "CUI",
     "role": "tag",
     "sign": "%default_font_size%",
-    "snippet-body": ["%default_font_size%"],
+    "snippet-body": [
+      "%default_font_size%"
+    ],
     "description": [
       "The default font size for the panel, in points.",
       "The value is rounded to the nearest whole number.",
@@ -2628,374 +3383,546 @@
     "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
   },
   {
+    "id": 212,
     "token": "HAS",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "HAS",
-    "snippet-body": ["HAS"],
+    "snippet-body": [
+      "HAS"
+    ],
     "description": [
       "Returns only items that have all words from `string` in metadata field named `field`."
     ],
-    "example": ["title HAS blah"],
+    "example": [
+      "title HAS blah"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
   },
   {
+    "id": 213,
     "token": "IS",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "IS",
-    "snippet-body": ["IS"],
+    "snippet-body": [
+      "IS"
+    ],
     "description": [
       "Returns only items where (at least one) metadata field `field` is equal to `string`."
     ],
-    "example": ["artist IS blah"],
+    "example": [
+      "artist IS blah"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
   },
   {
+    "id": 214,
     "token": "ALL",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "ALL",
-    "snippet-body": ["ALL"],
+    "snippet-body": [
+      "ALL"
+    ],
     "description": [
       "No operators can be used. This single keyword simply returns all items within the Media Library."
     ],
-    "example": ["ALL"],
+    "example": [
+      "ALL"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
   },
   {
+    "id": 215,
     "token": "GREATER",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "GREATER",
-    "snippet-body": ["GREATER"],
+    "snippet-body": [
+      "GREATER"
+    ],
     "description": [
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
-    "example": ["rating GREATER 3"],
+    "example": [
+      "rating GREATER 3"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
   },
   {
+    "id": 216,
     "token": "LESS",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "LESS",
-    "snippet-body": ["LESS"],
+    "snippet-body": [
+      "LESS"
+    ],
     "description": [
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
-    "example": ["rating LESS 3"],
+    "example": [
+      "rating LESS 3"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
   },
   {
+    "id": 217,
     "token": "EQUAL",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "EQUAL",
-    "snippet-body": ["EQUAL"],
+    "snippet-body": [
+      "EQUAL"
+    ],
     "description": [
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
-    "example": ["rating EQUAL 3"],
+    "example": [
+      "rating EQUAL 3"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
   },
   {
+    "id": 218,
     "token": "MISSING",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "MISSING",
-    "snippet-body": ["MISSING"],
+    "snippet-body": [
+      "MISSING"
+    ],
     "description": [
       "Returns only items that don't have a metadata field named `field`."
     ],
-    "example": ["genre MISSING"],
+    "example": [
+      "genre MISSING"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Metadata_expressions"
   },
   {
+    "id": 219,
     "token": "PRESENT",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "PRESENT",
-    "snippet-body": ["PRESENT"],
+    "snippet-body": [
+      "PRESENT"
+    ],
     "description": [
       "Returns only items that have a metadata field named `field`."
     ],
-    "example": ["genre PRESENT"],
+    "example": [
+      "genre PRESENT"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Metadata_expressions"
   },
   {
+    "id": 220,
     "token": "BEFORE",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "BEFORE",
-    "snippet-body": ["BEFORE"],
+    "snippet-body": [
+      "BEFORE"
+    ],
     "description": [
       "Returns only items where `time1` value is before `time2`.",
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
-    "example": ["%last_modified% BEFORE 2008"],
+    "example": [
+      "%last_modified% BEFORE 2008"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
   },
   {
+    "id": 221,
     "token": "AFTER",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "AFTER",
-    "snippet-body": ["AFTER"],
+    "snippet-body": [
+      "AFTER"
+    ],
     "description": [
       "Returns only items where `time1` value is after `time2`.",
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
-    "example": ["%last_modified% AFTER 2008"],
+    "example": [
+      "%last_modified% AFTER 2008"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
   },
   {
+    "id": 222,
     "token": "SINCE",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SINCE",
-    "snippet-body": ["SINCE"],
+    "snippet-body": [
+      "SINCE"
+    ],
     "description": [
       "Returns only items where `time1` value is not before `time2`.",
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
-    "example": ["%last_modified% SINCE 2008"],
+    "example": [
+      "%last_modified% SINCE 2008"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
   },
   {
+    "id": 223,
     "token": "DURING",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "DURING",
-    "snippet-body": ["DURING"],
+    "snippet-body": [
+      "DURING"
+    ],
     "description": [
       "Returns only items where `time1` value is a subset of `time2`.",
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
-    "example": ["%last_modified% DURING 2008"],
+    "example": [
+      "%last_modified% DURING 2008"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
   },
   {
+    "id": 224,
     "token": "DURING LAST",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "DURING LAST",
-    "snippet-body": ["DURING"],
+    "snippet-body": [
+      "DURING"
+    ],
     "description": [
       "Returns items where `time` value is contained in the specified period. `time-unit` can be one of SECONDS, MINUTES, HOURS, DAYS, or WEEKS.",
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
-    "example": ["%last_modified% DURING LAST 2 WEEKS"],
+    "example": [
+      "%last_modified% DURING LAST 2 WEEKS"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
   },
   {
+    "id": 225,
     "token": "AND",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "AND",
-    "snippet-body": ["AND"],
-    "description": ["Returns only items where both `expressions` are `true`"],
-    "example": ["artist IS blah AND title HAS blah"],
+    "snippet-body": [
+      "AND"
+    ],
+    "description": [
+      "Returns only items where both `expressions` are `true`"
+    ],
+    "example": [
+      "artist IS blah AND title HAS blah"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
   },
   {
+    "id": 226,
     "token": "OR",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "OR",
-    "snippet-body": ["OR"],
+    "snippet-body": [
+      "OR"
+    ],
     "description": [
       "Returns only items where at least one `expression` is `true`"
     ],
-    "example": ["artist IS blah OR title HAS blah"],
+    "example": [
+      "artist IS blah OR title HAS blah"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
   },
   {
+    "id": 227,
     "token": "NOT",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "NOT",
-    "snippet-body": ["NOT"],
-    "description": ["Returns only items where the `expression` is `false`."],
-    "example": ["NOT last_played AFTER first_played"],
+    "snippet-body": [
+      "NOT"
+    ],
+    "description": [
+      "Returns only items where the `expression` is `false`."
+    ],
+    "example": [
+      "NOT last_played AFTER first_played"
+    ],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
   },
   {
+    "id": 228,
     "token": "SORT BY",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SORT BY",
-    "snippet-body": ["SORT BY"],
-    "description": ["Sort results in ascending order."],
+    "snippet-body": [
+      "SORT BY"
+    ],
+    "description": [
+      "Sort results in ascending order."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
   },
   {
+    "id": 229,
     "token": "SORT ASCENDING BY",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SORT ASCENDING BY",
-    "snippet-body": ["SORT ASCENDING BY"],
-    "description": ["Sort results in ascending order."],
+    "snippet-body": [
+      "SORT ASCENDING BY"
+    ],
+    "description": [
+      "Sort results in ascending order."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
   },
   {
+    "id": 230,
     "token": "SORT DESCENDING BY",
     "realm": "FB2K Query",
     "role": "keyword",
     "sign": "SORT DESCENDING BY",
-    "snippet-body": ["SORT DESCENDING BY"],
-    "description": ["Sort results in descending order."],
+    "snippet-body": [
+      "SORT DESCENDING BY"
+    ],
+    "description": [
+      "Sort results in descending order."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
   },
   {
+    "id": 231,
     "token": "__codec",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__codec%",
-    "snippet-body": ["%__codec%"],
-    "description": ["Codec."],
+    "snippet-body": [
+      "%__codec%"
+    ],
+    "description": [
+      "Codec."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 232,
     "token": "__codec_profile",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__codec_profile%",
-    "snippet-body": ["%__codec_profile%"],
-    "description": ["Codec Profile."],
+    "snippet-body": [
+      "%__codec_profile%"
+    ],
+    "description": [
+      "Codec Profile."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 233,
     "token": "__samplerate",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__samplerate%",
-    "snippet-body": ["%__samplerate%"],
-    "description": ["Sample Rate, in hertz."],
+    "snippet-body": [
+      "%__samplerate%"
+    ],
+    "description": [
+      "Sample Rate, in hertz."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 234,
     "token": "__bitrate",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__bitrate%",
-    "snippet-body": ["%__bitrate%"],
-    "description": ["Bitrate, in kilobits per second."],
+    "snippet-body": [
+      "%__bitrate%"
+    ],
+    "description": [
+      "Bitrate, in kilobits per second."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 235,
     "token": "__tool",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__tool%",
-    "snippet-body": ["%__tool%"],
-    "description": ["Tool used to produce the file, possibly guessed."],
+    "snippet-body": [
+      "%__tool%"
+    ],
+    "description": [
+      "Tool used to produce the file, possibly guessed."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 236,
     "token": "__encoding",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__encoding%",
-    "snippet-body": ["%__encoding%"],
-    "description": ["Encoding lossiness."],
+    "snippet-body": [
+      "%__encoding%"
+    ],
+    "description": [
+      "Encoding lossiness."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 237,
     "token": "__channels",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__channels%",
-    "snippet-body": ["%__channels%"],
-    "description": ["Channels count."],
+    "snippet-body": [
+      "%__channels%"
+    ],
+    "description": [
+      "Channels count."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 238,
     "token": "__bitspersample",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__bitspersample%",
-    "snippet-body": ["%__bitspersample%"],
-    "description": ["Bits Per Sample."],
+    "snippet-body": [
+      "%__bitspersample%"
+    ],
+    "description": [
+      "Bits Per Sample."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 239,
     "token": "__decoded_bitspersample",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__decoded_bitspersample%",
-    "snippet-body": ["%__decoded_bitspersample%"],
-    "description": ["Bits Per Sample after decoding."],
+    "snippet-body": [
+      "%__decoded_bitspersample%"
+    ],
+    "description": [
+      "Bits Per Sample after decoding."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 240,
     "token": "__bitspersample_extra",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__bitspersample_extra%",
-    "snippet-body": ["%__bitspersample_extra%"],
-    "description": ["Format of 32-bit audio data."],
+    "snippet-body": [
+      "%__bitspersample_extra%"
+    ],
+    "description": [
+      "Format of 32-bit audio data."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 241,
     "token": "__tagtype",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__tagtype%",
-    "snippet-body": ["%__tagtype%"],
-    "description": ["Tag Type, comma-separated list of tag formats."],
+    "snippet-body": [
+      "%__tagtype%"
+    ],
+    "description": [
+      "Tag Type, comma-separated list of tag formats."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 242,
     "token": "__cue_embedded",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__cue_embedded%",
-    "snippet-body": ["%__cue_embedded%"],
-    "description": ["Embedded Cuesheet presence."],
+    "snippet-body": [
+      "%__cue_embedded%"
+    ],
+    "description": [
+      "Embedded Cuesheet presence."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 243,
     "token": "__md5",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__md5%",
-    "snippet-body": ["%__md5%"],
-    "description": ["Audio MD5 hash, if container defines it."],
+    "snippet-body": [
+      "%__md5%"
+    ],
+    "description": [
+      "Audio MD5 hash, if container defines it."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 244,
     "token": "__WAVEFORMATEXTENSIBLE_CHANNEL_MASK",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%",
-    "snippet-body": ["%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%"],
-    "description": ["Channel mask, channel layout of the track coded as hex."],
+    "snippet-body": [
+      "%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%"
+    ],
+    "description": [
+      "Channel mask, channel layout of the track coded as hex."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 245,
     "token": "__ENC_DELAY",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__ENC_DELAY%",
-    "snippet-body": ["%__ENC_DELAY%"],
+    "snippet-body": [
+      "%__ENC_DELAY%"
+    ],
     "description": [
       "LAME proprietary MP3 `enc_delay` value for gapless playback."
     ],
@@ -3003,11 +3930,14 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 246,
     "token": "__ENC_PADDING",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__ENC_PADDING%",
-    "snippet-body": ["%__ENC_PADDING%"],
+    "snippet-body": [
+      "%__ENC_PADDING%"
+    ],
     "description": [
       "LAME proprietary MP3 `enc_padding` value for gapless playback."
     ],
@@ -3015,52 +3945,77 @@
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 247,
     "token": "__MP3_ACCURATE_LENGTH",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__MP3_ACCURATE_LENGTH%",
-    "snippet-body": ["%__MP3_ACCURATE_LENGTH%"],
-    "description": ["MP3 duration."],
+    "snippet-body": [
+      "%__MP3_ACCURATE_LENGTH%"
+    ],
+    "description": [
+      "MP3 duration."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 248,
     "token": "__MP3_STEREO_MODE",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__MP3_STEREO_MODE%",
-    "snippet-body": ["%__MP3_STEREO_MODE%"],
-    "description": ["Stereo mode used in MP3 file."],
+    "snippet-body": [
+      "%__MP3_STEREO_MODE%"
+    ],
+    "description": [
+      "Stereo mode used in MP3 file."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 249,
     "token": "__VERSION",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__VERSION%",
-    "snippet-body": ["%__VERSION%"],
-    "description": ["Version of tool."],
+    "snippet-body": [
+      "%__VERSION%"
+    ],
+    "description": [
+      "Version of tool."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 250,
     "token": "__FLAGS",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__FLAGS%",
-    "snippet-body": ["%__FLAGS%"],
-    "description": ["Flags of tool."],
+    "snippet-body": [
+      "%__FLAGS%"
+    ],
+    "description": [
+      "Flags of tool."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   },
   {
+    "id": 251,
     "token": "__channel_mode",
     "realm": "FB2K",
     "role": "tag",
     "sign": "%__channel_mode%",
-    "snippet-body": ["%__channel_mode%"],
-    "description": ["Channel Mode, description of channels."],
+    "snippet-body": [
+      "%__channel_mode%"
+    ],
+    "description": [
+      "Channel Mode, description of channels."
+    ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
   }
