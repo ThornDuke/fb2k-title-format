@@ -73,6 +73,8 @@ $puts(
 )
 ```
 
+To use this function in Foobar2000, you must remove indentation, since all spaces are significant in FB2k title formatting, even those at the beginning of the lines.
+
 This command removes indentation from all selected lines, or from all unselected lines between blank or commented lines.
 
 - Keybinding: `Ctrl+K Ctrl+H` (`Cmd+K Cmd+H` on Mac)
@@ -100,7 +102,7 @@ This is useful when there are commented lines within a script that must be remov
 
 ## Usage
 
-Open a file with the `.f2k` extension to activate syntax highlighting, snippets and commands.
+Open a file with the **`.f2k`** extension to activate all the features of the plugin.
 
 ## Installation
 
