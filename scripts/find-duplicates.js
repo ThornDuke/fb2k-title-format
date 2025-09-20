@@ -7,7 +7,7 @@ function printDuplicates() {
     __dirname,
     '..',
     'data',
-    'duplicatedTokens.json'
+    'duplicatedTokens.jsonc'
   );
 
   let tokens = JSON.parse(fs.readFileSync(tokensPath, 'utf8'));
@@ -21,7 +21,12 @@ function printDuplicates() {
       );
       // If it finds repeated items, it adds them to the `duplicates` array.
       if (repeated.length > 1) {
-        duplicates = duplicates.concat(repeated);
+        duplicates.push({
+          [`${role} ${token}`]: {
+            items: repeated.length,
+            repeated
+          }
+        });
       }
       // Removes the element just checked and any repetitions from
       // the `tokens` array
@@ -31,7 +36,9 @@ function printDuplicates() {
       );
       if (repeated.length > 1) {
         console.log(
-          `found duplicates: ${String(repeated.length).padStart(3, '0')}\t residual tokens: ${String(tokens.length).padStart(3, '0')}`
+          `found duplicates: ${String(repeated.length).padStart(3, '0')}`
+            + `\tresidual tokens: ${String(tokens.length).padStart(3, '0')}`
+            + `\t${role} ${token}`
         );
       }
     }
@@ -43,7 +50,7 @@ function printDuplicates() {
       'utf8'
     );
     console.log(
-      `${duplicates.length} duplicates added successfully in "duplicatedTokens.json".`
+      `${duplicates.length} duplicate blocks added successfully in "duplicatedTokens.json".`
     );
   } catch (error) {
     console.error('Error processing duplicates:', error);

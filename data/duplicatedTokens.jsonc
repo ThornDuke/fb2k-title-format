@@ -1,0 +1,409 @@
+// [x] found duplicates: 002	 residual tokens: 236	 function if
+// [x] found duplicates: 002	 residual tokens: 227	 function abbr
+// [x] found duplicates: 002	 residual tokens: 217	 function directory
+// [x] found duplicates: 002	 residual tokens: 212	 function fix_eol
+// [x] found duplicates: 002	 residual tokens: 201	 function pad
+// [x] found duplicates: 002	 residual tokens: 199	 function pad_right
+// [x] found duplicates: 002	 residual tokens: 197	 function padcut
+// [x] found duplicates: 002	 residual tokens: 195	 function padcut_right
+// [x] found duplicates: 002	 residual tokens: 180	 function stripprefix
+// [x] found duplicates: 002	 residual tokens: 177	 function swapprefix
+// [x] found duplicates: 002	 residual tokens: 174	 function tab
+// [x] found duplicates: 002	 residual tokens: 171	 function meta
+// [x] found duplicates: 002	 residual tokens: 169	 function meta_sep
+// [ ] found duplicates: 002	 residual tokens: 165	 tag album artist
+// [ ] found duplicates: 002	 residual tokens: 163	 tag album
+// [ ] found duplicates: 002	 residual tokens: 161	 tag artist
+// [ ] found duplicates: 002	 residual tokens: 155	 tag track artist
+// [ ] found duplicates: 002	 residual tokens: 153	 tag title
+// [ ] found duplicates: 002	 residual tokens: 142	 tag filesize
+// [ ] found duplicates: 002	 residual tokens: 139	 tag length
+// [ ] found duplicates: 003	 residual tokens: 093	 function hsl
+// [ ] found duplicates: 003	 residual tokens: 090	 function rgb
+// [ ] found duplicates: 002	 residual tokens: 070	 function set_style
+[
+  {
+    "tag album artist": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 85,
+          "token": "album artist",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%album artist%",
+          "snippet-body": ["%album artist%"],
+          "description": [
+            "Name of the artist of the album specified track belongs to.",
+            "Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`.",
+            "The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+        },
+        {
+          "id": 156,
+          "token": "album artist",
+          "realm": "FB2K Album List",
+          "role": "tag",
+          "sign": "%<album artist>%",
+          "snippet-body": ["%<album artist>%"],
+          "description": [
+            "Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`. The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+        }
+      ]
+    }
+  },
+  {
+    "tag album": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 86,
+          "token": "album",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%album%",
+          "snippet-body": ["%album%"],
+          "description": [
+            "Name of the album specified track belongs to.",
+            "Checks following metadata fields, in this order: `album`, `venue`."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+        },
+        {
+          "id": 157,
+          "token": "album",
+          "realm": "FB2K Album List",
+          "role": "tag",
+          "sign": "%<album>%",
+          "snippet-body": ["%<album>%"],
+          "description": [
+            "Name of the album specified track belongs to. Checks following metadata fields, in this order: `album`, `venue`."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+        }
+      ]
+    }
+  },
+  {
+    "tag artist": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 87,
+          "token": "artist",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%artist%",
+          "snippet-body": ["%artist%"],
+          "description": [
+            "Name of the artist of the track.",
+            "Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`.",
+            "For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+        },
+        {
+          "id": 158,
+          "token": "artist",
+          "realm": "FB2K Album List",
+          "role": "tag",
+          "sign": "%<artist>%",
+          "snippet-body": ["%<artist>%"],
+          "description": [
+            "Name of the artist of the track. Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`. For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+        }
+      ]
+    }
+  },
+  {
+    "tag track artist": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 92,
+          "token": "track artist",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%track artist%",
+          "snippet-body": ["%track artist%"],
+          "description": [
+            "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
+            "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+        },
+        {
+          "id": 159,
+          "token": "track artist",
+          "realm": "FB2K Album List",
+          "role": "tag",
+          "sign": "%<track artist>%",
+          "snippet-body": ["%<track artist>%"],
+          "description": [
+            "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
+            "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+        }
+      ]
+    }
+  },
+  {
+    "tag title": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 93,
+          "token": "title",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%title%",
+          "snippet-body": ["%title%"],
+          "description": [
+            "Title of the track. If `title` metadata field is missing, file name is used instead.",
+            "For a SHOUTcast stream which contains metadata, it is the StreamTitle after the first '-' character."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%title%"
+        },
+        {
+          "id": 197,
+          "token": "title",
+          "realm": "CUI",
+          "role": "tag",
+          "sign": "%title%",
+          "snippet-body": ["%title%"],
+          "description": [
+            "The title of the playlist.",
+            "This field is available in Playlist Switcher scripts."
+          ],
+          "example": [],
+          "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+        }
+      ]
+    }
+  },
+  {
+    "tag filesize": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 103,
+          "token": "filesize",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%filesize%",
+          "snippet-body": ["%filesize%"],
+          "description": [
+            "The exact file size in bytes.",
+            "Old version: `%_filesize%`."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize%"
+        },
+        {
+          "id": 202,
+          "token": "filesize",
+          "realm": "CUI",
+          "role": "tag",
+          "sign": "%filesize%",
+          "snippet-body": ["%filesize%"],
+          "description": [
+            "The sum of the known file sizes of the items in the playlist.",
+            "This field is available in Playlist Switcher scripts."
+          ],
+          "example": [],
+          "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+        }
+      ]
+    }
+  },
+  {
+    "tag length": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 105,
+          "token": "length",
+          "realm": "FB2K",
+          "role": "tag",
+          "sign": "%length%",
+          "snippet-body": ["%length%"],
+          "description": [
+            "The length of the track formatted as hours, minutes, and seconds, rounded to the nearest second.",
+            "Old version: `%_time_total%`."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length%"
+        },
+        {
+          "id": 201,
+          "token": "length",
+          "realm": "CUI",
+          "role": "tag",
+          "sign": "%length%",
+          "snippet-body": ["%length%"],
+          "description": [
+            "The total length of the items in the playlist.",
+            "This field is available in Playlist Switcher scripts."
+          ],
+          "example": [],
+          "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+        }
+      ]
+    }
+  },
+  {
+    "function hsl": {
+      "items": 3,
+      "repeated": [
+        {
+          "id": 149,
+          "token": "hsl",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$hsl()",
+          "snippet-body": ["\\$hsl()"],
+          "description": ["Resets the text color to the default color."],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
+        },
+        {
+          "id": 150,
+          "token": "hsl",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$hsl(h,s,l)",
+          "snippet-body": ["\\$hsl(${1:num h},${2:num s},${3:num l})"],
+          "description": [
+            "Sets the color for text in the HSL color space.",
+            "`h1`, `s1` and `l1` are the hue, saturation, and lightness of the color for unselected text.",
+            "`h2`, `s2` and `l2` are the hue, saturation, and lightness of the color for selected text."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h,s,l)"
+        },
+        {
+          "id": 151,
+          "token": "hsl",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$hsl(h1,s1,l1,h2,s2,l2)",
+          "snippet-body": [
+            "\\$hsl(${1:num h1},${2:num s1},${3:num l1},${4:num h2},${5:num s2},${6:num l2})"
+          ],
+          "description": [
+            "Sets the color for text in the HSL color space.",
+            "h1, s1 and l1 are the hue, saturation, and lightness of the color for unselected text.",
+            "h2, s2 and l2 are the hue, saturation, and lightness of the color for selected text."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h1,s1,l1,h2,s2,l2)"
+        }
+      ]
+    }
+  },
+  {
+    "function rgb": {
+      "items": 3,
+      "repeated": [
+        {
+          "id": 152,
+          "token": "rgb",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$rgb()",
+          "snippet-body": ["\\$rgb()"],
+          "description": ["Resets the text color to the default color."],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
+        },
+        {
+          "id": 153,
+          "token": "rgb",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$rgb(r,g,b)",
+          "snippet-body": ["\\$rgb(${1:num r},${2:num g},${3:num b})"],
+          "description": [
+            "Sets the color for text.",
+            "`r`, `g` and `b` are the red, green and blue component of the color for unselected text.",
+            "The color for selected text is set to the inverse color."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r,g,b)"
+        },
+        {
+          "id": 154,
+          "token": "rgb",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$rgb(r1,g1,b1,r2,g2,b2)",
+          "snippet-body": [
+            "\\$rgb(${1:num r1},${2:num g1},${3:num b1},${4:num r2},${5:num g2},${6:num b2})"
+          ],
+          "description": [
+            "Sets the color for text.",
+            "`r1`, `g1` and `b1` are the red, green and blue component of the color for unselected text.",
+            "`r2`, `g2` and `b2` are the red, green and blue component of the color for selected text."
+          ],
+          "example": [],
+          "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r1,g1,b1,r2,g2,b2)"
+        }
+      ]
+    }
+  },
+  {
+    "function set_style": {
+      "items": 2,
+      "repeated": [
+        {
+          "id": 177,
+          "token": "set_style",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$set_style(...)",
+          "snippet-body": [
+            "\\$set_style(${1:text},${2:text colour},${3:selected item text colour})"
+          ],
+          "description": [
+            "Is used to set colours.",
+            "Colours are specified using the `$rgb()` function."
+          ],
+          "example": [],
+          "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+        },
+        {
+          "id": 178,
+          "token": "set_style",
+          "realm": "CUI",
+          "role": "function",
+          "sign": "$set_style(...)",
+          "snippet-body": [
+            "\\$set_style(${1:text},${2:text colour},${3:selected item text colour},${4:selected item text colour when window is not focused})"
+          ],
+          "description": [
+            "Is used to set colours.",
+            "Colours are specified using the `$rgb()` function.",
+            "The fourth parameter sets the text colour for selected items when the window is not focuseds."
+          ],
+          "example": [],
+          "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+        }
+      ]
+    }
+  }
+]
