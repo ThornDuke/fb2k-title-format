@@ -1176,7 +1176,7 @@
     "sign": "%genre%",
     "snippet-body": ["%genre%"],
     "description": [
-      "Genre of the album specified track belongs to, using “genre” metadata field. "
+      "Genre of the album specified track belongs to, using “genre” metadata field."
     ],
     "example": [],
     "ref-link": ""
@@ -2134,7 +2134,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -2150,7 +2151,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -2167,7 +2169,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -2184,7 +2187,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -3539,5 +3543,21 @@
     "ref-link": [
       "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
     ]
-  }
+  },
+  {
+    "id": 252,
+    "token": "genre",
+    "realm": "FB2K Album List",
+    "role": "tag",
+    "sign": "%<genre>%",
+    "snippet-body": ["%<genre>%"],
+    "description": [
+      "Genre of the album specified track belongs to, using “genre” metadata field."
+    ],
+    "example": [],
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Track_info_fields_and_functions"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
+    ]
+  },
 ]
