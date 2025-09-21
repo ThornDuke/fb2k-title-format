@@ -69,10 +69,14 @@ function popupExample(token) {
 }
 
 function popupFooter(token) {
-  if (token['ref-link'].length > 0) {
-    return `\n\nSee [${token.realm} reference](${token['ref-link']}) for more information.`;
-  }
-  return '';
+  let mdStr = '';
+  if (token['ref-link'].length == 1) {
+    mdStr = `\n\nSee [${token.realm} reference](${token['ref-link'][0]}) for more information.`;
+  } else if (token['ref-link'].length == 2) {
+    mdStr = `\n\nSee [${token.realm} reference](${token['ref-link'][0]}) for more information.\n\nSee [Album list reference](${token['ref-link'][1]}) for the branch-remapping version.`;
+  } else mdStr = '';
+
+  return mdStr;
 }
 
 /**
