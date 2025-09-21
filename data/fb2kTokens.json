@@ -1119,7 +1119,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -1135,7 +1136,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -1152,7 +1154,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -1179,7 +1182,10 @@
       "Genre of the album specified track belongs to, using “genre” metadata field."
     ],
     "example": [],
-    "ref-link": ""
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Track_info_fields_and_functions",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
+    ]
   },
   {
     "id": 90,
@@ -1224,7 +1230,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%",
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
   },
   {
@@ -3556,8 +3563,8 @@
     ],
     "example": [],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Track_info_fields_and_functions"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Track_info_fields_and_functions",
       "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
     ]
-  },
+  }
 ]

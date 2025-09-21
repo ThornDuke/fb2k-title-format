@@ -21,6 +21,7 @@ Updated with Foobar2000 v2.25.1 and ColumnsUI v3.1.0.
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [Disclaimer](#disclaimer)
+
 </details>
 
 ## Features
