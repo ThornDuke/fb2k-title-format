@@ -13,7 +13,7 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
-## [Unreleased]
+## [1.5.0] - 2025-09-21
 
 ### Added
 
@@ -29,6 +29,11 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 ### Removed
 
 - autocompletion, which conflicted with the snippets
+
+### Fixed
+
+- removed duplicated tokens in "fb2kTokens.json"
+- fixed a problem with snippets that duplicated previously typed characters
 
 ## [1.4.18] - 2025-09-13
 
