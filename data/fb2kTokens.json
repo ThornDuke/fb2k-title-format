@@ -1807,86 +1807,34 @@
     "token": "hsl",
     "realm": "CUI",
     "role": "function",
-    "sign": "$hsl()",
-    "snippet-body": ["\\$hsl()"],
-    "description": ["Resets the text color to the default color."],
-    "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
-  },
-  {
-    "id": 150,
-    "token": "hsl",
-    "realm": "CUI",
-    "role": "function",
-    "sign": "$hsl(h,s,l)",
-    "snippet-body": ["\\$hsl(${1:num h},${2:num s},${3:num l})"],
-    "description": [
-      "Sets the color for text in the HSL color space.",
-      "`h1`, `s1` and `l1` are the hue, saturation, and lightness of the color for unselected text.",
-      "`h2`, `s2` and `l2` are the hue, saturation, and lightness of the color for selected text."
-    ],
-    "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h,s,l)"
-  },
-  {
-    "id": 151,
-    "token": "hsl",
-    "realm": "CUI",
-    "role": "function",
-    "sign": "$hsl(h1,s1,l1,h2,s2,l2)",
+    "sign": "$hsl([h1,s1,l1[,h2,s2,l2]])",
     "snippet-body": [
       "\\$hsl(${1:num h1},${2:num s1},${3:num l1},${4:num h2},${5:num s2},${6:num l2})"
     ],
     "description": [
-      "Sets the color for text in the HSL color space.",
+      "If used without parameters, resets the text color to the default color, otherwise sets the color according to the specified parameters.",
       "h1, s1 and l1 are the hue, saturation, and lightness of the color for unselected text.",
       "h2, s2 and l2 are the hue, saturation, and lightness of the color for selected text."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl(h1,s1,l1,h2,s2,l2)"
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
   },
   {
     "id": 152,
     "token": "rgb",
     "realm": "CUI",
     "role": "function",
-    "sign": "$rgb()",
-    "snippet-body": ["\\$rgb()"],
-    "description": ["Resets the text color to the default color."],
-    "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
-  },
-  {
-    "id": 153,
-    "token": "rgb",
-    "realm": "CUI",
-    "role": "function",
-    "sign": "$rgb(r,g,b)",
-    "snippet-body": ["\\$rgb(${1:num r},${2:num g},${3:num b})"],
-    "description": [
-      "Sets the color for text.",
-      "`r`, `g` and `b` are the red, green and blue component of the color for unselected text.",
-      "The color for selected text is set to the inverse color."
-    ],
-    "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r,g,b)"
-  },
-  {
-    "id": 154,
-    "token": "rgb",
-    "realm": "CUI",
-    "role": "function",
-    "sign": "$rgb(r1,g1,b1,r2,g2,b2)",
+    "sign": "$rgb([r1,g1,b1[,r2,g2,b2]])",
     "snippet-body": [
       "\\$rgb(${1:num r1},${2:num g1},${3:num b1},${4:num r2},${5:num g2},${6:num b2})"
     ],
     "description": [
-      "Sets the color for text.",
+      "If used without parameters, resets the text color to the default color, otherwise sets the color according to the specified parameters.",
       "`r1`, `g1` and `b1` are the red, green and blue component of the color for unselected text.",
       "`r2`, `g2` and `b2` are the red, green and blue component of the color for selected text."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb(r1,g1,b1,r2,g2,b2)"
+    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
   },
   {
     "id": 155,
@@ -1912,7 +1860,9 @@
     "sign": "%<album artist>%",
     "snippet-body": ["%<album artist>%"],
     "description": [
-      "Name of the artist of the album specified track belongs to. Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`. The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
+      "Name of the artist of the album specified track belongs to.",
+      "Checks following metadata fields, in this order: `album artist`, `artist`, `composer`, `performer`.",
+      "The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
     ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
@@ -1925,7 +1875,8 @@
     "sign": "%<album>%",
     "snippet-body": ["%<album>%"],
     "description": [
-      "Name of the album specified track belongs to. Checks following metadata fields, in this order: `album`, `venue`."
+      "Name of the album specified track belongs to.",
+      "Checks following metadata fields, in this order: `album`, `venue`."
     ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
@@ -1938,7 +1889,9 @@
     "sign": "%<artist>%",
     "snippet-body": ["%<artist>%"],
     "description": [
-      "Name of the artist of the track. Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`. For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
+      "Name of the artist of the track.",
+      "Checks following metadata fields, in this order: `artist`, `album artist`, `composer`, `performer`.",
+      "For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
     ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
@@ -1952,7 +1905,8 @@
     "snippet-body": ["%<track artist>%"],
     "description": [
       "Name of the artist of the track; present only if `%album artist%` is different than `%artist%` for specific track.",
-      "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
+      "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`.",
+      "In this case, the last part will be displayed only when track-specific artist info is present."
     ],
     "example": [],
     "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
@@ -2183,23 +2137,7 @@
     "role": "function",
     "sign": "$set_style(...)",
     "snippet-body": [
-      "\\$set_style(${1:text},${2:text colour},${3:selected item text colour})"
-    ],
-    "description": [
-      "Is used to set colours.",
-      "Colours are specified using the `$rgb()` function."
-    ],
-    "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
-  },
-  {
-    "id": 178,
-    "token": "set_style",
-    "realm": "CUI",
-    "role": "function",
-    "sign": "$set_style(...)",
-    "snippet-body": [
-      "\\$set_style(${1:text},${2:text colour},${3:selected item text colour},${4:selected item text colour when window is not focused})"
+      "\\$set_style(${1:text},${2:text colour},${3:selected item text colour}${4:[,selected item text colour when window is not focused]})"
     ],
     "description": [
       "Is used to set colours.",
