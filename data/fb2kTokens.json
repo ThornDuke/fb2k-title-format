@@ -11,7 +11,9 @@
       "Can be used with an arbitrary number of arguments. `$add(a,b,...)` is the same as `$add($add(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$add(a,b,_...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$add(a,b,_...)"
+    ]
   },
   {
     "id": 2,
@@ -25,7 +27,9 @@
       "Can be used with an arbitrary number of arguments. `$div(a,b,...)` is the same as `$div($div(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$div(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$div(a,b)"
+    ]
   },
   {
     "id": 3,
@@ -38,7 +42,9 @@
       "Returns true, if `a` is greater than `b`, otherwise false."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$greater(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$greater(a,b)"
+    ]
   },
   {
     "id": 4,
@@ -52,7 +58,9 @@
       "Can be used with an arbitrary number of arguments. `$max(a,b,...)` is the same as `$max($max(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$max(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$max(a,b)"
+    ]
   },
   {
     "id": 5,
@@ -66,7 +74,9 @@
       "Can be used with an arbitrary number of arguments. `$min(a,b,...)` is the same as `$min($min(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$min(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$min(a,b)"
+    ]
   },
   {
     "id": 6,
@@ -81,7 +91,9 @@
       "Can be used with an arbitrary number of arguments. `$mod(a,b,...)` is the same as `$mod($mod(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$mod(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$mod(a,b)"
+    ]
   },
   {
     "id": 7,
@@ -95,7 +107,9 @@
       "Can be used with an arbitrary number of arguments. `$mul(a,b,...)` is the same as `$mul($mul(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$mul(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$mul(a,b)"
+    ]
   },
   {
     "id": 8,
@@ -109,7 +123,9 @@
       "The result is rounded to the nearest integer."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$muldiv(a,b,c)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$muldiv(a,b,c)"
+    ]
   },
   {
     "id": 9,
@@ -123,7 +139,9 @@
       "Available only in sort-related contexts, such as the `.` menu command."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rand()"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rand()"
+    ]
   },
   {
     "id": 10,
@@ -137,7 +155,9 @@
       "Can be used with an arbitrary number of arguments. `$sub(a,b,...)` is the same as `$sub($sub(a,b),...)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$sub(a,b)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$sub(a,b)"
+    ]
   },
   {
     "id": 11,
@@ -151,7 +171,9 @@
       "Returns `true`, if and only if all `expr` arguments evaluate to `true`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$and(expr,_...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$and(expr,_...)"
+    ]
   },
   {
     "id": 12,
@@ -165,7 +187,9 @@
       "Returns `true`, if at least one expression evaluate to `true`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$or(expr,_...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$or(expr,_...)"
+    ]
   },
   {
     "id": 13,
@@ -179,7 +203,9 @@
       "Returns the logical opposite of `expr`: `false`, if `expr` is `true` and `true` if `expr` is `false`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$not(expr)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$not(expr)"
+    ]
   },
   {
     "id": 14,
@@ -192,7 +218,9 @@
       "If `X` contains at least one present field, `Y` is executed/displayed; if `Z` is provided, it is executed/displayed when `X` contains no present fields."
     ],
     "example": ["$if(%artist%,%artist%,unknown artist)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if(cond,then)"
+    ]
   },
   {
     "id": 15,
@@ -207,7 +235,9 @@
       "Special case: `$xor(expr1,expr2)` returns `true`, if `EXPR1` or `EXPR2` is `true`. If both expressions are `true`, returns `false`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$xor(expr,...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$xor(expr,...)"
+    ]
   },
   {
     "id": 17,
@@ -221,7 +251,9 @@
       "Same as `$if(X,X,Y)`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if2(expr,else)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if2(expr,else)"
+    ]
   },
   {
     "id": 18,
@@ -234,7 +266,9 @@
       "Returns the first of parameters that contains at least one present field."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if3(a1,a2,...,aN,else)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$if3(a1,a2,...,aN,else)"
+    ]
   },
   {
     "id": 19,
@@ -249,7 +283,9 @@
       "Compares the integer numbers `int1` and `int2`, if `int1` is equal to `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifequal(int1,int2,then,else)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifequal(int1,int2,then,else)"
+    ]
   },
   {
     "id": 20,
@@ -264,7 +300,9 @@
       "Compares the integer numbers `int1` and `int2`, if `int1` is greater than `int2`, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifgreater(int1,int2,then,else)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ifgreater(int1,int2,then,else)"
+    ]
   },
   {
     "id": 21,
@@ -279,7 +317,9 @@
       "Compares the length of the string `str` to the number `n`, if `str` is longer than `n` characters, the `then` part is evaluated and its value returned. Otherwise the `else` part is evaluated and its value returned."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$iflonger(str,n,then,else)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$iflonger(str,n,then,else)"
+    ]
   },
   {
     "id": 22,
@@ -290,7 +330,9 @@
     "snippet-body": ["\\$select(${1:num N},${2:A},${3:B}${4:[,...]})"],
     "description": ["Returns `N`-th of `A`,`B`,`C`… parameters."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#select(n,a1,...,aN)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#select(n,a1,...,aN)"
+    ]
   },
   {
     "id": 23,
@@ -304,7 +346,9 @@
       "Words which begin with an alphanumeric character are shortened to the first character. Spaces and parentheses are stripped."
     ],
     "example": ["$abbr(The Fool Band) → TFB"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$abbr(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$abbr(str)"
+    ]
   },
   {
     "id": 25,
@@ -319,7 +363,9 @@
       "Useful for mass-renaming files to ensure compatibility with non-unicode-capable software."
     ],
     "example": ["$ansi(%title%), $ansi(%filename%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ansi(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ansi(str)"
+    ]
   },
   {
     "id": 26,
@@ -333,7 +379,9 @@
       "Any characters that are not present in ASCII will be removed / replaced."
     ],
     "example": ["$ascii(%title%), $ascii(%filename%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ascii(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ascii(str)"
+    ]
   },
   {
     "id": 27,
@@ -346,7 +394,9 @@
       "Converts first letter in every word of string `str` to uppercase, and all other letters to lowercase."
     ],
     "example": ["$caps(%title%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps(str)"
+    ]
   },
   {
     "id": 28,
@@ -359,7 +409,9 @@
       "Converts first letter in every word of string `str` to uppercase, and leaves all other letters as they are."
     ],
     "example": ["$caps2(%title%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps2(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$caps2(str)"
+    ]
   },
   {
     "id": 29,
@@ -373,7 +425,9 @@
       "You can search for characters and find the matching decimal number on (this site)[http://www.fileformat.info/info/unicode/char/search.htm]."
     ],
     "example": ["$char(9674)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$char(nbr)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$char(nbr)"
+    ]
   },
   {
     "id": 30,
@@ -387,7 +441,9 @@
       "Intended for use in coloring scripts."
     ],
     "example": ["$rgb($mod($crc32(%album%),256),128,128)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crc32(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crc32(str)"
+    ]
   },
   {
     "id": 31,
@@ -401,7 +457,9 @@
       "Can be used to generate multiple lines in the output, for example for the tooltip of the system notification area (_systray_) icon."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crlf()"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$crlf()"
+    ]
   },
   {
     "id": 32,
@@ -416,7 +474,9 @@
       "Negative numbers produce the entire string."
     ],
     "example": ["$cut('abc123',3) → abc"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$cut(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$cut(str,len)"
+    ]
   },
   {
     "id": 33,
@@ -430,7 +490,9 @@
       "ie given path as 'D:\\music\\jazz\\filename.mp3', this will output 'jazz') from the file path."
     ],
     "example": ["$directory(%path%,2)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory(path)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory(path)"
+    ]
   },
   {
     "id": 35,
@@ -444,7 +506,9 @@
       "ie. given path as 'D:\\music\\jazz\\filename.mp3', this will output 'D:\\music\\jazz'"
     ],
     "example": ["$directory_path(%path%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory_path(path)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$directory_path(path)"
+    ]
   },
   {
     "id": 36,
@@ -457,7 +521,9 @@
       "Extracts file extension from string `path`; a file name or full path."
     ],
     "example": ["$ext(%path%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ext(path)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$ext(path)"
+    ]
   },
   {
     "id": 37,
@@ -468,7 +534,9 @@
     "snippet-body": ["\\$filename(${1:path})"],
     "description": ["Extracts file name from full `path`."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$filename(path)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$filename(path)"
+    ]
   },
   {
     "id": 38,
@@ -481,7 +549,9 @@
       "If `str` contains an end-of-line marker (`CR-LF`), the end-of-line marker and all text to the right of it is replaced by `(...)` or by `indicator` if it is provided. Otherwise `str` is returned unaltered."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$fix_eol(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$fix_eol(str)"
+    ]
   },
   {
     "id": 40,
@@ -495,7 +565,9 @@
       "Pads with zeros from the left if necessary."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hex(int,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hex(int,len)"
+    ]
   },
   {
     "id": 41,
@@ -506,7 +578,9 @@
     "snippet-body": ["\\$insert(${1:str},${2:string insert},${3:num n})"],
     "description": ["Inserts `insert` into `str` after `n` characters."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$insert(str,insert,n)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$insert(str,insert,n)"
+    ]
   },
   {
     "id": 42,
@@ -521,7 +595,9 @@
       "Negative numbers produce the entire string."
     ],
     "example": ["$left('abc123',3) → abc"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$left(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$left(str,len)"
+    ]
   },
   {
     "id": 43,
@@ -532,7 +608,9 @@
     "snippet-body": ["\\$len(${1:str})"],
     "description": ["Returns length of string `str` in characters."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len(str)"
+    ]
   },
   {
     "id": 44,
@@ -545,7 +623,9 @@
       "Returns length of string `str` in characters, respecting double-width character rules (double-width characters will be counted as two)."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len2(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$len2(str)"
+    ]
   },
   {
     "id": 45,
@@ -558,7 +638,9 @@
       "Returns `true`, if string `str1` is longer than string `str2`, `false` otherwise."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longer(str1,str2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longer(str1,str2)"
+    ]
   },
   {
     "id": 46,
@@ -569,7 +651,9 @@
     "snippet-body": ["\\$lower(${1:str})"],
     "description": ["Converts string `str` to lowercase."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$lower(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$lower(str)"
+    ]
   },
   {
     "id": 47,
@@ -585,7 +669,9 @@
       "Can be used with an arbitrary number of strings."
     ],
     "example": ["$longest(%title%,%filename%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longest(arg,...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$longest(arg,...)"
+    ]
   },
   {
     "id": 48,
@@ -601,7 +687,9 @@
       "If `nbr` is not numeric, it is treated as zero."
     ],
     "example": ["$num(%tracknumber%,3) → 005"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$num(nbr,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$num(nbr,len)"
+    ]
   },
   {
     "id": 49,
@@ -616,7 +704,9 @@
       "Otherwise the function returns `str` unchanged."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad(str,len)"
+    ]
   },
   {
     "id": 50,
@@ -631,7 +721,9 @@
       "Otherwise the function returns `str` unchanged."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad_right(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$pad_right(str,len)"
+    ]
   },
   {
     "id": 53,
@@ -645,7 +737,9 @@
       "Otherwise adds spaces (or `char` if it is provided) to the right of `str` to make the result `len` characters long."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut(str,len)"
+    ]
   },
   {
     "id": 55,
@@ -659,7 +753,9 @@
       "Otherwise adds spaces (or `char` if it is provided) to the left of str to make the result len characters long."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut_right(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$padcut_right(str,len)"
+    ]
   },
   {
     "id": 57,
@@ -674,7 +770,9 @@
       "Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress(pos,range,len,char1,char2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress(pos,range,len,char1,char2)"
+    ]
   },
   {
     "id": 58,
@@ -689,7 +787,9 @@
       "Creates a progress bar: `pos` contains position, `range` contains range, `len` progress bar length in characters, `char1` and `char2` are characters to build progress bar with. Produces different appearance than `$progress`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress2(pos,range,len,char1,char2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$progress2(pos,range,len,char1,char2)"
+    ]
   },
   {
     "id": 59,
@@ -703,7 +803,9 @@
       "Note that `expr` is evaluated once before its value is used, so `$repeat` cannot be used for loops."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$repeat(expr,count)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$repeat(expr,count)"
+    ]
   },
   {
     "id": 60,
@@ -720,7 +822,9 @@
       "Note that `$replace(str,search1,replace1,search2,replace2)` is generally not the same as `$replace($replace(str,search1,replace1),search2,replace2)`."
     ],
     "example": ["$replace(ab,a,b,b,c) → bc"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$replace(str,search,replace)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$replace(str,search,replace)"
+    ]
   },
   {
     "id": 61,
@@ -733,7 +837,9 @@
       "Returns the first `len` characters from the right of string `str`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$right(str,len)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$right(str,len)"
+    ]
   },
   {
     "id": 62,
@@ -744,7 +850,9 @@
     "snippet-body": ["\\$roman(${1:int})"],
     "description": ["Formats the integer number `int` in roman notation."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$roman(int)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$roman(int)"
+    ]
   },
   {
     "id": 63,
@@ -757,7 +865,9 @@
       "Performs [ROT13](http://en.wikipedia.org/wiki/ROT13) transformation to given string."
     ],
     "example": ["$rot13('foobar2000') → sbbone2000"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rot13(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rot13(str)"
+    ]
   },
   {
     "id": 64,
@@ -771,7 +881,9 @@
       "Can be used with an arbitrary number of strings."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$shortest(str,...strN)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$shortest(str,...strN)"
+    ]
   },
   {
     "id": 65,
@@ -784,7 +896,9 @@
       "Returns position of first occurrence of character `char` in string `str`."
     ],
     "example": ["$strchr(abca,a) → 1"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strchr(str,char)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strchr(str,char)"
+    ]
   },
   {
     "id": 66,
@@ -797,7 +911,9 @@
       "Returns positions of last occurrence of character `char` in string `str`."
     ],
     "example": ["$strrchr(abca,a) → 4"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strrchr(str,char)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strrchr(str,char)"
+    ]
   },
   {
     "id": 67,
@@ -810,7 +926,9 @@
       "Returns position of first occurrence of string `str2` in string `str1`. Function is case-sensitive."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strstr(str1,str2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strstr(str1,str2)"
+    ]
   },
   {
     "id": 68,
@@ -823,7 +941,9 @@
       "Performs a case-sensitive comparison of the strings `str1` and `str2`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strcmp(str1,str2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$strcmp(str1,str2)"
+    ]
   },
   {
     "id": 69,
@@ -836,7 +956,9 @@
       "Performs a case-insensitive comparison of the strings `str1` and `str2`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stricmp(str1,str2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stricmp(str1,str2)"
+    ]
   },
   {
     "id": 70,
@@ -849,7 +971,9 @@
       "Removes 'A' and 'The' prefixes (or the specified prefixes if the y are provided) from string `str`."
     ],
     "example": ["$stripprefix(%artist%) ⇒ 'The Prodigy' becomes 'Prodigy'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str)"
+    ]
   },
   {
     "id": 72,
@@ -862,7 +986,9 @@
       "Returns substring of string `str`, starting from `FROM`-th character and ending at `TO`-th character."
     ],
     "example": ["$substr(blah,1,2) ⇒ bl"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$substr(str,from,to)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$substr(str,from,to)"
+    ]
   },
   {
     "id": 73,
@@ -875,7 +1001,9 @@
       "Moves 'A' and 'The' prefixes (or the specified prefixes if the are provided) to the end of string `str`."
     ],
     "example": ["$swapprefix(%artist%) ⇒ 'The Prodigy' becomes 'Prodigy, The'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$swapprefix(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$swapprefix(str)"
+    ]
   },
   {
     "id": 75,
@@ -886,7 +1014,9 @@
     "snippet-body": ["\\$trim(${1:str})"],
     "description": ["Removes leading and trailing spaces from string `str`."],
     "example": ["$trim(%title%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
+    ]
   },
   {
     "id": 76,
@@ -899,7 +1029,9 @@
       "Inserts one (or `count` if it is provided) tabulator character."
     ],
     "example": ["%title%$tab(2)%length%"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$tab()"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$tab()"
+    ]
   },
   {
     "id": 78,
@@ -910,7 +1042,9 @@
     "snippet-body": ["\\$upper(${1:str})"],
     "description": ["Converts string `str` to uppercase."],
     "example": ["$upper(%title%)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$upper(str)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$upper(str)"
+    ]
   },
   {
     "id": 79,
@@ -924,7 +1058,9 @@
       "If multiple values of that tag exist, they are concatenated with ', ' as separator."
     ],
     "example": ["$meta(artist,2) → 'She'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta(name)"
+    ]
   },
   {
     "id": 81,
@@ -939,7 +1075,9 @@
       "If `lastsep` is provided the last two values are concatenated with `lastsep`."
     ],
     "example": ["$meta_sep(artist,', ',', and ') → 'He, She, and They'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_sep(name,sep)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_sep(name,sep)"
+    ]
   },
   {
     "id": 83,
@@ -950,7 +1088,9 @@
     "snippet-body": ["\\$meta_test(${1:tag}${2:[,...]})"],
     "description": ["Returns 1, if all given tags exist, undefined otherwise."],
     "example": ["$meta_test(artist,title) → true"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
+    ]
   },
   {
     "id": 84,
@@ -961,7 +1101,9 @@
     "snippet-body": ["\\$meta_num(${1:name})"],
     "description": ["Returns the number of values for the tag called `name`."],
     "example": ["$meta_num(artist) → 3"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$meta_test(...)"
+    ]
   },
   {
     "id": 85,
@@ -976,7 +1118,9 @@
       "The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+    ]
   },
   {
     "id": 86,
@@ -990,7 +1134,9 @@
       "Checks following metadata fields, in this order: `album`, `venue`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+    ]
   },
   {
     "id": 87,
@@ -1005,7 +1151,9 @@
       "For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+    ]
   },
   {
     "id": 88,
@@ -1044,7 +1192,9 @@
       "Index of disc specified track belongs to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%discnumber%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%discnumber%"
+    ]
   },
   {
     "id": 91,
@@ -1057,7 +1207,9 @@
       "Index of total discs specified tracks belong to, within the album. Available only when `discnumber`/`disc` field is present in track’s metadata."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaldiscs%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaldiscs%"
+    ]
   },
   {
     "id": 92,
@@ -1071,7 +1223,9 @@
       "Intended for use together with `%album artist%`, to indicate track-specific artist info, e.g. `%album artist% - %title%[ '//' %track artist%]`. In this case, the last part will be displayed only when track-specific artist info is present."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+    ]
   },
   {
     "id": 93,
@@ -1085,7 +1239,9 @@
       "For a SHOUTcast stream which contains metadata, it is the StreamTitle after the first '-' character."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%title%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%title%"
+    ]
   },
   {
     "id": 94,
@@ -1100,7 +1256,9 @@
       "An extra '0' is placed in front of single digit track numbers (5 becomes 05) – otherwise the `tracknumber` field is returned unchanged (e.g. the following values remain as they are: 006, 05, 104, A3, two, -1, -)."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%tracknumber%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%tracknumber%"
+    ]
   },
   {
     "id": 95,
@@ -1113,7 +1271,9 @@
       "Similar to `%tracknumber%`, however single digit track numbers are not reformatted to have an extra 0."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_number%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_number%"
+    ]
   },
   {
     "id": 96,
@@ -1126,7 +1286,9 @@
       "Index of total tracks specified tracks belong to, within the album. Available only when `totaltracks` field is present in track’s metadata."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaltracks%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%totaltracks%"
+    ]
   },
   {
     "id": 97,
@@ -1140,7 +1302,9 @@
       "VBR files will show a dynamic display for currently played track (outside of the playlist)."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%bitrate%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%bitrate%"
+    ]
   },
   {
     "id": 98,
@@ -1153,7 +1317,9 @@
       "Number of channels in the track, as text; either 'mono', 'stereo' for 1 or 2 channels, respectively, otherwise a number followed by 'ch', e.g. '6ch'."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channels%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channels%"
+    ]
   },
   {
     "id": 99,
@@ -1167,7 +1333,9 @@
       "Introduced in foobar2000 preview 2024-06-30."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channel_mask%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%channel_mask%"
+    ]
   },
   {
     "id": 100,
@@ -1181,7 +1349,9 @@
       "If exact codec name is not available, file extension is used."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec%"
+    ]
   },
   {
     "id": 101,
@@ -1195,7 +1365,9 @@
       "Not always available."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_profile%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_profile%"
+    ]
   },
   {
     "id": 102,
@@ -1210,7 +1382,9 @@
       "The Default UI's standard Codec column displays the same info."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_long%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%codec_long%"
+    ]
   },
   {
     "id": 103,
@@ -1224,7 +1398,9 @@
       "Old version: `%_filesize%`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize%"
+    ]
   },
   {
     "id": 104,
@@ -1237,7 +1413,9 @@
       "The approximate file size, automatically formatted in appropriate units such as megabytes or kilobytes, e.g. '8.49 MB'."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize_natural%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filesize_natural%"
+    ]
   },
   {
     "id": 105,
@@ -1251,7 +1429,9 @@
       "Old version: `%_time_total%`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length%"
+    ]
   },
   {
     "id": 106,
@@ -1264,7 +1444,9 @@
       "The length of the track formatted as hours, minutes, seconds, and milliseconds, rounded to the nearest millisecond."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_ex%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_ex%"
+    ]
   },
   {
     "id": 107,
@@ -1278,7 +1460,9 @@
       "Old version: `%_time_total_seconds%`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds%"
+    ]
   },
   {
     "id": 108,
@@ -1291,7 +1475,9 @@
       "The length of the track in seconds as a floating point number."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds_fp%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_seconds_fp%"
+    ]
   },
   {
     "id": 109,
@@ -1302,7 +1488,9 @@
     "snippet-body": ["%length_samples%"],
     "description": ["The length of the track in samples."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_samples%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%length_samples%"
+    ]
   },
   {
     "id": 110,
@@ -1313,7 +1501,9 @@
     "snippet-body": ["%samplerate%"],
     "description": ["Sample rate of the track, in Hz."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%samplerate%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%samplerate%"
+    ]
   },
   {
     "id": 111,
@@ -1329,7 +1519,9 @@
       "For convenience, the `%__name%` alias is also available."
     ],
     "example": ["$info(bitrate)"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 112,
@@ -1340,7 +1532,9 @@
     "snippet-body": ["\\$channels()"],
     "description": ["The number of channels in text format."],
     "example": ["$channels() → 'stereo'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$channels()"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$channels()"
+    ]
   },
   {
     "id": 113,
@@ -1351,7 +1545,9 @@
     "snippet-body": ["%replaygain_album_gain%"],
     "description": ["The ReplayGain album gain value."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_gain%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_gain%"
+    ]
   },
   {
     "id": 114,
@@ -1362,7 +1558,9 @@
     "snippet-body": ["%replaygain_album_peak%"],
     "description": ["The ReplayGain album peak value."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak%"
+    ]
   },
   {
     "id": 115,
@@ -1373,7 +1571,9 @@
     "snippet-body": ["%replaygain_album_peak_db%"],
     "description": ["The ReplayGain album peak value in decibels."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak_db%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_album_peak_db%"
+    ]
   },
   {
     "id": 116,
@@ -1400,7 +1600,9 @@
     "snippet-body": ["%replaygain_track_gain%"],
     "description": ["The ReplayGain track gain value."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_gain%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_gain%"
+    ]
   },
   {
     "id": 118,
@@ -1411,7 +1613,9 @@
     "snippet-body": ["%replaygain_track_peak%"],
     "description": ["The ReplayGain track peak value."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak%"
+    ]
   },
   {
     "id": 119,
@@ -1422,7 +1626,9 @@
     "snippet-body": ["%replaygain_track_peak_db%"],
     "description": ["The ReplayGain track peak value in decibels."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak_db%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%replaygain_track_peak_db%"
+    ]
   },
   {
     "id": 120,
@@ -1433,7 +1639,9 @@
     "snippet-body": ["%filename%"],
     "description": ["The filename without directory and extension."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename%"
+    ]
   },
   {
     "id": 121,
@@ -1444,7 +1652,9 @@
     "snippet-body": ["%filename_ext%"],
     "description": ["The filename with extension, but without the directory."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename_ext%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%filename_ext%"
+    ]
   },
   {
     "id": 122,
@@ -1457,7 +1667,9 @@
       "The name of the parent directory only, not the complete path."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%directoryname%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%directoryname%"
+    ]
   },
   {
     "id": 123,
@@ -1470,7 +1682,9 @@
       "The date and time the file was last modified. Eg: `2005-12-22 00:04:10`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%last_modified%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%last_modified%"
+    ]
   },
   {
     "id": 124,
@@ -1481,7 +1695,9 @@
     "snippet-body": ["%path%"],
     "description": ["The complete path, including the filename and extension."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%path%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%path%"
+    ]
   },
   {
     "id": 125,
@@ -1492,7 +1708,9 @@
     "snippet-body": ["%_path_raw%"],
     "description": ["The path as URL including the protocol scheme."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_path_raw%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_path_raw%"
+    ]
   },
   {
     "id": 126,
@@ -1521,7 +1739,9 @@
       "The subsong index is used to distuingish multiple tracks in a single file, for example for cue sheets, tracker modules and various container formats."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%subsong%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%subsong%"
+    ]
   },
   {
     "id": 128,
@@ -1532,7 +1752,9 @@
     "snippet-body": ["%_foobar2000_version%"],
     "description": ["A string representing the version of foobar2000."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_foobar2000_version%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%_foobar2000_version%"
+    ]
   },
   {
     "id": 129,
@@ -1545,7 +1767,9 @@
       "Retrieves the year part (formatted as four digits) from a time/date string."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$year(time)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$year(time)"
+    ]
   },
   {
     "id": 130,
@@ -1558,7 +1782,9 @@
       "Retrieves the month part (formatted as two digits) from a time/date string."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$month(time)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$month(time)"
+    ]
   },
   {
     "id": 131,
@@ -1571,7 +1797,9 @@
       "Retrieves the day of month part (formatted as two digits) from a time/date string."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$day_of_month(time)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$day_of_month(time)"
+    ]
   },
   {
     "id": 132,
@@ -1584,7 +1812,9 @@
       "Retrieves the date part (formatted as YYYY-MM-DD) from a time/date string."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$date(time)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$date(time)"
+    ]
   },
   {
     "id": 133,
@@ -1597,7 +1827,9 @@
       "Retrieves the time part (formatted as HH:MM:SS or HH:MM) from a date/time string."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$time(time)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$time(time)"
+    ]
   },
   {
     "id": 134,
@@ -1612,7 +1844,9 @@
       "The truth value returned by `$get` indicates if the variable name was defined and is a non-empty string."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$get(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$get(name)"
+    ]
   },
   {
     "id": 135,
@@ -1625,7 +1859,9 @@
       "Stores `value` in the variable `name` and returns `value` unaltered."
     ],
     "example": ["$put(x,blah) sets variable x to 'blah' and returns 'blah'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$put(name,value)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$put(name,value)"
+    ]
   },
   {
     "id": 136,
@@ -1638,7 +1874,9 @@
       "Stores `value` in the variable `name` and returns nothing."
     ],
     "example": ["$puts(x,blah)$get(x)$get(x) returns 'blahblah'"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$puts(name,value)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$puts(name,value)"
+    ]
   },
   {
     "id": 137,
@@ -1649,7 +1887,9 @@
     "snippet-body": ["%playback_time%"],
     "description": ["The elapsed time formatted as `[HH:]MM:SS`."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time%"
+    ]
   },
   {
     "id": 138,
@@ -1663,7 +1903,9 @@
       "Old version: `%_time_elapsed%`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_seconds%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_seconds%"
+    ]
   },
   {
     "id": 139,
@@ -1677,7 +1919,9 @@
       "Old version: `%_time_remaining%`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining%"
+    ]
   },
   {
     "id": 140,
@@ -1691,7 +1935,9 @@
       "Old version: `%_time_remaining_seconds%`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining_seconds%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%playback_time_remaining_seconds%"
+    ]
   },
   {
     "id": 141,
@@ -1704,7 +1950,9 @@
       "'1' if file is currently playing, empty string otherwise."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%isplaying%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%isplaying%"
+    ]
   },
   {
     "id": 142,
@@ -1715,7 +1963,9 @@
     "snippet-body": ["%ispaused%"],
     "description": ["'1' if playback is paused, empty string otherwise."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%ispaused%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%ispaused%"
+    ]
   },
   {
     "id": 143,
@@ -1728,7 +1978,9 @@
       "A zero-padded playlist index of specified item. The first item is at index 1."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_index%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_index%"
+    ]
   },
   {
     "id": 144,
@@ -1739,7 +1991,9 @@
     "snippet-body": ["%list_total%"],
     "description": ["The number of items in the playlist."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_total%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%list_total%"
+    ]
   },
   {
     "id": 145,
@@ -1753,7 +2007,9 @@
       "If the item has been queued multiple times, `%queue_index%` evaluates to the first index."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_index%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_index%"
+    ]
   },
   {
     "id": 146,
@@ -1767,7 +2023,9 @@
       "Same as `%queue_index%` unless the item has been queued more than once."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_indexes%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_indexes%"
+    ]
   },
   {
     "id": 147,
@@ -1781,7 +2039,9 @@
       "Available only for queued tracks, for technical reasons."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_total%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%queue_total%"
+    ]
   },
   {
     "id": 148,
@@ -1800,7 +2060,9 @@
       "The blending is performed in the RGB color space."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$blend(color1,color2,part,total)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$blend(color1,color2,part,total)"
+    ]
   },
   {
     "id": 149,
@@ -1817,7 +2079,9 @@
       "h2, s2 and l2 are the hue, saturation, and lightness of the color for selected text."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$hsl()"
+    ]
   },
   {
     "id": 152,
@@ -1834,7 +2098,9 @@
       "`r2`, `g2` and `b2` are the red, green and blue component of the color for selected text."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$rgb()"
+    ]
   },
   {
     "id": 155,
@@ -1850,7 +2116,9 @@
       "For example, if you need to truncate a string, you should do this before applying $transition."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$transition(string,color1,color2)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$transition(string,color1,color2)"
+    ]
   },
   {
     "id": 156,
@@ -1865,7 +2133,9 @@
       "The difference between this and `%artist%` is that `%album artist%` is intended for use where consistent value across entire album is needed even when per-track artists values vary."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album_artist%"
+    ]
   },
   {
     "id": 157,
@@ -1879,7 +2149,9 @@
       "Checks following metadata fields, in this order: `album`, `venue`."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%album%"
+    ]
   },
   {
     "id": 158,
@@ -1894,7 +2166,9 @@
       "For a SHOUTcast stream which contains metadata, it is the StreamTitle up to the first '-' character."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%artist%"
+    ]
   },
   {
     "id": 159,
@@ -1909,7 +2183,9 @@
       "In this case, the last part will be displayed only when track-specific artist info is present."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#%track_artist%"
+    ]
   },
   {
     "id": 160,
@@ -1922,7 +2198,9 @@
       "This is identical to `%<name>%` except it does not produce a '?', if the tag does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch_remap(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch_remap(name)"
+    ]
   },
   {
     "id": 161,
@@ -1935,7 +2213,9 @@
       "Like `$meta_branch_remap(name)`, but without the tag remapping."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#$meta_branch(name)"
+    ]
   },
   {
     "id": 162,
@@ -1949,7 +2229,9 @@
       "If the track has not been played yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%play_count%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%play_count%"
+    ]
   },
   {
     "id": 163,
@@ -1963,7 +2245,9 @@
       "If the track has not been played yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%first_played%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%first_played%"
+    ]
   },
   {
     "id": 164,
@@ -1977,7 +2261,9 @@
       "If the track has not been played yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%last_played%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%last_played%"
+    ]
   },
   {
     "id": 165,
@@ -1991,7 +2277,9 @@
       "If the track has not been played yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%played_per_day%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%played_per_day%"
+    ]
   },
   {
     "id": 166,
@@ -2005,7 +2293,9 @@
       "Even if the track has not been played yet, the field exists, logically."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%25added%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%25added%"
+    ]
   },
   {
     "id": 167,
@@ -2019,7 +2309,9 @@
       "If the track has not been rated yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating%"
+    ]
   },
   {
     "id": 168,
@@ -2033,7 +2325,9 @@
       "If the track has not been rated yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars%"
+    ]
   },
   {
     "id": 169,
@@ -2047,7 +2341,9 @@
       "If the track has not been rated yet, the field does not exist."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars_fixed%"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Playback_Statistics#%rating_stars_fixed%"
+    ]
   },
   {
     "id": 170,
@@ -2058,7 +2354,9 @@
     "snippet-body": ["%node_name%"],
     "description": ["Is the name of the node, either a playlist or a folder."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    ]
   },
   {
     "id": 171,
@@ -2071,7 +2369,9 @@
       "Is a boolean value for use in `$if( ...)` expressions and is true when the node is a folder."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    ]
   },
   {
     "id": 172,
@@ -2084,7 +2384,9 @@
       "Will provide the number of children (folders or playlists) for each folder or the number of items for playlists."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    ]
   },
   {
     "id": 173,
@@ -2095,7 +2397,9 @@
     "snippet-body": ["%playlist_duration%"],
     "description": ["Will provide the duration of playlists."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    ]
   },
   {
     "id": 174,
@@ -2106,7 +2410,9 @@
     "snippet-body": ["%playlist_size%"],
     "description": ["Will provide the size of playlists (in kB, MB or GB)."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/Playlist_Organizer_(foo_plorg)#Nodes"
+    ]
   },
   {
     "id": 175,
@@ -2117,7 +2423,9 @@
     "snippet-body": ["\\$set_global(${1:name},${2:value})"],
     "description": ["Set the `name` variable to the `value` value."],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
+    ]
   },
   {
     "id": 176,
@@ -2128,7 +2436,9 @@
     "snippet-body": ["\\$get_global(${1:name})"],
     "description": ["Get the value of the global variable `name`."],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/global-variables.html"
+    ]
   },
   {
     "id": 177,
@@ -2145,7 +2455,9 @@
       "The fourth parameter sets the text colour for selected items when the window is not focuseds."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 179,
@@ -2158,7 +2470,9 @@
       "Returns black if the mean of the red, green and blue components of `color` is greater than or equal to 128; otherwise it returns white."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 180,
@@ -2171,7 +2485,9 @@
     ],
     "description": ["Shifts one colour towards another colour."],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 181,
@@ -2184,7 +2500,9 @@
       "Return the relevant colour before any modifications by the current style script."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 182,
@@ -2197,7 +2515,9 @@
       "Return the relevant colour before any modifications by the current style script."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 183,
@@ -2210,7 +2530,9 @@
       "Return the relevant colour before any modifications by the current style script."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 184,
@@ -2223,7 +2545,9 @@
       "Return the relevant colour before any modifications by the current style script."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 185,
@@ -2236,7 +2560,9 @@
       "Return the relevant colour before any modifications by the current style script."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 186,
@@ -2249,7 +2575,9 @@
       "Return the relevant colour before any modifications by the current style script."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 187,
@@ -2262,7 +2590,9 @@
       "The current row number in the playlist view (including group headings)."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 188,
@@ -2273,7 +2603,9 @@
     "snippet-body": ["%_is_group%"],
     "description": ["Whether a group heading is currently being formatted."],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 189,
@@ -2286,7 +2618,9 @@
       "Whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/style-script.html"
+    ]
   },
   {
     "id": 190,
@@ -2300,7 +2634,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 191,
@@ -2314,7 +2650,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 192,
@@ -2328,7 +2666,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 193,
@@ -2342,7 +2682,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 194,
@@ -2356,7 +2698,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 195,
@@ -2370,7 +2714,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 196,
@@ -2384,7 +2730,9 @@
       "This field is available in Display scripts, Style scripts and Global Variables scripts"
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-view/title-formatting.html"
+    ]
   },
   {
     "id": 197,
@@ -2398,7 +2746,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 198,
@@ -2412,7 +2762,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 199,
@@ -2426,7 +2778,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 200,
@@ -2440,7 +2794,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 201,
@@ -2454,7 +2810,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 202,
@@ -2468,7 +2826,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 203,
@@ -2482,7 +2842,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 204,
@@ -2496,7 +2858,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 205,
@@ -2510,7 +2874,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/playlist-switcher/title-formatting.html"
+    ]
   },
   {
     "id": 206,
@@ -2526,7 +2892,9 @@
       "This function is available in Item Details scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    ]
   },
   {
     "id": 207,
@@ -2540,7 +2908,9 @@
       "This function is available in Item Details scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    ]
   },
   {
     "id": 208,
@@ -2557,7 +2927,9 @@
       "Deprecated in Columns UI 3.0.0. It’s been replaced by `$set_format()`."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    ]
   },
   {
     "id": 209,
@@ -2572,7 +2944,9 @@
       "Deprecated in Columns UI 3.0.0. It’s been replaced by `$reset_format()`."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    ]
   },
   {
     "id": 210,
@@ -2588,7 +2962,9 @@
       "Deprecated in Columns UI 3.0.0. Use `$set_format(font-family: initial;)` instead."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    ]
   },
   {
     "id": 211,
@@ -2603,7 +2979,9 @@
       "This field is available in Playlist Switcher scripts."
     ],
     "example": [],
-    "ref-link": "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    "ref-link": [
+      "https://columns-ui.readthedocs.io/en/latest/item-details/title-formatting.html"
+    ]
   },
   {
     "id": 212,
@@ -2616,7 +2994,9 @@
       "Returns only items that have all words from `string` in metadata field named `field`."
     ],
     "example": ["title HAS blah"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
+    ]
   },
   {
     "id": 213,
@@ -2629,7 +3009,9 @@
       "Returns only items where (at least one) metadata field `field` is equal to `string`."
     ],
     "example": ["artist IS blah"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
+    ]
   },
   {
     "id": 214,
@@ -2642,7 +3024,9 @@
       "No operators can be used. This single keyword simply returns all items within the Media Library."
     ],
     "example": ["ALL"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Text_expressions"
+    ]
   },
   {
     "id": 215,
@@ -2655,7 +3039,9 @@
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
     "example": ["rating GREATER 3"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
+    ]
   },
   {
     "id": 216,
@@ -2668,7 +3054,9 @@
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
     "example": ["rating LESS 3"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
+    ]
   },
   {
     "id": 217,
@@ -2681,7 +3069,9 @@
       "Performs integral number comparison between the value of a `field` and a `number`."
     ],
     "example": ["rating EQUAL 3"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Numeric_expressions"
+    ]
   },
   {
     "id": 218,
@@ -2694,7 +3084,9 @@
       "Returns only items that don't have a metadata field named `field`."
     ],
     "example": ["genre MISSING"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Metadata_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Metadata_expressions"
+    ]
   },
   {
     "id": 219,
@@ -2707,7 +3099,9 @@
       "Returns only items that have a metadata field named `field`."
     ],
     "example": ["genre PRESENT"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Metadata_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Metadata_expressions"
+    ]
   },
   {
     "id": 220,
@@ -2721,7 +3115,9 @@
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% BEFORE 2008"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    ]
   },
   {
     "id": 221,
@@ -2735,7 +3131,9 @@
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% AFTER 2008"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    ]
   },
   {
     "id": 222,
@@ -2749,7 +3147,9 @@
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% SINCE 2008"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    ]
   },
   {
     "id": 223,
@@ -2763,7 +3163,9 @@
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% DURING 2008"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    ]
   },
   {
     "id": 224,
@@ -2777,7 +3179,9 @@
       "Time values must be in one of the following formats: `YYYY`, `YYYY-MM`, `YYYY-MM-DD`, `YYYY-MM-DD hh`, `YYYY-MM-DD hh:mm`, `YYYY-MM-DD hh:mm:ss`"
     ],
     "example": ["%last_modified% DURING LAST 2 WEEKS"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Time_expressions"
+    ]
   },
   {
     "id": 225,
@@ -2788,7 +3192,9 @@
     "snippet-body": ["AND"],
     "description": ["Returns only items where both `expressions` are `true`"],
     "example": ["artist IS blah AND title HAS blah"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
+    ]
   },
   {
     "id": 226,
@@ -2801,7 +3207,9 @@
       "Returns only items where at least one `expression` is `true`"
     ],
     "example": ["artist IS blah OR title HAS blah"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
+    ]
   },
   {
     "id": 227,
@@ -2812,7 +3220,9 @@
     "snippet-body": ["NOT"],
     "description": ["Returns only items where the `expression` is `false`."],
     "example": ["NOT last_played AFTER first_played"],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Combined_queries_using_logical_operators"
+    ]
   },
   {
     "id": 228,
@@ -2823,7 +3233,9 @@
     "snippet-body": ["SORT BY"],
     "description": ["Sort results in ascending order."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
+    ]
   },
   {
     "id": 229,
@@ -2834,7 +3246,9 @@
     "snippet-body": ["SORT ASCENDING BY"],
     "description": ["Sort results in ascending order."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
+    ]
   },
   {
     "id": 230,
@@ -2845,7 +3259,9 @@
     "snippet-body": ["SORT DESCENDING BY"],
     "description": ["Sort results in descending order."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Query_syntax#Sorting_results"
+    ]
   },
   {
     "id": 231,
@@ -2856,7 +3272,9 @@
     "snippet-body": ["%__codec%"],
     "description": ["Codec."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 232,
@@ -2867,7 +3285,9 @@
     "snippet-body": ["%__codec_profile%"],
     "description": ["Codec Profile."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 233,
@@ -2878,7 +3298,9 @@
     "snippet-body": ["%__samplerate%"],
     "description": ["Sample Rate, in hertz."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 234,
@@ -2889,7 +3311,9 @@
     "snippet-body": ["%__bitrate%"],
     "description": ["Bitrate, in kilobits per second."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 235,
@@ -2900,7 +3324,9 @@
     "snippet-body": ["%__tool%"],
     "description": ["Tool used to produce the file, possibly guessed."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 236,
@@ -2911,7 +3337,9 @@
     "snippet-body": ["%__encoding%"],
     "description": ["Encoding lossiness."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 237,
@@ -2922,7 +3350,9 @@
     "snippet-body": ["%__channels%"],
     "description": ["Channels count."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 238,
@@ -2933,7 +3363,9 @@
     "snippet-body": ["%__bitspersample%"],
     "description": ["Bits Per Sample."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 239,
@@ -2944,7 +3376,9 @@
     "snippet-body": ["%__decoded_bitspersample%"],
     "description": ["Bits Per Sample after decoding."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 240,
@@ -2955,7 +3389,9 @@
     "snippet-body": ["%__bitspersample_extra%"],
     "description": ["Format of 32-bit audio data."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 241,
@@ -2966,7 +3402,9 @@
     "snippet-body": ["%__tagtype%"],
     "description": ["Tag Type, comma-separated list of tag formats."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 242,
@@ -2977,7 +3415,9 @@
     "snippet-body": ["%__cue_embedded%"],
     "description": ["Embedded Cuesheet presence."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 243,
@@ -2988,7 +3428,9 @@
     "snippet-body": ["%__md5%"],
     "description": ["Audio MD5 hash, if container defines it."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 244,
@@ -2999,7 +3441,9 @@
     "snippet-body": ["%__WAVEFORMATEXTENSIBLE_CHANNEL_MASK%"],
     "description": ["Channel mask, channel layout of the track coded as hex."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 245,
@@ -3012,7 +3456,9 @@
       "LAME proprietary MP3 `enc_delay` value for gapless playback."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 246,
@@ -3025,7 +3471,9 @@
       "LAME proprietary MP3 `enc_padding` value for gapless playback."
     ],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 247,
@@ -3036,7 +3484,9 @@
     "snippet-body": ["%__MP3_ACCURATE_LENGTH%"],
     "description": ["MP3 duration."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 248,
@@ -3047,7 +3497,9 @@
     "snippet-body": ["%__MP3_STEREO_MODE%"],
     "description": ["Stereo mode used in MP3 file."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 249,
@@ -3058,7 +3510,9 @@
     "snippet-body": ["%__VERSION%"],
     "description": ["Version of tool."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 250,
@@ -3069,7 +3523,9 @@
     "snippet-body": ["%__FLAGS%"],
     "description": ["Flags of tool."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   },
   {
     "id": 251,
@@ -3080,6 +3536,8 @@
     "snippet-body": ["%__channel_mode%"],
     "description": ["Channel Mode, description of channels."],
     "example": [],
-    "ref-link": "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
+    ]
   }
 ]
