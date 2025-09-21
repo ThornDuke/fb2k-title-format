@@ -99,7 +99,7 @@
         {
           "comment": "Album list remapped tags",
           "name": "variable.other.album-list-tag.f2k",
-          "match": "%<(album artist|album|artist|track artist)>%"
+          "match": "%<(album artist|album|artist|track artist|genre)>%"
         },
         {
           "comment": "User-defined album list remapped tags",

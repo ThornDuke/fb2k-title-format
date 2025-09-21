@@ -15,6 +15,10 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 ## [Unreleased]
 
+### Added
+
+- remappable tags (the ones used in the "Album list" component's title-formatting) have a double link for the hover popup
+
 ### Changed
 
 - README.md: various updates

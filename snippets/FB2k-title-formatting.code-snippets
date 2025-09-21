@@ -529,7 +529,7 @@
     "body": [
       "%genre%"
     ],
-    "description": "FB2K: Genre of the album specified track belongs to, using “genre” metadata field. "
+    "description": "FB2K: Genre of the album specified track belongs to, using “genre” metadata field."
   },
   "Tag: %discnumber%": {
     "prefix": "%discnumber%",
@@ -1608,5 +1608,12 @@
       "%__channel_mode%"
     ],
     "description": "FB2K: Channel Mode, description of channels."
+  },
+  "Tag: %<genre>%": {
+    "prefix": "%<genre>%",
+    "body": [
+      "%<genre>%"
+    ],
+    "description": "FB2K Album List: Genre of the album specified track belongs to, using “genre” metadata field."
   }
 }
