@@ -13,6 +13,12 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [Unreleased]
+
+### Changed
+
+- README.md: various updates
+
 ## [1.5.0] - 2025-09-21
 
 ### Added

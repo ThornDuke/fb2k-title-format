@@ -78,7 +78,7 @@ To use this function in Foobar2000, you must remove indentation, since all space
 This command removes indentation from all selected lines, or from all unselected lines between blank or commented lines.
 
 - Keybinding: `Ctrl+K Ctrl+H` (`Cmd+K Cmd+H` on Mac)
-- Command Palette: `Shift + Ctrl + P` (Windows/Linux) `Shift + Command + P` (Mac) then type `Remove Indentation`
+- Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Command+P` (Mac) then type `Remove Indentation`
 
 #### `Join Lines`
 
@@ -87,7 +87,7 @@ This command joins into a single line all selected lines of code, or all unselec
 This is useful when a complex script has been written on multiple lines of text but needs to be copied into a single line of input text in the Foobar2000 interface.
 
 - Keybinding: `Ctrl+K Ctrl+Z` (`Cmd+K Cmd+Z` on Mac)
-- Command Palette: `Shift + Ctrl + P` (Windows/Linux) `Shift + Command + P` (Mac) then type `Join Lines`
+- Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Command+P` (Mac) then type `Join Lines`
 
 #### `Join Lines No Comments`
 
@@ -96,7 +96,7 @@ This command joins all selected lines of code, or all unselected lines between b
 This is useful when there are commented lines within a script that must be removed before the script can be used in Foobar2000.
 
 - Keybinding: `Ctrl+K Ctrl+Y` (`Cmd+K Cmd+Y` on Mac)
-- Command Palette: `Shift + Ctrl + P` (Windows/Linux) `Shift + Command + P` (Mac) then type `Join Lines No Comments`
+- Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Command+P` (Mac) then type `Join Lines No Comments`
 
 > **note**: these commands are only available in files with the '.f2k' extension.
 
