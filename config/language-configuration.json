@@ -38,26 +38,27 @@
     "indentNextLinePattern": "^((?!\\/\\/).)*\\s*.*,\\s*$"
   },
   "onEnterRules": [
-    // aggiunge un indent se il cursore è dopo la parentesi di una funzione
+    // Riga non commentata e cursore dopo la parentesi aperta di una funzione:
+    // la riga successiva è commentata
     {
       "beforeText": "^((?!\\/\\/).*\\s+$[a-zA-Z0-9_]\\()",
       "action": { "indent": "indent" }
     },
-    // aggiunge un indent se il cursore è dopo la virgola in una riga
-    // non commentata
+    // Riga non commentata e cursore subito dopo la virgola:
+    // la linea successiva è indentata
     {
       "beforeText": "^(?!\\/\\/).*\\s*.*,",
       "action": { "indent": "indent" }
     },
-    // Simbolo del commento senza altro testo dopo.
-    // La nuova riga è non commentata e non indentata
+    // Simbolo del commento senza altro testo dopo:
+    // la nuova riga è non commentata e non indentata
     {
       "beforeText": "^\\/\\/$",
       "action": {
         "indent": "none"
       }
     },
-    // simbolo di commento con spazi subito dopo;
+    // simbolo di commento con spazi subito dopo:
     // la riga successiva è commentata e non indentata
     {
       "beforeText": "^\\/\\/\\s+.*$",

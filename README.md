@@ -17,6 +17,7 @@ Updated with Foobar2000 v2.25.1 and ColumnsUI v3.1.0.
     - [`Remove Indentation`](#remove-indentation)
     - [`Join Lines`](#join-lines)
     - [`Join Lines No Comments`](#join-lines-no-comments)
+  - [Folding](#folding)
 - [Usage](#usage)
 - [Installation](#installation)
 - [Contributing](#contributing)
@@ -63,7 +64,7 @@ The plugin provides the following commands:
 
 To simplify writing and reading complex scripts, code is indented within functions. For example:
 
-```sh
+```php
 $puts(
   target,
   $if(
@@ -101,6 +102,41 @@ This is useful when there are commented lines within a script that must be remov
 
 > **note**: these commands are only available in files with the '.f2k' extension.
 
+### Folding
+
+Indentation-based folding is supported when writing title formatting scripts: a folding region starts when a line has a smaller indent than one or more following lines, and ends when there is a line with the same or smaller indent. Empty lines are ignored.
+
+Additionally, you can define a folding region.
+
+The start of a folding region is defined by a line starting with
+
+```php
+//section>
+```
+
+The end of a folding region is defined by a line starting with
+
+```php
+//endsection>
+```
+
+For example:
+
+```php
+//section> tags normalization
+$puts(
+  title,
+  $stripprefix(
+    $trim(%title%),
+    'The'
+  )
+)
+...
+//endsection> tags normalization
+```
+
+Folding regions can be nested inside each other.
+
 ## Usage
 
 Open a file with the **`.f2k`** extension to activate all the features of the plugin.
@@ -129,17 +165,20 @@ please don't hesitate to reach out to us on GitHub and
 
 Copyright 2025 Thorn Duke
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-associated documentation files (the “Software”), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the “Software”), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial
-portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
-NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
-OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
