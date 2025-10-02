@@ -36,89 +36,21 @@
     }
   },
   "onEnterRules": [
-    // Riga vuota o con solo spazi
-    // > aggiunge una riga con lo stesso indent
     {
-      "beforeText": "^\\s*$",
-      "afterText": "^\\s*$",
+      "beforeText": "^\\/\\/\\s+.*$",
+      "afterText": "^.*$",
       "action": {
-        "indent": "none"
+        "indent": "none",
+        "appendText": "// "
       }
     },
-    // Riga non commentata
-    // cursore tra due parentesi tonde di una funzione
-    // > aggiunge due righe: la prima con rientro che include il cursore,
-    // > la seconda senza rientro
     {
-      "beforeText": "^(?!\\/\\/).*\\$[a-zA-Z0-9_]+\\($",
-      "afterText": "^\\).*$",
+      "beforeText": "^\\/\\/.*$",
+      "afterText": "^.+$",
       "action": {
-        "indent": "indentOutdent"
-      }
-    },
-    // Riga non commentata
-    // cursore dentro le parentesi di una funzione
-    // con testo prima della parentesi chiusa
-    // > aggiunge una riga con lo stesso indent
-    {
-      "beforeText": "^(?!\\/\\/).*\\$[a-zA-Z0-9_]+\\([^\\)]*$",
-      "afterText": "^[^\\)]+\\).*$",
-      "action": {
-        "indent": "indent"
-      }
-    },
-    // Riga non commentata
-    // cursore dentro le parentesi di una funzione
-    // senza testo prima della parentesi chiusa
-    // > aggiunge una riga con un indent in meno
-    {
-      "beforeText": "^(?!\\/\\/).*\\$[a-zA-Z0-9_]+\\([^\\)]+$",
-      "afterText": "^\\).*$",
-      "action": {
-        "indent": "outdent"
-      }
-    },
-    // Riga non commentata
-    // cursore tra due parentesi quadre
-    // > aggiunge due righe: la prima con rientro che include il cursore,
-    // > la seconda senza rientro
-    {
-      "beforeText": "^(?!\\/\\/).*\\[$",
-      "afterText": "^\\].*$",
-      "action": {
-        "indent": "indentOutdent"
-      }
-    },
-    // Riga non commentata
-    // cursore tra prima di una parentesi quadra e preceduto da testo
-    // > aggiunge una riga con un indent in meno
-    {
-      "beforeText": "^(?!\\/\\/).*\\[[^\\]]+$",
-      "afterText": "^\\].*$",
-      "action": {
-        "indent": "outdent"
+        "indent": "none",
+        "appendText": "//"
       }
     }
-    // // Simbolo del commento senza altro testo dopo:
-    // // la nuova riga è non commentata e non indentata
-    // {
-    //   "beforeText": "^\\/\\/$",
-    //   "action": {
-    //     "indent": "none"
-    //   }
-    // },
-    // // simbolo di commento con spazi subito dopo:
-    // // la riga successiva è commentata e non indentata
-    // {
-    //   "beforeText": "^\\/\\/\\s+.*$",
-    //   "action": {
-    //     "indent": "none",
-    //     "appendText": "// "
-    //   }
-    // }
   ]
-  // "indentationRules": {
-  //   "increaseIndentPattern": "^((?!\\/\\/).)*(\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
-  //   "decreaseIndentPattern": "^((?!\\/\\/).)*\\s*[\\)\\]].*$"
-  // }
 }
