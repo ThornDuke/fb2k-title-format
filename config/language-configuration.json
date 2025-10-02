@@ -1,6 +1,9 @@
 {
   "comments": {
-    "lineComment": "//"
+    "lineComment": {
+      "comment": "//",
+      "noIndent": true
+    }
   },
   "brackets": [
     ["(", ")"],
@@ -34,21 +37,21 @@
   },
   "indentationRules": {
     "increaseIndentPattern": "^((?!\\/\\/).)*(\\([^)\"'`]*|\\[[^\\]\"'`]*)$",
-    "decreaseIndentPattern": "^((?!\\/\\/).)*\\s*[\\)\\]].*$",
-    "indentNextLinePattern": "^((?!\\/\\/).)*\\s*.*,\\s*$"
+    "decreaseIndentPattern": "^((?!\\/\\/).)*\\s*[\\)\\]].*$"
   },
   "onEnterRules": [
-    // Riga non commentata e cursore dopo la parentesi aperta di una funzione:
-    // la riga successiva è commentata
+    // Riga non commentata e cursore subito dopo la virgola:
+    // 1. all'interno di una funzione
+    //    alla linea successiva è aggiunto un indent
     {
-      "beforeText": "^((?!\\/\\/).*\\s+$[a-zA-Z0-9_]\\()",
+      "beforeText": "^((?!\\/\\/).)*\\s*\\$[a-zA-Z0-9_]+\\([a-zA-Z0-9%_]+,",
       "action": { "indent": "indent" }
     },
-    // Riga non commentata e cursore subito dopo la virgola:
-    // la linea successiva è indentata
+    // 2. NON all'interno di una funzione
+    //    la linea successiva ha lo stesso indent di quella attuale
     {
-      "beforeText": "^(?!\\/\\/).*\\s*.*,",
-      "action": { "indent": "indent" }
+      "beforeText": "^((?!\\/\\/).)*\\s*.*,",
+      "action": { "indent": "none" }
     },
     // Simbolo del commento senza altro testo dopo:
     // la nuova riga è non commentata e non indentata
