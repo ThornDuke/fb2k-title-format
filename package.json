@@ -26,9 +26,6 @@
     "snippets"
   ],
   "main": "./src/extension.js",
-  "activationEvents": [
-    "onCommand:foobar2000-title-formatting-syntax.joinLinesSmart"
-  ],
   "contributes": {
     "languages": [
       {
