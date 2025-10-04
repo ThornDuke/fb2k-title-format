@@ -13,11 +13,12 @@ Updated with Foobar2000 v2.25.1 and ColumnsUI v3.1.0.
   - [Syntax highlighting](#syntax-highlighting)
   - [Snippets](#snippets)
   - [Code Context](#code-context)
+  - [Markdown fenced blocks](#markdown-fenced-blocks)
+  - [Folding](#folding)
   - [Commands](#commands)
     - [`Remove Indentation`](#remove-indentation)
     - [`Join Lines`](#join-lines)
     - [`Join Lines No Comments`](#join-lines-no-comments)
-  - [Folding](#folding)
 - [Usage](#usage)
 - [Installation](#installation)
 - [Contributing](#contributing)
@@ -56,6 +57,32 @@ Complete code snippets are provided for all predefined tags, functions and query
 
 This plugin delivers detailed, contextual information directly to your cursor via a simple hover. For each element of the language, a link to the official documentation is provided.
 
+### Markdown fenced blocks
+
+This plugin introduces support for fenced code blocks within your markdown files, specifically utilizing the tag 'fb2k' for dedicated syntax highlighting. By wrapping code segments with three backticks and the 'fb2k' identifier, you can embed title formatting like the following example:
+
+<img src="./resources/scrsht02.png" width=200 alt="code block into a markdown file with tagged fences"/>
+
+### Folding
+
+Indentation-based folding is supported when writing title formatting scripts: a folding region starts when a line has a smaller indent than one or more following lines, and ends when there is a line with the same or smaller indent. Empty lines are ignored.
+
+Additionally, you can define a folding region.
+
+The start of a folding region is defined by a line starting with
+
+<img src="./resources/scrsht04.png" width=340 alt="title formatting comment tha starts a folding region" />
+
+The end of a folding region is defined by a line starting with
+
+<img src="./resources/scrsht05.png" width=340 alt="title formatting comment tha ends a folding region" />
+
+For example:
+
+<img src="./resources/scrsht06.png" width=340 alt="title formatting comment tha ends a folding region" />
+
+Folding regions can be nested inside each other.
+
 ### Commands
 
 The plugin provides the following commands:
@@ -64,16 +91,7 @@ The plugin provides the following commands:
 
 To simplify writing and reading complex scripts, code is indented within functions. For example:
 
-```php
-$puts(
-  target,
-  $if(
-    %series%,
-    $stripprefix(%series%,the),
-    $stripprefix(%album artist%,the)
-  )
-)
-```
+<img src="./resources/scrsht03.png" width=340 alt="title formatting code highlighted and indented" />
 
 To use this function in Foobar2000, you must remove indentation, since all spaces are significant in FB2k title formatting, even those at the beginning of the lines.
 
@@ -101,41 +119,6 @@ This is useful when there are commented lines within a script that must be remov
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Join Lines No Comments`
 
 > **note**: these commands are only available in files with the '.f2k' extension.
-
-### Folding
-
-Indentation-based folding is supported when writing title formatting scripts: a folding region starts when a line has a smaller indent than one or more following lines, and ends when there is a line with the same or smaller indent. Empty lines are ignored.
-
-Additionally, you can define a folding region.
-
-The start of a folding region is defined by a line starting with
-
-```php
-//section>
-```
-
-The end of a folding region is defined by a line starting with
-
-```php
-//endsection>
-```
-
-For example:
-
-```php
-//section> tags normalization
-$puts(
-  title,
-  $stripprefix(
-    $trim(%title%),
-    'The'
-  )
-)
-...
-//endsection> tags normalization
-```
-
-Folding regions can be nested inside each other.
 
 ## Usage
 
