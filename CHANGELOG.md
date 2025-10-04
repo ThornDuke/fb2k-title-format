@@ -13,16 +13,13 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
-## [Unreleased]
+## [1.6.0] - 2025-10-04
 
 ### Added
 
 - config/language-configuration.json:
   - a folding region starts with `//section>` and ends with `//endsection>`
-  - indentation rules:
-    - add indentation if the line starts with `(` or `[` (not in a comment)
-    - remove indentation if the ends with `)` or `]` (not in a comment)
-  - when the cursor is on a comment and you press "Enter" the next line is another comment
+  - indentation rules for commented lines
 
 ## [1.5.8] - 2025-09-24
 
