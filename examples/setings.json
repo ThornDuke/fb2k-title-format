@@ -1,0 +1,70 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      // Comments
+      {
+        "scope": "comment.line.double-slash.fb2k",
+        "settings": {
+          "foreground": "#6A9955" // Green
+        }
+      },
+      // Strings
+      {
+        "scope": "string.quoted.single.fb2k",
+        "settings": {
+          "foreground": "#CE9178" // Orange
+        }
+      },
+      // Built-in functions
+      {
+        "scope": "support.function.fb2k",
+        "settings": {
+          "foreground": "#DCDCAA" // Light yellow
+        }
+      },
+      // Built-in tags
+      {
+        "scope": [
+          "variable.other.tag.f2k",
+          "variable.other.album-list-tag.f2k"
+        ],
+        "settings": {
+          "foreground": "#569CD6" // Blu
+        }
+      },
+      // Query keywords and operators
+      {
+        "scope": "keyword.operator.fb2k",
+        "settings": {
+          "foreground": "#C586C0", // Viola
+          "fontStyle": "bold" // Optional: bold style
+        }
+      },
+      // Costants Put/Puts/Get
+      {
+        "scope": "constant.language.fb2k",
+        "settings": {
+          "foreground": "#4EC9B0" // Cyan
+        }
+      },
+      // User defined tags
+      {
+        "scope": "constant.other.user-tag.fb2k",
+        "settings": {
+          "foreground": "#3223b5" // Dark blue
+        }
+      },
+      // Invalid elements
+      {
+        "scope": [
+          "invalid.illegal.function.fb2k",
+          "constant.other.album-list-tag.fb2k"
+        ],
+        "settings": {
+          "foreground": "#F44747", // Red
+          "fontStyle": "underline"
+        }
+      }
+    ]
+  }
+}

@@ -5,6 +5,7 @@ node_modules/
 scripts/
 dist/
 tests/
+examples/
 *.log
 .nvmrc
 CHANGELOG.md

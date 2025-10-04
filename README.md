@@ -19,6 +19,9 @@ Updated with Foobar2000 v2.25.1 and ColumnsUI v3.1.0.
     - [`Remove Indentation`](#remove-indentation)
     - [`Join Lines`](#join-lines)
     - [`Join Lines No Comments`](#join-lines-no-comments)
+- [Customizing Syntax Highlighting Colors](#customizing-syntax-highlighting-colors)
+  - [1. Global Customization](#1-global-customization)
+  - [2. Project-Level Customization](#2-project-level-customization)
 - [Usage](#usage)
 - [Installation](#installation)
 - [Contributing](#contributing)
@@ -61,7 +64,18 @@ This plugin delivers detailed, contextual information directly to your cursor vi
 
 This plugin introduces support for fenced code blocks within your markdown files, specifically utilizing the tag 'fb2k' for dedicated syntax highlighting. By wrapping code segments with three backticks and the 'fb2k' identifier, you can embed title formatting like the following example:
 
-<img src="./resources/scrsht02.png" width=200 alt="code block into a markdown file with tagged fences"/>
+````markdown
+```fb2k
+$puts(
+  artist,
+  $stripprefix(
+    $trim(%artist%),
+    'The'
+  )
+)
+$get(artist)
+```
+````
 
 ### Folding
 
@@ -71,15 +85,29 @@ Additionally, you can define a folding region.
 
 The start of a folding region is defined by a line starting with
 
-<img src="./resources/scrsht04.png" width=340 alt="title formatting comment tha starts a folding region" />
+```txt
+//section>
+```
 
 The end of a folding region is defined by a line starting with
 
-<img src="./resources/scrsht05.png" width=340 alt="title formatting comment tha ends a folding region" />
+```txt
+//endsection>
+```
 
 For example:
 
-<img src="./resources/scrsht06.png" width=340 alt="title formatting comment tha ends a folding region" />
+```
+//section> tags normalization
+$puts(
+  artist,
+  $stripprefix(
+    $trim(%artist%),
+    'The'
+  )
+)
+//endsection> tags normalization
+```
 
 Folding regions can be nested inside each other.
 
@@ -91,7 +119,22 @@ The plugin provides the following commands:
 
 To simplify writing and reading complex scripts, code is indented within functions. For example:
 
-<img src="./resources/scrsht03.png" width=340 alt="title formatting code highlighted and indented" />
+```
+$puts(
+  target,
+  $if(
+    %series%,
+    $stripprefix(%
+      series%,
+      'The'
+    ),
+    $stripprefix(
+      %album artist%,
+      'The'
+    )
+  )
+)
+```
 
 To use this function in Foobar2000, you must remove indentation, since all spaces are significant in FB2k title formatting, even those at the beginning of the lines.
 
@@ -119,6 +162,54 @@ This is useful when there are commented lines within a script that must be remov
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Join Lines No Comments`
 
 > **note**: these commands are only available in files with the '.f2k' extension.
+
+Certamente. Ecco una spiegazione tecnica e diretta in inglese su come personalizzare i colori della sintassi in VS Code, strutturata in base ai punti richiesti:
+
+---
+
+## Customizing Syntax Highlighting Colors
+
+VS Code allows for granular control over syntax highlighting colors using **TextMate scopes**. This customization can be applied either globally (affecting all projects) or locally (per-project).
+
+### 1\. Global Customization
+
+To apply color changes globally, you must edit your VS Code **User Settings** file (`settings.json`).
+
+1. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
+2. Type and select "**Preferences: Open User Settings (JSON)**."
+3. Add or modify the `editor.tokenColorCustomizations` object. Within the `textMateRules` array, you define rules by targeting specific TextMate scopes (like `support.function.fb2k` for your built-in functions) and setting the desired `foreground` color and `fontStyle`.
+
+```json
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment.line.double-slash.fb2k",
+        "settings": {
+          "foreground": "#6A9955"
+        }
+      },
+      {
+        "scope": "support.function.fb2k",
+        "settings": {
+          "foreground": "#DCDCAA",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  }
+}
+```
+
+### 2\. Project-Level Customization
+
+For changes that apply only to the current workspace, you must create a file named **`settings.json`** inside the **`.vscode`** folder at the root of your project.
+
+1. Create the folder `.vscode/` in your project root.
+2. Create the file `.vscode/settings.json`.
+3. Apply the same `editor.tokenColorCustomizations` structure shown above. These settings will override the global settings only when this specific project is open.
+
+You can use [this file](https://github.com/ThornDuke/fb2k-title-format/blob/master/examples/settings.json) as a reference for the specific TextMate scopes defined in the syntax grammar for Foobar2000 Title Formatting.
 
 ## Usage
 

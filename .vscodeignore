@@ -5,6 +5,7 @@ build/**
 node_modules/**
 scripts/**
 tests/**
+examples/**
 .github/**
 .gitignore
 .nvmrc
