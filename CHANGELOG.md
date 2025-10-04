@@ -13,6 +13,12 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [Unreleased]
+
+### Added
+
+- Highlighting of fenced code blocks in markdown files
+
 ## [1.6.0] - 2025-10-04
 
 ### Added
