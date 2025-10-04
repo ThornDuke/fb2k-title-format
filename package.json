@@ -40,6 +40,9 @@
           ".f2k"
         ],
         "configuration": "./config/language-configuration.json"
+      },
+      {
+        "id": "fb2kcb"
       }
     ],
     "grammars": [
@@ -47,6 +50,17 @@
         "language": "fb2k",
         "scopeName": "source.f2k",
         "path": "./syntaxes/foobar2000.tmLanguage.json"
+      },
+      {
+        "language": "fb2kcb",
+        "scopeName": "markdown.fb2k.codeblock",
+        "path": "./syntaxes/codeblock.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.fb2k": "fb2k"
+        }
       }
     ],
     "snippets": [
