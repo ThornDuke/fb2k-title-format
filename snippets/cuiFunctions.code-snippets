@@ -1,0 +1,93 @@
+{
+  "Function: $blend(color1,color2,part,total)": {
+    "prefix": "$blend(",
+    "body": [
+      "\\$blend(${1:color1},${2:color2},${3:num part},${4:total})"
+    ],
+    "description": "CUI: Returns a color that is a blend between `color1` and `color2`."
+  },
+  "Function: $hsl([h1,s1,l1[,h2,s2,l2]])": {
+    "prefix": "$hsl(",
+    "body": [
+      "\\$hsl(${1:num h1},${2:num s1},${3:num l1},${4:num h2},${5:num s2},${6:num l2})"
+    ],
+    "description": "CUI: If used without parameters, resets the text color to the default color, otherwise sets the color according to the specified parameters."
+  },
+  "Function: $rgb([r1,g1,b1[,r2,g2,b2]])": {
+    "prefix": "$rgb(",
+    "body": [
+      "\\$rgb(${1:num r1},${2:num g1},${3:num b1},${4:num r2},${5:num g2},${6:num b2})"
+    ],
+    "description": "CUI: If used without parameters, resets the text color to the default color, otherwise sets the color according to the specified parameters."
+  },
+  "Function: $transition(string,color1,color2)": {
+    "prefix": "$transition(",
+    "body": [
+      "\\$transition(${1:string},${2:color1},${3:color2})"
+    ],
+    "description": "CUI: Inserts color codes into `string`, so that the first character has `color1`, the last character has `color2`, and intermediate characters have blended colors."
+  },
+  "Function: $set_global(name,value)": {
+    "prefix": "$set_global(",
+    "body": [
+      "\\$set_global(${1:name},${2:value})"
+    ],
+    "description": "CUI: Set the `name` variable to the `value` value."
+  },
+  "Function: $get_global(name)": {
+    "prefix": "$get_global(",
+    "body": [
+      "\\$get_global(${1:name})"
+    ],
+    "description": "CUI: Get the value of the global variable `name`."
+  },
+  "Function: $set_style(...)": {
+    "prefix": "$set_style(",
+    "body": [
+      "\\$set_style(${1:text},${2:text colour},${3:selected item text colour}${4:[,selected item text colour when window is not focused]})"
+    ],
+    "description": "CUI: Is used to set colours."
+  },
+  "Function: $calculate_blend_target(color)": {
+    "prefix": "$calculate_blend_target(",
+    "body": [
+      "\\$calculate_blend_target(${1:colour})"
+    ],
+    "description": "CUI: Returns black if the mean of the red, green and blue components of `color` is greater than or equal to 128; otherwise it returns white."
+  },
+  "Function: $offset_colour(colour_from,colour_to,offset)": {
+    "prefix": "$offset_colour(",
+    "body": [
+      "\\$offset_colour(${1:colour_from},${2:colour_to},${3:offset})"
+    ],
+    "description": "CUI: Shifts one colour towards another colour."
+  },
+  "Function: $set_format(name: value; name2: value2; ...)": {
+    "prefix": "$set_format(",
+    "body": [
+      "\\$set_format(${1|font-family,font-size,font-weight,font-stretch,font-style,text-decoration|}: ${2|value,initial|})"
+    ],
+    "description": "CUI: Changes font and text styling for subsequent text."
+  },
+  "Function: $reset_format()": {
+    "prefix": "$reset_format(",
+    "body": [
+      "\\$reset_format()"
+    ],
+    "description": "CUI: Restores font and text styling for subsequent text to the panel defaults."
+  },
+  "Function: $set_font(font face,point size,modifiers)": {
+    "prefix": "$set_font(",
+    "body": [
+      "\\$set_font(${1:font face},${2:point size},${3|bold,italic,underline|})"
+    ],
+    "description": "CUI: Changes the font used for subsequent text."
+  },
+  "Function: $reset_font()": {
+    "prefix": "$reset_font(",
+    "body": [
+      "\\$reset_font()"
+    ],
+    "description": "CUI: Restores font and text styling for subsequent text to the panel defaults."
+  }
+}

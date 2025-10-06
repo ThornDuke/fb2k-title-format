@@ -2,7 +2,7 @@
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
   "description": "Syntax highlighting, snippets and commands for Foobar2000's title formatting.",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -63,7 +63,23 @@
     "snippets": [
       {
         "language": "fb2k",
-        "path": "./snippets/FB2k-title-formatting.code-snippets"
+        "path": "./snippets/cuiFunctions.code-snippets"
+      },
+      {
+        "language": "fb2k",
+        "path": "./snippets/cuiTags.code-snippets"
+      },
+      {
+        "language": "fb2k",
+        "path": "./snippets/fb2kFunctions.code-snippets"
+      },
+      {
+        "language": "fb2k",
+        "path": "./snippets/fb2kKeywords.code-snippets"
+      },
+      {
+        "language": "fb2k",
+        "path": "./snippets/fb2kTags.code-snippets"
       }
     ],
     "commands": [

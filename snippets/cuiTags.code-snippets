@@ -1,0 +1,191 @@
+{
+  "Tag: %_text%": {
+    "prefix": "%_text%",
+    "body": [
+      "%_text%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_text%": {
+    "prefix": "%_selected_text%",
+    "body": [
+      "%_selected_text%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_text_no_focus%": {
+    "prefix": "%_selected_text_no_focus%",
+    "body": [
+      "%_selected_text_no_focus%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_back%": {
+    "prefix": "%_back%",
+    "body": [
+      "%_back%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_back%": {
+    "prefix": "%_selected_back%",
+    "body": [
+      "%_selected_back%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_selected_back_no_focus%": {
+    "prefix": "%_selected_back_no_focus%",
+    "body": [
+      "%_selected_back_no_focus%"
+    ],
+    "description": "CUI: Return the relevant colour before any modifications by the current style script."
+  },
+  "Tag: %_display_index%": {
+    "prefix": "%_display_index%",
+    "body": [
+      "%_display_index%"
+    ],
+    "description": "CUI: The current row number in the playlist view (including group headings)."
+  },
+  "Tag: %_is_group%": {
+    "prefix": "%_is_group%",
+    "body": [
+      "%_is_group%"
+    ],
+    "description": "CUI: Whether a group heading is currently being formatted."
+  },
+  "Tag: %_is_themed%": {
+    "prefix": "%_is_themed%",
+    "body": [
+      "%_is_themed%"
+    ],
+    "description": "CUI: Whether ‘Themed’ has been selected as the scheme for the playlist view in Colours and fonts preferences."
+  },
+  "Tag: %_system_year%": {
+    "prefix": "%_system_year%",
+    "body": [
+      "%_system_year%"
+    ],
+    "description": "CUI: The current year."
+  },
+  "Tag: %_system_day%": {
+    "prefix": "%_system_day%",
+    "body": [
+      "%_system_day%"
+    ],
+    "description": "CUI: The current day of the month, as a number."
+  },
+  "Tag: %_system_month%": {
+    "prefix": "%_system_month%",
+    "body": [
+      "%_system_month%"
+    ],
+    "description": "CUI: The current month of the year, as a number."
+  },
+  "Tag: %_system_day_of_week%": {
+    "prefix": "%_system_day_of_week%",
+    "body": [
+      "%_system_day_of_week%"
+    ],
+    "description": "CUI: The current day of the week, as a number."
+  },
+  "Tag: %_system_hour%": {
+    "prefix": "%_system_hour%",
+    "body": [
+      "%_system_hour%"
+    ],
+    "description": "CUI: The current hour."
+  },
+  "Tag: %_system_julian_day%": {
+    "prefix": "%_system_julian_day%",
+    "body": [
+      "%_system_julian_day%"
+    ],
+    "description": "CUI: The current Julian day."
+  },
+  "Tag: %playlist_name%": {
+    "prefix": "%playlist_name%",
+    "body": [
+      "%playlist_name%"
+    ],
+    "description": "CUI: The name of the active playlist."
+  },
+  "Tag: %title%": {
+    "prefix": "%title%",
+    "body": [
+      "%title%"
+    ],
+    "description": "CUI: The title of the playlist."
+  },
+  "Tag: %is_locked%": {
+    "prefix": "%is_locked%",
+    "body": [
+      "%is_locked%"
+    ],
+    "description": "CUI: Exists if the playlist is locked."
+  },
+  "Tag: %lock_name%": {
+    "prefix": "%lock_name%",
+    "body": [
+      "%lock_name%"
+    ],
+    "description": "CUI: The name of the playlist lock, if the playlist is locked."
+  },
+  "Tag: %size%": {
+    "prefix": "%size%",
+    "body": [
+      "%size%"
+    ],
+    "description": "CUI: The number of items in the playlist."
+  },
+  "Tag: %length%": {
+    "prefix": "%length%",
+    "body": [
+      "%length%"
+    ],
+    "description": "CUI: The total length of the items in the playlist."
+  },
+  "Tag: %filesize%": {
+    "prefix": "%filesize%",
+    "body": [
+      "%filesize%"
+    ],
+    "description": "CUI: The sum of the known file sizes of the items in the playlist."
+  },
+  "Tag: %filesize_raw%": {
+    "prefix": "%filesize_raw%",
+    "body": [
+      "%filesize_raw%"
+    ],
+    "description": "CUI: The sum of the known file sizes of the items in the playlist, in bytes."
+  },
+  "Tag: %is_active%": {
+    "prefix": "%is_active%",
+    "body": [
+      "%is_active%"
+    ],
+    "description": "CUI: Exists if the playlist is the active playlist."
+  },
+  "Tag: %is_playing%": {
+    "prefix": "%is_playing%",
+    "body": [
+      "%is_playing%"
+    ],
+    "description": "CUI: Exists if the playlist is playing."
+  },
+  "Tag: %default_font_face%": {
+    "prefix": "%default_font_face%",
+    "body": [
+      "%default_font_face%"
+    ],
+    "description": "CUI: The default font family for the panel."
+  },
+  "Tag: %default_font_size%": {
+    "prefix": "%default_font_size%",
+    "body": [
+      "%default_font_size%"
+    ],
+    "description": "CUI: The default font size for the panel, in points."
+  }
+}
