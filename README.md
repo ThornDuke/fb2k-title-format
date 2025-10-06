@@ -85,19 +85,19 @@ Additionally, you can define a folding region.
 
 The start of a folding region is defined by a line starting with
 
-```txt
+```fb2k
 //section>
 ```
 
 The end of a folding region is defined by a line starting with
 
-```txt
+```fb2k
 //endsection>
 ```
 
 For example:
 
-```
+```fb2k
 //section> tags normalization
 $puts(
   artist,
@@ -119,13 +119,13 @@ The plugin provides the following commands:
 
 To simplify writing and reading complex scripts, code is indented within functions. For example:
 
-```
+```fb2k
 $puts(
   target,
   $if(
     %series%,
-    $stripprefix(%
-      series%,
+    $stripprefix(
+      %series%,
       'The'
     ),
     $stripprefix(
@@ -164,8 +164,6 @@ This is useful when there are commented lines within a script that must be remov
 > **note**: these commands are only available in files with the '.f2k' extension.
 
 Certamente. Ecco una spiegazione tecnica e diretta in inglese su come personalizzare i colori della sintassi in VS Code, strutturata in base ai punti richiesti:
-
----
 
 ## Customizing Syntax Highlighting Colors
 

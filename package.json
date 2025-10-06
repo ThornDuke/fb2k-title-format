@@ -69,15 +69,15 @@
     "commands": [
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
-        "title": "Join Lines"
+        "title": "fb2k: Join Lines"
       },
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
-        "title": "Join Lines No Comments"
+        "title": "fb2k: Join Lines No Comments"
       },
       {
         "command": "foobar2000-title-formatting-syntax.removeIndentation",
-        "title": "Remove Indentation"
+        "title": "fb2k: Remove Indentation"
       }
     ],
     "keybindings": [
