@@ -1,9 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const { getProjectRoot } = require('./prj-root');
 
 function roleCount() {
-  const tokensPath = path.join(__dirname, '..', 'data', 'fb2kTokens.json');
   try {
+    const projectRoot = getProjectRoot();
+    const tokensPath = path.join(projectRoot, 'data', 'fb2kTokens.json');
     const tokensData = fs.readFileSync(tokensPath, 'utf8');
     const tokens = JSON.parse(tokensData);
 

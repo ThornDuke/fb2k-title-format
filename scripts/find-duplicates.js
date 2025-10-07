@@ -1,11 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+const { getProjectRoot } = require('./prj-root');
 
 function printDuplicates() {
-  const tokensPath = path.join(__dirname, '..', 'data', 'fb2kTokens.json');
+  const projectRoot = getProjectRoot();
+  const tokensPath = path.join(projectRoot, 'data', 'fb2kTokens.json');
   const duplicatesPath = path.join(
-    __dirname,
-    '..',
+    projectRoot,
     'data',
     'duplicatedTokens.jsonc'
   );

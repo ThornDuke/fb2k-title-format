@@ -1,11 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+const { getProjectRoot } = require('./prj-root');
 
 function updateSyntaxFile() {
-  const tokensPath = path.join(__dirname, '..', 'data', 'fb2kTokens.json');
+  const projectRoot = getProjectRoot();
+  const tokensPath = path.join(projectRoot, 'data', 'fb2kTokens.json');
   const syntaxPath = path.join(
-    __dirname,
-    '..',
+    projectRoot,
     'syntaxes',
     'foobar2000.tmLanguage.json'
   );

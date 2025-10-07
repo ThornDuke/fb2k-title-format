@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+const { getProjectRoot } = require('./prj-root');
 
 function addIdField() {
-  const tokensPath = path.join(__dirname, '..', 'data', 'fb2kTokens.json');
-
   try {
+    const projectRoot = getProjectRoot();
+    const tokensPath = path.join(projectRoot, 'data', 'fb2kTokens.json');
+
     // Read and parse JSON files
     const tokensData = JSON.parse(fs.readFileSync(tokensPath, 'utf8'));
     // cicle on tokensData and add id field

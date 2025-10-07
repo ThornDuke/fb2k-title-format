@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const { getProjectRoot } = require('./prj-root');
 
+const projectRoot = getProjectRoot();
 const snippetsFolder = 'snippets';
 const dataFolder = 'data';
 const dataFilename = 'fb2kTokens.json';
@@ -48,7 +50,7 @@ const FILE_MAP = [
 
 // Funzione helper per ottenere il percorso completo di output
 function getOutputPath(filename) {
-  return path.join(__dirname, '..', snippetsFolder, filename);
+  return path.join(projectRoot, snippetsFolder, filename);
 }
 
 /**
@@ -78,7 +80,7 @@ function createSnippet(tokenObj) {
 }
 
 function updateSnippets() {
-  const tokensPath = path.join(__dirname, '..', dataFolder, dataFilename);
+  const tokensPath = path.join(projectRoot, dataFolder, dataFilename);
 
   try {
     const tokensData = fs.readFileSync(tokensPath, 'utf8');
