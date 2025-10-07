@@ -1015,7 +1015,7 @@
     "description": ["Removes leading and trailing spaces from string `str`."],
     "example": ["$trim(%title%)"],
     "ref-link": [
-      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$stripprefix(str,prefix1,prefix2,...)"
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$trim(str)"
     ]
   },
   {
