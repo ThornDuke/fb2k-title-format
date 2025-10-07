@@ -1,0 +1,5 @@
+{
+  "command.joinLinesSmart.title": "Join Lines",
+  "command.joinLinesNoComments.title": "Join Lines Remove Comments",
+  "command.removeIndentation.title": "Remove Indentation"
+}

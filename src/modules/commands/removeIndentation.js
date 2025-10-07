@@ -3,6 +3,7 @@
 // Licensed under the MIT License.
 // See LICENSE in the project root for license information.
 // ---------------------------------------------------------
+const vscode = require('vscode');
 
 /**
  * Rimuove l'indentazione da tutte le linee selezionate o dal blocco.

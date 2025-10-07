@@ -3,6 +3,7 @@
 // Licensed under the MIT License.
 // See LICENSE in the project root for license information.
 // ---------------------------------------------------------
+const vscode = require('vscode');
 
 /**
  * Unisce le linee selezionate o il blocco di codice tra linee vuote/commentate in una singola linea.
@@ -47,30 +48,11 @@ function joinLinesSmart(editor, edit) {
     const joined = lines.join('');
 
     // Sostituisci il blocco selezionato/trovato
-    const range = new editor.document.getWordRangeAtPosition(
-      new editor.document.positionAt(0),
-      new editor.Document(0, 0) // Dummy range, verrà sovrascritto
-    );
-    edit.replace(
-      new editor.document.getWordRangeAtPosition(
-        new editor.document.positionAt(0),
-        new editor.Document(0, 0)
-      ),
-      joined
-    );
-    edit.replace(
-      new editor.document.getWordRangeAtPosition(
-        new editor.document.positionAt(0),
-        new editor.Document(0, 0)
-      ),
-      joined
-    );
-
-    const fullRange = new vscode.Range(
+    const range = new vscode.Range(
       new vscode.Position(startLine, 0),
       new vscode.Position(endLine, document.lineAt(endLine).text.length)
     );
-    edit.replace(fullRange, joined);
+    edit.replace(range, joined);
   });
 }
 

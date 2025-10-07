@@ -1,0 +1,5 @@
+{
+  "command.joinLinesSmart.title": "Joindre les Lignes",
+  "command.joinLinesNoComments.title": "Joindre les Lignes en Supprimant les Commentaires",
+  "command.removeIndentation.title": "Supprimer l'Indentation"
+}
