@@ -2,7 +2,7 @@
   "name": "foobar2000-title-formatting-syntax",
   "displayName": "Foobar2000 Title Formatting Syntax",
   "description": "Syntax highlighting, snippets and commands for Foobar2000's title formatting.",
-  "version": "1.6.9",
+  "version": "1.7.0",
   "author": "Thorn Duke",
   "publisher": "ThornDuke",
   "icon": "resources/main.png",
@@ -26,6 +26,9 @@
     "snippets"
   ],
   "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:foobar2000-title-formatting-syntax.joinLinesSmart"
+  ],
   "contributes": {
     "languages": [
       {
@@ -86,17 +89,17 @@
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
         "title": "%command.joinLinesSmart.title%",
-        "category": "fb2k"
+        "category": "FB2K"
       },
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
         "title": "%command.joinLinesNoComments.title%",
-        "category": "fb2k"
+        "category": "FB2K"
       },
       {
         "command": "foobar2000-title-formatting-syntax.removeIndentation",
         "title": "%command.removeIndentation.title%",
-        "category": "fb2k"
+        "category": "FB2K"
       }
     ],
     "keybindings": [

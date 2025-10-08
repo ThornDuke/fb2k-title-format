@@ -4,7 +4,7 @@ Provides syntax highlighting, code snippets and code context for [Foobar2000](ht
 
 Handles all scripting related to Foobar2000 [native tags and functions](https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Syntax), as well as those of [ColumnsUI](https://yuo.be/columns-ui).
 
-Updated with Foobar2000 v2.25.1 and ColumnsUI v3.1.0.
+Updated with Foobar2000 v2.25.2 and ColumnsUI v3.1.0.
 
 <details open>
 <summary><strong>Table of Contents</strong></summary>

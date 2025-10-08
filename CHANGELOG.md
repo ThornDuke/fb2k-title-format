@@ -13,12 +13,13 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
-## [Unreleased]
+## [1.7.0] - 2025-10-08
 
 ### Added
 
 - Highlighting of fenced code blocks in markdown files
-- docs: color customization
+- README.md: a chapter about color customization
+- localization of the commands
 
 ### Changed
 
@@ -148,7 +149,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 - syntaxes/foobar2000.tmLanguage.json: conditional blocks correctly parsed
 
-## [1.1.0] 2025-09-05
+## [1.1.0] - 2025-09-05
 
 ### Added
 
