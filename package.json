@@ -89,22 +89,103 @@
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
         "title": "%command.joinLinesSmart.title%",
-        "category": "FB2K"
+        "category": "FB2K",
+        "enablement": "resourceExtname == '.f2k'",
+        "icon": "resources/join-lines.svg"
       },
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
         "title": "%command.joinLinesNoComments.title%",
-        "category": "FB2K"
+        "category": "FB2K",
+        "enablement": "resourceExtname == '.f2k'",
+        "icon": "resources/join-lines-clean.svg"
       },
       {
         "command": "foobar2000-title-formatting-syntax.removeIndentation",
         "title": "%command.removeIndentation.title%",
-        "category": "FB2K"
+        "category": "FB2K",
+        "enablement": "resourceExtname == '.f2k'",
+        "icon": "resources/remove-indentation.svg"
       },
       {
         "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
         "title": "%command.transpile.title%",
-        "category": "FB2K"
+        "category": "FB2K",
+        "enablement": "resourceExtname == '.f2k'",
+        "icon": "resources/transpile.svg"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
+          "when": "resourceLangId == fb2k"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
+          "when": "resourceLangId == fb2k"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.removeIndentation",
+          "when": "resourceLangId == fb2k"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
+          "when": "resourceLangId == fb2k"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
+          "when": "resourceLangId == fb2k",
+          "group": "navigation@1"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
+          "when": "resourceLangId == fb2k",
+          "group": "navigation@1"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.removeIndentation",
+          "when": "resourceLangId == fb2k",
+          "group": "navigation@1"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
+          "when": "resourceLangId == fb2k",
+          "group": "navigation@1"
+        }
+      ],
+      "editor/context": [
+        {
+          "submenu": "foobar2000-title-formatting-syntax.fb2k-submenu-context",
+          "when": "resourceLangId == fb2k",
+          "group": "9_fb2k@1"
+        }
+      ],
+      "foobar2000-title-formatting-syntax.fb2k-submenu-context": [
+        {
+          "command": "foobar2000-title-formatting-syntax.joinLinesSmart",
+          "group": "fb2k_modifications@1"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
+          "group": "fb2k_modifications@2"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.removeIndentation",
+          "group": "fb2k_modifications@3"
+        },
+        {
+          "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
+          "group": "fb2k_modifications@4"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "foobar2000-title-formatting-syntax.fb2k-submenu-context",
+        "label": "FB2K"
       }
     ],
     "keybindings": [
