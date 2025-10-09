@@ -13,6 +13,12 @@
 https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 -->
 
+## [Unreleased]
+
+### Added
+
+- the scripts can be transpiled to a previous version of the title formatting
+
 ## [1.7.0] - 2025-10-08
 
 ### Added
