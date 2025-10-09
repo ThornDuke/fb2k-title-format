@@ -144,7 +144,6 @@ This command removes indentation from all selected lines, or from all unselected
 - Keybinding: `Ctrl+K Ctrl+H` (`Cmd+K Cmd+H` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Remove Indentation`
 - Context menu: `FB2K -> Remove Indentation`
-- Menu button: ![clear icon of the command Remove Indentation](./resources/dark/removeIndent.png) ![dark icon of the command Remove Indentation](./resources/light/removeIndent.png)
 
 #### `Join Lines`
 
@@ -155,7 +154,6 @@ This is useful when a complex script has been written on multiple lines of text 
 - Keybinding: `Ctrl+K Ctrl+Z` (`Cmd+K Cmd+Z` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Join Lines`
 - Context menu: `FB2K -> Join Lines`
-- Menu button: ![clear icon of the command Join Lines](./resources/dark/joinLines.png) ![dark icon of the command Join Lines](./resources/light/joinLines.png)
 
 #### `Join Lines No Comments`
 
@@ -166,7 +164,6 @@ This is useful when there are commented lines within a script that must be remov
 - Keybinding: `Ctrl+K Ctrl+Y` (`Cmd+K Cmd+Y` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Join Lines No Comments`
 - Context menu: `FB2K -> Join Lines Join Lines Remove Comments`
-- Menu button: ![clear icon of the command Join Lines Remove Comments](./resources/dark/deleteComment.png) ![dark icon of the command Join Lines Remove Comments](./resources/light/deleteComment.png)
 
 #### `Transpile` (experimental)
 
@@ -179,7 +176,6 @@ The algorithm is in an experimental phase.
 - Keybinding: `Ctrl+K Ctrl+P` (`Cmd+K Cmd+P` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Transpile`
 - Context menu: `FB2K -> Transpile`
-- Menu button: ![clear icon of the command Transpile](./resources/dark/transpile.png) ![dark icon of the command Transpile](./resources/light/transpile.png)
 
 > **note**: these commands are only available in files with the '.f2k' extension.
 
