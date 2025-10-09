@@ -3,9 +3,70 @@
 // Licensed under the MIT License.
 // See LICENSE in the project root for license information.
 // ---------------------------------------------------------
+// Helper function to find matching closing parenthesis
+function findClosingParen(str, startIdx) {
+  let depth = 1;
+  let inQuotes = false;
+
+  for (let i = startIdx; i < str.length; i++) {
+    if (str[i] === "'" && (i === 0 || str[i - 1] !== '\\')) {
+      inQuotes = !inQuotes;
+    }
+    if (!inQuotes) {
+      if (str[i] === '(') depth++;
+      if (str[i] === ')') {
+        depth--;
+        if (depth === 0) return i;
+      }
+    }
+  }
+  return -1;
+}
+
+// Helper function to extract second parameter
+function extractSecondParam(content) {
+  let depth = 0;
+  let inQuotes = false;
+
+  for (let i = 0; i < content.length; i++) {
+    if (content[i] === "'" && (i === 0 || content[i - 1] !== '\\')) {
+      inQuotes = !inQuotes;
+    }
+    if (!inQuotes) {
+      if (content[i] === '(') depth++;
+      if (content[i] === ')') depth--;
+      if (content[i] === ',' && depth === 0) {
+        return content.substring(i + 1);
+      }
+    }
+  }
+  return '';
+}
+
+// Helper function to extract variable name (first parameter)
+function extractVarName(content) {
+  let depth = 0;
+  let inQuotes = false;
+
+  for (let i = 0; i < content.length; i++) {
+    if (content[i] === "'" && (i === 0 || content[i - 1] !== '\\')) {
+      inQuotes = !inQuotes;
+    }
+    if (!inQuotes) {
+      if (content[i] === '(') depth++;
+      if (content[i] === ')') depth--;
+      if (content[i] === ',' && depth === 0) {
+        return content.substring(0, i);
+      }
+    }
+  }
+  return content;
+}
+
 function parseFB2KScript(script) {
-  // Step 1: Remove comment lines (lines starting with //)
   let lines = script.split('\n');
+
+  // Step 1: Remove comment lines (lines starting with //)
   lines = lines.filter((line) => !line.startsWith('//'));
 
   // Step 2: Remove indentation
@@ -20,66 +81,6 @@ function parseFB2KScript(script) {
   // Step 5: Parse and substitute variables
   const variables = new Map();
   const putVars = new Map();
-
-  // Helper function to find matching closing parenthesis
-  function findClosingParen(str, startIdx) {
-    let depth = 1;
-    let inQuotes = false;
-
-    for (let i = startIdx; i < str.length; i++) {
-      if (str[i] === "'" && (i === 0 || str[i - 1] !== '\\')) {
-        inQuotes = !inQuotes;
-      }
-      if (!inQuotes) {
-        if (str[i] === '(') depth++;
-        if (str[i] === ')') {
-          depth--;
-          if (depth === 0) return i;
-        }
-      }
-    }
-    return -1;
-  }
-
-  // Helper function to extract second parameter
-  function extractSecondParam(content) {
-    let depth = 0;
-    let inQuotes = false;
-
-    for (let i = 0; i < content.length; i++) {
-      if (content[i] === "'" && (i === 0 || content[i - 1] !== '\\')) {
-        inQuotes = !inQuotes;
-      }
-      if (!inQuotes) {
-        if (content[i] === '(') depth++;
-        if (content[i] === ')') depth--;
-        if (content[i] === ',' && depth === 0) {
-          return content.substring(i + 1);
-        }
-      }
-    }
-    return '';
-  }
-
-  // Helper function to extract variable name (first parameter)
-  function extractVarName(content) {
-    let depth = 0;
-    let inQuotes = false;
-
-    for (let i = 0; i < content.length; i++) {
-      if (content[i] === "'" && (i === 0 || content[i - 1] !== '\\')) {
-        inQuotes = !inQuotes;
-      }
-      if (!inQuotes) {
-        if (content[i] === '(') depth++;
-        if (content[i] === ')') depth--;
-        if (content[i] === ',' && depth === 0) {
-          return content.substring(0, i);
-        }
-      }
-    }
-    return content;
-  }
 
   // First pass: collect all $puts and $put definitions
   let idx = 0;
@@ -261,3 +262,7 @@ function parseFB2KScript(script) {
 
   return result;
 }
+
+module.exports = {
+  parseFB2KScript
+};

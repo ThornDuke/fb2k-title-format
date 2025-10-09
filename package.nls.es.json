@@ -1,5 +1,6 @@
 {
   "command.joinLinesSmart.title": "Unir Líneas",
   "command.joinLinesNoComments.title": "Unir Líneas Eliminando Comentarios",
-  "command.removeIndentation.title": "Eliminar Sangría"
+  "command.removeIndentation.title": "Eliminar Sangría",
+  "command.transpile.title": "Transpile"
 }

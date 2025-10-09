@@ -100,6 +100,11 @@
         "command": "foobar2000-title-formatting-syntax.removeIndentation",
         "title": "%command.removeIndentation.title%",
         "category": "FB2K"
+      },
+      {
+        "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
+        "title": "%command.transpile.title%",
+        "category": "FB2K"
       }
     ],
     "keybindings": [
@@ -125,6 +130,14 @@
         "mac": "cmd+k cmd+h",
         "win": "ctrl+k ctrl+h",
         "linux": "ctrl+k ctrl+h",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
+        "key": "cmd+k cmd+p",
+        "mac": "cmd+k cmd+p",
+        "win": "ctrl+k ctrl+p",
+        "linux": "ctrl+k ctrl+p",
         "when": "editorTextFocus"
       }
     ]

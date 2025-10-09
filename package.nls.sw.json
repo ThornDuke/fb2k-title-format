@@ -1,5 +1,6 @@
 {
   "command.joinLinesSmart.title": "Unganisha Mistari",
   "command.joinLinesNoComments.title": "Unganisha Mistari Ondoa Maoni",
-  "command.removeIndentation.title": "Ondoa Uingizaji"
+  "command.removeIndentation.title": "Ondoa Uingizaji",
+  "command.transpile.title": "Transpile"
 }

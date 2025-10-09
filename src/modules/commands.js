@@ -9,6 +9,7 @@ const vscode = require('vscode');
 const { joinLinesSmart } = require('./commands/joinLinesSmart');
 const { joinLinesNoComments } = require('./commands/joinLinesNoComments');
 const { removeIndentation } = require('./commands/removeIndentation');
+const { transpileCurrentFile } = require('./commands/transpileCurrentFile');
 
 /**
  * Registra tutti i comandi dell'estensione.
@@ -33,10 +34,17 @@ function registerAllCommands(vscode, context) {
     removeIndentation // Si riferisce alla funzione importata
   );
 
+  const disposableTranspileCurrentFile =
+    vscode.commands.registerTextEditorCommand(
+      'foobar2000-title-formatting-syntax.transpileCurrentFile',
+      transpileCurrentFile // Si riferisce alla funzione importata
+    );
+
   return [
     disposableJoinLines,
     disposableJoinLinesNoComments,
-    disposableRemoveIndentation
+    disposableRemoveIndentation,
+    disposableTranspileCurrentFile
   ];
 }
 

@@ -1,5 +1,6 @@
 {
   "command.joinLinesSmart.title": "Unisci Righe",
   "command.joinLinesNoComments.title": "Unisci Righe Rimuovendo Commenti",
-  "command.removeIndentation.title": "Rimuovi Indentazione"
+  "command.removeIndentation.title": "Rimuovi Indentazione",
+  "command.transpile.title": "Transpile"
 }
