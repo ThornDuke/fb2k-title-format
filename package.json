@@ -91,28 +91,40 @@
         "title": "%command.joinLinesSmart.title%",
         "category": "FB2K",
         "enablement": "resourceExtname == '.f2k'",
-        "icon": "resources/join-lines.svg"
+        "icon": {
+          "light": "resources/light/joinLines.svg",
+          "dark": "resources/dark/joinLines.svg"
+        }
       },
       {
         "command": "foobar2000-title-formatting-syntax.joinLinesNoComments",
         "title": "%command.joinLinesNoComments.title%",
         "category": "FB2K",
         "enablement": "resourceExtname == '.f2k'",
-        "icon": "resources/join-lines-clean.svg"
+        "icon": {
+          "light": "resources/light/deleteComment.svg",
+          "dark": "resources/dark/deleteComment.svg"
+        }
       },
       {
         "command": "foobar2000-title-formatting-syntax.removeIndentation",
         "title": "%command.removeIndentation.title%",
         "category": "FB2K",
         "enablement": "resourceExtname == '.f2k'",
-        "icon": "resources/remove-indentation.svg"
+        "icon": {
+          "light": "resources/light/removeIndent.svg",
+          "dark": "resources/dark/removeIndent.svg"
+        }
       },
       {
         "command": "foobar2000-title-formatting-syntax.transpileCurrentFile",
         "title": "%command.transpile.title%",
         "category": "FB2K",
         "enablement": "resourceExtname == '.f2k'",
-        "icon": "resources/transpile.svg"
+        "icon": {
+          "light": "resources/light/transpile.svg",
+          "dark": "resources/dark/transpile.svg"
+        }
       }
     ],
     "menus": {
