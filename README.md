@@ -19,6 +19,7 @@ Updated with Foobar2000 v2.25.2 and ColumnsUI v3.1.0.
     - [`Remove Indentation`](#remove-indentation)
     - [`Join Lines`](#join-lines)
     - [`Join Lines No Comments`](#join-lines-no-comments)
+    - [`Transpile` (experimental)](#transpile-experimental)
 - [Customizing Syntax Highlighting Colors](#customizing-syntax-highlighting-colors)
   - [1. Global Customization](#1-global-customization)
   - [2. Project-Level Customization](#2-project-level-customization)
@@ -142,6 +143,8 @@ This command removes indentation from all selected lines, or from all unselected
 
 - Keybinding: `Ctrl+K Ctrl+H` (`Cmd+K Cmd+H` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Remove Indentation`
+- Context menu: `FB2K -> Remove Indentation`
+- Menu button: ![clear icon of the command Remove Indentation](./resources/dark/removeIndent.svg) ![dark icon of the command Remove Indentation](./resources/light/removeIndent.svg)
 
 #### `Join Lines`
 
@@ -151,6 +154,8 @@ This is useful when a complex script has been written on multiple lines of text 
 
 - Keybinding: `Ctrl+K Ctrl+Z` (`Cmd+K Cmd+Z` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Join Lines`
+- Context menu: `FB2K -> Join Lines`
+- Menu button: ![clear icon of the command Join Lines](./resources/dark/joinLines.svg) ![dark icon of the command Join Lines](./resources/light/joinLines.svg)
 
 #### `Join Lines No Comments`
 
@@ -160,10 +165,23 @@ This is useful when there are commented lines within a script that must be remov
 
 - Keybinding: `Ctrl+K Ctrl+Y` (`Cmd+K Cmd+Y` on Mac)
 - Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Join Lines No Comments`
+- Context menu: `FB2K -> Join Lines Join Lines Remove Comments`
+- Menu button: ![clear icon of the command Join Lines Remove Comments](./resources/dark/deleteComment.svg) ![dark icon of the command Join Lines Remove Comments](./resources/light/deleteComment.svg)
+
+#### `Transpile` (experimental)
+
+This command allows you to transform the code present in a scripting file to make it compatible with old versions of Foobar2000.
+
+The command acts on an entire file. The processing result is automatically saved in a file with the same name as the starting one, but with the pre-suffix "transpiled", and shown in a side window of VSCode.
+
+The algorithm is in an experimental phase.
+
+- Keybinding: `Ctrl+K Ctrl+P` (`Cmd+K Cmd+P` on Mac)
+- Command Palette: `Shift+Ctrl+P` (Windows/Linux) `Shift+Cmd+P` (Mac) then type `Transpile`
+- Context menu: `FB2K -> Transpile`
+- Menu button: ![clear icon of the command Transpile](./resources/dark/transpile.svg) ![dark icon of the command Transpile](./resources/light/transpile.svg)
 
 > **note**: these commands are only available in files with the '.f2k' extension.
-
-Certamente. Ecco una spiegazione tecnica e diretta in inglese su come personalizzare i colori della sintassi in VS Code, strutturata in base ai punti richiesti:
 
 ## Customizing Syntax Highlighting Colors
 

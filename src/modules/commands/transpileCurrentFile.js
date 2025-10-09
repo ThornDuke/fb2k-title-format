@@ -39,7 +39,7 @@ function transpileCurrentFile(editor, edit) {
   const originalNameNoExt = path.basename(originalBaseName, originalExt);
 
   // Crea il nuovo nome del file (es: file.txt -> file.transformed.txt)
-  const newFileName = `${originalNameNoExt}.transformed${originalExt}`;
+  const newFileName = `${originalNameNoExt}.transpiled${originalExt}`;
   const newFilePath = path.join(originalDir, newFileName);
   const newFileUri = vscode.Uri.file(newFilePath);
 
