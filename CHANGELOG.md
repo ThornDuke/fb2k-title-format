@@ -19,6 +19,7 @@ https://gist.github.com/ThornDuke/64da76cd4a56b16492d5101691f6108f
 
 - the scripts can be transpiled to a previous version of the title formatting
 - added context menu commands and menu buttons
+- added icons for the menu buttons
 
 ## [1.7.0] - 2025-10-08
 
