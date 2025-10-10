@@ -9,9 +9,6 @@ const { parseFB2KScript } = require('./parseFB2KScript');
  * @param {vscode.TextEditor} editor
  */
 function transpileCurrentFile(editor, edit) {
-  // 1. Prende il contenuto del file aperto nel tab attivo
-  // const editor = vscode.window.activeTextEditor;
-
   if (editor.document.languageId !== 'fb2k') {
     return;
   }
@@ -21,7 +18,7 @@ function transpileCurrentFile(editor, edit) {
 
   if (originalUri.scheme !== 'file') {
     vscode.window.showInformationMessage(
-      'Questo comando funziona solo per i file salvati su disco.'
+      'This command only works for files saved to disk.'
     );
     return;
   }
@@ -58,12 +55,12 @@ function transpileCurrentFile(editor, edit) {
     });
 
     vscode.window.showInformationMessage(
-      `File trasformato salvato e aperto: ${newFileName}`
+      `Transpiled file saved and opened: ${newFileName}`
     );
   } catch (error) {
     console.error(error);
     vscode.window.showErrorMessage(
-      `Errore durante il salvataggio o l'apertura del file: ${error.message}`
+      `Error saving or opening file: ${error.message}`
     );
   }
 }
