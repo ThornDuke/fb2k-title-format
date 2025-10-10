@@ -1519,7 +1519,7 @@
     "role": "function",
     "sign": "$info(name)",
     "snippet-body": [
-      "\\$info(${1|codec|codec_profile|samplerate|bitrate|tool|encoding|channels|bitspersample|decoded_bitspersample|bitspersample_extra|tagtype|cue_embedded|md5|WAVEFORMATEXTENSIBLE_CHANNEL_MASK|ENC_DELAY|ENC_PADDING|MP3_ACCURATE_LENGTH|MP3_STEREO_MODE|VERSION|FLAGS|channel_mode|})"
+      "\\$info(${1|codec|codec_profile|container|samplerate|bitrate|tool|encoding|channels|bitspersample|decoded_bitspersample|bitspersample_extra|tagtype|cue_embedded|md5|WAVEFORMATEXTENSIBLE_CHANNEL_MASK|ENC_DELAY|ENC_PADDING|MP3_ACCURATE_LENGTH|MP3_STEREO_MODE|VERSION|FLAGS|channel_mode|})"
     ],
     "description": [
       "Returns value of technical information field called `name`.",
@@ -3565,6 +3565,32 @@
     "ref-link": [
       "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#Track_info_fields_and_functions",
       "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Titleformat_Album_List#Special_fields"
+    ]
+  },
+  {
+    "id": 253,
+    "token": "_cpu_arch",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%_cpu_arch%",
+    "snippet-body": ["%_cpu_arch%"],
+    "description": [
+      "Architecture of the processor present on the machine in use."
+    ],
+    "example": [],
+    "ref-link": []
+  },
+  {
+    "id": 254,
+    "token": "__container",
+    "realm": "FB2K",
+    "role": "tag",
+    "sign": "%__container%",
+    "snippet-body": ["%__container%"],
+    "description": ["File container (MP4, Matroska, Ogg, etc)."],
+    "example": [],
+    "ref-link": [
+      "https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Title_Formatting_Reference#$info(name)"
     ]
   }
 ]
