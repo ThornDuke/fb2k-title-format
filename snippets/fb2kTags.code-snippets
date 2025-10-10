@@ -635,5 +635,19 @@
       "%<genre>%"
     ],
     "description": "FB2K Album List: Genre of the album specified track belongs to, using “genre” metadata field."
+  },
+  "Tag: %_cpu_arch%": {
+    "prefix": "%_cpu_arch%",
+    "body": [
+      "%_cpu_arch%"
+    ],
+    "description": "FB2K: Architecture of the processor present on the machine in use."
+  },
+  "Tag: %__container%": {
+    "prefix": "%__container%",
+    "body": [
+      "%__container%"
+    ],
+    "description": "FB2K: File container (MP4, Matroska, Ogg, etc)."
   }
 }

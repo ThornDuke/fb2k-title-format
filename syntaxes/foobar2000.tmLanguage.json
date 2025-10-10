@@ -1,7 +1,9 @@
 {
   "scopeName": "source.f2k",
   "name": "Foobar2000 Title Formatting",
-  "fileTypes": ["fb2k"],
+  "fileTypes": [
+    "fb2k"
+  ],
   "patterns": [
     {
       "include": "#comments"
@@ -82,7 +84,7 @@
         {
           "comment": "Built-in tags",
           "name": "variable.other.tag.f2k",
-          "match": "%(album artist|album|artist|date|genre|discnumber|totaldiscs|track artist|title|tracknumber|track number|totaltracks|bitrate|channels|channel_mask|codec|codec_profile|codec_long|filesize|filesize_natural|length|length_ex|length_seconds|length_seconds_fp|length_samples|samplerate|replaygain_album_gain|replaygain_album_peak|replaygain_album_peak_db|replaygain_track_gain|replaygain_track_peak|replaygain_track_peak_db|filename|filename_ext|directoryname|last_modified|path|_path_raw|%path_sort%|subsong|_foobar2000_version|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|isplaying|ispaused|list_index|list_total|queue_index|queue_indexes|queue_total|play_count|first_played|last_played|played_per_day|added|rating|rating_stars|rating_stars_fixed|node_name|is_folder|count|playlist_duration|playlist_size|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|is_locked|lock_name|size|filesize_raw|is_active|is_playing|default_font_face|default_font_size|__codec|__codec_profile|__samplerate|__bitrate|__tool|__encoding|__channels|__bitspersample|__decoded_bitspersample|__bitspersample_extra|__tagtype|__cue_embedded|__md5|__WAVEFORMATEXTENSIBLE_CHANNEL_MASK|__ENC_DELAY|__ENC_PADDING|__MP3_ACCURATE_LENGTH|__MP3_STEREO_MODE|__VERSION|__FLAGS|__channel_mode)%"
+          "match": "%(album artist|album|artist|date|genre|discnumber|totaldiscs|track artist|title|tracknumber|track number|totaltracks|bitrate|channels|channel_mask|codec|codec_profile|codec_long|filesize|filesize_natural|length|length_ex|length_seconds|length_seconds_fp|length_samples|samplerate|replaygain_album_gain|replaygain_album_peak|replaygain_album_peak_db|replaygain_track_gain|replaygain_track_peak|replaygain_track_peak_db|filename|filename_ext|directoryname|last_modified|path|_path_raw|%path_sort%|subsong|_foobar2000_version|playback_time|playback_time_seconds|playback_time_remaining|playback_time_remaining_seconds|isplaying|ispaused|list_index|list_total|queue_index|queue_indexes|queue_total|play_count|first_played|last_played|played_per_day|added|rating|rating_stars|rating_stars_fixed|node_name|is_folder|count|playlist_duration|playlist_size|_text|_selected_text|_selected_text_no_focus|_back|_selected_back|_selected_back_no_focus|_display_index|_is_group|_is_themed|_system_year|_system_day|_system_month|_system_day_of_week|_system_hour|_system_julian_day|playlist_name|is_locked|lock_name|size|filesize_raw|is_active|is_playing|default_font_face|default_font_size|__codec|__codec_profile|__samplerate|__bitrate|__tool|__encoding|__channels|__bitspersample|__decoded_bitspersample|__bitspersample_extra|__tagtype|__cue_embedded|__md5|__WAVEFORMATEXTENSIBLE_CHANNEL_MASK|__ENC_DELAY|__ENC_PADDING|__MP3_ACCURATE_LENGTH|__MP3_STEREO_MODE|__VERSION|__FLAGS|__channel_mode|_cpu_arch|__container)%"
         },
         {
           "comment": "User-defined tags",

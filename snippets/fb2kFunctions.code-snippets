@@ -499,7 +499,7 @@
   "Function: $info(name)": {
     "prefix": "$info(",
     "body": [
-      "\\$info(${1|codec|codec_profile|samplerate|bitrate|tool|encoding|channels|bitspersample|decoded_bitspersample|bitspersample_extra|tagtype|cue_embedded|md5|WAVEFORMATEXTENSIBLE_CHANNEL_MASK|ENC_DELAY|ENC_PADDING|MP3_ACCURATE_LENGTH|MP3_STEREO_MODE|VERSION|FLAGS|channel_mode|})"
+      "\\$info(${1|codec,codec_profile,container,samplerate,bitrate,tool,encoding,channels,bitspersample,decoded_bitspersample,bitspersample_extra,tagtype,cue_embedded,md5,WAVEFORMATEXTENSIBLE_CHANNEL_MASK,ENC_DELAY,ENC_PADDING,MP3_ACCURATE_LENGTH,MP3_STEREO_MODE,VERSION,FLAGS,channel_mode|})"
     ],
     "description": "FB2K: Returns value of technical information field called `name`."
   },
