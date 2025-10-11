@@ -1256,7 +1256,7 @@
     "realm": "FB2K",
     "role": "tag",
     "sign": "%tracknumber%",
-    "snippet-body": ["%title%"],
+    "snippet-body": ["%tracknumber%"],
     "description": [
       "Two-digit index of specified track within the album.",
       "Available only when `tracknumber` field is present in track’s metadata.",
