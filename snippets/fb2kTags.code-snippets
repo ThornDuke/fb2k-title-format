@@ -65,7 +65,7 @@
   "Tag: %tracknumber%": {
     "prefix": "%tracknumber%",
     "body": [
-      "%title%"
+      "%tracknumber%"
     ],
     "description": "FB2K: Two-digit index of specified track within the album."
   },

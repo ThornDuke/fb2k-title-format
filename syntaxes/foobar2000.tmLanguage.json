@@ -1,9 +1,7 @@
 {
   "scopeName": "source.f2k",
   "name": "Foobar2000 Title Formatting",
-  "fileTypes": [
-    "fb2k"
-  ],
+  "fileTypes": ["fb2k"],
   "patterns": [
     {
       "include": "#comments"
